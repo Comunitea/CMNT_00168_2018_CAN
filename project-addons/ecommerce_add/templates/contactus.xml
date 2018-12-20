@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+
+    <!-- Contact us form changes (website_crm/views/website_crm_templates.xml) -->
+    <template id="website_crm_contactus_form_adds" inherit_id="website_crm.contactus_form">
+        <xpath expr="//div[hasclass('form-group', 'form-field')]" position="attributes">
+            <attribute name="class">form-group form-field o_website_form_required_custom</attribute>
+        </xpath>
+        <xpath expr="//label[@for='phone']" position="inside"> *</xpath>
+        <xpath expr="//input[@name='phone']" position="attributes">
+            <attribute name="required">required</attribute>
+        </xpath>
+    </template>
+
+</odoo>
