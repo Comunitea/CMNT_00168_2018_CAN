@@ -13,8 +13,9 @@ develop-eggs/
 dist/
 downloads/
 eggs/
+eggs*
+develop-eggs/
 .eggs/
-lib/
 lib64/
 parts/
 sdist/
@@ -24,6 +25,24 @@ wheels/
 .installed.cfg
 *.egg
 MANIFEST
+devel_*
+devel-*
+.mr.developer.cfg
+odoo_repos/
+odoo-repos/
+include/
+/data/
+etc/
+bin/
+sandbox/
+src/
+.installed.cfg
+.idea
+upgrade.py
+*.log
+*.pyc
+atlassian-ide-plugin.xml
+*~
 
 # PyInstaller
 #  Usually these files are written by a python script from a template
