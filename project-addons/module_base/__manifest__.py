@@ -26,9 +26,9 @@
 ##############################################################################
 
 {
-    'name': 'Website base module',
+    'name': 'Website Base module',
     'version': '1.0',
-    'summary': 'Website base customization theme',
+    'summary': 'BackEnd customization for Website',
     'description': '',
     'category': 'Website',
     'author': 'Comunitea',
@@ -39,6 +39,8 @@
         'Rubén Seijas <ruben@comunitea.com>',
     ],
     'depends': [
+        'ecommerce_base',
+        'website_theme_install'
     ],
     'data': [
     ],
