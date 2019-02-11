@@ -40,7 +40,8 @@
     ],
     'depends': [
         'ecommerce_base',
-        'website_theme_install'
+        'website_theme_install',
+        'seo_base'
     ],
     'data': [
     ],
