@@ -13,7 +13,7 @@
     <!--Add custom scripts-->
     <template id="theme_can_website_assets_editor" inherit_id="website.assets_editor">
         <xpath expr="script[last()]" position="after">
-            <script type="text/javascript" src="/theme_canilike/static/js/snippet.js" />
+            <!--<script type="text/javascript" src="/theme_canilike/static/js/snippet.js" />-->
         </xpath>
     </template>
 

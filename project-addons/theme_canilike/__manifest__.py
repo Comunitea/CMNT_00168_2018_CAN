@@ -29,7 +29,7 @@
     'name': 'Theme Can I Like',
     'version': '1.0',
     'summary': 'FrontEnd customization for Website Custom Theme Website',
-    'description': 'This is a theme module that contains styles and layout elements for front-end part.',
+    'description': '',
     'category': 'Theme/Ecommerce',
     'author': 'Comunitea',
     'website': 'http://www.comunitea.com',
@@ -39,15 +39,16 @@
         'Rubén Seijas <ruben@comunitea.com>',
     ],
     'depends': [
+        'website',
         'module_base'
     ],
     'data': [
-        # 'templates/head.xml',
-        # 'templates/header.xml',
-        # 'templates/footer.xml',
-        # 'templates/pages.xml'
-        # 'templates/options.xml',
-        # 'templates/snippets.xml'
+        'data/menu_data.xml',
+        'data/shop_data.xml',
+        'templates/head.xml',
+        'templates/header.xml',
+        'templates/footer.xml',
+        'templates/pages.xml',
     ],
     'images': [
         '/static/description/icon.png',
