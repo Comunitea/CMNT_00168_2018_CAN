@@ -1,0 +1,16 @@
+# © 2019 Comunitea
+# License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl).
+
+from odoo.addons.website_sale_stock.controllers.main import WebsiteSale
+from odoo.http import request
+
+
+class WebsiteSaleGeoIp(WebsiteSale):
+
+    def get_attribute_value_ids(self, product):
+        country_code = request.session['geoip'].get('country_code')
+        if country_code:
+            warehouse = self.env['stock.wareougs'].get_warehouse_id(country_code)
+            if warehouse:
+                self = self.with_context(warehouse=warehouse.id)
+        return super(WebsiteSaleGeoIp, self).get_attribute_value_ids(product)
