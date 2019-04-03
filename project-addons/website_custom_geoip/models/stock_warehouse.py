@@ -7,13 +7,13 @@ class StockWarehouse(models.Model):
 
     _inherit = 'stock.warehouse'
 
-    country_group_ids = fields.Many2many('res.country.group', 'res_country_group_pricelist_rel',
-                                         'pricelist_id', 'res_country_group_id', string='Country Groups')
+    country_group_id = fields.Many2many(
+        'res.country.group', string='Country Groups')
 
     @api.model
     def get_warehouse_id(self, country_code):
         warehouse = self.env['stock.warehouse'].search(
-            [('country_group_ids.country_ids.code', '=', country_code)],
+            [('country_group_id.country_ids.code', '=', country_code)],
             limit=1
         )
         return warehouse

@@ -13,6 +13,8 @@
     ],
     'data': [
         'views/stock_warehouse.xml',
+        'views/res_country_group.xml',
+        'views/website_templates.xml'
     ],
     'installable': True,
     'auto_install': False,
