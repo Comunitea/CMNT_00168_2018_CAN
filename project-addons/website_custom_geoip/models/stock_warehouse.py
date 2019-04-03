@@ -11,7 +11,7 @@ class StockWarehouse(models.Model):
                                          'pricelist_id', 'res_country_group_id', string='Country Groups')
 
     @api.model
-    def get_waehouse_id(self, country_code):
+    def get_warehouse_id(self, country_code):
         warehouse = self.env['stock.warehouse'].search(
             [('country_group_ids.country_ids.code', '=', country_code)],
             limit=1

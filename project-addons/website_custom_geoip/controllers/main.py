@@ -10,7 +10,9 @@ class WebsiteSaleGeoIp(WebsiteSale):
     def get_attribute_value_ids(self, product):
         country_code = request.session['geoip'].get('country_code')
         if country_code:
-            warehouse = self.env['stock.wareougs'].get_warehouse_id(country_code)
+            warehouse = request.env['stock.warehouse'].sudo().get_warehouse_id(country_code)
             if warehouse:
-                self = self.with_context(warehouse=warehouse.id)
+                context = request.env.context.copy()
+                context.update({'warehouse': warehouse.id})
+                request.env.context = context
         return super(WebsiteSaleGeoIp, self).get_attribute_value_ids(product)
