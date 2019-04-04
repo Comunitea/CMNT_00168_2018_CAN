@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+
+    <record model="website.theme" id="theme_canilike_multi">
+        <field name="name">Can I Like Multiwebsite Theme</field>
+        <field name="converted_theme_addon">theme_canilike</field>
+    </record>
+
+    <!-- This method prepare assets and applies canilike theme for his website -->
+    <!-- Hook to reload canilike theme on website_multi_theme module updates -->
+    <function model="res.config.settings"
+              name="multi_theme_reload"
+              eval="([],)"
+    />
+
+</odoo>

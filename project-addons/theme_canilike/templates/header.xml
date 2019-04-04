@@ -1,49 +1,19 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <odoo>
 
-    <template id="theme_can_website_layout" inherit_id="website.layout">
-        <xpath expr="//div[@id='wrapwrap']//div[hasclass('navbar')]" position="before">
-            <div class="wp-contact-navbar">
-                <div class="container contact-navbar">
-                    <div class="row">
-                        <div class="visible-xs col-xs-4">
-                            <a t-att-href="'tel:%s' %res_company.phone"><i class="fa fa-phone mr4"/></a>
-                            <a t-att-href="'mailto:%s' %res_company.email"><i class="fa fa-envelope"/></a>
-                        </div>
-                        <div class="col-md-2 col-sm-3 hidden-xs">
-                            <div class="header-phone">
-                                <i class="fa fa-phone"/>
-                                <a t-field="res_company.phone" t-att-href="'tel:%s' %res_company.phone"/>
-                            </div>
-                            <div class="contact-separator hidden-sm"/>
-                        </div>
-                        <div class="col-md-3 col-sm-4 hidden-xs">
-                            <div class="header-email">
-                                <i class="fa fa-envelope"/>
-                                <a t-field="res_company.email" t-att-href="'mailto:%s' %res_company.email"/>
-                            </div>
-                        </div>
-                        <div class="col-md-5 hidden-sm hidden-xs"/>
-                        <div class="col-md-2 col-sm-4 col-xs-8">
-                            <div class="header-language pull-right">
-                                <t t-foreach="languages" t-as="lg">
-                                    <a t-att-href="url_for(request.httprequest.path + '?' + keep_query(), lang=lg[0])"
-                                       t-att-data-default-lang="(editable or translatable) and 'true' if website and lg[0] == website.default_lang_code else None"
-                                       t-att-data-lang="lg[0]"
-                                       class="js_change_lang"
-                                       rel="nofollow">
-                                        <img t-att-src="'/theme_canilike/static/img/flag_%s.png' % lg[0].split('_')[0]"
-                                             t-att-title="lg[1].split('/').pop()"
-                                             t-att-alt="lg[1].split('/').pop()"
-                                             t-att-href="url_for(request.httprequest.path + '?' + keep_query(), lang=lg[0])"
-                                             style="max-height: 24px;"/>
-                                    </a>
-                                </t>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <!--Header Template-->
+<!--    <template id="can_website_layout" inherit_id="website_multi_theme.auto_layout_website_can">-->
+<!--        <xpath expr="//div[@id='wrapwrap']//div[hasclass('navbar')]" position="before">-->
+<!--            <t t-call="theme_canilike.custom_header_snippet"/>-->
+<!--        </xpath>-->
+<!--        <xpath expr="//div[@id='wrapwrap']//div[hasclass('navbar')]" position="after">-->
+<!--            <t t-call="breadcrumbs_base.bcb_main_wrap"/>-->
+<!--        </xpath>-->
+<!--    </template>-->
+
+    <template id="can_logo_show" inherit_id="website_multi_theme.auto_view_can_website_layout_logo_show">
+        <xpath expr="//a[hasclass('navbar-brand')]/span" position="replace">
+            <img class="img img-responsive" src="/theme_canilike/static/img/flags/canilike/img-logo.png" alt="website.name"/>
         </xpath>
     </template>
 

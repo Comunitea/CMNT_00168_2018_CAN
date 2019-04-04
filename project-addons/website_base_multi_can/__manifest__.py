@@ -1,14 +1,10 @@
 # -*- coding: utf-8 -*-
 #
-# © 2018 Comunitea
-# Pavel Smirnov <pavel@comunitea.com>
-# Rubén Seijas <ruben@comunitea.com>
-# License AGPL-3 - See http://www.gnu.org/licenses/agpl-3.0.html
-#
 ##############################################################################
 #
-#    Copyright (C) {year} {company} All Rights Reserved
-#    ${developer} <{mail}>$
+#    License AGPL-3 - See http://www.gnu.org/licenses/agpl-3.0.html
+#    © 2019 Comunitea - Ruben Seijas <ruben@comunitea.com>
+#    © 2019 Comunitea - Pavel Smirnov <pavel@comunitea.com>
 #
 #    This program is free software: you can redistribute it and/or modify
 #    it under the terms of the GNU Affero General Public License as published
@@ -26,11 +22,11 @@
 ##############################################################################
 
 {
-    'name': 'Theme Can I Like',
+    'name': 'MultiWebsite Base Module Can I Like',
     'version': '1.0',
-    'summary': 'FrontEnd customization for Can I Like Website',
+    'summary': 'BackEnd customization for all companies and their websites.',
     'description': '',
-    'category': 'Theme',
+    'category': 'Website',
     'author': 'Comunitea',
     'website': 'http://www.comunitea.com',
     'license': 'AGPL-3',
@@ -39,26 +35,24 @@
         'Rubén Seijas <ruben@comunitea.com>',
     ],
     'depends': [
-        'website_blog_base',
+        'ecommerce_base',
         'multi_company_base',
-        'website_base_multi_can',
+        'website_blog_base',
+        'website_multi_company_blog',
+        'mass_mailing',
+        # 'website_form_builder',
+        'seo_base',
+        'breadcrumbs_base',
+        # 'website_sale_product_brand',
+        'payment_redsys',
     ],
     'data': [
-        'data/theme_data.xml',
-        'data/view_data.xml',
-        'templates/pages.xml',
-        'data/page_data.xml',
-        'data/menu_data.xml',
-        'templates/snippets.xml',
-        'templates/head.xml',
-        'templates/header.xml',
-        # 'templates/footer.xml',
-        # 'templates/breadcrumbs_bar.xml',
-        'templates/account.xml',
-        'templates/newsletter.xml',
-        'templates/page_home.xml',
-        'templates/page_newsletter.xml',
-        # 'templates/other.xml',
+        'data/company_data.xml',
+        # 'data/menu_data.xml',  # To Delete Default Data Only
+        # 'data/page_data.xml',  # To Delete Default Data Only
+        'data/website_data.xml',
+        'views/res_company_views.xml',
+        'views/website_views.xml',
     ],
     'images': [
         '/static/description/icon.png',

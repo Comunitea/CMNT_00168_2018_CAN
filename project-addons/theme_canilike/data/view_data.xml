@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo noupdate="1">
+
+	<!-- split between ir_ui_view & website_page record to keep external_id on ir_ui_view -->
+	<record id="can_homepage_view" model="ir.ui.view">
+		<field name="name">Home</field>
+		<field name="type">qweb</field>
+		<field name="key">website.homepage</field>
+		<field name="arch" type="xml">
+			<t name="Home" priority="29" t-name="can_homepage">
+				<t t-call="theme_canilike.can_homepage_template"/>
+			</t>
+		</field>
+	</record>
+
+</odoo>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+
+    <template id="can_page_home_content_template" inherit_id="theme_canilike.can_homepage_template">
+
+        <xpath expr="//div[@id='wrap']" position="inside">
+
+            <h1>Can I Like Home</h1>
+            <h2>Homapage Content</h2>
+            <h3>Canning tradition</h3>
+            <p>
+                We are a team of passionate people whose goal is to improve everyone's life through disruptive products. We build great products to solve your business problems.
+            </p>
+            <!-- Latest news section -->
+<!--            <t t-set="latest_posts" t-value="website.latest_posts(3, 3, 'Our latest news', 'Read all our news')"/>-->
+<!--            <t t-call="website_blog_base.wbb_latest_post_wrap"/>-->
+        </xpath>
+
+    </template>
+
+</odoo>

@@ -1,0 +1,113 @@
+/* ==========================================================================
+   Header
+   ========================================================================== */
+
+.header {
+    &:extend(.wrapper);
+    display: flex;
+    justify-content: space-between;
+    /* @todo: delete this, just for test */
+    border-bottom: 1px solid @color-main-light;
+    a {
+        text-decoration: none;
+        color: @color-main-medium;
+        &:hover {
+            color: @color-corp;
+        }
+    }
+    ul {
+        list-style-type: none;
+        display: flex;
+        li {
+            &:not(:last-child){
+                margin-right: 1em;
+            }
+        }
+    }
+}
+
+.header-logo {
+    display: flex;
+    align-items: center;
+}
+
+.header-logo-name,
+.header-logo-description {
+    margin: 0;
+    color: #FF785F;
+}
+
+.header-logo-name {
+    text-transform: uppercase;
+    margin-right: .5em;
+    position: relative;
+    a {
+        color: @color-corp;
+    }
+    &::before {
+        display: block;
+        position: absolute;
+        z-index: -1;
+        top: -50%;
+        left:-10px;
+        content: "";
+        background-image: url('/img/img-logo.svg');
+        background-size: 100%;
+        width: 150px;
+        height: 80px;
+    }
+}
+.header-logo-description{
+    color: @color-main-medium;
+    max-width: 150px;
+    .font-size(14);
+}
+
+
+.nav {
+    ul {
+        justify-content: flex-end;
+        align-items: center;
+    }
+}
+
+.nav-main {
+    font-weight: @fw-bold;
+    a {
+        color: @color-corp;
+        &:hover {
+            color: @color-secondary;
+        }
+    }
+}
+
+.nav-user {
+    .font-size(14);
+    line-height: 100%;
+    li {
+        &:not(:first-child){
+            &::before {
+                content: "|";
+                margin-right: 1em;
+                color: @color-main-xtralight;
+            }
+        }
+    }
+    span {
+        margin-left: .25em;
+        padding: .25em .45em;
+        border-radius: 4px;
+        background-color: @color-secondary;
+        color: white;
+    }
+}
+
+
+.icon-heart {
+    &::before {
+        content: "♥";
+        font-size: 150%;
+        margin-right: .25em;
+        color: @color-secondary;
+    }
+}

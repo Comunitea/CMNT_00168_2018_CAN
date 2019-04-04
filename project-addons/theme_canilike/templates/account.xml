@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+
+    <template id="can_web_login_template" inherit_id="web.login">
+        <xpath expr="//div[hasclass('oe_login_buttons')]" position="before">
+            <div class="on_login_advise mt4 mb8 small">
+                With entering <t t-call="theme_canilike.accept_legal_terms_without_check_snippet"/>
+            </div>
+        </xpath>
+    </template>
+
+</odoo>

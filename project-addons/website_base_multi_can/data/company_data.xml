@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+        <data noupdate="1">
+
+            <!--Create Main Company-->
+            <!--No es necesario crearla ya que referencia como: ref="base.main_company"-->
+            <!--Pero si le añadimos datos fijos-->
+            <record id="base.main_company" model="res.company">
+                <field name="logo" type="base64" file="website_base_multi_can/static/img/img-logo.png"/>
+                <field name="email">info@canilike.com</field>
+                <field name="phone">952 23 90 00</field>
+            </record>
+
+
+            <!--Create Second Company-->
+            <!--<record id="second_company" model="res.company">-->
+                <!--<field name="name">Second Company</field>-->
+                <!--<field name="currency_id" ref="base.EUR"/>-->
+                <!--<field name="parent_id" ref="group_company"/>-->
+                <!--<field name="logo" type="base64" file="website_base_multi_can/static/img/second_company_logo.png"/>-->
+                <!--<field name="email">info@company.com</field>-->
+                <!--<field name="phone">982 00 00 00</field>-->
+            <!--</record>-->
+
+        </data>
+</odoo>

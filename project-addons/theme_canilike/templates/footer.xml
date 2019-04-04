@@ -1,46 +1,45 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <odoo>
 
-    <template id="theme_can_website_footer_custom" inherit_id="website.footer_custom">
-        <xpath expr="//div[@id='footer']//div[hasclass('row')]" position="replace">
-            <div class="row">
-                <div class="col-md-4 col-lg-3">
-                    <h4>First column</h4>
-                    <ul class="list-unstyled">
-                        <li><a href="/">Line 1</a></li>
-                        <li><a href="/">Line 2</a></li>
-                        <li><a href="/">Line 3</a></li>
-                        <li><a href="/">Line 4</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-4 col-lg-3">
-                    <h4>Second column</h4>
-                    <ul class="list-unstyled">
-                        <li><a href="/">Line 1</a></li>
-                        <li><a href="/">Line 2</a></li>
-                    </ul>
-                    <ul class="list-unstyled">
-                        <li t-ignore="true"><i class="fa fa-phone"/> <span t-field="res_company.phone"/></li>
-                        <li t-ignore="true"><i class="fa fa-envelope"/>  <span t-field="res_company.email"/></li>
-                    </ul>
-                </div>
-                <div class="col-md-4 col-lg-5 col-lg-offset-1">
-                    <h4>Third column</h4>
-                    <div>
-                        <p>We are a team of passionate people whose goal is to improve everyone's
-                            life through disruptive products. We build great products to solve your
-                            business problems.</p>
-                    </div>
-                    <h2>
-                        <a t-att-href="website.social_facebook" t-if="website.social_facebook" rel="nofollow" target="_blank"><i class="fa fa-facebook-square"/></a>
-                        <a t-att-href="website.social_twitter" t-if="website.social_twitter" rel="nofollow" target="_blank"><i class="fa fa-twitter"/></a>
-                        <a t-att-href="website.social_linkedin" t-if="website.social_linkedin" rel="nofollow" target="_blank"><i class="fa fa-linkedin"/></a>
-                        <a t-att-href="website.social_youtube" t-if="website.social_youtube" rel="nofollow" target="_blank"><i class="fa fa-youtube-play"/></a>
-                        <a t-att-href="website.social_googleplus" t-if="website.social_googleplus" rel="publisher" target="_blank"><i class="fa fa-google-plus-square"/></a>
-                        <a t-att-href="website.social_github" t-if="website.social_github" rel="nofollow" target="_blank"><i class="fa fa-github"/></a>
-                    </h2>
-                </div>
-            </div>
+    <template id="can_website_footer_custom_template" inherit_id="website_multi_theme.auto_view_can_website_footer_custom">
+        <xpath expr="//div[@id='footer']" position="replace">
+            <h4 t-esc="website.name"/>
+            <ul class="list-unstyled">
+                <li><a href="/aboutus">About us</a></li>
+                <li><a href="/contactus">Contactus</a></li>
+                <li><a href="/newsletter">Newsletter</a></li>
+            </ul>
+
+            <h4>Column</h4>
+            <ul>
+                <li><a href="/">Line 1</a></li>
+                <li><a href="/">Line 2</a></li>
+            </ul>
+
+            <h4>Column</h4>
+            <p>We are a team of passionate people whose goal is to improve everyone's life through disruptive products. We build great products to solve your business problems.</p>
+
+            <h4>Follow us</h4>
+            <ul>
+                <!--<li><a rel="nofollow" target="_blank" href="https://www.facebook.com/">Facebook</a></li>-->
+                <!--<li><a rel="nofollow" target="_blank" href="https://twitter.com/">Twitter</a></li>-->
+                <!--<li><a rel="nofollow" target="_blank" href="https://instagram.com/">Instagram</a></li>-->
+                <li><a t-att-href="website.social_facebook" t-if="website.social_facebook" rel="nofollow" target="_blank"><i class="fa fa-facebook-square"/></a></li>
+                <li><a t-att-href="website.social_twitter" t-if="website.social_twitter" rel="nofollow" target="_blank"><i class="fa fa-twitter"/></a></li>
+                <li><a t-att-href="website.social_youtube" t-if="website.social_youtube" rel="nofollow" target="_blank"><i class="fa fa-youtube-play"/></a></li>
+                <li><a t-att-href="website.social_instagram" t-if="website.social_instagram" rel="nofollow" target="_blank"><i class="fa fa-instagram"/></a></li>
+            </ul>
+
+            <ul>
+                <li><a href="/legal/terms-of-use">Términos de Uso</a></li>
+                <li><a href="/legal/privacy-policy">Política de Privacidad</a></li>
+                <li><a href="/legal/advice">Aviso Legal</a></li>
+            </ul>
+            <p>Copyright © 2019 CanILike eShop</p>
+            <ul>
+                <li>111-222-333</li>
+                <li>info@canilike.com</li>
+            </ul>
         </xpath>
     </template>
 

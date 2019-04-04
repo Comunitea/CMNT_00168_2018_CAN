@@ -1,0 +1,53 @@
+/* ==========================================================================
+   Forms
+   ========================================================================== */
+
+/**
+ * Default styles to use on Scms-site forms components
+ */
+
+input[type="date"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="email"],
+input[type="week"],
+input[type="month"],
+input[type="number"],
+input[type="password"],
+input[type="text"],
+input[type="time"],
+input[type="tel"],
+input[type="url"],
+textarea {
+	width: 100%;
+	border: 1px solid lighten(@color-main, 70%);
+	padding: 0.7em 0.5em;
+	background: white;
+	border-radius: 2px;
+
+	&:focus {
+		border: 1px solid @color-main-medium;
+	}
+}
+textarea {
+	height: 10em;
+}
+
+legend {
+	display: none;
+}
+
+fieldset {
+	border: 0;
+	padding: 0;
+}
+
+/**
+ * Errors forms on Scms-site
+ */
+.form-error {
+	color: red;
+}
+.form-correct {
+	color: seagreen !important;
+}

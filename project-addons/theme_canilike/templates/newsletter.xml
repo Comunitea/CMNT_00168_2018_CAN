@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+
+    <template id="can_website_mail_follow_template" inherit_id="website_mail.follow">
+        <xpath expr="//div[hasclass('js_follow')]" position="after">
+            <div class="on_subscribe_advise small mt4" t-if="object.id and not object.message_is_follower">
+                With subscribe <t t-call="theme_canilike.accept_legal_terms_without_check_snippet"/>
+            </div>
+        </xpath>
+    </template>
+
+</odoo>

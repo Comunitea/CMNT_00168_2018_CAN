@@ -2,19 +2,17 @@
 <odoo>
 
     <!-- Add custom styles -->
-    <template id="theme_can_website_assets_frontend" inherit_id="website.assets_frontend">
-        <xpath expr="link[last()]" position="after">
-            <link href="/theme_canilike/static/css/_general.less" rel="stylesheet" type="text/less"/>
-            <link href="/theme_canilike/static/css/header.less" rel="stylesheet" type="text/less"/>
-            <link href="/theme_canilike/static/css/footer.less" rel="stylesheet" type="text/less"/>
-        </xpath>
-    </template>
+    <template id="can_website_assets_frontend" inherit_id="website_multi_theme.auto_assets_website_can">
 
-    <!--Add custom scripts-->
-    <template id="theme_can_website_assets_editor" inherit_id="website.assets_editor">
-        <xpath expr="script[last()]" position="after">
-            <!--<script type="text/javascript" src="/theme_canilike/static/js/snippet.js" />-->
+        <xpath expr="link[last()]" position="after">
+            <t t-call="theme_canilike.custom_css_snippet"/>
         </xpath>
+
+        <xpath expr="//script[last()]" position="after">
+            <script type="text/javascript" src="/theme_canilike/static/js/main.js"/>
+            <script type="text/javascript" src="/theme_canilike/static/js/comunitea.js"/>
+        </xpath>
+
     </template>
 
 </odoo>

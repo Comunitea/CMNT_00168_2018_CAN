@@ -1,250 +1,253 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<odoo noupdate="0">
 
-    <!-- About us page -->
-    <template id="theme_can_about_us_template">
-        <t t-call="website.layout">
-            <div id="wrap">
-                <div class="container">
-                    <section class="s_title">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <h1 class="text-center">About us page</h1>
-                                    <h3 class="text-center text-muted">The sub-title of this page</h3>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                    <section class="s_text_image mt32">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-md-6 mb32">
-                                    <h3>Lorem Ipsum section</h3>
-                                    <p>
-                                        Lorem ipsum dolor <strong>sit amet, consectetur adipiscing</strong> elit. Ut in mi pretium,
-                                        tincidunt est vel, tincidunt nisi. Phasellus aliquet, leo vitae consectetur
-                                        auctor, urna mauris <a href="#">viverra lorem</a>, in semper nisl odio ac sem.
-                                    </p>
-                                    <p>
-                                        Curabitur a lacus sed mi venenatis euismod eget nec lectus.
-                                        Etiam in fermentum neque. In facilisis aliquet venenatis.
-                                        Nam a massa sit amet magna <strong>sollicitudin pharetra</strong> ut vel nunc.
-                                        Maecenas accumsan massa vitae iaculis tincidunt.
-                                    </p>
-                                    <h4>Lorem Ipsum h4 title</h4>
-                                    <p>
-                                        Etiam erat ex, <a href="#">posuere sollicitudin</a> leo sit amet, convallis aliquam sem.
-                                        Nulla sed erat ullamcorper, malesuada sapien vitae, condimentum nulla.
-                                        Suspendisse auctor mauris neque, quis ornare augue efficitur id.
-                                    </p>
-                                    <ul>
-                                        <li>Orci varius natoque penatibus</li>
-                                        <li>Maecenas a molestie massa, quis suscipit massa</li>
-                                        <li>Curabitur interdum lacus nisi</li>
-                                    </ul>
-                                    <p>
-                                        Vivamus nec mattis lacus, vitae dapibus magna.
-                                    </p>
-                                </div>
-                                <div class="col-md-6 mb32">
-                                    <img class="img img-responsive pull-left mb16" src="/theme_canilike/static/demo/img-01.jpg" alt="Lorem Ipsum"/>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                    <!-- Snippets' area -->
-                    <div class="oe_structure" />
-                </div>
-            </div>
-        </t>
-    </template>
+<odoo noupdate="1">
 
-    <!-- Delete default and create the new Aboutus page-->
-    <delete id="website.aboutus_page" model="website.page"/>
-    <record id="theme_can_about_us" model="website.page">
-        <field name="name">About us</field>
-        <field name="website_published">True</field>
-        <field name="url">/aboutus</field>
-        <field name="view_id" ref="theme_can_about_us_template"/>
-    </record>
-    <record id="theme_can_about_us_link" model="website.menu">
-        <field name="name">About us</field>
-        <field name="url">/aboutus</field>
-        <field name="page_id" ref="theme_can_about_us"/>
-        <field name="sequence" type="int">99</field>
-        <field name="parent_id" ref="website.main_menu" />
-        <field name="website_id" ref="website.default_website"/>
-    </record>
+	<!-- ======================================= Main Template ======================================= -->
+	<template id="can_main_template" name="Main Canilike Theme Template" inherit_id="website_multi_theme.auto_layout_website_can">
 
-    <!-- Home page content part -->
-    <template id="theme_can_homepage_content">
-        <div id="carousel-homepage" class="carousel slide" data-ride="carousel">
-            <!-- Indicators -->
-            <ol class="carousel-indicators">
-                <li data-target="#carousel-homepage" data-slide-to="0" class="active"/>
-                <li data-target="#carousel-homepage" data-slide-to="1"/>
-                <li data-target="#carousel-homepage" data-slide-to="2"/>
-            </ol>
-            <!-- Wrapper for slides -->
-            <div class="carousel-inner" role="listbox">
-                <div class="item active">
-                    <img src="/theme_canilike/static/demo/slide-01.jpg" alt="Slide #01"/>
-                    <div class="carousel-caption">
-                        The first slide text
-                    </div>
-                </div>
-                <div class="item">
-                    <img src="/theme_canilike/static/demo/slide-02.jpg" alt="Slide #02"/>
-                    <div class="carousel-caption">
-                        The second slide text
-                    </div>
-                </div>
-                <div class="item">
-                    <img src="/theme_canilike/static/demo/slide-01.jpg" alt="Slide #03"/>
-                    <div class="carousel-caption">
-                        The third slide text
-                    </div>
-                </div>
-            </div>
-            <!-- Controls -->
-            <a class="left carousel-control" href="#carousel-homepage" role="button" data-slide="prev">
-                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"/>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="right carousel-control" href="#carousel-homepage" role="button" data-slide="next">
-                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"/>
-                <span class="sr-only">Next</span>
-            </a>
-        </div>
-        <section class="s_title mt32">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <h1 class="text-center">CanILike Homepage</h1>
-                        <h3 class="text-center text-muted">The sub-title of the homepage</h3>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="s_text_block mt32">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6">
-                        <p>
-                            Lorem ipsum dolor <strong>sit amet, consectetur adipiscing</strong> elit. Ut in mi pretium,
-                            tincidunt est vel, tincidunt nisi. Phasellus aliquet, leo vitae consectetur
-                            auctor, urna mauris <a href="#">viverra lorem</a>, in semper nisl odio ac sem.
-                        </p>
-                        <h3>Lorem Ipsum section</h3>
-                        <p>
-                            Curabitur a lacus sed mi venenatis euismod eget nec lectus.
-                            Etiam in fermentum neque. In facilisis aliquet venenatis.
-                            Nam a massa sit amet magna <strong>sollicitudin pharetra</strong> ut vel nunc.
-                            Maecenas accumsan massa vitae iaculis tincidunt.
-                        </p>
-                    </div>
-                    <div class="col-md-5 col-md-offset-1">
-                        <p>
-                            Etiam erat ex, <a href="#">posuere sollicitudin</a> leo sit amet, convallis aliquam sem.
-                            Nulla sed erat ullamcorper, malesuada sapien vitae, condimentum nulla.
-                            Suspendisse auctor mauris neque, quis ornare augue efficitur id.
-                        </p>
-                        <h4>Lorem Ipsum h4 title</h4>
-                        <ul>
-                            <li>Orci varius natoque penatibus</li>
-                            <li>Maecenas a molestie massa, quis suscipit massa</li>
-                            <li>Curabitur interdum lacus nisi</li>
-                        </ul>
-                        <p>
-                            Vivamus nec mattis lacus, vitae dapibus magna.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="s_features mt32">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-4 text-center">
-                        <span class="fa fa-suitcase fa-5x"/>
-                        <div>
-                            <h3 class="mt8 mb0">First Feature</h3>
-                            <p class="text-muted">Tell what's the value for the<br/>customer for this feature.</p>
-                        </div>
-                    </div>
-                    <div class="col-md-4 text-center">
-                        <span class="fa fa-lock fa-5x"/>
-                        <div>
-                            <h3 class="mt8 mb0">Second Feature</h3>
-                            <p class="text-muted">Write what the customer would like to know,<br/>not what you want to show.</p>
-                        </div>
-                    </div>
-                    <div class="col-md-4 text-center">
-                        <span class="fa fa-heart fa-5x"/>
-                        <div>
-                            <h3 class="mt8 mb0">Third Feature</h3>
-                            <p class="text-muted">A small explanation of this great<br/>feature, in clear words.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="s_text_block mt32">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <h2>Lorem Ipsum title</h2>
-                        <p>
-                            Lorem ipsum dolor <strong>sit amet, consectetur adipiscing</strong> elit. Ut in mi pretium,
-                            tincidunt est vel, tincidunt nisi. Phasellus aliquet, leo vitae consectetur
-                            auctor, urna mauris <a href="#">viverra lorem</a>, in semper nisl odio ac sem.
-                        </p>
-                        <p>
-                            Etiam erat ex, <a href="#">posuere sollicitudin</a> leo sit amet, convallis aliquam sem.
-                            Nulla sed erat ullamcorper, malesuada sapien vitae, condimentum nulla.
-                            Suspendisse auctor mauris neque, quis ornare augue efficitur id.
-                        </p>
-                        <p>
-                            Curabitur a lacus sed mi venenatis euismod eget nec lectus.
-                            Etiam in fermentum neque. In facilisis aliquet venenatis.
-                            Nam a massa sit amet magna <strong>sollicitudin pharetra</strong> ut vel nunc.
-                            Maecenas accumsan massa vitae iaculis tincidunt.
-                        </p>
-                    </div>
-                </div>
-                <div class="row mt32 mb32">
-                    <div class="col-md-3">
-                        <img src="/theme_canilike/static/demo/img-02.jpg" class="img-responsive img-circle img-thumbnail" alt="Responsive image"/>
-                    </div>
-                    <div class="col-md-3">
-                        <img src="/theme_canilike/static/demo/img-03.jpg" class="img-responsive img-circle img-thumbnail" alt="Responsive image"/>
-                    </div>
-                    <div class="col-md-3">
-                        <img src="/theme_canilike/static/demo/img-04.jpg" class="img-responsive img-circle img-thumbnail" alt="Responsive image"/>
-                    </div>
-                    <div class="col-md-3">
-                        <img src="/theme_canilike/static/demo/img-05.jpg" class="img-responsive img-circle img-thumbnail" alt="Responsive image"/>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12">
-                        <h4>Lorem Ipsum h4 sub-title</h4>
-                        <p>
-                            Etiam erat ex, <a href="#">posuere sollicitudin</a> leo sit amet, convallis aliquam sem.
-                            Nulla sed erat ullamcorper, malesuada sapien vitae, condimentum nulla.
-                            Suspendisse auctor mauris neque, quis ornare augue efficitur id.
-                        </p>
-                        <p>
-                            Lorem ipsum dolor <strong>sit amet, consectetur adipiscing</strong> elit. Ut in mi pretium,
-                            tincidunt est vel, tincidunt nisi. Phasellus aliquet, leo vitae consectetur
-                            auctor, urna mauris <a href="#">viverra lorem</a>, in semper nisl odio ac sem.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <div class="clearfix mb32"/>
-    </template>
+		<xpath expr="//div[@id='wrapwrap']" position="attributes">
+			<attribute name="t-if">True == False</attribute>
+		</xpath>
+
+		<xpath expr="//div[@id='wrapwrap']" position="after">
+			<div class="page_page_page">
+				<header class="header">
+					<t t-call="theme_canilike.custom_header_snippet"/>
+					<!--<t t-call="breadcrumbs_base.bcb_main_wrap"/>-->
+				</header>
+
+				<main>
+					<t t-raw="0"/>
+				</main>
+
+				<footer>
+					<!-- <t t-call="theme_canilike.can_website_footer_custom_template"/>-->
+					<t t-call="theme_canilike.custom_footer_snippet"/>
+				</footer>
+			</div>
+		</xpath>
+
+	</template>
+
+	<!-- ======================================= Home Template ======================================= -->
+	<template id="can_homepage_template" name="Home Canilike Theme Template">
+		<t t-call="theme_canilike.can_main_template">
+			<div id="wrap"/>
+		</t>
+	</template>
+
+	<!-- ======================================= Portal part ======================================= -->
+	<template id="can_portal_my_home_template" name="My Portal Canilike Theme Template">
+		<t t-call="theme_canilike.can_main_template">
+			<div id="wrap"/>
+		</t>
+	</template>
+	<template id="can_portal_my_home_content_template" name="My Portal Canilike Theme Template Content" inherit_id="theme_canilike.can_portal_my_home_template">
+		<xpath expr="//div[@id='wrap']" position="inside">
+			<t t-call="portal.portal_my_home"/>
+		</xpath>
+	</template>
+
+	<template id="can_portal_my_details_template" name="Account Details Canilike Theme Template">
+		<t t-call="theme_canilike.can_main_template">
+			<div id="wrap"/>
+		</t>
+	</template>
+	<template id="can_portal_my_details_content_template" name="ccount Details Canilike Theme Template Content" inherit_id="theme_canilike.can_portal_my_details_template">
+		<xpath expr="//div[@id='wrap']" position="inside">
+			<t t-call="portal.portal_my_details"/>
+		</xpath>
+	</template>
+
+	<template id="can_portal_my_quotations_template" name="My Quotations Canilike Theme Template">
+		<t t-call="theme_canilike.can_main_template">
+			<div id="wrap"/>
+		</t>
+	</template>
+	<template id="can_portal_my_quotations_content_template" name="My Quotations Canilike Theme Template Content" inherit_id="theme_canilike.can_portal_my_quotations_template">
+		<xpath expr="//div[@id='wrap']" position="inside">
+			<t t-call="sale.portal_my_quotations"/>
+		</xpath>
+	</template>
+
+	<template id="can_portal_my_orders_template" name="My Sales Orders Canilike Theme Template">
+		<t t-call="theme_canilike.can_main_template">
+			<div id="wrap"/>
+		</t>
+	</template>
+	<template id="can_portal_my_orders_content_template" name="My Sales Orders Canilike Theme Template Content" inherit_id="theme_canilike.can_portal_my_orders_template">
+		<xpath expr="//div[@id='wrap']" position="inside">
+			<t t-call="sale.portal_my_orders"/>
+		</xpath>
+	</template>
+
+	<template id="can_portal_order_template" name="Sales Order Canilike Theme Template">
+		<t t-call="theme_canilike.can_main_template">
+			<div id="wrap"/>
+		</t>
+	</template>
+	<template id="can_portal_order_content_template" name="Sale Order Canilike Theme Template Content" inherit_id="theme_canilike.can_portal_order_template">
+		<xpath expr="//div[@id='wrap']" position="inside">
+			<t t-call="sale.portal_order_page"/>
+		</xpath>
+	</template>
+
+	<template id="can_portal_my_invoices_template" name="My Invoices and Payments Canilike Theme Template">
+		<t t-call="theme_canilike.can_main_template">
+			<div id="wrap"/>
+		</t>
+	</template>
+	<template id="can_portal_my_invoices_content_template" name="My Invoices and Payments Canilike Theme Template Content" inherit_id="theme_canilike.can_portal_my_invoices_template">
+		<xpath expr="//div[@id='wrap']" position="inside">
+			<t t-call="account.portal_my_invoices"/>
+		</xpath>
+	</template>
+
+	<template id="can_portal_invoice_template" name="Invoice Canilike Theme Template">
+		<t t-call="theme_canilike.can_main_template">
+			<div id="wrap"/>
+		</t>
+	</template>
+	<template id="can_portal_invoice_content_template" name="Invoice and Payments Canilike Theme Template Content" inherit_id="theme_canilike.can_portal_invoice_template">
+		<xpath expr="//div[@id='wrap']" position="inside">
+			<t t-call="account.portal_invoice_page"/>
+		</xpath>
+	</template>
+
+	<!-- ======================================= Shop part ======================================= -->
+	<template id="can_order_confirmation_template" name="Order Confirmation Canilike Theme Template">
+		<t t-call="theme_canilike.can_main_template">
+			<div id="wrap"/>
+		</t>
+	</template>
+	<template id="can_order_confirmation_content_template" name="Order Confirmation Canilike Theme Template Content" inherit_id="theme_canilike.can_order_confirmation_template">
+		<xpath expr="//div[@id='wrap']" position="inside">
+			<t t-call="website_sale.confirmation"/>
+		</xpath>
+	</template>
+
+	<!-- ======================================= Error part ======================================= -->
+	<template id="can_404_template" name="Error 404 Canilike Theme Template">
+		<t t-call="theme_canilike.can_main_template">
+			<div id="wrap"/>
+		</t>
+	</template>
+	<template id="can_404_content_template" name="Error 404 Canilike Theme Template Content" inherit_id="theme_canilike.can_404_template">
+		<xpath expr="//div[@id='wrap']" position="inside">
+			<t t-call="website.page_404"/>
+		</xpath>
+	</template>
+
+	<!-- ======================================= Legal part ======================================= -->
+	<template id="can_advise_template" name="Legal Advise Canilike Theme Template">
+		<t t-call="theme_canilike.can_main_template">
+			<div id="wrap"/>
+		</t>
+	</template>
+	<template id="can_advise_content_template" name="Legal Advise Canilike Theme Template Content" inherit_id="theme_canilike.can_advise_template">
+		<xpath expr="//div[@id='wrap']" position="inside">
+			<t t-call="website_legal_page.advice"/>
+		</xpath>
+	</template>
+
+	<template id="can_privacy_template" name="Privacy Policy Canilike Theme Template">
+		<t t-call="theme_canilike.can_main_template">
+			<div id="wrap"/>
+		</t>
+	</template>
+	<template id="can_privacy_content_template" name="Privacy Policy Canilike Theme Template Content" inherit_id="theme_canilike.can_privacy_template">
+		<xpath expr="//div[@id='wrap']" position="inside">
+			<t t-call="website_legal_page.privacy-policy"/>
+		</xpath>
+	</template>
+
+	<template id="can_terms_template" name="Terms of Use Canilike Theme Template">
+		<t t-call="theme_canilike.can_main_template">
+			<div id="wrap"/>
+		</t>
+	</template>
+	<template id="can_terms_content_template" name="Terms of Use Canilike Theme Template Content" inherit_id="theme_canilike.can_terms_template">
+		<xpath expr="//div[@id='wrap']" position="inside">
+			<t t-call="website_legal_page.terms-of-use"/>
+		</xpath>
+	</template>
+
+	<!-- ======================================= Contact Us Template ======================================= -->
+	<template id="can_contactus_template" name="Contact Us Canilike Theme Template">
+		<t t-call="theme_canilike.can_main_template">
+			<div id="wrap"/>
+		</t>
+	</template>
+	<template id="can_contactus_content_template" name="Contact Us Canilike Theme Template Content" inherit_id="theme_canilike.can_contactus_template">
+		<xpath expr="//div[@id='wrap']" position="inside">
+
+
+			<t t-call="website.contactus"/>
+			<hr/>
+			<t t-call="theme_canilike.default_contact_form_snippet"/>
+
+
+		</xpath>
+
+	</template>
+
+	<template id="can_contactus_thanks_template" name="Contact Us (Thanks) Canilike Theme Template">
+		<t t-call="theme_canilike.can_main_template">
+			<div id="wrap"/>
+		</t>
+	</template>
+	<template id="can_contactus_thanks_content_template" name="Contact Us (Thanks) Canilike Theme Template Content" inherit_id="theme_canilike.can_contactus_thanks_template">
+		<xpath expr="//div[@id='wrap']" position="inside">
+			<t t-call="website_crm.contactus_thanks_ir_ui_view"/>
+		</xpath>
+	</template>
+
+
+	<!-- ======================================= About Us Template ======================================= -->
+	<template id="can_aboutus_template" name="About Us Canilike Theme Template">
+		<t t-call="theme_canilike.can_main_template">
+			<div id="wrap"/>
+		</t>
+	</template>
+	<template id="can_aboutus_content_template" name="About Us Canilike Theme Template Content" inherit_id="theme_canilike.can_aboutus_template">
+		<xpath expr="//div[@id='wrap']" position="inside">
+			<t t-call="website.aboutus"/>
+		</xpath>
+	</template>
+
+	<!-- ======================================= Newsletter Template ======================================= -->
+	<template id="can_newsletter_template" name="Newsletter Canilike Theme Template">
+		<t t-call="theme_canilike.can_main_template">
+			<div id="wrap"/>
+		</t>
+	</template>
+	<template id="can_newsletter_content_template" name="Newsletter Canilike Theme Template Content" inherit_id="theme_canilike.can_newsletter_template">
+		<xpath expr="//div[@id='wrap']" position="inside">
+
+
+			<t t-call="theme_canilike.can_page_newsletter_template"/>
+			<hr/>
+			<t t-set="latest_posts" t-value="website.latest_posts(3, 3, 'Our latest news', 'Read all our news')"/>
+			<hr/>
+			<t t-call="website_blog_base.wbb_latest_post_wrap"/>
+			<hr/>
+			<t t-call="website_blog_base.wbb_latest_post"/>
+
+
+		</xpath>
+
+	</template>
+
+	<!-- ======================================= Other Template ======================================= -->
+<!--	<template id="can_other_template" name="Other Canilike Theme Template">-->
+<!--		<t t-call="theme_canilike.can_main_template">-->
+<!--			<div id="wrap"/>-->
+<!--		</t>-->
+<!--	</template>-->
+<!--	<template id="can_other_content_template" name="Other Canilike Theme Template Content" inherit_id="theme_canilike.can_other_template">-->
+<!--		<xpath expr="//div[@id='wrap']" position="inside">-->
+<!--			<t t-call="module.template"/>-->
+<!--		</xpath>-->
+<!--	</template>-->
 
 </odoo>
