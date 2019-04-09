@@ -2,7 +2,7 @@
 <odoo>
 
     <!-- Add custom styles -->
-    <template id="can_website_assets_frontend" inherit_id="website_multi_theme.auto_assets_website_can">
+    <template id="can_website_assets_frontend" name="Assets Canilike Theme Template" inherit_id="website_multi_theme.auto_assets_website_can">
 
         <xpath expr="link[last()]" position="after">
             <t t-call="theme_canilike.custom_css_snippet"/>

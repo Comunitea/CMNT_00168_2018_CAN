@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <odoo>
 
-    <template id="can_page_newsletter_content_template">
-        <xpath expr="div[hasclass('page')]/main" position="inside">
+    <template id="can_newsletter_content_template" name="Newsletter Content Canilike Theme Template" inherit_id="theme_canilike.can_newsletter_template">
+        <xpath expr="//div[@id='wrap']" position="inside">
             <div class="row mt32 mb32">
                 <div class="col-md-12">
                     <h1>Newsletter</h1>
@@ -28,9 +28,9 @@
 
                     <section class="mt32 mb32">
                         <h1>Social networks</h1>
-                    <h2>LinkedIn</h2>
-                    <h3>Follow us and you can know us better</h3>
-                    <p>Remember that Can I Like will be respectful of the law and its rights</p>
+                        <h2>LinkedIn</h2>
+                        <h3>Follow us and you can know us better</h3>
+                        <p>Remember that Can I Like will be respectful of the law and its rights</p>
                         <p class="mt16"><a href="https://es.linkedin.com/company/canilike" target="_blank" alt="LinkedIn Link" title="LinkedIn" rel="nofollow">LinkedIn</a></p>
                     </section>
                 </div>

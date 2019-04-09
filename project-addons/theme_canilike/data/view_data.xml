@@ -2,13 +2,46 @@
 <odoo noupdate="1">
 
 	<!-- split between ir_ui_view & website_page record to keep external_id on ir_ui_view -->
-	<record id="can_homepage_view" model="ir.ui.view">
+	<record id="can_home_view" model="ir.ui.view">
 		<field name="name">Home</field>
 		<field name="type">qweb</field>
 		<field name="key">website.homepage</field>
 		<field name="arch" type="xml">
 			<t name="Home" priority="29" t-name="can_homepage">
-				<t t-call="theme_canilike.can_homepage_template"/>
+				<t t-call="theme_canilike.can_home_content_template"/>
+			</t>
+		</field>
+	</record>
+
+	<record id="can_advise_view" model="ir.ui.view">
+		<field name="name">Legal Advice</field>
+		<field name="type">qweb</field>
+		<field name="key">website.advice</field>
+		<field name="arch" type="xml">
+			<t name="Legal Advice" priority="29" t-name="can_advice">
+				<t t-call="theme_canilike.can_advise_content_template"/>
+			</t>
+		</field>
+	</record>
+
+	<record id="can_privacy_view" model="ir.ui.view">
+		<field name="name">Legal Advice</field>
+		<field name="type">qweb</field>
+		<field name="key">website.advice</field>
+		<field name="arch" type="xml">
+			<t name="Legal Privacy" priority="29" t-name="can_privacy">
+				<t t-call="theme_canilike.can_privacy_content_template"/>
+			</t>
+		</field>
+	</record>
+
+	<record id="can_terms_view" model="ir.ui.view">
+		<field name="name">Legal Advice</field>
+		<field name="type">qweb</field>
+		<field name="key">website.advice</field>
+		<field name="arch" type="xml">
+			<t name="Legal Terms" priority="29" t-name="can_terms">
+				<t t-call="theme_canilike.can_terms_content_template"/>
 			</t>
 		</field>
 	</record>

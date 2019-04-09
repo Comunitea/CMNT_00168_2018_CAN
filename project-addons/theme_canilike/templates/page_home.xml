@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <odoo>
 
-    <template id="can_page_home_content_template" inherit_id="theme_canilike.can_homepage_template">
+    <template id="can_home_content_template" name="Home Content Canilike Theme Template" inherit_id="theme_canilike.can_home_template">
 
         <xpath expr="//div[@id='wrap']" position="inside">
 

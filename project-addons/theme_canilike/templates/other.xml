@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <odoo>
 
-    <template id="can_page_other_content_template" inherit_id="theme_canilike.can_other_template">
+    <template id="can_other_content_template" name="Other Canilike Theme Template" inherit_id="theme_canilike.can_other_template">
         <xpath expr="//div[hasclass(container')]" position="inside">
             <section id="open_section">
                 <!--Carousel-->

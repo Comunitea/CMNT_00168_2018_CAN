@@ -16,7 +16,7 @@
         <!--general-->
         <link href="/theme_canilike/static/css/common.less" rel="stylesheet" type="text/less"/>
         <link href="/theme_canilike/static/css/errors.less" rel="stylesheet" type="text/less"/>
-        <link href="/theme_canilike/static/css/main.less" rel="stylesheet" type="text/less"/>
+        <!--        <link href="/theme_canilike/static/css/main.less" rel="stylesheet" type="text/less"/>-->
         <link href="/theme_canilike/static/css/variables.less" rel="stylesheet" type="text/less"/>
     </template>
 
@@ -76,46 +76,46 @@
 
                 <!--<li><a href="/shop/cart">Mi carrito <span>2</span></a></li>-->
                 <!--<template id="header" inherit_id="website.layout" name="Header Shop My Cart Link">-->
-                    <!--<xpath expr="//header//ul[@id='top_menu']/li" position="before">-->
-                        <!--<t t-set="website_sale_order" t-value="website.sale_get_order()" />-->
-                        <!--<li id="my_cart" t-att-class="'' if website_sale_order and website_sale_order.cart_quantity else 'hidden'">-->
-                            <!--<a href="/shop/cart">-->
-                                <!--<i class="fa fa-shopping-cart"></i>-->
-                                <!--My Cart <sup t-attf-class="my_cart_quantity label label-primary" t-esc="website_sale_order and website_sale_order.cart_quantity or ''" />-->
-                            <!--</a>-->
-                        <!--</li>-->
-                    <!--</xpath>-->
+                <!--<xpath expr="//header//ul[@id='top_menu']/li" position="before">-->
+                <!--<t t-set="website_sale_order" t-value="website.sale_get_order()" />-->
+                <!--<li id="my_cart" t-att-class="'' if website_sale_order and website_sale_order.cart_quantity else 'hidden'">-->
+                <!--<a href="/shop/cart">-->
+                <!--<i class="fa fa-shopping-cart"></i>-->
+                <!--My Cart <sup t-attf-class="my_cart_quantity label label-primary" t-esc="website_sale_order and website_sale_order.cart_quantity or ''" />-->
+                <!--</a>-->
+                <!--</li>-->
+                <!--</xpath>-->
                 <!--</template>-->
 
                 <!--<li><a class="icon-heart" href="/shop/wishlist">Lista de deseos <span>31</span></a></li>-->
                 <!--<template id="header" inherit_id="website.layout" name="Header Shop Wishlist Link">-->
-                    <!--<xpath expr="//header//ul[@id='top_menu']/li[@id='my_cart']" position="after">-->
-                        <!--<t t-if="request.env.ref('website_sale_wishlist.add_to_wishlist').active">-->
-                            <!--<t t-set='wishcount' t-value="len(request.env['product.wishlist'].current())"/>-->
-                            <!--<li id="my_wish" t-att-style="not wishcount and 'display:none;'">-->
-                                <!--<a href="/shop/wishlist">-->
-                                    <!--<i class="fa fa-heart"></i>-->
-                                    <!--Wishlist <sup t-attf-class="my_wish_quantity o_animate_blink label label-primary"><t t-esc='wishcount'/></sup>-->
-                                <!--</a>-->
-                            <!--</li>-->
-                        <!--</t>-->
-                    <!--</xpath>-->
+                <!--<xpath expr="//header//ul[@id='top_menu']/li[@id='my_cart']" position="after">-->
+                <!--<t t-if="request.env.ref('website_sale_wishlist.add_to_wishlist').active">-->
+                <!--<t t-set='wishcount' t-value="len(request.env['product.wishlist'].current())"/>-->
+                <!--<li id="my_wish" t-att-style="not wishcount and 'display:none;'">-->
+                <!--<a href="/shop/wishlist">-->
+                <!--<i class="fa fa-heart"></i>-->
+                <!--Wishlist <sup t-attf-class="my_wish_quantity o_animate_blink label label-primary"><t t-esc='wishcount'/></sup>-->
+                <!--</a>-->
+                <!--</li>-->
+                <!--</t>-->
+                <!--</xpath>-->
                 <!--</template>-->
             </ul>
 
             <!--No se ponen-->
             <!--<ul class="nav-main">-->
-                <!--<li><a href="">Tienda</a></li>-->
-                <!--<li><a href="">Can i like</a></li>-->
-                <!--<li><a href="">Contacto</a></li>-->
+            <!--<li><a href="">Tienda</a></li>-->
+            <!--<li><a href="">Can i like</a></li>-->
+            <!--<li><a href="">Contacto</a></li>-->
             <!--</ul>-->
 
             <!--Habria que hacer un replace de esto al inicio de pages.xml <template id="can_main_template" inherit_id="website.layout">-->
             <!--Andes de <xpath expr="div[@id='wrapwrap']" position="replace">-->
             <!--<xpath expr="//header//ul[@id='top_menu']/li[hasclass('divider')]" position="before">-->
-                <!--<t t-foreach="website.menu_id.child_id" t-as="submenu">-->
-                    <!--<t t-call="website.submenu"/>-->
-                <!--</t>-->
+            <!--<t t-foreach="website.menu_id.child_id" t-as="submenu">-->
+            <!--<t t-call="website.submenu"/>-->
+            <!--</t>-->
             <!--</xpath>-->
 
         </nav>
@@ -134,7 +134,7 @@
         <h4>Column</h4>
         <ul>
             <li><a href="/">Line 1</a></li>
-            <li><a href="/">Line 2</a></li>container mt16 mb16
+            <li><a href="/">Line 2</a></li>
         </ul>
 
         <h4>Column</h4>
@@ -154,8 +154,8 @@
         </ul>
         <!--<p>Copyright © 2019 CanILike eShop</p>-->
         <div class="pull-left text-muted" itemscope="itemscope" itemtype="http://schema.org/Organization">
-                <p>Copyright &amp;copy; <span t-esc="time.strftime('%Y')"/> <span t-field="res_company.name" itemprop="name">Company name</span>eShop</p>
-            </div>
+            <p>Copyright &amp;copy; <span t-esc="time.strftime('%Y')"/> <span t-field="res_company.name" itemprop="name">Company name</span>eShop</p>
+        </div>
         <ul>
             <!--<li>111-222-333</li>-->
             <li><i class="fa fa-phone"/><a t-field="website.phone" t-att-href="'tel:%s' %website.phone"/></li>

@@ -3,11 +3,11 @@
     <data noupdate="1">
 
         <!--Home-->
-        <record id="can_homepage_page" model="website.page">
+        <record id="can_home_page" model="website.page">
             <field name="name">Home</field>
             <field name="website_published">True</field>
             <field name="url">/</field>
-            <field name="view_id" ref="theme_canilike.can_homepage_view"/>
+            <field name="view_id" ref="theme_canilike.can_home_view"/>
             <field name="website_ids" eval="[(6, 0, [ref('website_base_multi_can.canilike_website')])]"/>
         </record>
 
@@ -17,7 +17,7 @@
             <field name="website_published">True</field>
             <field name="website_ids" eval="[(6, 0, [ref('website_base_multi_can.canilike_website')])]"/>
             <field name="url">/my/home</field>
-            <field name="view_id" ref="theme_canilike.can_portal_my_home_template"/>
+            <field name="view_id" ref="theme_canilike.can_portal_my_home_content_template"/>
         </record>
 
         <record id="can_portal_my_details_page" model="website.page">
@@ -25,7 +25,7 @@
             <field name="website_published">True</field>
             <field name="website_ids" eval="[(6, 0, [ref('website_base_multi_can.canilike_website')])]"/>
             <field name="url">/my/account</field>
-            <field name="view_id" ref="theme_canilike.can_portal_my_details_template"/>
+            <field name="view_id" ref="theme_canilike.can_portal_my_details_content_template"/>
             <field name="parent_id" ref="theme_canilike.can_portal_my_home_page"/>
         </record>
 
@@ -34,7 +34,7 @@
             <field name="website_published">True</field>
             <field name="website_ids" eval="[(6, 0, [ref('website_base_multi_can.canilike_website')])]"/>
             <field name="url">/my/quotes</field>
-            <field name="view_id" ref="theme_canilike.can_portal_my_quotations_template"/>
+            <field name="view_id" ref="theme_canilike.can_portal_my_quotations_content_template"/>
             <field name="parent_id" ref="theme_canilike.can_portal_my_home_page"/>
         </record>
 
@@ -43,7 +43,7 @@
             <field name="website_published">True</field>
             <field name="website_ids" eval="[(6, 0, [ref('website_base_multi_can.canilike_website')])]"/>
             <field name="url">/my/orders</field>
-            <field name="view_id" ref="theme_canilike.can_portal_my_orders_template"/>
+            <field name="view_id" ref="theme_canilike.can_portal_my_orders_content_template"/>
             <field name="parent_id" ref="theme_canilike.can_portal_my_home_page"/>
         </record>
 
@@ -51,7 +51,7 @@
             <field name="name">Sales Order</field>
             <field name="website_published">True</field>
             <field name="website_ids" eval="[(6, 0, [ref('website_base_multi_can.canilike_website')])]"/>
-            <field name="view_id" ref="theme_canilike.can_portal_order_template"/>
+            <field name="view_id" ref="theme_canilike.can_portal_order_content_template"/>
             <field name="parent_id" ref="theme_canilike.can_portal_my_orders_page"/>
         </record>
 
@@ -60,7 +60,7 @@
             <field name="website_published">True</field>
             <field name="website_ids" eval="[(6, 0, [ref('website_base_multi_can.canilike_website')])]"/>
             <field name="url">/my/invoices</field>
-            <field name="view_id" ref="theme_canilike.can_portal_my_invoices_template"/>
+            <field name="view_id" ref="theme_canilike.can_portal_my_invoices_content_template"/>
             <field name="parent_id" ref="theme_canilike.can_portal_my_home_page"/>
         </record>
 
@@ -68,7 +68,7 @@
             <field name="name">Invoice</field>
             <field name="website_published">True</field>
             <field name="website_ids" eval="[(6, 0, [ref('website_base_multi_can.canilike_website')])]"/>
-            <field name="view_id" ref="theme_canilike.can_portal_invoice_template"/>
+            <field name="view_id" ref="theme_canilike.can_portal_invoice_content_template"/>
             <field name="parent_id" ref="theme_canilike.can_portal_my_invoices_page"/>
         </record>
 
@@ -78,7 +78,7 @@
             <field name="website_published">True</field>
             <field name="website_ids" eval="[(6, 0, [ref('website_base_multi_can.canilike_website')])]"/>
             <field name="url">/shop/confirmation</field>
-            <field name="view_id" ref="theme_canilike.can_order_confirmation_template"/>
+            <field name="view_id" ref="theme_canilike.can_order_confirmation_content_template"/>
             <field name="parent_id" ref="theme_canilike.can_portal_my_home_page"/>
         </record>
 
@@ -88,7 +88,7 @@
             <field name="website_published">True</field>
             <field name="website_ids" eval="[(6, 0, [ref('website_base_multi_can.canilike_website')])]"/>
             <field name="url">/page_404</field>
-            <field name="view_id" ref="theme_canilike.can_404_template"/>
+            <field name="view_id" ref="theme_canilike.can_404_content_template"/>
         </record>
 
         <!-- // Legal pages part -->
@@ -97,7 +97,7 @@
             <field name="website_published">True</field>
             <field name="website_ids" eval="[(6, 0, [ref('website_base_multi_can.canilike_website')])]"/>
             <field name="url">/legal/advice</field>
-            <field name="view_id" ref="theme_canilike.can_advise_template"/>
+            <field name="view_id" ref="theme_canilike.can_advise_content_template"/>
         </record>
 
         <record id="can_privacy_page" model="website.page">
@@ -105,7 +105,7 @@
             <field name="website_published">True</field>
             <field name="website_ids" eval="[(6, 0, [ref('website_base_multi_can.canilike_website')])]"/>
             <field name="url">/legal/privacy-policy</field>
-            <field name="view_id" ref="theme_canilike.can_privacy_template"/>
+            <field name="view_id" ref="theme_canilike.can_privacy_content_template"/>
         </record>
 
         <record id="can_terms_page" model="website.page">
@@ -113,7 +113,7 @@
             <field name="website_published">True</field>
             <field name="website_ids" eval="[(6, 0, [ref('website_base_multi_can.canilike_website')])]"/>
             <field name="url">/legal/terms-of-use</field>
-            <field name="view_id" ref="theme_canilike.can_terms_template"/>
+            <field name="view_id" ref="theme_canilike.can_terms_content_template"/>
         </record>
 
         <!-- // Contact Us part -->
@@ -122,7 +122,7 @@
             <field name="website_published">True</field>
             <field name="website_ids" eval="[(6, 0, [ref('website_base_multi_can.canilike_website')])]"/>
             <field name="url">/contactus</field>
-            <field name="view_id" ref="theme_canilike.can_contactus_template"/>
+            <field name="view_id" ref="theme_canilike.can_contactus_content_template"/>
         </record>
 
         <record id="can_contactus_thanks_page" model="website.page">
@@ -130,7 +130,7 @@
             <field name="website_published">True</field>
             <field name="website_ids" eval="[(6, 0, [ref('website_base_multi_can.canilike_website')])]"/>
             <field name="url">/contactus-thank-you</field>
-            <field name="view_id" ref="theme_canilike.can_contactus_thanks_template"/>
+            <field name="view_id" ref="theme_canilike.can_contactus_thanks_content_template"/>
         </record>
 
         <!--About Us-->
@@ -139,7 +139,7 @@
             <field name="website_ids" eval="[(6, 0, [ref('website_base_multi_can.canilike_website')])]"/>
             <field name="website_published">True</field>
             <field name="url">/aboutus</field>
-            <field name="view_id" ref="theme_canilike.can_aboutus_template"/>
+            <field name="view_id" ref="theme_canilike.can_aboutus_content_template"/>
         </record>
 
         <!-- Newsletter -->
@@ -148,7 +148,7 @@
             <field name="website_ids" eval="[(6, 0, [ref('website_base_multi_can.canilike_website')])]"/>
             <field name="website_published">True</field>
             <field name="url">/newsletter</field>
-            <field name="view_id" ref="theme_canilike.can_newsletter_template"/>
+            <field name="view_id" ref="theme_canilike.can_newsletter_content_template"/>
         </record>
 
         <!-- Other Page -->
@@ -158,7 +158,7 @@
             <!--<field name="website_published">True</field>-->
             <!--<field name="website_ids" eval="[(6, 0, [ref('website_base_multi_can.canilike_website')])]"/>-->
             <!--<field name="url">/page/open_shop</field>-->
-            <!--<field name="view_id" ref="theme_canilike.can_other_template"/>-->
+            <!--<field name="view_id" ref="theme_canilike.can_other_content_template"/>-->
         <!--</record>-->
 
     </data>

@@ -5,32 +5,17 @@
 	<!-- ======================================= Main Template ======================================= -->
 	<template id="can_main_template" name="Main Canilike Theme Template" inherit_id="website_multi_theme.auto_layout_website_can">
 
-		<xpath expr="//div[@id='wrapwrap']" position="attributes">
-			<attribute name="t-if">True == False</attribute>
-		</xpath>
-
-		<xpath expr="//div[@id='wrapwrap']" position="after">
-			<div class="page_page_page">
-				<header class="header">
-					<t t-call="theme_canilike.custom_header_snippet"/>
-					<!--<t t-call="breadcrumbs_base.bcb_main_wrap"/>-->
-				</header>
-
-				<main>
-					<t t-raw="0"/>
-				</main>
-
-				<footer>
-					<!-- <t t-call="theme_canilike.can_website_footer_custom_template"/>-->
-					<t t-call="theme_canilike.custom_footer_snippet"/>
-				</footer>
-			</div>
-		</xpath>
+<!--		<xpath expr="//div[@id='footer']" position="replace">-->
+<!--			<div id="footer">-->
+<!--&lt;!&ndash;				<t t-call="theme_canilike.custom_footer_snippet"/>&ndash;&gt;-->
+<!--				<t t-call="theme_canilike.can_website_footer_custom_template"/>-->
+<!--			</div>-->
+<!--		</xpath>-->
 
 	</template>
 
 	<!-- ======================================= Home Template ======================================= -->
-	<template id="can_homepage_template" name="Home Canilike Theme Template">
+	<template id="can_home_template" name="Home Canilike Theme Template">
 		<t t-call="theme_canilike.can_main_template">
 			<div id="wrap"/>
 		</t>
@@ -221,22 +206,18 @@
 			<div id="wrap"/>
 		</t>
 	</template>
-	<template id="can_newsletter_content_template" name="Newsletter Canilike Theme Template Content" inherit_id="theme_canilike.can_newsletter_template">
-		<xpath expr="//div[@id='wrap']" position="inside">
+<!--	<template id="can_newsletter_content_template" name="Newsletter Canilike Theme Template Content" inherit_id="theme_canilike.can_newsletter_template">-->
+<!--		<xpath expr="//div[@id='wrap']" position="inside">-->
+<!--			-->
+<!--			<t t-set="latest_posts" t-value="website.latest_posts(3, 3, 'Our latest news', 'Read all our news')"/>-->
+<!--			<hr/>-->
+<!--			<t t-call="website_blog_base.wbb_latest_post_wrap"/>-->
+<!--			<hr/>-->
+<!--			<t t-call="website_blog_base.wbb_latest_post"/>-->
+<!--			-->
+<!--		</xpath>-->
 
-
-			<t t-call="theme_canilike.can_page_newsletter_template"/>
-			<hr/>
-			<t t-set="latest_posts" t-value="website.latest_posts(3, 3, 'Our latest news', 'Read all our news')"/>
-			<hr/>
-			<t t-call="website_blog_base.wbb_latest_post_wrap"/>
-			<hr/>
-			<t t-call="website_blog_base.wbb_latest_post"/>
-
-
-		</xpath>
-
-	</template>
+<!--	</template>-->
 
 	<!-- ======================================= Other Template ======================================= -->
 <!--	<template id="can_other_template" name="Other Canilike Theme Template">-->
