@@ -1,20 +1,25 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<odoo>
+<odoo noupdate="1">
 
-    <template id="can_home_content_template" name="Home Content Canilike Theme Template" inherit_id="theme_canilike.can_home_template">
+    <template id="can_home_content_template" name="Home Content Canilike Template">
 
-        <xpath expr="//div[@id='wrap']" position="inside">
-
-            <h1>Can I Like Home</h1>
-            <h2>Homapage Content</h2>
-            <h3>Canning tradition</h3>
-            <p>
-                We are a team of passionate people whose goal is to improve everyone's life through disruptive products. We build great products to solve your business problems.
-            </p>
-            <!-- Latest news section -->
-<!--            <t t-set="latest_posts" t-value="website.latest_posts(3, 3, 'Our latest news', 'Read all our news')"/>-->
-<!--            <t t-call="website_blog_base.wbb_latest_post_wrap"/>-->
-        </xpath>
+        <t t-call="website.layout">
+            <div id="wrap">
+                <div class="container mt32">
+                    <br/>
+                    <br/>
+                    <h1>Can I Like Home</h1>
+                    <h2>Homapage Content</h2>
+                    <h3>Canning tradition</h3>
+                    <p>
+                        We are a team of passionate people whose goal is to improve everyone's life through disruptive products. We build great products to solve your business problems.
+                    </p>
+                    <!-- Latest news section -->
+                    <t t-set="latest_posts" t-value="website.latest_posts(3, 3, 'Our latest news', 'Read all our news')"/>
+                    <t t-call="website_blog_base.wbb_latest_post_wrap"/>
+                </div>
+            </div>
+        </t>
 
     </template>
 

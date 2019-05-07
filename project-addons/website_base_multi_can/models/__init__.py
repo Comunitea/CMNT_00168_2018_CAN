@@ -21,6 +21,4 @@
 #
 ##############################################################################
 
-from . import website
-from . import res_company
-from . import redsys
+from . import website, res_company, redsys, product

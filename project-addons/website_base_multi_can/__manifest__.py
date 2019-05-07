@@ -45,6 +45,7 @@
         'breadcrumbs_base',
         # 'website_sale_product_brand',
         'payment_redsys',
+        'follow_us_base'
     ],
     'data': [
         'data/company_data.xml',
@@ -53,6 +54,8 @@
         'data/website_data.xml',
         'views/res_company_views.xml',
         'views/website_views.xml',
+        'views/public_category.xml',
+        'security/ir.model.access.csv',
     ],
     'images': [
         '/static/description/icon.png',

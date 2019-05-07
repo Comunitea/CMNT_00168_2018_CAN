@@ -2,15 +2,20 @@
 <odoo>
 
     <!-- Add custom styles -->
-    <template id="can_website_assets_frontend" name="Assets Canilike Theme Template" inherit_id="website_multi_theme.auto_assets_website_can">
+    <template id="can_website_assets_frontend" name="Assets Canilike Template" inherit_id="website.assets_frontend">
 
         <xpath expr="link[last()]" position="after">
-            <t t-call="theme_canilike.custom_css_snippet"/>
+            <link href="/theme_canilike/static/css/_general.less" rel="stylesheet" type="text/less"/>
+            <link href="/theme_canilike/static/css/blog.less" rel="stylesheet" type="text/less"/>
+            <link href="/theme_canilike/static/css/elements.less" rel="stylesheet" type="text/less"/>
+            <link href="/theme_canilike/static/css/footer.less" rel="stylesheet" type="text/less"/>
+            <link href="/theme_canilike/static/css/header.less" rel="stylesheet" type="text/less"/>
+            <link href="/theme_canilike/static/css/media.less" rel="stylesheet" type="text/less"/>
+            <link href="/theme_canilike/static/css/shop.less" rel="stylesheet" type="text/less"/>
         </xpath>
 
         <xpath expr="//script[last()]" position="after">
             <script type="text/javascript" src="/theme_canilike/static/js/main.js"/>
-            <script type="text/javascript" src="/theme_canilike/static/js/comunitea.js"/>
         </xpath>
 
     </template>
