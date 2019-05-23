@@ -49,12 +49,10 @@
     ],
     'data': [
         'data/company_data.xml',
-        # 'data/menu_data.xml',  # To Delete Default Data Only
-        # 'data/page_data.xml',  # To Delete Default Data Only
         'data/website_data.xml',
         'views/res_company_views.xml',
         'views/website_views.xml',
-        'views/public_category.xml',
+        'views/product_views.xml',
         'security/ir.model.access.csv',
     ],
     'images': [

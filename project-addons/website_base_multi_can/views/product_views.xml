@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+
+    <!-- Product Public Categories -->
+    <record id="website_public_category_form" model="ir.ui.view">
+        <field name="name">Website category tag form</field>
+        <field name="model">product.public.category</field>
+        <field name="inherit_id" ref="website_sale.product_public_category_form_view"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='name']" position="after">
+                <field name="public_categ_tag_ids" widget="many2many_tags"/>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="website_public_category_tree" model="ir.ui.view">
+        <field name="name">Website category tag tree</field>
+        <field name="model">product.public.category</field>
+        <field name="inherit_id" ref="website_sale.product_public_category_tree_view"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='display_name']" position="after">
+                <field name="public_categ_tag_ids" widget="many2many_tags"/>
+            </xpath>
+        </field>
+    </record>
+
+    <!-- Recipes -->
+    <record id="product_recipe_form_view" model="ir.ui.view">
+        <field name="name">product.recipe.form</field>
+        <field name="model">product.recipe</field>
+        <field name="arch" type="xml">
+            <form string="Recipes">
+                <sheet>
+                    <field name="image_medium" widget='image' class="oe_avatar"/>
+                    <group string="Titles">
+                        <field name="title"/>
+                        <field name="subtitle"/>
+                        <field name="sequence"/>
+                        <field name="website_sequence"/>
+                        <field name="description_short"/>
+                        <field name="description"/>
+                    </group>
+                    <group string="Products">
+                        <field name="product_ids" widget="many2many_tags"/>
+                    </group>
+                    <group string="Images">
+                        <field name="recipe_image_ids" mode="kanban" context="{'default_name': title}">
+                            <kanban string="Images">
+                                <field name="name"/>
+                                <field name="image" />
+                                <templates>
+                                    <t t-name="kanban-box">
+                                        <div class="oe_kanban_global_click">
+                                            <a t-if="!read_only_mode" type="delete" class="fa fa-times pull-right"/>
+                                            <div class="o_kanban_image">
+                                                <img t-if="record.image.raw_value" t-att-src="'data:image/png;base64,'+record.image.raw_value"/>
+                                            </div>
+                                            <div class="oe_kanban_details">
+                                                <field name="name"/>
+                                            </div>
+                                        </div>
+                                    </t>
+                                </templates>
+                            </kanban>
+                        </field>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="product_recipe_tree_view" model="ir.ui.view">
+        <field name="name">product.recipe.tree</field>
+        <field name="model">product.recipe</field>
+        <field name="field_parent" eval="False"/>
+        <field name="arch" type="xml">
+            <tree string="Recipes">
+                <field name="website_sequence" widget="handle"/>
+                <field name="website_published"/>
+                <field name="title"/>
+                <field name="subtitle"/>
+                <field name="description_short"/>
+                <field name="product_ids" widget="many2many_tags"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="product_recipe_action" model="ir.actions.act_window">
+        <field name="name">Recipes</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">product.recipe</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+        <field name="view_id" eval="False"/>
+        <field name="help" type="html">
+            <p class="oe_view_nocontent_create">
+                Click to define a new recipe.
+            </p>
+        </field>
+    </record>
+
+    <!-- Catalog sub-menus -->
+    <menuitem id="menu_catalog_recipes" name="Recipes"
+              action="product_recipe_action"
+              parent="website_sale.menu_catalog" sequence="5"/>
+
+    <!-- Configuration sub-menus -->
+    <menuitem id="menu_product_recipes"
+              action="product_recipe_action"
+              parent="website_sale.menu_product_settings" sequence="4"/>
+
+    <!-- Product Recipes -->
+    <record id="product_recipes" model="ir.ui.view">
+        <field name="name">Product Recipes</field>
+        <field name="model">product.template</field>
+        <field name="inherit_id" ref="product.product_template_form_view"/>
+        <field name="arch" type="xml">
+            <xpath expr="//notebook[last()]" position="inside">
+                <page string="Recipes">
+                    <field name="recipe_ids" nolabel="1">
+                        <tree>
+                            <field name="title"/>
+                            <field name="subtitle"/>
+                            <field name="description_short"/>
+                            <field name="product_ids" widget="many2many_tags"/>
+                        </tree>
+                        <form>
+                            <field name="image_medium" widget='image' class="oe_avatar"/>
+                            <group string="Titles">
+                                <field name="title"/>
+                                <field name="subtitle"/>
+                            </group>
+                            <group string="Descriptions">
+                                <field name="description_short"/>
+                                <field name="description"/>
+                            </group>
+                            <group string="Products">
+                                <field name="product_ids" widget="many2many_tags"/>
+                            </group>
+                            <group string="Images">
+                                <field name="recipe_image_ids" mode="kanban" context="{'default_name': title}">
+                                    <kanban string="Product Images">
+                                        <field name="name"/>
+                                        <field name="image" />
+                                        <templates>
+                                            <t t-name="kanban-box">
+                                                <div class="oe_kanban_global_click">
+                                                    <a t-if="!read_only_mode" type="delete" class="fa fa-times pull-right"/>
+                                                    <div class="o_kanban_image">
+                                                        <img t-if="record.image.raw_value" t-att-src="'data:image/png;base64,'+record.image.raw_value"/>
+                                                    </div>
+                                                    <div class="oe_kanban_details">
+                                                        <field name="name"/>
+                                                    </div>
+                                                </div>
+                                            </t>
+                                        </templates>
+                                    </kanban>
+                                </field>
+                            </group>
+                        </form>
+                    </field>
+                </page>
+            </xpath>
+        </field>
+    </record>
+
+</odoo>

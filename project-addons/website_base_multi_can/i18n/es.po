@@ -124,3 +124,226 @@ msgstr "Email Sitio Web"
 #: model:ir.model,name:website_base_multi_anz.model_website_menu
 msgid "Website Menu"
 msgstr "Menú Sitio Web"
+
+#. module: website_base_multi_can
+#: model:ir.model.fields,help:website_base_multi_can.field_product_public_category_public_categ_tag_ids
+msgid "Find Website Categories in Search Box by Related Tags"
+msgstr "Encuentra las Categorías ecommerce en el cuadro de búsqueda por sus etiquetas relacionadas"
+
+#. module: website_base_multi_can
+#: model:ir.model.fields,field_description:website_base_multi_can.field_product_public_category_public_categ_tag_ids
+msgid "Related Tags"
+msgstr "Etiqueta Relacionada"
+
+#. module: website_base_multi_can
+#: model:ir.actions.act_window,help:website_base_multi_can.product_recipe_action
+msgid "Click to define a new recipe."
+msgstr "Pulsar para definir una nueva receta."
+
+#. module: website_base_multi_can
+#: code:addons/website_base_multi_can/models/product.py:42
+#: model:ir.model.fields,help:website_base_multi_can.field_product_recipe_website_sequence
+#, python-format
+msgid "Determine the display order in the Website"
+msgstr "Determina el orden en el sitio web"
+
+#. module: website_base_multi_can
+#: model:ir.model.fields,field_description:website_base_multi_can.field_product_public_category_tag_display_name
+#: model:ir.model.fields,field_description:website_base_multi_can.field_product_recipe_display_name
+#: model:ir.model.fields,field_description:website_base_multi_can.field_recipe_image_display_name
+msgid "Display Name"
+msgstr "Nombre mostrado"
+
+#. module: website_base_multi_can
+#: code:addons/website_base_multi_can/models/product.py:43
+#: model:ir.model.fields,field_description:website_base_multi_can.field_product_recipe_description
+#, python-format
+msgid "Full Description"
+msgstr "Descripción Completa"
+
+#. module: website_base_multi_can
+#: code:addons/website_base_multi_can/models/product.py:40
+#: model:ir.model.fields,help:website_base_multi_can.field_product_recipe_sequence
+#, python-format
+msgid "Gives the sequence order when displaying a recipe list"
+msgstr "Da la secuencia de orden cuando se muestra una lista de recetas"
+
+#. module: website_base_multi_can
+#: code:addons/website_base_multi_can/models/product.py:50
+#: code:addons/website_base_multi_can/models/product.py:78
+#: model:ir.model.fields,field_description:website_base_multi_can.field_product_recipe_image
+#: model:ir.model.fields,field_description:website_base_multi_can.field_recipe_image_image
+#, python-format
+msgid "Image"
+msgstr "Imagen"
+
+#. module: website_base_multi_can
+#: model:ir.model.fields,field_description:website_base_multi_can.field_product_recipe_recipe_image_ids
+#: model:ir.ui.view,arch_db:website_base_multi_can.product_recipe_form_view
+#: model:ir.ui.view,arch_db:website_base_multi_can.product_recipes
+msgid "Images"
+msgstr "Imagenes"
+
+#. module: website_base_multi_can
+#: code:addons/website_base_multi_can/models/product.py:47
+#: model:ir.model.fields,help:website_base_multi_can.field_product_recipe_product_ids
+#, python-format
+msgid "Products that contains the recipe"
+msgstr "Productos que se usan en la receta"
+
+#. module: website_base_multi_can
+#: code:addons/website_base_multi_can/models/product.py:28
+#: model:ir.model.fields,help:website_base_multi_can.field_product_product_recipe_ids
+#: model:ir.model.fields,help:website_base_multi_can.field_product_template_recipe_ids
+#, python-format
+msgid "Recipes that contains the product"
+msgstr "Recetas que se usan este producto"
+
+#. module: website_base_multi_can
+#: code:addons/website_base_multi_can/models/product.py:39
+#: model:ir.model.fields,field_description:website_base_multi_can.field_product_recipe_sequence
+#, python-format
+msgid "Internal Sequence"
+msgstr "Secuencia Interna"
+
+#. module: website_base_multi_can
+#: code:addons/website_base_multi_can/models/product.py:52
+#: model:ir.model.fields,field_description:website_base_multi_can.field_product_recipe_image_medium
+#, python-format
+msgid "Medium-sized image"
+msgstr "Imagen de tamaño mediano"
+
+#. module: website_base_multi_can
+#: code:addons/website_base_multi_can/models/product.py:53
+#: model:ir.model.fields,help:website_base_multi_can.field_product_recipe_image_medium
+#, python-format
+msgid "Medium-sized image of the recipe. It is automatically resized as a 128x128px image, with aspect ratio preserved,
+only when the image exceeds one of those sizes. Use this field in form views or some kanban views."
+msgstr "Imagen mediana de la receta. Se redimensiona automáticamente a 128x128px,con el ratio de aspecto preservado.
+Use este campo en las vistas de formulario o en algunas vistas kanban."
+
+#. module: website_base_multi_can
+#: code:addons/website_base_multi_can/models/product.py:77
+#: model:ir.model.fields,field_description:website_base_multi_can.field_product_public_category_tag_name
+#: model:ir.model.fields,field_description:website_base_multi_can.field_recipe_image_name
+#, python-format
+msgid "Name"
+msgstr "Nombre"
+
+#. module: website_base_multi_can
+#: code:addons/website_base_multi_can/models/product.py:61
+#: model:ir.model.fields,help:website_base_multi_can.field_product_recipe_website_published
+#, python-format
+msgid "Only published recipes are visible on the website"
+msgstr "Solo las recetas publicadas son visibles en el sitio web"
+
+#. module: website_base_multi_can
+#: model:ir.ui.view,arch_db:website_base_multi_can.product_recipes
+msgid "Product Images"
+msgstr "Imágenes del producto"
+
+#. module: website_base_multi_can
+#: code:addons/website_base_multi_can/models/product.py:33
+#: model:ir.model,name:website_base_multi_can.model_product_recipe
+#: model:ir.model.fields,field_description:website_base_multi_can.field_product_product_recipe_ids
+#: model:ir.model.fields,field_description:website_base_multi_can.field_product_template_recipe_ids
+#, python-format
+msgid "Recipe"
+msgstr "Receta"
+
+#. module: website_base_multi_can
+#: model:ir.actions.act_window,name:website_base_multi_can.product_recipe_action
+#: model:ir.ui.menu,name:website_base_multi_can.menu_catalog_recipes
+#: model:ir.ui.menu,name:website_base_multi_can.menu_product_recipes
+#: model:ir.ui.view,arch_db:website_base_multi_can.product_recipe_form_view
+#: model:ir.ui.view,arch_db:website_base_multi_can.product_recipes
+#: model:ir.ui.view,arch_db:website_base_multi_can.product_recipe_tree_view
+msgid "Recipes"
+msgstr "Recetas"
+
+#. module: website_base_multi_can
+#: model:ir.model,name:website_base_multi_can.model_product_template
+msgid "Product Template"
+msgstr "Plantilla de producto"
+
+#. module: website_base_multi_can
+#: model:ir.model.fields,field_description:website_base_multi_can.field_product_recipe_product_ids
+#: model:ir.ui.view,arch_db:website_base_multi_can.product_recipe_form_view
+#: model:ir.ui.view,arch_db:website_base_multi_can.product_recipes
+msgid "Products"
+msgstr "Productos"
+
+#. module: website_base_multi_can
+#: code:addons/website_base_multi_can/models/product.py:60
+#: model:ir.model.fields,field_description:website_base_multi_can.field_product_recipe_website_published
+#: model:ir.model.fields,field_description:website_base_multi_can.field_website_menu_website_published
+#, python-format
+msgid "Published"
+msgstr "Publicada"
+
+#. module: website_base_multi_can
+#: model:ir.model.fields,field_description:website_base_multi_can.field_recipe_image_recipe_tmpl_id
+msgid "Related Recipe"
+msgstr "Receta Relacionada"
+
+#. module: website_base_multi_can
+#: code:addons/website_base_multi_can/models/product.py:44
+#: model:ir.model.fields,field_description:website_base_multi_can.field_product_recipe_description_short
+#, python-format
+msgid "Short Description"
+msgstr "Short Description"
+
+#. module: website_base_multi_can
+#: code:addons/website_base_multi_can/models/product.py:44
+#: model:ir.model.fields,help:website_base_multi_can.field_product_recipe_description_short
+#, python-format
+msgid "Short Description (Optional)"
+msgstr "Descripción Corta (Opcional)"
+
+#. module: website_base_multi_can
+#: code:addons/website_base_multi_can/models/product.py:56
+#: model:ir.model.fields,field_description:website_base_multi_can.field_product_recipe_image_small
+#, python-format
+msgid "Small-sized image"
+msgstr "Imagen de tamaño pequeño"
+
+#. module: website_base_multi_can
+#: code:addons/website_base_multi_can/models/product.py:57
+#: model:ir.model.fields,help:website_base_multi_can.field_product_recipe_image_small
+#, python-format
+msgid "Small-sized image of the recipe. It is automatically resized as a 64x64px image, with aspect ratio preserved. Use this field anywhere a small image is required."
+msgstr "Imagen pequeña de la categoría. Se redimensiona automáticamente a 64x64px, con el ratio de aspecto preservado. Use este campo donde se requiera una imagen pequeña."
+
+#. module: website_base_multi_can
+#: code:addons/website_base_multi_can/models/product.py:38
+#: model:ir.model.fields,field_description:website_base_multi_can.field_product_recipe_subtitle
+#, python-format
+msgid "Subtitle"
+msgstr "Subtitulo"
+
+#. module: website_base_multi_can
+#: code:addons/website_base_multi_can/models/product.py:50
+#: model:ir.model.fields,help:website_base_multi_can.field_product_recipe_image
+#, python-format
+msgid "This field holds the image used as image for the recipe, limited to 1024x1024px."
+msgstr "Este campo contiene la imagen utilizada como avatar para este contacto, limitada a 1024x1024px."
+
+#. module: website_base_multi_can
+#: code:addons/website_base_multi_can/models/product.py:37
+#: model:ir.model.fields,field_description:website_base_multi_can.field_product_recipe_title
+#, python-format
+msgid "Title"
+msgstr "Título"
+
+#. module: website_base_multi_can
+#: model:ir.ui.view,arch_db:website_base_multi_can.product_recipe_form_view
+#: model:ir.ui.view,arch_db:website_base_multi_can.product_recipes
+msgid "Titles"
+msgstr "Títulos"
+
+#. module: website_base_multi_can
+#: code:addons/website_base_multi_can/models/product.py:41
+#: model:ir.model.fields,field_description:website_base_multi_can.field_product_recipe_website_sequence
+#, python-format
+msgid "Website Sequence"
+msgstr "Secuencia de Página Web"
