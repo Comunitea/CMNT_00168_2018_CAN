@@ -1,4 +1,7 @@
 # -*- coding: utf-8 -*-
+import unicodedata
+import re
+import random
 from odoo import api, fields, models, tools, _
 
 
@@ -59,6 +62,8 @@ class ProductRecipe(models.Model):
                                        "Use this field anywhere a small image is required."))
     website_published = fields.Boolean(string=_('Published'), default=True,
                                        help=_("Only published recipes are visible on the website"))
+    slug = fields.Char(_("Friendly URL"))
+    video = fields.Char(_("YouTube video URL"))
 
     def _default_website_sequence(self):
         self._cr.execute("SELECT MIN(website_sequence) FROM %s" % self._table)
@@ -68,7 +73,34 @@ class ProductRecipe(models.Model):
     @api.multi
     def write(self, vals):
         tools.image_resize_images(vals)
-        return super(ProductRecipe, self).write(vals)
+        slug = vals.get('slug', self.slug)
+        if not slug:
+            slug = vals.get('title', False) or self.title
+        vals.update({'slug': self._slug_validation(slug)})
+        super(ProductRecipe, self).write(vals)
+        vals.pop('slug')
+        return True
+
+    @api.model
+    def create(self, vals):
+        slug = vals.get('slug', False)
+        if not slug or slug == '':
+            slug = vals['title']
+        vals.update({'slug': self._slug_validation(slug)})
+        return super(ProductRecipe, self).create(vals)
+
+    def _slug_validation(self, value):
+        # Unicode validation and apply max length
+        uni = unicodedata.normalize('NFKD', value).encode('ascii', 'ignore').decode('ascii')
+        value = re.sub('[\W_]', ' ', uni).strip().lower()
+        value = re.sub('[-\s]+', '-', value)
+        value = value[:60]
+        # Check if this SLUG value already exists in any recipe
+        it_exists = self.sudo().search([('slug', '=', value)], limit=1).id
+        if it_exists and not it_exists == self.id:
+            # Add random URL part
+            value = '%s-%d' % (value, random.randint(0, 999))
+        return value
 
 
 class RecipeImage(models.Model):

@@ -35,6 +35,7 @@
                     <group string="Titles">
                         <field name="title"/>
                         <field name="subtitle"/>
+                        <field name="slug"/>
                         <field name="sequence"/>
                         <field name="website_sequence"/>
                         <field name="description_short"/>
@@ -63,6 +64,7 @@
                                 </templates>
                             </kanban>
                         </field>
+                        <field name="video" placeholder="https://www.youtube.com/embed/AAA111BBB222"/>
                     </group>
                 </sheet>
             </form>
