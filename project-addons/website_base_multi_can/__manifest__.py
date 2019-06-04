@@ -53,6 +53,7 @@
         'views/res_company_views.xml',
         'views/website_views.xml',
         'views/product_views.xml',
+        'templates/product_recipe.xml',
         'security/ir.model.access.csv',
     ],
     'images': [

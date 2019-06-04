@@ -21,4 +21,4 @@
 #
 ##############################################################################
 
-from . import redsys, website
+from . import product_recipe, redsys, website
