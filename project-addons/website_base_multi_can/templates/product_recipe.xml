@@ -39,6 +39,7 @@
 
     <!-- Page template for displaying one recipe -->
     <template id="page_one_recipe" name="Recipe">
+        <t t-set="main_object" t-value="recipe"/>
         <t t-call="website.layout">
             <t t-set="additional_title" t-value="recipe.title"/>
             <div id="wrap">
