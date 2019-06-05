@@ -47,48 +47,47 @@
                     <div class="row">
                         <div class="col-sm-7">
                             <t t-set="image_ids" t-value="recipe.recipe_image_ids"/>
-                            <div id="o-carousel-recipe" class="carousel slide recipe-carousel" data-ride="carousel" data-interval="0">
+                            <div id="o-carousel-product" class="carousel slide recipe-carousel" data-ride="carousel" data-interval="0">
                                 <div class="carousel-outer">
                                     <div class="carousel-inner">
                                         <div class="item active">
-                                            <img t-att-alt="recipe.title" t-att-title="recipe.title"
+                                            <img t-att-alt="recipe.title" t-att-title="recipe.title" class="product_detail_img"
                                                  t-attf-src="/web/image/product.recipe/{{recipe.id}}/image/"/>
                                         </div>
                                         <t t-if="len(image_ids)" t-foreach="image_ids" t-as="image">
                                             <div class="item">
-                                                <img t-att-alt="image.name" t-att-title="image.name"
+                                                <img t-att-alt="image.name" t-att-title="image.name" class="product_detail_img"
                                                      t-attf-src="/web/image/recipe.image/{{image.id}}/image/"/>
                                             </div>
                                         </t>
                                         <div class="item" t-if="recipe.video">
-                                            <iframe width="100%" height="480" t-att-src="recipe.video"
+                                            <iframe width="100%" height="400" t-att-src="recipe.video"
                                                     frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="true"/>
                                         </div>
                                     </div>
                                     <t t-if="len(image_ids) or recipe.video">
-                                        <a class="carousel-control left" href="#o-carousel-recipe" role="button" data-slide="prev" >
+                                        <a class="carousel-control left" href="#o-carousel-product" role="button" data-slide="prev" >
                                             <span class="fa fa-chevron-left" aria-hidden="true"/>
                                             <span class="sr-only">Previous</span>
                                         </a>
-                                        <a class="carousel-control right" href="#o-carousel-recipe" role="button" data-slide="next">
+                                        <a class="carousel-control right" href="#o-carousel-product" role="button" data-slide="next">
                                             <span class="fa fa-chevron-right" aria-hidden="true"/>
                                             <span class="sr-only">Next</span>
                                         </a>
                                     </t>
                                 </div>
                                 <ol class="carousel-indicators" t-if="len(image_ids) or recipe.video">
-<!--                                    <li data-target="#o-carousel-recipe" data-slide-to="0" class="active"/>-->
-<!--                                    <t t-if="len(image_ids)" t-foreach="image_ids" t-as="image">-->
-<!--                                        <li data-target="#o-carousel-recipe" t-att-data-slide-to="image_index + 1"/>-->
-<!--                                    </t>-->
-                                    <li t-if="recipe.video" data-target="#o-carousel-recipe" t-att-data-slide-to="len(image_ids) + 1"/>
-
-
-                                    <t t-if="len(image_ids)" t-foreach="image_ids" t-as="pimg">
-                                        <li data-target="#o-carousel-recipe" t-att-data-slide-to="pimg_index + 1">
-                                            <img class="img img-responsive" t-attf-src="/website/image/recipe.image/{{pimg.id}}/image/90x90" t-att-alt="pimg.name"/>
+                                    <li data-target="#o-carousel-product" data-slide-to="0" class="active">
+                                        <img class="img img-responsive" t-attf-src="/web/image/product.recipe/{{recipe.id}}/image/90x90" t-att-alt="recipe.title"/>
+                                    </li>
+                                    <t t-if="len(image_ids)" t-foreach="image_ids" t-as="image">
+                                        <li data-target="#o-carousel-product" t-att-data-slide-to="image_index + 1">
+                                            <img class="img img-responsive" t-attf-src="/website/image/recipe.image/{{image.id}}/image/90x90" t-att-alt="image.name"/>
                                         </li>
                                     </t>
+                                    <li t-if="recipe.video" data-target="#o-carousel-product" t-att-data-slide-to="len(image_ids) + 1">
+                                        <img class="img img-responsive" src="/website_base_multi_can/static/img/icon-video-50.png" alt="Video"/>
+                                    </li>
                                   </ol>
                             </div>
                         </div>
