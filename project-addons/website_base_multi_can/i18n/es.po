@@ -243,7 +243,7 @@ msgid "Product Images"
 msgstr "Imágenes del producto"
 
 #. module: website_base_multi_can
-#: code:addons/website_base_multi_can/models/product.py:33
+#: code:addons/website_base_multi_can/models/product.py:36
 #: model:ir.model,name:website_base_multi_can.model_product_recipe
 #: model:ir.model.fields,field_description:website_base_multi_can.field_product_product_recipe_ids
 #: model:ir.model.fields,field_description:website_base_multi_can.field_product_template_recipe_ids
@@ -252,6 +252,7 @@ msgid "Recipe"
 msgstr "Receta"
 
 #. module: website_base_multi_can
+#: code:addons/website_base_multi_can/models/website.py:32
 #: model:ir.actions.act_window,name:website_base_multi_can.product_recipe_action
 #: model:ir.ui.menu,name:website_base_multi_can.menu_catalog_recipes
 #: model:ir.ui.menu,name:website_base_multi_can.menu_product_recipes
@@ -268,6 +269,7 @@ msgstr "Plantilla de producto"
 
 #. module: website_base_multi_can
 #: model:ir.model.fields,field_description:website_base_multi_can.field_product_recipe_product_ids
+#: model:ir.ui.view,arch_db:website_base_multi_can.can_recipe_template
 #: model:ir.ui.view,arch_db:website_base_multi_can.product_recipe_form_view
 #: model:ir.ui.view,arch_db:website_base_multi_can.product_recipes
 msgid "Products"
@@ -291,7 +293,7 @@ msgstr "Receta Relacionada"
 #: model:ir.model.fields,field_description:website_base_multi_can.field_product_recipe_description_short
 #, python-format
 msgid "Short Description"
-msgstr "Short Description"
+msgstr "Descripción Corta"
 
 #. module: website_base_multi_can
 #: code:addons/website_base_multi_can/models/product.py:44
@@ -347,3 +349,25 @@ msgstr "Títulos"
 #, python-format
 msgid "Website Sequence"
 msgstr "Secuencia de Página Web"
+
+#. module: website_base_multi_can
+#: code:addons/website_base_multi_can/models/product.py:65
+#: model:ir.model.fields,field_description:website_base_multi_can.field_product_recipe_slug
+#, python-format
+msgid "Friendly URL"
+msgstr "URL amigable"
+
+#. module: website_base_multi_can
+#: model:ir.ui.view,arch_db:website_base_multi_can.can_recipes_list_template
+msgid "Recipes list"
+msgstr "Recipes list"
+
+#. module: website_base_multi_can
+#: model:ir.ui.view,arch_db:website_base_multi_can.can_recipe_template
+msgid "Description"
+msgstr "Descripción"
+
+#. module: website_base_multi_can
+#: model:ir.ui.view,arch_db:website_base_multi_can.product_recipes
+msgid "Descriptions"
+msgstr "Descripciones"

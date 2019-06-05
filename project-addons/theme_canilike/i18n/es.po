@@ -1,0 +1,340 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* theme_canilike
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 11.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-06-04 17:52+0000\n"
+"PO-Revision-Date: 2019-06-04 17:52+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: theme_canilike
+#: model:ir.ui.view,arch_db:theme_canilike.can_accept_legal_terms_without_check_snippet
+msgid ", and the"
+msgstr ", y los"
+
+#. module: theme_canilike
+#: model:ir.ui.view,arch_db:theme_canilike.can_accept_legal_terms_without_check_snippet
+msgid ", the"
+msgstr ", la"
+
+#. module: theme_canilike
+#: model:ir.ui.view,arch_db:theme_canilike.can_default_contact_form_snippet
+msgid "<span class=\"btn btn-primary btn-lg o_website_form_send\">Send</span>\n"
+"                    <span id=\"o_website_form_result\"/>"
+msgstr "<span class=\"btn btn-primary btn-lg o_website_form_send\">Send</span>\n"
+"                    <span id=\"o_website_form_result\"/>"
+
+#. module: theme_canilike
+#: model:ir.ui.view,arch_db:theme_canilike.can_website_footer_custom_template
+#: model:website.menu,name:theme_canilike.can_menu_aboutus
+#: model:website.page,name:theme_canilike.can_aboutus_page
+msgid "About Us"
+msgstr "Nosotros"
+
+#. module: theme_canilike
+#: model:ir.ui.view,arch_db:theme_canilike.can_website_footer_custom_template
+msgid "About Us Link"
+msgstr "Enlace Sobre Nosotros"
+
+#. module: theme_canilike
+#: model:website.page,name:theme_canilike.can_portal_my_details_page
+msgid "Account Details"
+msgstr "Detalles de la Cuenta"
+
+#. module: theme_canilike
+#: model:ir.ui.view,arch_db:theme_canilike.can_website_sale_product
+msgid "Add to Wishlist"
+msgstr "Añadir a lista de deseos"
+
+#. module: theme_canilike
+#: model:ir.ui.view,arch_db:theme_canilike.can_website_sale_products_categories
+msgid "All Products"
+msgstr "Todos los productos"
+
+#. module: theme_canilike
+#: model:ir.ui.view,arch_db:theme_canilike.can_website_footer_custom_template
+#: model:website.menu,name:theme_canilike.can_menu_blog
+msgid "Blog"
+msgstr "Blog"
+
+#. module: theme_canilike
+#: model:ir.ui.view,arch_db:theme_canilike.can_website_footer_custom_template
+msgid "Blog Link"
+msgstr "Blog Link"
+
+#. module: theme_canilike
+#: model:ir.ui.view,arch_db:theme_canilike.can_home_content_template
+msgid "Can I Like Home"
+msgstr "Can I Like Home"
+
+#. module: theme_canilike
+#: model:ir.ui.view,arch_db:theme_canilike.can_home_content_template
+msgid "Canning tradition"
+msgstr "Tradición consevera"
+
+#. module: theme_canilike
+#: model:ir.ui.view,arch_db:theme_canilike.can_layout_footer_copyright
+msgid "Company Name"
+msgstr "Nombre de la compañía"
+
+#. module: theme_canilike
+#: model:ir.ui.view,arch_db:theme_canilike.can_website_footer_custom_template
+#: model:website.menu,name:theme_canilike.can_menu_contact_us
+#: model:website.page,name:theme_canilike.can_contactus_page
+msgid "Contact Us"
+msgstr "Contacto"
+
+#. module: theme_canilike
+#: model:website.page,name:theme_canilike.can_contactus_thanks_page
+msgid "Contact Us (Thanks)"
+msgstr "Contacto (Gracias)"
+
+#. module: theme_canilike
+#: model:ir.ui.view,arch_db:theme_canilike.can_website_footer_custom_template
+msgid "Contact Us Link"
+msgstr "Contacto Enlace"
+
+#. module: theme_canilike
+#: model:ir.ui.view,arch_db:theme_canilike.can_layout_footer_copyright
+msgid "Copyright &amp;copy;"
+msgstr "Copyright &amp;copy;"
+
+#. module: theme_canilike
+#: model:ir.ui.view,arch_db:theme_canilike.can_default_contact_form_snippet
+msgid "Email"
+msgstr "Correo electrónico"
+
+#. module: theme_canilike
+#: model:website.page,name:theme_canilike.can_404_page
+msgid "Error 404"
+msgstr "Error 404"
+
+#. module: theme_canilike
+#: model:ir.ui.view,arch_db:theme_canilike.can_website_footer_custom_template
+msgid "Follow Us"
+msgstr "Síguenos"
+
+#. module: theme_canilike
+#: model:ir.ui.view,arch_db:theme_canilike.can_website_footer_custom_template
+msgid "Follow Us Link"
+msgstr "Síguenos Link"
+
+#. module: theme_canilike
+#: model:ir.ui.view,arch_db:theme_canilike.can_home_content_template
+msgid "Homapage Content"
+msgstr "Homapage Content"
+
+#. module: theme_canilike
+#: model:website.menu,name:theme_canilike.can_menu_home
+#: model:website.page,name:theme_canilike.can_home_page
+msgid "Home"
+msgstr "Inicio"
+
+#. module: theme_canilike
+#: model:ir.ui.view,arch_db:theme_canilike.can_accept_legal_terms_without_check_snippet
+msgid "I accept the"
+msgstr "Acepto los"
+
+#. module: theme_canilike
+#: model:ir.ui.view,arch_db:theme_canilike.can_website_footer_custom_template
+msgid "Improvement"
+msgstr "Mejora"
+
+#. module: theme_canilike
+#: model:website.page,name:theme_canilike.can_portal_invoice_page
+msgid "Invoice"
+msgstr "Factura"
+
+#. module: theme_canilike
+#: model:ir.ui.view,arch_db:theme_canilike.can_default_contact_form_snippet
+msgid "Is human?"
+msgstr "Es Humano"
+
+#. module: theme_canilike
+#: model:ir.ui.view,arch_db:theme_canilike.can_website_footer_custom_template
+msgid "Legal"
+msgstr "Legal"
+
+#. module: theme_canilike
+#: model:ir.ui.view,arch_db:theme_canilike.can_website_footer_custom_template
+#: model:website.page,name:theme_canilike.can_advise_page
+msgid "Legal Advise"
+msgstr "Aviso Legal"
+
+#. module: theme_canilike
+#: model:website.menu,name:theme_canilike.can_main_menu
+msgid "Main Menu"
+msgstr "Menú Principal"
+
+#. module: theme_canilike
+#: model:website.theme,name:theme_canilike.theme_canilike_multi
+msgid "Multi Website Can I Like Theme"
+msgstr "Multi Website Can I Like Theme"
+
+#. module: theme_canilike
+#: model:website.page,name:theme_canilike.can_portal_my_invoices_page
+msgid "My Invoices and Payments"
+msgstr "Mis Pagos y Facturas"
+
+#. module: theme_canilike
+#: model:website.page,name:theme_canilike.can_portal_my_home_page
+msgid "My Portal"
+msgstr "My Cuenta"
+
+#. module: theme_canilike
+#: model:website.page,name:theme_canilike.can_portal_my_purchase_orders
+msgid "My Purchase Orders"
+msgstr "Mis Órdenes de Compra"
+
+#. module: theme_canilike
+#: model:website.page,name:theme_canilike.can_portal_my_quotations_page
+msgid "My Quotations"
+msgstr "Mis Presupuestos"
+
+#. module: theme_canilike
+#: model:website.page,name:theme_canilike.can_portal_my_orders_page
+msgid "My Sales Orders"
+msgstr "Mis Pedidos de Venta"
+
+#. module: theme_canilike
+#: model:website.page,name:theme_canilike.can_wishlist_page
+msgid "My Wishlist"
+msgstr "Mi Lista de Deseos"
+
+#. module: theme_canilike
+#: model:website.menu,name:theme_canilike.can_menu_newsletter
+#: model:website.page,name:theme_canilike.can_newsletter_page
+msgid "Newsletter"
+msgstr "Canal de noticias"
+
+#. module: theme_canilike
+#: model:website.page,name:theme_canilike.can_order_confirmation_page
+msgid "Order Confirmation"
+msgstr "Confirmación de Pedido"
+
+#. module: theme_canilike
+#: model:ir.ui.view,arch_db:theme_canilike.can_default_contact_form_snippet
+msgid "Phone number"
+msgstr "Teléfono"
+
+#. module: theme_canilike
+#: model:ir.ui.view,arch_db:theme_canilike.can_website_footer_custom_template
+#: model:website.page,name:theme_canilike.can_privacy_page
+msgid "Privacy Policy"
+msgstr "Política de Privacidad"
+
+#. module: theme_canilike
+#: model:ir.ui.view,arch_db:theme_canilike.can_website_footer_custom_template
+msgid "Privacy Policy Link"
+msgstr "Política de Privacidad Enlace"
+
+#. module: theme_canilike
+#: model:website.menu,name:theme_canilike.can_menu_recipes
+msgid "Recipes"
+msgstr "Recetas"
+
+#. module: theme_canilike
+#: model:website.page,name:theme_canilike.can_portal_order_page
+msgid "Sales Order"
+msgstr "Pedido de Venta"
+
+#. module: theme_canilike
+#: model:website.menu,name:theme_canilike.can_menu_shop
+msgid "Shop"
+msgstr "Tienda"
+
+#. module: theme_canilike
+#: model:ir.ui.view,arch_db:theme_canilike.can_website_footer_custom_template
+msgid "Social Media"
+msgstr "Medios sociales"
+
+#. module: theme_canilike
+#: model:ir.ui.view,arch_db:theme_canilike.can_default_contact_form_snippet
+msgid "Subject"
+msgstr "Asunto"
+
+#. module: theme_canilike
+#: model:ir.ui.view,arch_db:theme_canilike.can_website_footer_custom_template
+#: model:website.page,name:theme_canilike.can_terms_page
+msgid "Terms of Use"
+msgstr "Términos de Uso"
+
+#. module: theme_canilike
+#: model:ir.ui.view,arch_db:theme_canilike.can_website_footer_custom_template
+msgid "Terms of Use Link"
+msgstr "Términos de Uso Link"
+
+#. module: theme_canilike
+#: model:ir.ui.view,arch_db:theme_canilike.can_home_content_template
+#: model:ir.ui.view,arch_db:theme_canilike.can_website_footer_custom_template
+msgid "We are a team of passionate people whose goal is to improve everyone's life through disruptive products. We build great products to solve your business problems."
+msgstr "We are a team of passionate people whose goal is to improve everyone's life through disruptive products. We build great products to solve your business problems."
+
+#. module: theme_canilike
+#: model:ir.ui.view,arch_db:theme_canilike.can_web_login_template
+msgid "With entering"
+msgstr "Al entrar"
+
+#. module: theme_canilike
+#: model:ir.ui.view,arch_db:theme_canilike.can_website_mail_follow_template
+msgid "With subscribe"
+msgstr "Al suscribirme"
+
+#. module: theme_canilike
+#: model:ir.ui.view,arch_db:theme_canilike.can_default_contact_form_snippet
+msgid "Your company"
+msgstr "Su empresa"
+
+#. module: theme_canilike
+#: model:ir.ui.view,arch_db:theme_canilike.can_default_contact_form_snippet
+msgid "Your name"
+msgstr "Su nombre"
+
+#. module: theme_canilike
+#: model:ir.ui.view,arch_db:theme_canilike.can_default_contact_form_snippet
+msgid "Your question"
+msgstr "Su pregunta"
+
+#. module: theme_canilike
+#: model:ir.ui.view,arch_db:theme_canilike.can_layout_footer_copyright
+msgid "eShop"
+msgstr "eShop"
+
+#. module: theme_canilike
+#: model:ir.ui.view,arch_db:theme_canilike.can_website_footer_custom_template
+msgid "egal Advise"
+msgstr "Aviso Legal"
+
+#. module: theme_canilike
+#: model:ir.ui.view,arch_db:theme_canilike.can_website_footer_custom_template
+msgid "egal Advise Link"
+msgstr "Aviso Legal Link"
+
+#. module: theme_canilike
+#: model:ir.ui.view,arch_db:theme_canilike.can_accept_legal_terms_without_check_snippet
+msgid "legal advice"
+msgstr "aviso legal"
+
+#. module: theme_canilike
+#: model:ir.ui.view,arch_db:theme_canilike.can_accept_legal_terms_without_check_snippet
+msgid "of this website."
+msgstr "de este sitio web."
+
+#. module: theme_canilike
+#: model:ir.ui.view,arch_db:theme_canilike.can_accept_legal_terms_without_check_snippet
+msgid "privacy policy"
+msgstr "política de privacidad"
+
+#. module: theme_canilike
+#: model:ir.ui.view,arch_db:theme_canilike.can_accept_legal_terms_without_check_snippet
+msgid "terms of use"
+msgstr "términos de Uso"
+

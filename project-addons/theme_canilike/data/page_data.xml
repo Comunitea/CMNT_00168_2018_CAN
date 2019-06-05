@@ -148,7 +148,7 @@
             <field name="view_id" ref="theme_canilike.can_terms_page_view"/>
         </record>
 
-        <!-- // Contact Us part -->
+        <!-- Contact Us -->
         <template id="can_contactus_view" name="Contact Us Can I Like View" inherit_id="website.contactus"/>
         <record id="can_contactus_page" model="website.page">
             <field name="name">Contact Us</field>

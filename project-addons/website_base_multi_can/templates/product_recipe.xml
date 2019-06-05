@@ -2,21 +2,21 @@
 <odoo>
 
     <!-- Page template for displaying recipes -->
-    <template id="page_recipe_list" name="Recipes">
+    <template id="can_recipes_list_template" name="Recipes">
         <t t-call="website.layout">
             <t t-set="additional_title">Product recipe list</t>
             <div id="wrap">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12">
-                            <h1 class="text-center">Product recipe list page</h1>
+                            <h1 class="text-center">Recipes list</h1>
                         </div>
                     </div>
                     <div class="row wp-recipe_list mt32 mb32">
                         <t t-if="recipe_list">
                             <t t-foreach="recipe_list" t-as="res">
                                 <div class="col-md-3 mb32 one_recipe">
-                                    <a t-att-href="'/recipes/%s' % res.slug" t-att-title="res.title">
+                                    <a t-att-href="'/recipe/%s' % res.slug" t-att-title="res.title">
                                         <div class="recipe_image">
                                             <img t-attf-src="/web/image/product.recipe/{{res.id}}/image/"
                                                  t-att-alt="res.title" class="img img-responsive"/>
@@ -38,7 +38,7 @@
     </template>
 
     <!-- Page template for displaying one recipe -->
-    <template id="page_one_recipe" name="Recipe">
+    <template id="can_recipe_template" name="Recipe">
         <t t-set="main_object" t-value="recipe"/>
         <t t-call="website.layout">
             <t t-set="additional_title" t-value="recipe.title"/>
@@ -77,11 +77,18 @@
                                     </t>
                                 </div>
                                 <ol class="carousel-indicators" t-if="len(image_ids) or recipe.video">
-                                    <li data-target="#o-carousel-recipe" data-slide-to="0" class="active"/>
-                                    <t t-if="len(image_ids)" t-foreach="image_ids" t-as="image">
-                                        <li data-target="#o-carousel-recipe" t-att-data-slide-to="image_index + 1"/>
-                                    </t>
+<!--                                    <li data-target="#o-carousel-recipe" data-slide-to="0" class="active"/>-->
+<!--                                    <t t-if="len(image_ids)" t-foreach="image_ids" t-as="image">-->
+<!--                                        <li data-target="#o-carousel-recipe" t-att-data-slide-to="image_index + 1"/>-->
+<!--                                    </t>-->
                                     <li t-if="recipe.video" data-target="#o-carousel-recipe" t-att-data-slide-to="len(image_ids) + 1"/>
+
+
+                                    <t t-if="len(image_ids)" t-foreach="image_ids" t-as="pimg">
+                                        <li data-target="#o-carousel-recipe" t-att-data-slide-to="pimg_index + 1">
+                                            <img class="img img-responsive" t-attf-src="/website/image/recipe.image/{{pimg.id}}/image/90x90" t-att-alt="pimg.name"/>
+                                        </li>
+                                    </t>
                                   </ol>
                             </div>
                         </div>
@@ -92,7 +99,7 @@
                             <p class="text-muted" t-field="recipe.description_short" t-if="recipe.description_short"/>
                             <div class="mt16" t-if="len(recipe.product_ids)">
                                 <hr/>
-                                <h4>Products that contains this recipe</h4>
+                                <h4>Products</h4>
                                 <div class="row">
                                     <t t-foreach="recipe.product_ids" t-as="product">
                                         <div class="wp-related-product col-md-6 mt16">
@@ -113,6 +120,7 @@
                 <section class="mt16 mb16">
                     <div class="container">
                         <div class="row">
+                            <h4>Description</h4>
                             <div class="col-md-12" t-field="recipe.description"/>
                         </div>
                     </div>
