@@ -4,7 +4,7 @@
     <template id="can_website_layout" name="Layout Can I Like Template" inherit_id="website_multi_theme.auto_layout_website_can">
 
         <xpath expr="//div[@id='wrapwrap']//div[hasclass('navbar')]" position="before">
-            <div groups="website.group_website_publisher" class="clearfix mt32 header-fixed-margin"/>
+            <div groups="website.group_website_publisher" class="clearfix header-fixed-margin"/>
         </xpath>
 
         <xpath expr="//div[@id='wrapwrap']//div[hasclass('navbar')]" position="after">
