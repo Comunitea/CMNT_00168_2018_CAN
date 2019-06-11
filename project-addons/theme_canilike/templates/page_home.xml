@@ -5,14 +5,14 @@
 
         <t t-call="website.layout">
             <div id="wrap">
-                <section class="oe_structure mt32">
-                    <section class="s_text_block_image_fw mt92 oe_img_bg oe_custom_bg" style="background-position: 50% 100%; background-image: url('/web/image/website.s_cover_default_image');">
+                <section class="oe_structure">
+                    <section class="s_text_block_image_fw mt92 oe_img_bg oe_custom_bg mt0" style="background-position: 50% 100%; background-image: url('/web/image/website.s_cover_default_image');">
                         <div class="container">
                             <div class="row">
                                 <div class="col-md-12 mt128 mb128">
                                     <h2 style="font-size:36px; color: white;" class="text-center">¿Quieres disfrutar de un producto gourmet<br/> natural de máxima calidad?</h2>
                                     <div class="text-center mt32">
-                                        <a class="btn btn-default btn-lg" href="/shop">ENCUÉNTRALO AQUÍ</a>
+                                        <a class="btn btn-primary btn-lg" href="/shop">ENCUÉNTRALO AQUÍ</a>
                                     </div>
                                 </div>
                             </div>
@@ -24,7 +24,7 @@
                         <div class="container">
                             <div class="row">
                                 <div class="col-md-4 mt32 mb48">
-                                    <h4>Gonservas e historia en Galicia</h4>
+                                    <h4>Conservas e historia en Galicia</h4>
                                     <p>Historia de la conserva y cuando se instaló en Galicia.</p>
                                 </div>
                                 <div class="col-md-4 mt32 mb48">
