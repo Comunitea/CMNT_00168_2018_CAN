@@ -8,8 +8,6 @@
                 <ul>
                     <li><a href="/aboutus" alt="About Us Link" title="About Us" rel="nofollow" target="_blank">About Us</a></li>
                     <li><a href="/contactus" alt="Contact Us Link" title="Contact Us" rel="nofollow" target="_blank">Contact Us</a></li>
-                    <li><a href="/page/newsletter" alt="Follow Us Link" title="Follow Us" rel="nofollow" target="_blank">Follow Us</a></li>
-                    <li><a href="/blog" alt="Blog Link" title="Blog" rel="nofollow" target="_blank">Blog</a></li>
                 </ul>
             </div>
             <div>
@@ -30,7 +28,7 @@
                 <ul>
                     <li><a href="/legal/terms-of-use" alt="Terms of Use Link" title="Terms of Use" rel="nofollow" target="_blank">Terms of Use</a></li>
                     <li><a href="/legal/privacy-policy" alt="Privacy Policy Link" title="Privacy Policy" rel="nofollow" target="_blank">Privacy Policy</a></li>
-                    <li><a href="/legal/advice" alt="egal Advise Link" title="egal Advise" rel="nofollow" target="_blank">Legal Advise</a></li>
+                    <li><a href="/legal/advice" alt="Legal Advise Link" title="Legal Advise" rel="nofollow" target="_blank">Legal Advise</a></li>
                 </ul>
             </div>
         </xpath>

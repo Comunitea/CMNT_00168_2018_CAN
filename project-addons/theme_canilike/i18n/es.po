@@ -73,7 +73,7 @@ msgstr "Blog Link"
 #. module: theme_canilike
 #: model:ir.ui.view,arch_db:theme_canilike.can_home_content_template
 msgid "Can I Like Home"
-msgstr "Can I Like Home"
+msgstr "Can I Like"
 
 #. module: theme_canilike
 #: model:ir.ui.view,arch_db:theme_canilike.can_home_content_template
@@ -130,7 +130,7 @@ msgstr "Síguenos Link"
 #. module: theme_canilike
 #: model:ir.ui.view,arch_db:theme_canilike.can_home_content_template
 msgid "Homapage Content"
-msgstr "Homapage Content"
+msgstr "Bienvenido!"
 
 #. module: theme_canilike
 #: model:website.menu,name:theme_canilike.can_menu_home
@@ -276,7 +276,7 @@ msgstr "Términos de Uso Link"
 #: model:ir.ui.view,arch_db:theme_canilike.can_home_content_template
 #: model:ir.ui.view,arch_db:theme_canilike.can_website_footer_custom_template
 msgid "We are a team of passionate people whose goal is to improve everyone's life through disruptive products. We build great products to solve your business problems."
-msgstr "We are a team of passionate people whose goal is to improve everyone's life through disruptive products. We build great products to solve your business problems."
+msgstr "Somos un equipo de personas apasionadas cuyo objetivo es mejorar la vida de todos a través de productos disruptivos. Construimos grandes productos para resolver sus problemas de negocios."
 
 #. module: theme_canilike
 #: model:ir.ui.view,arch_db:theme_canilike.can_web_login_template
@@ -310,13 +310,13 @@ msgstr "eShop"
 
 #. module: theme_canilike
 #: model:ir.ui.view,arch_db:theme_canilike.can_website_footer_custom_template
-msgid "egal Advise"
+msgid "Legal Advise"
 msgstr "Aviso Legal"
 
 #. module: theme_canilike
 #: model:ir.ui.view,arch_db:theme_canilike.can_website_footer_custom_template
-msgid "egal Advise Link"
-msgstr "Aviso Legal Link"
+msgid "Legal Advise Link"
+msgstr "Enlace Aviso Legal"
 
 #. module: theme_canilike
 #: model:ir.ui.view,arch_db:theme_canilike.can_accept_legal_terms_without_check_snippet
