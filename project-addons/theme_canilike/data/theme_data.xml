@@ -3,7 +3,7 @@
 
     <!-- Record that lets website admin to choose this theme -->
     <record model="website.theme" id="theme_canilike_multi">
-        <field name="name">Multi Website Can I Like Theme</field>
+        <field name="name">MultiWebsite Can I Like Theme</field>
         <field name="dependency_ids" eval="[(4, ref('website_multi_theme.theme_default'))]"/>
     </record>
 
