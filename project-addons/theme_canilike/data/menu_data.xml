@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <odoo>
-    <data noupdate="1">
-
-        <!-- Delete unused menus -->
-        <delete id="menu_news" model="website.menu"/>
+    <data>
 
         <!--Main menu-->
         <record id="can_main_menu" model="website.menu">
