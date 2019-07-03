@@ -38,7 +38,7 @@
         'ecommerce_base',
         'breadcrumbs_base',
         'seo_base',
-        'follow_us_base'
+        'follow_us_base',
         'multi_company_base',
         'payment_redsys',
     ],
