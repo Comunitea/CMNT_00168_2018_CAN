@@ -36,16 +36,11 @@
     ],
     'depends': [
         'ecommerce_base',
-        'multi_company_base',
-        'website_blog_base',
-        'website_multi_company_blog',
-        'mass_mailing',
-        # 'website_form_builder',
-        'seo_base',
         'breadcrumbs_base',
-        # 'website_sale_product_brand',
-        'payment_redsys',
+        'seo_base',
         'follow_us_base'
+        'multi_company_base',
+        'payment_redsys',
     ],
     'data': [
         'data/company_data.xml',

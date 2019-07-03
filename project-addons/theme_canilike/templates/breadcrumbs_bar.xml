@@ -15,11 +15,4 @@
         </xpath>
     </template>
 
-    <!-- Remove the Blog breadcrumb's bar -->
-    <template id="can_breadcrumbs_blog_remove" name="Remove Blog BreadCrumbs Canilike Theme Template" inherit_id="website_blog.blog_breadcrumb">
-        <xpath expr="//div[hasclass('container')]" position="attributes">
-            <attribute name="t-if">True == False</attribute>
-        </xpath>
-    </template>
-
 </odoo>

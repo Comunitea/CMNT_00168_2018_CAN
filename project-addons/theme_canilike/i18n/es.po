@@ -60,17 +60,6 @@ msgid "All Products"
 msgstr "Todos los productos"
 
 #. module: theme_canilike
-#: model:ir.ui.view,arch_db:theme_canilike.can_website_footer_custom_template
-#: model:website.menu,name:theme_canilike.can_menu_blog
-msgid "Blog"
-msgstr "Blog"
-
-#. module: theme_canilike
-#: model:ir.ui.view,arch_db:theme_canilike.can_website_footer_custom_template
-msgid "Blog Link"
-msgstr "Blog Link"
-
-#. module: theme_canilike
 #: model:ir.ui.view,arch_db:theme_canilike.can_home_content_template
 msgid "Can I Like Home"
 msgstr "Can I Like"
@@ -208,12 +197,6 @@ msgstr "Mis Pedidos de Venta"
 #: model:website.page,name:theme_canilike.can_wishlist_page
 msgid "My Wishlist"
 msgstr "Mi Lista de Deseos"
-
-#. module: theme_canilike
-#: model:website.menu,name:theme_canilike.can_menu_newsletter
-#: model:website.page,name:theme_canilike.can_newsletter_page
-msgid "Newsletter"
-msgstr "Canal de noticias"
 
 #. module: theme_canilike
 #: model:website.page,name:theme_canilike.can_order_confirmation_page
