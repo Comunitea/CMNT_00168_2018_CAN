@@ -38,7 +38,8 @@
 /* Buttons styles for Scms-site
    ========================================================================== */
 
-.button-default{
+.button-default,
+.button-action{
     border-radius: 3px;
     text-transform: uppercase;
     padding: .7em 2em;
@@ -49,6 +50,17 @@
     background-color: @color-main-light;
     &:hover {
         background-color: @color-main-medium;
+        text-decoration: none;
+    }
+}
+
+.button-action {
+    background-color: @color-secondary;
+    color: white;
+    &:hover {
+        background-color: @color-secondary-medium;
+        color: white;
+        text-decoration: none;
     }
 }
 

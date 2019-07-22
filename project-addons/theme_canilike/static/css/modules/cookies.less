@@ -1,0 +1,21 @@
+.cookies-advise {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 100;
+    padding: 4em 1em;
+    background-color: fade(white, 98%);
+    color: @color-main-medium;
+    border-top: 1px solid @color-main-light;
+    box-shadow: 0 0 20px 10px fade(#000000, 17%);
+    p a {
+        color: @color-secondary;
+        &:hover {
+            color:@color-secondary-medium;
+        }
+    }
+}
+
+.cookies-advise-content {
+    &:extend(.wrapper-m);
+}

@@ -15,7 +15,8 @@
 
 .wrapper,
 .wrapper-s,
-.wrapper-m {
+.wrapper-m,
+.wrapper-l {
  	display: block;
  	width: 100%;
  	padding-left: 1rem;
@@ -52,4 +53,10 @@
 	@media (min-width: @screen-xs) {
  		max-width: 1024px;
  	}
+}
+
+.wrapper-l{
+    @media (min-width: @screen-xs) {
+        max-width: 1280px;
+    }
 }

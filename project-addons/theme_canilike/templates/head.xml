@@ -7,14 +7,18 @@
         <xpath expr="link[last()]" position="after">
             <link href="/theme_canilike/static/css/variables.less" rel="stylesheet" type="text/less"/>
             <link href="/theme_canilike/static/css/common.less" rel="stylesheet" type="text/less"/>
+            <link href="/theme_canilike/static/css/error.less" rel="stylesheet" type="text/less"/>
             <link href="/theme_canilike/static/css/mixins/font-size.less" rel="stylesheet" type="text/less"/>
             <link href="/theme_canilike/static/css/helpers/ratios.less" rel="stylesheet" type="text/less"/>
             <link href="/theme_canilike/static/css/helpers/image-replacement.less" rel="stylesheet" type="text/less"/>
             <link href="/theme_canilike/static/css/ui/form.less" rel="stylesheet" type="text/less"/>
             <link href="/theme_canilike/static/css/ui/button.less" rel="stylesheet" type="text/less"/>
+            <link href="/theme_canilike/static/css/vendors/sia.less" rel="stylesheet" type="text/less"/>
             <link href="/theme_canilike/static/css/layout/wrapper.less" rel="stylesheet" type="text/less"/>
             <link href="/theme_canilike/static/css/modules/footer.less" rel="stylesheet" type="text/less"/>
             <link href="/theme_canilike/static/css/modules/header.less" rel="stylesheet" type="text/less"/>
+            <link href="/theme_canilike/static/css/modules/breadcrumbs.less" rel="stylesheet" type="text/less"/>
+            <link href="/theme_canilike/static/css/modules/cookies.less" rel="stylesheet" type="text/less"/>
         </xpath>
 
         <xpath expr="//script[last()]" position="after">
