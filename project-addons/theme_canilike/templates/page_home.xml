@@ -6,13 +6,16 @@
         <t t-call="website.layout">
             <div id="wrap">
                 <section class="oe_structure">
-                    <section class="s_text_block_image_fw mt92 oe_img_bg oe_custom_bg mt0" style="background-position: 50% 100%; background-image: url('/web/image/website.s_cover_default_image');">
+                    <section class="s_text_block_image_fw mb64 mt0 bg-gray-lighter" style="background-position: 50% 100%;">
                         <div class="container">
                             <div class="row">
                                 <div class="col-md-12 mt128 mb128">
-                                    <h2 style="font-size:36px; color: white;" class="text-center">¿Quieres disfrutar de un producto gourmet<br/> natural de máxima calidad?</h2>
-                                    <div class="text-center mt32">
-                                        <a class="btn btn-primary btn-lg" href="/shop">ENCUÉNTRALO AQUÍ</a>
+                                    <h2 style="font-size:36px; color: white;" class="text-center">
+                                        <font style="" class="text-epsilon">LA CALIDAD ESTÁ EN LO NATURAL.<br/></font>
+                                        <font style="font-size: 24px;" class="text-epsilon">LO IMPORTANTE ES CONSERVARLA.</font>
+                                    </h2>
+                                    <div class="mt32 text-center">
+                                        <a href="/shop" data-original-title="" title="" class="btn btn-danger"> Conoce nuestros productos </a>
                                     </div>
                                 </div>
                             </div>
@@ -24,16 +27,41 @@
                         <div class="container">
                             <div class="row">
                                 <div class="col-md-4 mt32 mb48">
-                                    <h4>Conservas e historia en Galicia</h4>
-                                    <p>Historia de la conserva y cuando se instaló en Galicia.</p>
+                                    <h4>
+                                        <font style="font-size: 24px;" class="text-epsilon">Las conservas en Galicia:<br/>el valor de la tradición</font>
+                                    </h4>
+                                    <p>
+                                        <font style="color: rgb(156, 156, 148);">El mar gallego es único en su exuberante riqueza: reúne abundancia y calidad. Es natural que la industria conservera se asentase en Galicia hace casi doscientos años. Más que un negocio, preservar el delicioso producto procedente de las aguas gallegas era una necesidad. Pero para hablar del auténtico origen de este sistema de conservación tenemos que viajar en el espacio y en el tiempo… y hablar de Napoleón Bonaparte. Sí, Napoleón, el célebre emperador francés.&amp;nbsp;&amp;nbsp;</font>
+                                    </p>
+                                    <p><font style="color: rgb(156, 156, 148);">&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;</font>&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; </p>
+                                    <p>&amp;nbsp;<a href="/aboutus" class="btn btn-danger" data-original-title="" title="">Más información…</a><br/></p>
                                 </div>
                                 <div class="col-md-4 mt32 mb48">
-                                    <h4>Proceso de conservación</h4>
-                                    <p>No contiene conservantes y en que consisten los ingredientes, cualidades.</p>
+                                    <h4>
+                                        <font style="font-size: 24px;" class="text-epsilon">El proceso de conservación:<br/>el valor de lo natural</font>
+                                    </h4>
+                                    <p>
+                                        <font style="color: rgb(156, 156, 148);">Sin conservantes. Sin química. Sin nada que te arrebate el sabor 100% natural de los pescados y mariscos. Los métodos utilizados en la industria conservera gallega son una sólida garantía de calidad y fiabilidad.</font>
+                                        <font style="color: rgb(156, 156, 148);">Nuestras conservas son capaces de complacer a los consumidores más exigentes. A diferencia de otros alimentos envasados, en las conservas no hay trucos o artificios para engañar paladares. No son necesarios. Basta con proteger las extraordinarias cualidades del producto extraído de aguas gallegas.<font style="color: rgb(156, 156, 148);">&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;</font></font>
+                                    </p>
+                                    <p>
+                                        <font style="color: rgb(156, 156, 148);">
+                                            <br/>
+                                        </font>
+                                    </p>
+                                    <p>&amp;nbsp;<a href="http://canilike.livingodoo.com/aboutus" class="btn btn-danger" data-original-title="" title="">Más información…</a></p>
                                 </div>
                                 <div class="col-md-4 mt32 mb48">
-                                    <h4>El producto</h4>
-                                    <p>Cualidades del producto.</p>
+                                    <h4>
+                                        <font style="font-size: 24px;" class="text-epsilon">Recuerdos de sabores: <br/>en Galicia y en el mundo</font>
+                                    </h4>
+                                    <p>
+                                        <font style="color: rgb(156, 156, 148);">Si pudiésemos asomarnos a las despensas de un centenar de familias españolas, en más de noventa encontraríamos latas de conservas. ¿Cómo podría ser de otro modo? Un producto natural, delicioso, fácil de almacenar, de precio competitivo y con fechas de caducidad que conceden un amplio margen para su consumo. Avales de sobra para convertirse en un imprescindible.<font style="color: rgb(156, 156, 148);"><br/></font></font>
+                                    </p>
+                                    <p>
+                                        <font style="color: rgb(156, 156, 148);"><font style="color: rgb(156, 156, 148);">&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;</font>&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; <br/></font>
+                                    </p>
+                                    <p>&amp;nbsp;<a href="http://canilike.livingodoo.com/aboutus" class="btn btn-danger" data-original-title="" title="">Más información…</a></p>
                                 </div>
                             </div>
                         </div>

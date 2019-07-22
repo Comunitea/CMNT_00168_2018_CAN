@@ -11,10 +11,30 @@
             <field name="not_public">False</field>
         </record>
 
+        <!-- split between ir_ui_view & website_page record to keep external_id on ir_ui_view -->
+        <record id="can_home_view" model="ir.ui.view">
+            <field name="name">Home</field>
+            <field name="type">qweb</field>
+            <field name="key">website.homepage</field>
+            <field name="arch" type="xml">
+                <t name="Home" priority="29" t-name="can_homepage">
+                    <t t-call="theme_canilike.can_home_content_template"/>
+                </t>
+            </field>
+        </record>
+
+        <record id="can_home_page" model="website.page">
+            <field name="name">Home</field>
+            <field name="website_published">True</field>
+            <field name="url">/</field>
+            <field name="view_id" ref="theme_canilike.can_home_view"/>
+            <field name="website_ids" eval="[(6, 0, [ref('website_base_multi_can.canilike_website')])]"/>
+        </record>
+
         <!-- ======================================= Shop menu ======================================= -->
 
         <record id="can_menu_shop" model="website.menu">
-            <field name="name">Shop</field>
+            <field name="name">Shop Canilike</field>
             <field name="url">/shop</field>
             <field name="parent_id" ref="theme_canilike.can_main_menu"/>
             <field name="sequence" type="int">20</field>
@@ -39,7 +59,7 @@
 
         <!--Contact Us-->
         <record id="can_menu_contact_us" model="website.menu">
-            <field name="name">Contact Us</field>
+            <field name="name">Contact Us Canilike</field>
             <field name="url">/contactus</field>
             <field name="page_id" ref="theme_canilike.can_contactus_page"/>
             <field name="parent_id" ref="theme_canilike.can_main_menu"/>
@@ -52,7 +72,7 @@
 
         <!--Recipes-->
         <record id="can_menu_recipes" model="website.menu">
-            <field name="name">Recipes</field>
+            <field name="name">Recipes Canilike</field>
             <field name="url">/recipes</field>
             <field name="parent_id" ref="theme_canilike.can_main_menu"/>
             <field name="sequence" type="int">80</field>
