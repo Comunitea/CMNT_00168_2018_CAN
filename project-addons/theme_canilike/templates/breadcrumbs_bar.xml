@@ -2,15 +2,8 @@
 <odoo>
 
     <!-- Remove the product breadcrumb's bar -->
-    <template id="can_breadcrumbs_product_remove" name="Remove Product BreadCrumbs Canilike Theme Template" inherit_id="website_multi_theme.auto_view_can_website_sale_product">
+    <template id="can_breadcrumbs_product_remove" name="Remove Product BreadCrumbs" inherit_id="website_multi_theme.auto_view_can_website_sale_product">
         <xpath expr="//ol[hasclass('breadcrumb')]" position="attributes">
-            <attribute name="t-if">True == False</attribute>
-        </xpath>
-    </template>
-
-    <!-- Remove the My Account breadcrumb's bar -->
-    <template id="can_breadcrumbs_account_remove" name="Remove Portal Account BreadCrumbs Canilike Theme Template" inherit_id="portal.portal_layout">
-        <xpath expr="//div[hasclass('o_portal')]" position="attributes">
             <attribute name="t-if">True == False</attribute>
         </xpath>
     </template>

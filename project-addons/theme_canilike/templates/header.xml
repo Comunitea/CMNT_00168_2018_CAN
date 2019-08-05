@@ -1,77 +1,61 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <odoo>
 
-    <template id="can_website_layout" name="Layout Can I Like Template" inherit_id="website_multi_theme.auto_layout_website_can">
-
-        <xpath expr="//div[@id='wrapwrap']//div[hasclass('navbar')]" position="before">
-            <div groups="website.group_website_publisher" class="clearfix header-fixed-margin"/>
-        </xpath>
-
-        <xpath expr="//div[@id='wrapwrap']//div[hasclass('navbar')]" position="after">
-            <t t-call="breadcrumbs_base.bcb_main_wrap"/>
-        </xpath>
-
-        <xpath expr="//div[@id='wrapwrap']/header" position="attributes">
-            <attribute name="t-att-class">'homepage-header' if xmlid == 'website.homepage' else None</attribute>
-        </xpath>
-
-        <xpath expr="//header//ul[@id='top_menu']/li[@id='my_cart']" position="after">
-            <t t-if="request.env.ref('website_multi_theme.auto_view_can_website_sale_wishlist_add_to_wishlist').active">
-                <t t-set='wishcount' t-value="len(request.env['product.wishlist'].current())"/>
-                <li id="my_wish" t-att-style="not wishcount and 'display:none;'">
-                    <a href="/shop/wishlist">
-                        <i class="fa fa-heart"/>
-                        <sup t-attf-class="my_wish_quantity o_animate_blink label label-primary"><t t-esc='wishcount'/></sup>
-                    </a>
-                </li>
-            </t>
-        </xpath>
-    </template>
-
+     <!-- Set Up Responsive Logo Show -->
     <template id="can_logo_show" name="Logo Show Canilike Template" inherit_id="website_multi_theme.auto_view_can_website_layout_logo_show">
         <xpath expr="//a[hasclass('navbar-brand')]/span" position="replace">
-            <img class="img img-responsive" src="/theme_canilike/static/img/flags/canilike/img-logo.png" alt="website.name"/>
+<!--            Not logo -->
+<!--            <h1>CAN I LIKE</h1>-->
+<!--            <p>Tradition canning updated</p>-->
+<!--            with logo -->
+            <figure>
+                <img class="img img-responsive" src="/theme_canilike/static/img/canilike/img-logo.png" alt="website.name"/>
+                <figcaption><h1>CAN I LIKE</h1></figcaption>
+                <figcaption><p>Tradition canning updated</p></figcaption>
+            </figure>
         </xpath>
     </template>
 
-    <template id="can_portal_frontend_layout" name="Frontend Layout Canilike Template" inherit_id="portal.frontend_layout">
-        <xpath expr="//ul[@id='top_menu']" position="inside">
-            <t t-if="(request and request.is_frontend_multilang and len(languages) &gt; 1)">
-                <li class="divider"/>
-                <li class="dropdown language_menu">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                        <img t-att-src="'/theme_canilike/static/img/flags/flag_%s.png' % lang.split('_')[0]" style="max-height: 21px;"/>
-                        <span t-esc="lang.split('_')[0]"/>
-                        <span class="caret"/>
-                    </a>
-                    <ul class="dropdown-menu" role="menu">
-                        <t t-foreach="languages" t-as="lg">
-                            <li t-if="lg[0] != lang">
-                                <a t-att-href="url_for(request.httprequest.path + '?' + keep_query(), lang=lg[0])"
-                                   t-att-data-default-lang="(editable or translatable) and 'true' if website and lg[0] == website.default_lang_code else None"
-                                   t-att-data-lang="lg[0]"
-                                   class="js_change_lang"
-                                   rel="nofollow">
-                                    <img t-att-src="'/theme_canilike/static/img/flags/flag_%s.png' % lg[0].split('_')[0]"
-                                         t-att-title="lg[1].split('/').pop()"
-                                         t-att-alt="lg[1].split('/').pop()"
-                                         t-att-href="url_for(request.httprequest.path + '?' + keep_query(), lang=lg[0])"/>
-                                    <span t-esc="lg[0].split('_')[0]"/>
-                                </a>
-                            </li>
+    <template id="can_website_layout" name="Main layout Canilike" inherit_id="website.layout">
+
+        <!-- Replace original header submenus -->
+        <xpath expr="//t[@t-foreach='website.menu_id.child_id']" position="replace"/>
+
+        <xpath expr="//div[hasclass('navbar', 'navbar-default', 'navbar-static-top')]" position="after">
+            <!-- Include shop search box in header keeping category if exist -->
+            <div id="header_search_box">
+                <t t-if="xmlid == 'website_sale.products'">
+                    <form method="get" t-att-class="search_class"
+                          t-att-action="'/category/%s' % category.slug if category and category.slug else keep('/shop'+ ('/category/'+slug(category)) if category else None, search=0)">
+                        <t t-if="attrib_values">
+                            <t t-foreach="attrib_values" t-as="a">
+                                <input type="hidden" name="attrib" t-att-value="'%s-%s' % (a[0], a[1])" />
+                            </t>
                         </t>
-                    </ul>
-                </li>
-            </t>
-        </xpath>
-    </template>
+                        <t t-call="website.website_search_box" />
+                    </form>
+                </t>
+                <t t-else="">
+                    <form action="/shop" method="get" class="navbar-search pull-left pagination form-inline">
+                        <t t-call="website.website_search_box">
+                            <t t-set="search_class" t-value="'pagination form-inline o_website_sale_search'"/>
+                        </t>
+                    </form>
+                </t>
+            </div>
 
-    <template id="can_website_sale_header" name="Header Canilike Template" inherit_id="website_sale.header">
-        <xpath expr="//li[@id='my_cart']/a" position="replace">
-            <a href="/shop/cart">
-                <i class="fa fa-shopping-cart"/>
-                <sup t-attf-class="my_cart_quantity label label-primary" t-esc="website_sale_order and website_sale_order.cart_quantity or ''" />
-            </a>
+            <!-- Add header submenus -->
+            <div id="header_submenu">
+                <div class="navbar-default navbar-static-top">
+                    <div class="collapse navbar-collapse navbar-top-collapse">
+                        <ul class="nav navbar-nav navbar-right" id="top_submenu">
+                            <t t-foreach="website.menu_id.child_id" t-as="submenu">
+                                <t t-call="website.submenu"/>
+                            </t>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </xpath>
     </template>
 

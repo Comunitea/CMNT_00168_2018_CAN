@@ -78,12 +78,12 @@ msgstr "Nombre de la compañía"
 #: model:ir.ui.view,arch_db:theme_canilike.can_website_footer_custom_template
 #: model:website.menu,name:theme_canilike.can_menu_contact_us
 #: model:website.page,name:theme_canilike.can_contactus_page
-msgid "Contact Us"
+msgid "Contact us"
 msgstr "Contacto"
 
 #. module: theme_canilike
 #: model:website.page,name:theme_canilike.can_contactus_thanks_page
-msgid "Contact Us (Thanks)"
+msgid "Contact us (Thanks)"
 msgstr "Contacto (Gracias)"
 
 #. module: theme_canilike
@@ -159,7 +159,7 @@ msgid "Legal Advise"
 msgstr "Aviso Legal"
 
 #. module: theme_canilike
-#: model:website.menu,name:theme_canilike.can_main_menu
+#: model:website.menu,name:website.main_menu
 msgid "Main Menu"
 msgstr "Menú Principal"
 

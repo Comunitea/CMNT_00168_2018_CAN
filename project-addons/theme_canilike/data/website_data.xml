@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
 
-    <record id="website_base_multi_can.canilike_website" model="website">
+    <record id="website.default_website" model="website">
         <field name="multi_theme_id" ref="theme_canilike.theme_canilike_multi"/>
     </record>
 

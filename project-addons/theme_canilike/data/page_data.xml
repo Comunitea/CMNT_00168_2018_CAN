@@ -1,169 +1,54 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <odoo>
     <data>
-        <!-- // Portal part -->
-        <template id="can_portal_my_home_view" name="My Portal Can I Like View" inherit_id="portal.portal_my_home"/>
-        <record id="can_portal_my_home_page" model="website.page">
-            <field name="name">My Portal</field>
-            <field name="website_published">True</field>
-            <field name="website_ids" eval="[(6, 0, [ref('website_base_multi_can.canilike_website')])]"/>
-            <field name="url">/my/home</field>
-            <field name="view_id" ref="theme_canilike.can_portal_my_home_view"/>
-        </record>
-
-        <template id="can_portal_my_details_view" name="Account Details Can I Like View" inherit_id="portal.portal_my_details"/>
-        <record id="can_portal_my_details_page" model="website.page">
-            <field name="name">Account Details</field>
-            <field name="website_published">True</field>
-            <field name="website_ids" eval="[(6, 0, [ref('website_base_multi_can.canilike_website')])]"/>
-            <field name="url">/my/account</field>
-            <field name="view_id" ref="theme_canilike.can_portal_my_details_view"/>
-            <field name="parent_id" ref="theme_canilike.can_portal_my_home_page"/>
-        </record>
-
-        <template id="can_portal_my_quotations_view" name="My Quotations Can I Like View" inherit_id="sale.portal_my_quotations"/>
-        <record id="can_portal_my_quotations_page" model="website.page">
-            <field name="name">My Quotations</field>
-            <field name="website_published">True</field>
-            <field name="website_ids" eval="[(6, 0, [ref('website_base_multi_can.canilike_website')])]"/>
-            <field name="url">/my/quotes</field>
-            <field name="view_id" ref="theme_canilike.can_portal_my_quotations_view"/>
-            <field name="parent_id" ref="theme_canilike.can_portal_my_home_page"/>
-        </record>
-
-        <template id="can_portal_my_orders_view" name="My Sales Orders Can I Like View" inherit_id="sale.portal_my_orders"/>
-        <record id="can_portal_my_orders_page" model="website.page">
-            <field name="name">My Sales Orders</field>
-            <field name="website_published">True</field>
-            <field name="website_ids" eval="[(6, 0, [ref('website_base_multi_can.canilike_website')])]"/>
-            <field name="url">/my/orders</field>
-            <field name="view_id" ref="theme_canilike.can_portal_my_orders_view"/>
-            <field name="parent_id" ref="theme_canilike.can_portal_my_home_page"/>
-        </record>
-
-        <template id="can_portal_my_purchase_orders_view" name="My Purchase Orders Can I Like View" inherit_id="purchase.portal_my_purchase_orders"/>
-        <record id="can_portal_my_purchase_orders" model="website.page">
-            <field name="name">My Purchase Orders</field>
-            <field name="website_published">True</field>
-            <field name="website_ids" eval="[(6, 0, [ref('website_base_multi_can.canilike_website')])]"/>
-            <field name="url">/my/purchase</field>
-            <field name="view_id" ref="can_portal_my_purchase_orders_view"/>
-        </record>
-
-        <template id="can_portal_order_page_view" name="Sales Order Can I Like View" inherit_id="sale.portal_order_page"/>
-        <record id="can_portal_order_page" model="website.page">
-            <field name="name">Sales Order</field>
-            <field name="website_published">True</field>
-            <field name="website_ids" eval="[(6, 0, [ref('website_base_multi_can.canilike_website')])]"/>
-            <field name="view_id" ref="theme_canilike.can_portal_order_page_view"/>
-            <field name="parent_id" ref="theme_canilike.can_portal_my_orders_page"/>
-        </record>
-
-        <template id="can_portal_my_invoices_view" name="My Invoices and Payments Can I Like View" inherit_id="account.portal_my_invoices"/>
-        <record id="can_portal_my_invoices_page" model="website.page">
-            <field name="name">My Invoices and Payments</field>
-            <field name="website_published">True</field>
-            <field name="website_ids" eval="[(6, 0, [ref('website_base_multi_can.canilike_website')])]"/>
-            <field name="url">/my/invoices</field>
-            <field name="view_id" ref="theme_canilike.can_portal_my_invoices_view"/>
-            <field name="parent_id" ref="theme_canilike.can_portal_my_home_page"/>
-        </record>
-
-        <template id="can_portal_invoice_page_view" name="Invoice Can I Like View" inherit_id="account.portal_invoice_page"/>
-        <record id="can_portal_invoice_page" model="website.page">
-            <field name="name">Invoice</field>
-            <field name="website_published">True</field>
-            <field name="website_ids" eval="[(6, 0, [ref('website_base_multi_can.canilike_website')])]"/>
-            <field name="view_id" ref="theme_canilike.can_portal_invoice_page_view"/>
-            <field name="parent_id" ref="theme_canilike.can_portal_my_invoices_page"/>
-        </record>
-
-        <!-- // Shop part -->
-        <template id="can_order_confirmation_view" name="Order Confirmation Can I Like View" inherit_id="website_sale.confirmation"/>
-        <record id="can_order_confirmation_page" model="website.page">
-            <field name="name">Order Confirmation</field>
-            <field name="website_published">True</field>
-            <field name="website_ids" eval="[(6, 0, [ref('website_base_multi_can.canilike_website')])]"/>
-            <field name="url">/shop/confirmation</field>
-            <field name="view_id" ref="theme_canilike.can_order_confirmation_view"/>
-            <field name="parent_id" ref="theme_canilike.can_portal_my_home_page"/>
-        </record>
-
-        <!-- // Error pages part -->
-        <template id="can_page_404_view" name="Error 404 Can I Like View" inherit_id="website.page_404"/>
-        <record id="can_404_page" model="website.page">
-            <field name="name">Error 404</field>
-            <field name="website_published">True</field>
-            <field name="website_ids" eval="[(6, 0, [ref('website_base_multi_can.canilike_website')])]"/>
-            <field name="url">/page_404</field>
-            <field name="view_id" ref="theme_canilike.can_page_404_view"/>
-        </record>
-
-        <!-- // Legal pages part -->
-        <template id="can_advise_page_view" name="Legal Advise Can I Like View" inherit_id="website_legal_page.advice"/>
-        <record id="can_advise_page" model="website.page">
+        <!-- Legal pages -->
+        <record id="website_legal_page.advise_page" model="website.page">
             <field name="name">Legal Advise</field>
             <field name="website_published">True</field>
-            <field name="website_ids" eval="[(6, 0, [ref('website_base_multi_can.canilike_website')])]"/>
+            <field name="website_ids" eval="[(6, 0, [ref('website.default_website')])]"/>
             <field name="url">/legal/advice</field>
-            <field name="view_id" ref="theme_canilike.can_advise_page_view"/>
+            <field name="view_id" ref="website_legal_page.advice"/>
         </record>
 
-        <template id="can_privacy_page_view" name="Privacy Policy Can I Like View" inherit_id="website_legal_page.privacy-policy"/>
-        <record id="can_privacy_page" model="website.page">
+        <record id="website_legal_page.privacy_page" model="website.page">
             <field name="name">Privacy Policy</field>
             <field name="website_published">True</field>
-            <field name="website_ids" eval="[(6, 0, [ref('website_base_multi_can.canilike_website')])]"/>
+            <field name="website_ids" eval="[(6, 0, [ref('website.default_website')])]"/>
             <field name="url">/legal/privacy-policy</field>
-            <field name="view_id" ref="theme_canilike.can_privacy_page_view"/>
+            <field name="view_id" ref="website_legal_page.privacy-policy"/>
         </record>
 
-        <template id="can_terms_page_view" name="Terms of Use Can I Like View" inherit_id="website_legal_page.terms-of-use"/>
-        <record id="can_terms_page" model="website.page">
+        <record id="website_legal_page.terms_page" model="website.page">
             <field name="name">Terms of Use</field>
             <field name="website_published">True</field>
-            <field name="website_ids" eval="[(6, 0, [ref('website_base_multi_can.canilike_website')])]"/>
+            <field name="website_ids" eval="[(6, 0, [ref('website.default_website')])]"/>
             <field name="url">/legal/terms-of-use</field>
-            <field name="view_id" ref="theme_canilike.can_terms_page_view"/>
+            <field name="view_id" ref="website_legal_page.terms-of-use"/>
         </record>
 
         <!-- Contact Us -->
-        <template id="can_contactus_view" name="Contact Us Can I Like View" inherit_id="website.contactus"/>
-        <record id="can_contactus_page" model="website.page">
+        <template id="can_contactus_view" name="Contact Us Canilike View" inherit_id="website_multi_theme.auto_view_can_website_crm_contactus_form">
+            <!-- Google recaptcha and Accept Legal contact form -->
+            <xpath expr="//div[hasclass('form-field')][last()]" position="after">
+                <t t-call="website_base_multi_can.can_website_crm_contactus_form_recaptcha_snippet"/>
+                <t t-call="website_base_multi_can.can_website_crm_contactus_form_legal_snippet"/>
+            </xpath>
+        </template>
+        <record id="website.contactus_page" model="website.page">
             <field name="name">Contact Us</field>
-            <field name="website_published">True</field>
-            <field name="website_ids" eval="[(6, 0, [ref('website_base_multi_can.canilike_website')])]"/>
+            <field name="website_published">False</field>
+            <field name="website_ids" eval="[(6, 0, [ref('website.default_website')])]"/>
             <field name="url">/contactus</field>
             <field name="view_id" ref="theme_canilike.can_contactus_view"/>
         </record>
 
-        <template id="can_contactus_thanks_view" name="Contact Us (Thanks) Can I Like View" inherit_id="website_crm.contactus_thanks_ir_ui_view"/>
-        <record id="can_contactus_thanks_page" model="website.page">
-            <field name="name">Contact Us (Thanks)</field>
-            <field name="website_published">True</field>
-            <field name="website_ids" eval="[(6, 0, [ref('website_base_multi_can.canilike_website')])]"/>
-            <field name="url">/contactus-thank-you</field>
-            <field name="view_id" ref="theme_canilike.can_contactus_thanks_view"/>
-        </record>
-
         <!--About Us-->
-        <template id="can_aboutus_view" name="About Us Can I Like View" inherit_id="website.aboutus"/>
-        <record id="can_aboutus_page" model="website.page">
-            <field name="name">About Us</field>
-            <field name="website_ids" eval="[(6, 0, [ref('website_base_multi_can.canilike_website')])]"/>
-            <field name="website_published">True</field>
+        <record id="website.aboutus_page" model="website.page">
+            <field name="name">About us</field>
+            <field name="website_ids" eval="[(6, 0, [ref('website.default_website')])]"/>
+            <field name="website_published">False</field>
             <field name="url">/aboutus</field>
-            <field name="view_id" ref="theme_canilike.can_aboutus_view"/>
-        </record>
-
-        <!--Wishlist-->
-        <template id="can_wishlist_view" name="Wishlist Can I Like View" inherit_id="website_sale_wishlist.product_wishlist"/>
-        <record id="can_wishlist_page" model="website.page">
-            <field name="name">My Wishlist</field>
-            <field name="website_ids" eval="[(6, 0, [ref('website_base_multi_can.canilike_website')])]"/>
-            <field name="website_published">True</field>
-            <field name="url">/shop/wishlist</field>
-            <field name="view_id" ref="theme_canilike.can_wishlist_view"/>
+            <field name="view_id" ref="website.aboutus"/>
         </record>
 
     </data>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="can_website_cookie_notice_message" name="Canilike Cookies notice Template" inherit_id="website_cookie_notice.message">
+        <!-- Replace cookie notice message -->
+        <xpath expr="//div[@id='website_cookie_notice']" position="replace">
+            <div t-if="request and not request.session.get('accepted_cookies')" id="website_cookie_notice" class="cc-cookies cookies-advise">
+                <div class="cookies-advise-content">
+                    <p>We use cookies in this website. Read about them in our <a href="/legal/privacy-policy">privacy policy</a>. To disable them, configure your browser properly. If you keep using this website, you are accepting those.</p>
+                    <a class="button btn-primary button-action" href="#">OK</a>
+                </div>
+            </div>
+        </xpath>
+    </template>
+
+</odoo>

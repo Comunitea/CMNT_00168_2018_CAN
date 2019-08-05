@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+
+    <template id="can_advise_page" name="Aviso legal - Canilike"/>
+
+    <template id="can_privacy_page" name="Política de privacidad - Canilike"/>
+
+    <template id="can_terms_page" name="Terminos legales - Canilike"/>
+
+</odoo>

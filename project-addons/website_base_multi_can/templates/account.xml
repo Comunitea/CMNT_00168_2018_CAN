@@ -4,7 +4,7 @@
     <template id="can_web_login_template" name="Legal Login Canilike Theme Template" inherit_id="web.login">
         <xpath expr="//div[hasclass('oe_login_buttons')]" position="before">
             <div class="on_login_advise mt4 mb8 small">
-                With entering <t t-call="theme_canilike.can_accept_legal_terms_without_check_snippet"/>
+                With entering: <t t-call="theme_canilike.can_accept_legal_terms_without_check_snippet"/>
             </div>
         </xpath>
     </template>

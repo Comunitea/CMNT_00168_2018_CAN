@@ -44,10 +44,3 @@ class ResConfigSettings(models.TransientModel):
     email = fields.Char(related='website_id.email')
     phone = fields.Char(related='website_id.phone')
 
-
-class WebsiteMenu(models.Model):
-    _inherit = 'website.menu'
-
-    not_public = fields.Boolean(string='Available only for logged users', default=False)
-    not_portal = fields.Boolean(string='Available only for public users', default=False)
-    website_published = fields.Boolean(string='Published', default=True)

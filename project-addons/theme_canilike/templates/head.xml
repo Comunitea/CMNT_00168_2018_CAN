@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <odoo>
 
-    <!-- Add custom styles -->
+    <!-- Add custom assets -->
     <template id="can_website_assets_frontend" name="Assets Canilike Template" inherit_id="website.assets_frontend">
 
         <xpath expr="link[last()]" position="after">
@@ -22,7 +22,7 @@
         </xpath>
 
         <xpath expr="//script[last()]" position="after">
-            <script type="text/javascript" src="/theme_canilike/static/js/main.js"/>
+<!--            <script type="text/javascript" src="/theme_canilike/static/js/main.js"/>-->
         </xpath>
 
     </template>

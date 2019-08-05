@@ -3,7 +3,7 @@
 
     <!-- Record that lets website admin to choose this theme -->
     <record model="website.theme" id="theme_canilike_multi">
-        <field name="name">MultiWebsite Can I Like Theme</field>
+        <field name="name">MultiWebsite Canilike Theme</field>
         <field name="dependency_ids" eval="[(4, ref('website_multi_theme.theme_default'))]"/>
     </record>
 
@@ -19,11 +19,11 @@
               name="_convert_assets"
               eval="([ref('theme_canilike.theme_canilike_multi')])"/>
 
-    <!-- This method prepare assets and applies Can I Like theme for Can I Like website -->
+    <!-- This method prepare assets and applies Canilike theme for Canilike website -->
     <!-- Hook to reload theme on website_multi_theme module updates -->
     <function model="website"
               name="multi_theme_reload"
-              eval="([ref('website_base_multi_can.canilike_website')])"
+              eval="([ref('website.default_website')])"
     />
 
 </odoo>
