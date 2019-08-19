@@ -40,6 +40,7 @@
     ],
     'depends': [
         'website_base_multi_can',
+        'website_custom_geoip',
     ],
     'data': [
         'data/theme_data.xml',

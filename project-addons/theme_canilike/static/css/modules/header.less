@@ -9,14 +9,6 @@
     background-color: transparent;
     display: flex;
 }
-
-
-
-
-
-
-
-
 .header {
     &:extend(.wrapper);
     display: flex;
@@ -125,5 +117,93 @@
         font-size: 150%;
         margin-right: .25em;
         color: @color-secondary;
+    }
+}
+
+/* ==========================================================================
+   Base - styles
+   ========================================================================== */
+header {
+    a.navbar-brand.logo {
+        figure.figure {
+            img.figure-img.img-fluid.rounded {
+                height: 96px;
+                padding: 5px;
+                margin: 5px;
+            }
+            figcaption.figure-caption.text-center {
+                top: -100px;
+                position: relative;
+                div.col-md-6 {
+                    h3 {
+                        font-size: inherit;
+                        color: @color-main-medium;
+                    }
+                }
+            }
+        }
+    }
+    
+    div#header_submenu {
+        @media (max-width: @screen-sm-min) {
+            text-align: center;
+        }
+        div.navbar-default {
+            background-color: transparent;
+            div.nav {
+                ul#top_submenu {
+                    display: inline-flex;
+                }
+            }
+        }
+    }
+
+    div#header_search_box {
+        @media (max-width: @screen-sm-min) {
+            margin-top: 60px;
+        }
+        margin-top: 12px;
+        form.navbar-search {
+            width: 100%;
+            div.input-group {
+                width: 100%;
+                div.oe_search {
+                    width: 100%;
+                    input.oe_search_box {
+                        width: 100%;
+                    }
+                }
+                span.input-group-btn {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    ul#top_menu {
+        @media (max-width: @screen-sm-min) {
+            margin-top: 60px;
+            display: inline-flex;
+            div.navbar-default.navbar-static-top {
+                float: unset;
+            }
+        }
+        @media (max-width: @screen-xs-min) {
+            display: block;
+        }
+        div.navbar-default.navbar-static-top {
+            float: right;
+        }
+        li.dropdown.language_menu {
+            display: none;
+        }
+    }
+
+}
+
+div#wrapwrap div.modal {
+    display: none;
+    li.dropdown.language_menu {
+        list-style: none;
     }
 }

@@ -1,19 +1,120 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <odoo>
-
-     <!-- Set Up Responsive Logo Show -->
-    <template id="can_logo_show" name="Logo Show Canilike Template" inherit_id="website_multi_theme.auto_view_can_website_layout_logo_show">
-        <xpath expr="//a[hasclass('navbar-brand')]/span" position="replace">
-<!--            Not logo -->
-<!--            <h1>CAN I LIKE</h1>-->
-<!--            <p>Tradition canning updated</p>-->
-<!--            with logo -->
-            <figure>
-                <img class="img img-responsive" src="/theme_canilike/static/img/canilike/img-logo.png" alt="website.name"/>
-                <figcaption><h1>CAN I LIKE</h1></figcaption>
-                <figcaption><p>Tradition canning updated</p></figcaption>
+   
+    <template id="can_header_logo" name="Header Logo Canilike Template">
+        <!-- Set Up Responsive Logo Show -->
+        <a href="/" class="navbar-brand logo">
+            <figure class="figure">
+                <img class="figure-img img-fluid rounded" src="/theme_canilike/static/img/canilike/img-logo.png" alt="website.name"/>
+                <figcaption class="figure-caption text-center">
+                    <div class="col-md-6">
+                        <h1>CAN I LIKE</h1>
+                    </div>
+                    <div class="col-md-6 hidden-xs">
+                        <h3>Tradition canning updated</h3>
+                    </div>
+                </figcaption>
             </figure>
-        </xpath>
+        </a>
+    </template>
+
+    <template id="can_header_search_box" name="Header Search Box Canilike">
+        <!-- Include shop search box in header keeping category if exist -->
+        <div id="header_search_box">
+            <t t-if="xmlid == 'website_sale.products'">
+                <form method="get" t-att-class="search_class"
+                        t-att-action="'/category/%s' % category.slug if category and category.slug else keep('/shop'+ ('/category/'+slug(category)) if category else None, search=0)">
+                    <t t-if="attrib_values">
+                        <t t-foreach="attrib_values" t-as="a">
+                            <input type="hidden" name="attrib" t-att-value="'%s-%s' % (a[0], a[1])" />
+                        </t>
+                    </t>
+                    <t t-call="website.website_search_box" />
+                </form>
+            </t>
+            <t t-else="">
+                <form action="/shop" method="get" class="navbar-search pull-left form-inline">
+                    <t t-call="website.website_search_box">
+                        <t t-set="search_class" t-value="'pagination form-inline o_website_sale_search'"/>
+                    </t>
+                </form>
+            </t>
+        </div>
+    </template>
+
+    <template id="can_header_submenus" name="Header Submenus Canilike">
+        <!-- Add header submenus -->
+        <div id="header_submenu">
+            <div class="navbar-default navbar-static-top">
+                <div class="nav navbar-top">
+                    <ul class="nav navbar-nav navbar-right" id="top_submenu">
+                        <t t-foreach="website.menu_id.child_id" t-as="submenu">
+                            <t t-call="website.submenu"/>
+                        </t>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </template>
+
+    <template id="can_location_selection_modal" name="Location selection modal Canilike">
+
+        <div class="modal fade" id="languageModal" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"/>
+                        <h4 class="modal-title" id="modalLabel">Location Options</h4>
+                    </div>
+                    <div class="modal-body text-center">
+                        <div class="col-md-6">
+                            <t t-if="(request and request.is_frontend_multilang and len(languages) &gt; 1)">
+                                <h4>Available languages</h4>
+                                <li class="dropdown language_menu">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                        <img t-att-src="'/theme_canilike/static/img/flags/flag_%s.png' % lang.split('_')[0]" style="max-height: 21px;"/>
+                                        <span t-esc="lang.split('_')[0]"/>
+                                        <span class="caret"/>
+                                    </a>
+                                    <ul class="dropdown-menu" role="menu">
+                                        <t t-foreach="languages" t-as="lg">
+                                            <li t-if="lg[0] != lang">
+                                                <a t-att-href="url_for(request.httprequest.path + '?' + keep_query(), lang=lg[0])"
+                                                t-att-data-default-lang="(editable or translatable) and 'true' if website and lg[0] == website.default_lang_code else None"
+                                                t-att-data-lang="lg[0]"
+                                                class="js_change_lang"
+                                                rel="nofollow">
+                                                    <img t-att-src="'/theme_canilike/static/img/flags/flag_%s.png' % lg[0].split('_')[0]"
+                                                        t-att-title="lg[1].split('/').pop()"
+                                                        t-att-alt="lg[1].split('/').pop()"
+                                                        t-att-href="url_for(request.httprequest.path + '?' + keep_query(), lang=lg[0])"/>
+                                                    <span t-esc="lg[0].split('_')[0]"/>
+                                                </a>
+                                            </li>
+                                        </t>
+                                    </ul>
+                                </li>
+                            </t>
+                        </div>
+                        <div class="col-md-6">
+                            <h4>Available warehouses</h4>
+                            <t t-call="website_custom_geoip.country_widget"/>
+                            <div class="alert alert-warning" role="alert">
+                                The prices and availability of the products may change depending on the selected warehouse.
+                            </div>
+                            <div class="alert alert-warning" role="alert">
+                                Switching from one warehouse to another will empty your current cart as every warehouse has different products.
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-secondary" data-dismiss="modal">
+                                Close
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </template>
 
     <template id="can_website_layout" name="Main layout Canilike" inherit_id="website.layout">
@@ -21,42 +122,54 @@
         <!-- Replace original header submenus -->
         <xpath expr="//t[@t-foreach='website.menu_id.child_id']" position="replace"/>
 
-        <xpath expr="//div[hasclass('navbar', 'navbar-default', 'navbar-static-top')]" position="after">
-            <!-- Include shop search box in header keeping category if exist -->
-            <div id="header_search_box">
-                <t t-if="xmlid == 'website_sale.products'">
-                    <form method="get" t-att-class="search_class"
-                          t-att-action="'/category/%s' % category.slug if category and category.slug else keep('/shop'+ ('/category/'+slug(category)) if category else None, search=0)">
-                        <t t-if="attrib_values">
-                            <t t-foreach="attrib_values" t-as="a">
-                                <input type="hidden" name="attrib" t-att-value="'%s-%s' % (a[0], a[1])" />
-                            </t>
-                        </t>
-                        <t t-call="website.website_search_box" />
-                    </form>
-                </t>
-                <t t-else="">
-                    <form action="/shop" method="get" class="navbar-search pull-left pagination form-inline">
-                        <t t-call="website.website_search_box">
-                            <t t-set="search_class" t-value="'pagination form-inline o_website_sale_search'"/>
-                        </t>
-                    </form>
-                </t>
-            </div>
+        <xpath expr="//header" position="after">
+            <t t-call="theme_canilike.can_location_selection_modal"/>
+        </xpath>
 
-            <!-- Add header submenus -->
-            <div id="header_submenu">
-                <div class="navbar-default navbar-static-top">
-                    <div class="collapse navbar-collapse navbar-top-collapse">
-                        <ul class="nav navbar-nav navbar-right" id="top_submenu">
-                            <t t-foreach="website.menu_id.child_id" t-as="submenu">
-                                <t t-call="website.submenu"/>
-                            </t>
-                        </ul>
-                    </div>
+        <xpath expr="//div[hasclass('navbar', 'navbar-default', 'navbar-static-top')]" position="replace">
+            <div class="col-xs-10 col-sm-6 col-md-6 mt8">
+                <t t-call="theme_canilike.can_header_logo"/>
+            </div>
+            <div class="col-xs-1 col-sm-1 col-md-1 mt8">
+                <span data-toggle="tooltip" title="Location Options" >
+                    <a href="#" data-toggle="modal" data-target="#languageModal" rel="nofollow">
+                        <i class="fa fa-globe" aria-hidden="true"></i>
+                    </a>
+                </span>
+            </div>
+            <div class="col-xs-6 col-xs-push-6 col-sm-5 col-sm-push-0 col-md-5 col-md-push-0">
+                <div class="nav navbar-top pull-right">
+                    <ul class="nav navbar-nav navbar-right" id="top_menu">
+                        <li class="divider" t-ignore="true" t-if="not user_id._is_public()"/>
+                        <li class="dropdown" t-ignore="true" t-if="not user_id._is_public()">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                <b>
+                                    <span t-esc="user_id.name[:23] + '...' if user_id.name and len(user_id.name) &gt; 25 else user_id.name"/>
+                                    <span class="caret"></span>
+                                </b>
+                            </a>
+                            <ul class="dropdown-menu js_usermenu" role="menu">
+                                <li id="o_logout"><a t-attf-href="/web/session/logout?redirect=/" role="menuitem">Logout</a></li>
+                            </ul>
+                        </li>
+                        <t t-set="website_sale_order" t-value="website.sale_get_order()" />
+                        <li id="my_cart" t-att-class="'' if website_sale_order and website_sale_order.cart_quantity else 'hidden'">
+                            <a href="/shop/cart">
+                                My Cart <sup t-attf-class="my_cart_quantity label label-danger" t-esc="website_sale_order and website_sale_order.cart_quantity or ''" />
+                            </a>
+                        </li>
+                    </ul>
                 </div>
             </div>
+            
+            <div class="col-xs-6 col-xs-pull-6 col-sm-3 col-sm-pull-0 col-sm-offset-6 col-md-3 col-md-pull-0 col-md-offset-6 mb16">
+                <t t-call="theme_canilike.can_header_search_box"/>
+            </div>
+            <div class="col-xs-12 col-sm-3 col-md-3">
+                <t t-call="theme_canilike.can_header_submenus"/>
+            </div>
         </xpath>
+
     </template>
 
 </odoo>
