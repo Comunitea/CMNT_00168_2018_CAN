@@ -56,6 +56,7 @@
         'templates/page_home.xml',
         'templates/cookies.xml',
         'templates/page_aboutus.xml',
+        'templates/recipe.xml',
     ],
     'images': [
         '/static/description/icon.png',
