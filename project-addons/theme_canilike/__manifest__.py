@@ -55,6 +55,7 @@
         'templates/product.xml',
         'templates/page_home.xml',
         'templates/cookies.xml',
+        'templates/page_aboutus.xml',
     ],
     'images': [
         '/static/description/icon.png',

@@ -43,12 +43,17 @@
         </record>
 
         <!--About Us-->
+        <template id="can_aboutus_view" name="About Us Canilike View" inherit_id="website.aboutus">
+            <xpath expr="//div[@id='wrap']" position="replace">
+                <t t-call="theme_canilike.can_about_us_content"/>
+            </xpath>
+        </template>
         <record id="website.aboutus_page" model="website.page">
             <field name="name">About us</field>
             <field name="website_ids" eval="[(6, 0, [ref('website.default_website')])]"/>
             <field name="website_published">False</field>
             <field name="url">/aboutus</field>
-            <field name="view_id" ref="website.aboutus"/>
+            <field name="view_id" ref="theme_canilike.can_aboutus_view"/>
         </record>
 
     </data>

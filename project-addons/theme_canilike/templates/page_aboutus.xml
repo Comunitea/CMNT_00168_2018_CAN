@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+
+    <template id="can_about_us_content" name="About us Canilike Content">
+        <section class="oe_structure">
+            <section class="s_text_block_image_fw mb64 mt0 bg-gray-lighter">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 mt128 mb128">
+                            <h2 class="text-center">
+                                <font style="" class="text-epsilon">CAN I LIKE<br/></font>
+                            </h2>
+                            <div class="mt32 text-center">
+                                Tradición conservera puesta al día
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <section class="oe_structure mt32">
+            <section class="s_three_columns mb64">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4 mt32 mb48">
+                            <h4>
+                                Valores
+                            </h4>
+                            <p>
+                                Nuestros valores
+                            </p>
+                        </div>
+                        <div class="col-md-4 mt32 mb48">
+                            <h4>
+                                Transparencia
+                            </h4>
+                            <p>
+                                No contiene conservantes y en qué consisten los ingredientes, cualidades.
+                            </p>
+                        </div>
+                        <div class="col-md-4 mt32 mb48">
+                            <h4>
+                                Calidad
+                            </h4>
+                            <p>
+                                Cualidades del producto.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </template>
+
+</odoo>
