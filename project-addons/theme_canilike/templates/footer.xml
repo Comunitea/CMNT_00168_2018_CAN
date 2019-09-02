@@ -37,8 +37,8 @@
 
     <!-- Legal footer links replacement -->
     <template id="can_website_layout_footer_copyright" inherit_id="website.layout_footer_copyright" name="Footer Copyright Legal Link Replace">
-        <xpath expr="//div[hasclass('pull-left', 'text-muted')]" position="replace">
-            <p class="pull-left text-muted">
+        <xpath expr="//footer//div[hasclass('container', 'mt16', 'mb16')]" position="replace">
+            <p class="footer-copyright">
                 Copyright &amp;copy; <span t-field="res_company.name">Company name</span>
             </p>
         </xpath>
