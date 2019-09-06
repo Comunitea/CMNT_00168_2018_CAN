@@ -5,6 +5,7 @@
 #    License AGPL-3 - See http://www.gnu.org/licenses/agpl-3.0.html
 #    © 2019 Comunitea - Ruben Seijas <ruben@comunitea.com>
 #    © 2019 Comunitea - Pavel Smirnov <pavel@comunitea.com>
+#    © 2019 Comunitea - Vicente Gutiérrez <vicente@comunitea.com>
 #
 #    This program is free software: you can redistribute it and/or modify
 #    it under the terms of the GNU Affero General Public License as published
@@ -21,5 +22,4 @@
 #
 ##############################################################################
 
-from . import models
-from . import controllers
+from . import order

@@ -37,6 +37,7 @@
     'contributors': [
         'Pavel Smirnov <pavel@comunitea.com>',
         'Rubén Seijas <ruben@comunitea.com>',
+        'Vicente Gutiérrez <vicente@comunitea.com>',
     ],
     'depends': [
         'website_base_multi_can',
@@ -57,6 +58,7 @@
         'templates/cookies.xml',
         'templates/page_aboutus.xml',
         'templates/recipe.xml',
+        'templates/checkout.xml',
     ],
     'images': [
         '/static/description/icon.png',

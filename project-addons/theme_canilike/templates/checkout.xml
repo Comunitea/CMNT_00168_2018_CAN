@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+
+    <template id="can_website_sale_checkout" name="GeoIP Canilike Website sale checkout" inherit_id="website_sale.checkout">
+        <xpath expr="//div[@id='wrap']//t[@t-set='same_shipping']" position="after">
+            <t t-set="current_country" t-value="website.get_current_country()" />
+            <t t-set="allowed_shipping" t-value="order._check_shipping_location(current_country)" />
+            <span class="hidden" id="allowed_shipping"><t t-esc="allowed_shipping"/></span>
+            <span class="hidden" id="current_country"><t t-esc="current_country.id"/></span>
+        </xpath>
+
+        <xpath expr="//a[@href='/shop/confirm_order']" position="attributes">
+            <attribute name='class'>btn btn-primary pull-right mb32 hidden</attribute>
+            <attribute name='id'>address_submit</attribute>
+        </xpath>
+
+        <xpath expr="//div[hasclass('col-md-8', 'col-md-offset-2', 'oe_cart')]/div[hasclass('clearfix')]" position="after">
+            <div id="alert_msg" class="row"/>
+        </xpath>
+
+        <xpath expr="//t[@t-set='readonly' and @t-value='1']" position="after">
+            <t t-set="no_check" t-value="True"/>
+        </xpath>
+
+    </template>
+
+    <template id="can_website_sale_address_kanban" name="GeoIP Canilike Kanban Address" inherit_id="website_sale.address_kanban">
+        <xpath expr="//form" position="before">
+            <t t-if="no_check">
+                <t t-set="allowed_current_address" t-value="True" />
+            </t>
+            <t t-else="">
+                <span class="js_contact hidden">
+                    <t t-esc="contact.id"/>
+                </span>
+                <t t-set="allowed_current_address" t-value="order._check_shipping_location(current_country, contact)" />
+            </t>
+        </xpath>
+
+        <xpath expr="//div[@t-if='not readonly']" position="replace">
+            <div class='panel-footer' t-if='not readonly and allowed_current_address'>
+                <span class='btn-ship' t-att-style="'' if selected else 'display:none;'">
+                    <a class="btn btn-block btn-primary">
+                        <i class='fa fa-check'></i> Ship to this address
+                    </a>
+                </span>
+                <span class='btn-ship' t-att-style="'' if not selected else 'display:none;'">
+                    <a class="btn btn-block btn-default">
+                        Select this address
+                    </a>
+                </span>
+            </div>
+            <div class='panel-footer' t-if="not allowed_current_address">
+                <span class='btn-ship' t-att-style="'' if selected else 'display:none;'">
+                    <a class="btn btn-block btn-danger disabled">
+                        <i class='fa fa-times'></i> You can't ship to this address
+                    </a>
+                </span>
+                <span class='btn-ship' t-att-style="'' if not selected else 'display:none;'">
+                    <a class="btn btn-block btn-default disabled">
+                        You can't ship to this address
+                    </a>
+                </span>
+            </div>
+        </xpath>
+    </template>
+
+</odoo>
