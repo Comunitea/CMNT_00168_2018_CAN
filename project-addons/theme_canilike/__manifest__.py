@@ -59,6 +59,7 @@
         'templates/page_aboutus.xml',
         'templates/recipe.xml',
         'templates/checkout.xml',
+        'templates/page_payment.xml',
     ],
     'images': [
         '/static/description/icon.png',

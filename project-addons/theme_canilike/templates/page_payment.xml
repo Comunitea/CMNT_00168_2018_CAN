@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+
+    <template id="can_payment_and_shipping_content" name="Payment and shipping Canilike Content" inherit_id="theme_canilike.can_payment_and_shipping_view">
+        <xpath expr="//div[@id='wrap']/div[hasclass('container')]">
+            <section class="oe_structure oe_empty"/>
+            <section class="oe_structure">
+                <section class="s_text_block_image_fw mb64 mt0 bg-gray-lighter">
+                    <div class="col-md-12 mt128 mb128">
+                        <h2 class="text-center">
+                            <font style="" class="text-epsilon">Payment and shipping<br/></font>
+                        </h2>
+                        <div class="mt32 text-center">
+                            Payment and shipping info
+                        </div>
+                    </div>
+                </section>
+            </section>
+            <section class="oe_structure mt32">
+                <section class="s_three_columns mb64">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-4 mt32 mb48">
+                                <h4>
+                                    Shipping methods
+                                </h4>
+                                <p>
+                                    List of available shipping methods.
+                                </p>
+                            </div>
+                            <div class="col-md-4 mt32 mb48">
+                                <h4>
+                                    Payment methods
+                                </h4>
+                                <p>
+                                    List of available payment methods.
+                                </p>
+                            </div>
+                            <div class="col-md-4 mt32 mb48">
+                                <t t-set="website_countries" t-value="website.get_website_available(not_current=True)" />
+                                <t t-set="current_country" t-value="website.get_current_country()" />
+                                <h4>
+                                    Current warehouse: <t t-esc="current_country.name"/>
+                                </h4>
+                                <p>From this warehouse you can ship your order to:</p>
+                                <ul>
+                                    <t t-foreach="current_country.country_ids" t-as="country">
+                                        <li><t t-esc="country.name"/></li>
+                                    </t>
+                                </ul>
+                                <p>The prices and availability of the products may change depending on the selected warehouse.</p>
+                                <p>Switching from one warehouse to another will empty your current cart as every warehouse has different products.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </section>
+            <section class="oe_structure oe_empty"/>
+        </xpath>
+    </template>
+
+</odoo>
