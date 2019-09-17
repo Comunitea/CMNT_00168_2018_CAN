@@ -8,7 +8,7 @@ class ResCountryGroup(models.Model):
 
     country_code = fields.Char()
     website_available = fields.Boolean()
-    warehouse_ids = fields.One2many('stock.warehouse', 'country_group_id')
+    warehouse_ids = fields.Many2many('stock.warehouse', 'country_group_id')
     fiscal_position_id = fields.Many2one('account.fiscal.position')
 
     def get_flag(self):
