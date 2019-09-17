@@ -23,17 +23,18 @@
 ##############################################################################
 
 from odoo import api, fields, models, _
-
+from odoo.http import request
 
 class SaleOrder(models.Model):
     _inherit = 'sale.order'
 
-    def _check_shipping_location(self, current_country, partner_shipping_id=False):
+    def _check_shipping_location(self, partner_shipping_id=False):
 
-        shipping_country_id = self.partner_shipping_id.country_id
+        shipping_country = self.partner_shipping_id.country_id.code
         if partner_shipping_id:
-            shipping_country_id = partner_shipping_id.country_id
-        
-        country_ids = current_country.country_ids
-        result = shipping_country_id in country_ids
+            shipping_country = partner_shipping_id.country_id.code
+        country_code = request.session['geoip'].get('country_code')
+        warehouse_countries = self.env['stock.warehouse'].get_warehouse_id(country_code)\
+            .country_group_id.mapped('country_ids').mapped('code')
+        result = shipping_country in warehouse_countries
         return result

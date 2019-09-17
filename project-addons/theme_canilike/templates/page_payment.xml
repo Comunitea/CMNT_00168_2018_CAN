@@ -37,14 +37,15 @@
                                 </p>
                             </div>
                             <div class="col-md-4 mt32 mb48">
-                                <t t-set="website_countries" t-value="website.get_website_available(not_current=True)" />
                                 <t t-set="current_country" t-value="website.get_current_country()" />
                                 <h4>
                                     Current warehouse: <t t-esc="current_country.name"/>
                                 </h4>
                                 <p>From this warehouse you can ship your order to:</p>
+                                <br/>
                                 <ul>
-                                    <t t-foreach="current_country.country_ids" t-as="country">
+                                    <t t-set="available_countries" t-value="website.get_available_countries()" />
+                                    <t t-foreach="available_countries.sorted(key=lambda r: r.name)" t-as="country">
                                         <li><t t-esc="country.name"/></li>
                                     </t>
                                 </ul>
