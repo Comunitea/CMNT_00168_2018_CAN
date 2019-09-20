@@ -44,12 +44,12 @@
         'website_custom_geoip',
     ],
     'data': [
-        'templates/head.xml',
         'data/theme_data.xml',
         'data/website_data.xml',
         'data/legal_data.xml',
         'data/page_data.xml',
         'data/menu_data.xml',
+        'templates/head.xml',
         'templates/header.xml',
         'templates/footer.xml',
         'templates/breadcrumbs_bar.xml',
