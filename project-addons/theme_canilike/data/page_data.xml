@@ -45,7 +45,9 @@
         <!--About Us-->
         <template id="can_aboutus_view" name="About Us Canilike View" inherit_id="website.aboutus">
             <xpath expr="//div[@id='wrap']" position="replace">
-                <t t-call="theme_canilike.can_about_us_content"/>
+                <div class="page-aboutus">
+
+                </div>
             </xpath>
         </template>
         <record id="website.aboutus_page" model="website.page">
