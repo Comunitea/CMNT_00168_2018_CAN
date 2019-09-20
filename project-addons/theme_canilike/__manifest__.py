@@ -44,7 +44,6 @@
         'website_custom_geoip',
     ],
     'data': [
-        'data/theme_data.xml',
         'data/website_data.xml',
         'data/legal_data.xml',
         'data/page_data.xml',
@@ -60,6 +59,7 @@
         'templates/recipe.xml',
         'templates/checkout.xml',
         'templates/page_payment.xml',
+        'data/theme_data.xml',
     ],
     'images': [
         '/static/description/icon.png',
