@@ -1,0 +1,3 @@
+"id","name","model_id:id","group_id:id","perm_read","perm_write","perm_create","perm_unlink"
+access_sga_swiss_post_soap,access_sga_swiss_post_soap,model_sga_swiss_post_soap,base.group_user,1,0,0,0
+access_sga_swiss_post_soap_manager,access_sga_swiss_post_soap_manager,model_sga_swiss_post_soap,stock.group_stock_manager,1,1,1,1

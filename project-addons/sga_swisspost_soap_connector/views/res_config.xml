@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="res_config_settings_swiss_post_form" model="ir.ui.view">
+        <field name="name">res.config.settings.swiss.post.form</field>
+        <field name="inherit_id" ref="stock.res_config_settings_view_form"/>
+        <field name="model">res.config.settings</field>
+        <field name="arch" type="xml">
+            <xpath expr="//h2[@id='schedule_info']" position="before">
+                <h2>Swiss Post SOAP connector configuration</h2>
+                <div class="o_settings_container">
+                    <group>
+                        <group>
+                            <field name="sender_id"/>
+                            <field name="depositor_no"/>
+                            <field name="partner_no"/>
+                            <field name="warehouse_id"/>
+                            <field name="supplier_no"/>
+                        </group>
+                        <group>
+                            <field name="email_alarm"/>
+                            <field name="sprach_code"/>
+                            <field name="operating_mode"/>
+                            <field name="soap_url"/>
+                        </group>
+                    </group>
+                </div>
+            </xpath>
+        </field>
+    </record>
+
+    <menuitem id="menu_sga_swiss" name="SGA SWISS POST" parent="stock.menu_stock_config_settings" groups="stock.group_stock_manager"
+        sequence="26" />
+    
+</odoo>

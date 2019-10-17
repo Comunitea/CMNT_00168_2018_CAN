@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="stock_picking_type_sga_form" model="ir.ui.view">
+        <field name="name">stock.picking.type.sga.form</field>
+        <field name="model">stock.picking.type</field>
+        <field name="inherit_id" ref="stock.view_picking_type_form"/>
+        <field name="arch" type="xml">
+            <field name="warehouse_id" position="after">
+                <field name="sga_integrated"/>
+                <field name="sga_integration_type" attrs="{'invisible': [('sga_integrated','=',False)]}" />
+                <field name="swiss_soap_file" string="SWISS POST file" attrs="{'invisible': [('sga_integration_type','!=','sga_swiss_post')]}" />
+            </field>
+        </field>
+    </record>
+</odoo>

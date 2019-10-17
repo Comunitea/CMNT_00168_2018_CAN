@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    
+    <record model="ir.ui.view" id="sga_swiss_post_soap_form">
+        <field name="name">sga_swiss_post_soap.form</field>
+        <field name="model">sga_swiss_post_soap</field>
+        <field name="arch" type="xml">
+            <form string="SGA SWISS POST">
+                <sheet>
+                    <group>
+                        <field name="data_type"/>
+                        <field name="operation_type"/>
+                        <field name="response"/>
+                        <field name="xml_data"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record model="ir.ui.view" id="sga_swiss_post_soap_search">
+        <field name="name">sga_swiss_post_soap.search</field>
+        <field name="model">sga_swiss_post_soap</field>
+        <field name="arch" type="xml">
+            <search string="SGA SWISS POST">
+                <field name="data_type" string="Data Type"/>
+                <field name="operation_type" string="Operation Type"/>
+                <field name="response"/>
+            </search>
+        </field>
+    </record>
+
+    <record model="ir.ui.view" id="sga_swiss_post_soap_tree">
+        <field name="name">sga_swiss_post_soap.tree</field>
+        <field name="model">sga_swiss_post_soap</field>
+        <field name="arch" type="xml">
+            <tree string="SGA SWISS POST">
+                <field name="id" />
+                <field name="data_type" string="Data Type"/>
+                <field name="operation_type" string="Operation Type"/>
+                <field name="response"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="action_sga_swiss_post_soap_view" model="ir.actions.act_window">
+        <field name="name">SGA SWISS POST</field>
+        <field name="res_model">sga_swiss_post_soap</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+        <field name="view_ids" eval="[(5, 0, 0),
+                (0, 0, {'view_mode': 'tree', 'view_id': ref('sga_swisspost_soap_connector.sga_swiss_post_soap_tree')}),
+                (0, 0, {'view_mode': 'form', 'view_id': ref('sga_swisspost_soap_connector.sga_swiss_post_soap_form')})]"/>
+        <field name="search_view_id" ref="sga_swiss_post_soap_search"/>
+    </record>
+
+    <menuitem id="menu_ga_swiss_post_soap_views" name="SGA SWISS POST" parent="menu_sga_swiss" action="sga_swisspost_soap_connector.action_sga_swiss_post_soap_view"  groups="stock.group_stock_manager"/>
+
+</odoo>

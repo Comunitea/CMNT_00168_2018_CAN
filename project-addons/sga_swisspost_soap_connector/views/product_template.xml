@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="product_template_only_form_view_sga_soap" model="ir.ui.view">
+        <field name="name">product.template.only.form.view.sga.soap</field>
+        <field name="model">product.template</field>
+        <field name="inherit_id" ref="product.product_template_only_form_view"/>
+        <field name="arch" type="xml">
+            <notebook position="inside">
+                <page string="Integración Swiss Post">
+                    <group>
+                        <field name="sga_state" widget="statusbar" statusbar_visible="not-integrated,integrated,error"
+                            statusbar_colors='{"error":"red", "not-integrated":"grey", "integrated":"green"}'/>
+                        <button name="send_to_sga" string="Enviar a SGA" type="object"
+                            class="oe_stat_button" icon="fa-shopping-cart"  attrs="{'invisible':[('sga_state','=','integrated')]}"/>
+                        <button name="delete_from_sga" string="Eliminar de SGA" type="object"
+                            class="oe_stat_button" icon="fa-shopping-cart" attrs="{'invisible':[('sga_state','=','not-integrated')]}"/>
+                    </group>
+                </page>
+            </notebook>
+        </field>
+    </record>
+
+    <record id="view_template_property_form_sga_soap" model="ir.ui.view">
+        <field name="name">Product template Unit Sga Soap</field>
+        <field name="model">product.template</field>
+        <field name="inherit_id" ref="stock.view_template_property_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//group[@name='group_lots_and_weight']" position="inside">
+                <label for="length"/>
+                <div class="o_row" name="length">
+                    <field name="length"/>
+                    <span>cm</span>
+                </div>
+                <label for="width"/>
+                <div class="o_row" name="width">
+                    <field name="width"/>
+                    <span>cm</span>
+                </div>
+            </xpath>
+        </field>
+    </record>
+    
+</odoo>
