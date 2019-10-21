@@ -35,7 +35,8 @@
         'views/product_template.xml',
         'views/stock_picking_type.xml',
         'views/stock_picking.xml',
-        'views/soap_connect.xml'
+        'views/soap_connect.xml',
+        'views/stock_warehouse.xml'
     ],
     'installable': True,
     'auto_install': False,

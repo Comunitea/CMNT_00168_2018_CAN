@@ -9,12 +9,17 @@
             <notebook position="inside">
                 <page string="Integración Swiss Post">
                     <group>
-                        <field name="sga_state" widget="statusbar" statusbar_visible="not-integrated,integrated,error"
+                        <field name="sga_integrated"/>
+                        <field name="sga_integration_type" attrs="{'invisible':[('sga_integrated','!=',True)]}"/>
+                        <field name="sga_state" attrs="{'invisible':[('sga_integrated','!=',True)]}" widget="statusbar" 
+                            statusbar_visible="not-integrated,integrated,error"
                             statusbar_colors='{"error":"red", "not-integrated":"grey", "integrated":"green"}'/>
                         <button name="send_to_sga" string="Enviar a SGA" type="object"
-                            class="oe_stat_button" icon="fa-shopping-cart"  attrs="{'invisible':[('sga_state','=','integrated')]}"/>
+                            class="oe_stat_button" icon="fa-shopping-cart"  
+                            attrs="{'invisible':['|', ('sga_integrated','!=',True), ('sga_state','=','integrated')]}"/>
                         <button name="delete_from_sga" string="Eliminar de SGA" type="object"
-                            class="oe_stat_button" icon="fa-shopping-cart" attrs="{'invisible':[('sga_state','=','not-integrated')]}"/>
+                            class="oe_stat_button" icon="fa-shopping-cart" 
+                            attrs="{'invisible':['|', ('sga_integrated','!=',True), ('sga_state','=','not-integrated')]}"/>
                     </group>
                 </page>
             </notebook>

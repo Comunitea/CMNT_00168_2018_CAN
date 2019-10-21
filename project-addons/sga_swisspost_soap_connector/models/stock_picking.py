@@ -22,7 +22,7 @@ from odoo import fields, models, api, _
 from datetime import datetime
 from lxml import etree
 
-SOAPENV_NAMESPACE = "http://schemas.xmlsoap.org/soap/envelope"
+SOAPENV_NAMESPACE = "http://schemas.xmlsoap.org/soap/envelope/"
 SOAPENV = "{%s}" % SOAPENV_NAMESPACE
 
 WAB_NAMESPACE = "https://service-test.swisspost.ch/apache/yellowcube-test/YellowCube_WAB_REQUEST_Warenausgangsbestellung.xsd"
@@ -31,7 +31,13 @@ WAB = "{%s}" % WAB_NAMESPACE
 WBL_NAMESPACE = "https://service-test.swisspost.ch/apache/yellowcube-test/YellowCube_WBL_REQUEST_SupplierOrders.xsd"
 WBL = "{%s}" % WBL_NAMESPACE
 
-NSMAP = {'soapenv' : SOAPENV_NAMESPACE, 'wab' : WAB_NAMESPACE, 'wbl' : WBL_NAMESPACE}
+WAR_R_NAMESPACE = "https://service-test.swisspost.ch/apache/yellowcube-test/YellowCube_WBL_REQUEST_SupplierOrders.xsd"
+WAR_R = "{%s}" % WAR_R_NAMESPACE
+
+WBA_R_NAMESPACE = "https://service-test.swisspost.ch/apache/yellowcube-test/YellowCube_WBL_REQUEST_SupplierOrders.xsd"
+WBA_R = "{%s}" % WBA_R_NAMESPACE
+
+NSMAP = {'soapenv' : SOAPENV_NAMESPACE, 'wab' : WAB_NAMESPACE, 'wbl' : WBL_NAMESPACE, 'war_r': WAR_R_NAMESPACE, 'wba_r': WBA_R_NAMESPACE}
 
 
 class StockPicking(models.Model):
@@ -39,8 +45,8 @@ class StockPicking(models.Model):
     _inherit = 'stock.picking'
 
     sga_state = fields.Selection([('integrated', 'Integrated'), ('waiting', 'Waiting'),\
-        ('not-integrated', 'Not Integrated'), ('send-error', 'Send Error'), ('get-error', 'Get Error')],\
-            default="not-integrated", string='Sga Status', help='Integration Status')
+        ('not-integrated', 'Not Integrated'), ('send-error', 'Send Error'), ('get-error', 'Get Error'), ('confirmed', 'Confirmed'),\
+             ('confirmation-error', 'Confirmation Error')], default="not-integrated", string='Sga Status', help='Integration Status')
     sga_integrated = fields.Boolean(related='picking_type_id.sga_integrated')
     sga_integration_type = fields.Selection(related='picking_type_id.sga_integration_type')
     
@@ -64,6 +70,18 @@ class StockPicking(models.Model):
             wbl = etree.SubElement(body, WBL + "WBL", nsmap=NSMAP)
             self.file_control_reference(wbl, data_type)
             self.file_supplier_order_info(wbl)
+
+        elif data_type == 'war_r':
+            # Wbl file content
+            war_r = etree.SubElement(body, WAR_R + "WAR_R", nsmap=NSMAP)
+            self.file_control_reference(war_r, data_type)
+            self.request_order_info_info(war_r)
+        
+        elif data_type == 'wba_r':
+            # Wbl file content
+            wba_r = etree.SubElement(body, WBA_R + "WBA_R", nsmap=NSMAP)
+            self.file_control_reference(wba_r, data_type)
+            self.request_order_info_info(wba_r, data_type)
         else:
             return False
 
@@ -78,11 +96,15 @@ class StockPicking(models.Model):
             control_NS = WAB
         elif data_type == 'wbl':
             control_NS = WBL
+        elif data_type == 'war_r':
+            control_NS = WAR_R
+        elif data_type == 'wba_r':
+            control_NS = WBA_R
         else:
             return False
 
         soap_file_control = etree.SubElement(soap_file, control_NS + "ControlReference", nsmap=NSMAP)
-        etree.SubElement(soap_file_control, control_NS + "Type", nsmap=NSMAP).text = "%s" % data_type.upper()
+        etree.SubElement(soap_file_control, control_NS + "Type", nsmap=NSMAP).text = "%s" % data_type.replace('_r', '').upper()
         etree.SubElement(soap_file_control, control_NS + "Sender", nsmap=NSMAP).text = self.env['ir.config_parameter'].get_param('sga_swisspost_soap_connector.sender_id', False)
         etree.SubElement(soap_file_control, control_NS + "Receiver", nsmap=NSMAP).text = "YELLOWCUBE"
         etree.SubElement(soap_file_control, control_NS + "Timestamp", nsmap=NSMAP).text = "%s" % datetime.now().strftime("%Y%m%d%H%M%S")
@@ -92,6 +114,13 @@ class StockPicking(models.Model):
         etree.SubElement(soap_file_control, control_NS + "CommType", nsmap=NSMAP).text = "SOAP"
         etree.SubElement(soap_file_control, control_NS + "TransControlID", nsmap=NSMAP, UniqueFlag="1").text = "%s" % self.id
         etree.SubElement(soap_file_control, control_NS + "TransMaxWait", nsmap=NSMAP).text = "3600"
+    
+    def request_order_info_info(self, soap_file, data_type):
+        # Order info request
+        if data_type == 'war_r':
+            etree.SubElement(soap_file, WAR_R + "CustomerOrderNo", nsmap=NSMAP).text = "%s" % self.name
+        elif data_type == 'wba_r':
+            etree.SubElement(soap_file, WBA_R + "SupplierOrderNo", nsmap=NSMAP).text = "%s" % self.name
 
     def file_supplier_order_info(self, wbl):
         # Wbl Info
@@ -194,18 +223,57 @@ class StockPicking(models.Model):
         soap_connection = self.env['sga_swiss_post_soap'].create({
             'data_type': data_type,
             'operation_type': operation_type,
-            'xml_data': xml_data
+            'xml_data': xml_data,
+            'model': 'stock.picking',
+            'picking_id': self.id
         })
         return soap_connection
 
+    @api.multi
     def send_to_sga(self):
-        if self.sga_integrated and self.sga_integration_type == 'sga_swiss_post':
-            data_type = self.picking_type_id.swiss_soap_file
+        for picking in self.filtered(lambda x: x.sga_integrated and x.sga_integration_type == 'sga_swiss_post'):
+            data_type = picking.picking_type_id.swiss_soap_file
             print(data_type)
-            xml_data = self.create_soap_xml(data_type)
-            soap_connection = self.create_soap(data_type, 'send', xml_data)
+            xml_data = picking.create_soap_xml(data_type)
+            soap_connection = picking.create_soap(data_type, 'send', xml_data)
             res = soap_connection.send()
             if res == True:
-                self.sga_state = 'waiting'
+                picking.sga_state = 'waiting'
             else:
-                self.sga_state = 'send-error'
+                picking.sga_state = 'send-error'
+
+    @api.multi
+    def get_from_sga(self):
+        for picking in self.filtered(lambda x: x.sga_integrated and x.sga_integration_type == 'sga_swiss_post' and sga_state == 'waiting'):
+            if picking.picking_type_id.code == 'outgoing':
+                data_type = 'war_r'
+            elif picking.picking_type_id.code == 'incoming':
+                data_type = 'wba_r'
+            else:
+                return False
+            print(data_type)
+            xml_data = picking.create_soap_xml(data_type)
+            soap_connection = picking.create_soap(data_type, 'get', xml_data)
+            res = soap_connection.get()
+            # Mirar si es necesario WEA
+            #if res == True and data_type == 'war_r':
+            #    picking.sga_state = 'integrated'
+            #elif res == True and data_type == 'wba_r':
+            #    picking.sga_state = 'confirmed'
+            if res == True:
+                picking.sga_state = 'integrated'
+            else:
+                picking.sga_state = 'get-error'
+    
+    # WEA no se aplica en SOAP ?
+
+    #def confirm_to_sga(self):
+    #    if self.sga_integrated and self.sga_integration_type == 'sga_swiss_post' and sga_state == 'confirmed':
+    #        data_type = 'wea'
+    #        xml_data = self.create_soap_xml(data_type)
+    #        soap_connection = self.create_soap(data_type, 'send', xml_data)
+    #        res = soap_connection.get()
+    #        if res == True:
+    #            self.sga_state = 'confirmed'
+    #        else:
+    #            self.sga_state = 'get-error'

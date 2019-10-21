@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
     
-    <delete id="sga_swisspost_soap_connector.stock_view_picking_form_sga_soap" model="ir.ui.view"/>
     <record id="stock_view_picking_form_sga_soap" model="ir.ui.view">
         <field name="name">stock.view.picking.form.sga.soap</field>
         <field name="model">stock.picking</field>
@@ -12,10 +11,12 @@
                     <group  attrs="{'invisible': [('sga_integration_type','!=','sga_swiss_post')]}">
                         <field name="sga_integrated" invisible="1"/>
                         <field name="sga_integration_type" invisible="1"/>
-                        <field name="sga_state" widget="statusbar" statusbar_visible="not-integrated,integrated,error,waiting,send-error"
-                            statusbar_colors='{"error":"red", "send-error": "red", "not-integrated":"grey", "integrated":"green", "waiting": "green"}'/>
+                        <field name="sga_state" widget="statusbar" statusbar_visible="get-error,not-integrated,integrated,error,waiting,send-error"
+                            statusbar_colors='{"get-error":"red", "send-error": "red", "not-integrated":"grey", "integrated":"green", "waiting": "green"}'/>
                         <button name="send_to_sga" string="Enviar a SGA" type="object"
                             class="oe_stat_button" icon="fa-shopping-cart" attrs="{'invisible':[('sga_state','in', ['integrated', 'waiting'])]}"/>
+                        <button name="get_from_sga" string="Recibir del SGA" type="object"
+                            class="oe_stat_button" icon="fa-shopping-cart" attrs="{'invisible':[('sga_state','in', ['integrated', 'non-integrated', 'send-error'])]}"/>
                     </group>
                 </page>
             </notebook>

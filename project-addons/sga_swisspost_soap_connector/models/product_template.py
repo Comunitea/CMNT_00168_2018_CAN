@@ -22,10 +22,10 @@ from odoo import fields, models, api, _
 from datetime import datetime
 from lxml import etree
 
-SOAPENV_NAMESPACE = "http://schemas.xmlsoap.org/soap/envelope"
+SOAPENV_NAMESPACE = "http://schemas.xmlsoap.org/soap/envelope/"
 SOAPENV = "{%s}" % SOAPENV_NAMESPACE
 
-ART_NAMESPACE = "https://service.swisspost.ch/apache/yellowcube/YellowCube_ART_REQUEST_Artikelstamm.xsd"
+ART_NAMESPACE = "https://service-test.swisspost.ch/apache/yellowcube-test/YellowCube_ART_REQUEST_Artikelstamm.xsd"
 ART = "{%s}" % ART_NAMESPACE
 
 NSMAP = {'soapenv' : SOAPENV_NAMESPACE, 'art' : ART_NAMESPACE}
@@ -40,6 +40,8 @@ class ProductTemplate(models.Model):
     height = fields.Float()
     sga_state = fields.Selection([('integrated', 'Integrated'),\
         ('not-integrated', 'Not Integrated'), ('error', 'Error')], default="not-integrated", string='Sga Status', help='Integration Status')
+    sga_integration_type = fields.Selection([('sga_swiss_post', 'Swiss POST')], 'Integration type')
+    sga_integrated = fields.Boolean('Sga', help='Marcar si tiene un tipo de integración con el sga')
 
     def create_soap_xml(self, action='create'):
         # File root
@@ -109,24 +111,30 @@ class ProductTemplate(models.Model):
         soap_connection = self.env['sga_swiss_post_soap'].create({
             'data_type': data_type,
             'operation_type': operation_type,
-            'xml_data': xml_data
+            'xml_data': xml_data,
+            'model': 'product.template',
+            'product_tmpl_id': self.id
         })
         return soap_connection
 
+    @api.multi
     def send_to_sga(self):
-        xml_data = self.create_soap_xml()
-        soap_connection = self.create_soap('art', 'send', xml_data)
-        res = soap_connection.send()
-        if res == True:
-            self.sga_state = 'integrated'
-        else:
-            self.sga_state = 'error'
+        for product in self.filtered(lambda x: x.sga_integrated and x.sga_integration_type == 'sga_swiss_post'):
+            xml_data = product.create_soap_xml()
+            soap_connection = product.create_soap('art', 'send', xml_data)
+            res = soap_connection.send()
+            if res == True:
+                product.sga_state = 'integrated'
+            else:
+                product.sga_state = 'error'
 
+    @api.multi
     def delete_from_sga(self):
-        xml_data = self.create_soap_xml('delete')
-        soap_connection = self.create_soap('art', 'delete', xml_data)
-        res = soap_connection.send()
-        if res == True:
-            self.sga_state = 'non-integrated'
-        else:
-            self.sga_state = 'error'
+        for product in self.filtered(lambda x: x.sga_integrated and x.sga_integration_type == 'sga_swiss_post' and x.sga_state == 'integrated'):
+            xml_data = product.create_soap_xml('delete')
+            soap_connection = product.create_soap('art', 'delete', xml_data)
+            res = soap_connection.send()
+            if res == True:
+                product.sga_state = 'non-integrated'
+            else:
+                product.sga_state = 'error'

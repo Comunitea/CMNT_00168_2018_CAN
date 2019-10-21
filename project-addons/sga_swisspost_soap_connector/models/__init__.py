@@ -19,4 +19,4 @@
 #
 ##############################################################################
 from . import res_config, soap_connect, product_template
-from . import stock_picking_type, stock_picking
+from . import stock_picking_type, stock_picking, stock_warehouse

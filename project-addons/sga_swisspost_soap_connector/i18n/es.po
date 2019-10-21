@@ -1,0 +1,643 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* sga_swisspost_soap_connector
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 11.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-10-21 10:42+0000\n"
+"PO-Revision-Date: 2019-10-21 10:42+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: sga_swisspost_soap_connector
+#: model:ir.ui.view,arch_db:sga_swisspost_soap_connector.view_template_property_form_sga_soap
+msgid "<span>cm</span>"
+msgstr "<span>cm</span>"
+
+#. module: sga_swisspost_soap_connector
+#: selection:stock.picking,sga_state:0
+msgid "Confirmation Error"
+msgstr "Error - Confirmar"
+
+#. module: sga_swisspost_soap_connector
+#: selection:stock.picking,sga_state:0
+msgid "Confirmed"
+msgstr "Confirmado"
+
+#. module: sga_swisspost_soap_connector
+#: model:ir.model.fields,field_description:sga_swisspost_soap_connector.field_sga_swiss_post_soap_create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: sga_swisspost_soap_connector
+#: model:ir.model.fields,field_description:sga_swisspost_soap_connector.field_sga_swiss_post_soap_create_date
+msgid "Created on"
+msgstr "Creado en"
+
+#. module: sga_swisspost_soap_connector
+#: model:ir.ui.view,arch_db:sga_swisspost_soap_connector.sga_swiss_post_soap_search
+#: model:ir.ui.view,arch_db:sga_swisspost_soap_connector.sga_swiss_post_soap_tree
+msgid "Data Type"
+msgstr "Tipo"
+
+#. module: sga_swisspost_soap_connector
+#: model:ir.model.fields,field_description:sga_swisspost_soap_connector.field_sga_swiss_post_soap_data_type
+msgid "Data type"
+msgstr "Tipo"
+
+#. module: sga_swisspost_soap_connector
+#: code:addons/sga_swisspost_soap_connector/models/soap_connect.py:70
+#: code:addons/sga_swisspost_soap_connector/models/soap_connect.py:95
+#, python-format
+msgid "Data type is not recognized."
+msgstr "Tipo de archivo no reconocido."
+
+#. module: sga_swisspost_soap_connector
+#: model:ir.model.fields,field_description:sga_swisspost_soap_connector.field_res_config_settings_depositor_no
+#: model:ir.model.fields,field_description:sga_swisspost_soap_connector.field_robots_txt_settings_depositor_no
+#: model:ir.model.fields,field_description:sga_swisspost_soap_connector.field_seo_analytics_settings_depositor_no
+#: model:ir.model.fields,field_description:sga_swisspost_soap_connector.field_seo_general_settings_depositor_no
+#: model:ir.model.fields,field_description:sga_swisspost_soap_connector.field_sitemap_base_settings_depositor_no
+#: model:ir.model.fields,field_description:sga_swisspost_soap_connector.field_web_app_settings_depositor_no
+msgid "DepositorNo"
+msgstr "DepositorNo"
+
+#. module: sga_swisspost_soap_connector
+#: selection:res.config.settings,operating_mode:0
+#: selection:robots_txt.settings,operating_mode:0
+#: selection:seo_analytics.settings,operating_mode:0
+#: selection:seo_general.settings,operating_mode:0
+#: selection:sitemap_base.settings,operating_mode:0
+#: selection:web_app.settings,operating_mode:0
+msgid "Development"
+msgstr "Desarrollo"
+
+#. module: sga_swisspost_soap_connector
+#: model:ir.model.fields,field_description:sga_swisspost_soap_connector.field_sga_swiss_post_soap_display_name
+msgid "Display Name"
+msgstr "Nombre mostrado"
+
+#. module: sga_swisspost_soap_connector
+#: model:ir.ui.view,arch_db:sga_swisspost_soap_connector.product_template_only_form_view_sga_soap
+msgid "Eliminar de SGA"
+msgstr "Eliminar de SGA"
+
+#. module: sga_swisspost_soap_connector
+#: model:ir.model.fields,field_description:sga_swisspost_soap_connector.field_res_config_settings_email_alarm
+#: model:ir.model.fields,field_description:sga_swisspost_soap_connector.field_robots_txt_settings_email_alarm
+#: model:ir.model.fields,field_description:sga_swisspost_soap_connector.field_seo_analytics_settings_email_alarm
+#: model:ir.model.fields,field_description:sga_swisspost_soap_connector.field_seo_general_settings_email_alarm
+#: model:ir.model.fields,field_description:sga_swisspost_soap_connector.field_sitemap_base_settings_email_alarm
+#: model:ir.model.fields,field_description:sga_swisspost_soap_connector.field_web_app_settings_email_alarm
+msgid "Email-Alarm"
+msgstr "Alarma por email"
+
+#. module: sga_swisspost_soap_connector
+#: model:ir.ui.view,arch_db:sga_swisspost_soap_connector.product_template_only_form_view_sga_soap
+#: model:ir.ui.view,arch_db:sga_swisspost_soap_connector.stock_view_picking_form_sga_soap
+msgid "Enviar a SGA"
+msgstr "Enviar a SGA"
+
+#. module: sga_swisspost_soap_connector
+#: selection:product.template,sga_state:0
+msgid "Error"
+msgstr "Error"
+
+#. module: sga_swisspost_soap_connector
+#: model:ir.model.fields,help:sga_swisspost_soap_connector.field_sga_swiss_post_soap_data_type
+msgid "File type"
+msgstr "Tipo"
+
+#. module: sga_swisspost_soap_connector
+#: selection:stock.picking,sga_state:0
+#: selection:stock.warehouse,sga_state:0
+msgid "Get Error"
+msgstr "Error de lectura"
+
+#. module: sga_swisspost_soap_connector
+#: model:ir.model.fields,field_description:sga_swisspost_soap_connector.field_product_product_height
+#: model:ir.model.fields,field_description:sga_swisspost_soap_connector.field_product_template_height
+msgid "Height"
+msgstr "Altura"
+
+#. module: sga_swisspost_soap_connector
+#: model:ir.model.fields,field_description:sga_swisspost_soap_connector.field_sga_swiss_post_soap_id
+msgid "ID"
+msgstr "ID"
+
+#. module: sga_swisspost_soap_connector
+#: model:ir.model.fields,help:sga_swisspost_soap_connector.field_res_config_settings_sender_id
+#: model:ir.model.fields,help:sga_swisspost_soap_connector.field_robots_txt_settings_sender_id
+#: model:ir.model.fields,help:sga_swisspost_soap_connector.field_seo_analytics_settings_sender_id
+#: model:ir.model.fields,help:sga_swisspost_soap_connector.field_seo_general_settings_sender_id
+#: model:ir.model.fields,help:sga_swisspost_soap_connector.field_sitemap_base_settings_sender_id
+#: model:ir.model.fields,help:sga_swisspost_soap_connector.field_web_app_settings_sender_id
+msgid "ID given by Swiss Post."
+msgstr "ID dado por Swiss Post."
+
+#. module: sga_swisspost_soap_connector
+#: model:ir.model.fields,help:sga_swisspost_soap_connector.field_res_config_settings_email_alarm
+#: model:ir.model.fields,help:sga_swisspost_soap_connector.field_robots_txt_settings_email_alarm
+#: model:ir.model.fields,help:sga_swisspost_soap_connector.field_seo_analytics_settings_email_alarm
+#: model:ir.model.fields,help:sga_swisspost_soap_connector.field_seo_general_settings_email_alarm
+#: model:ir.model.fields,help:sga_swisspost_soap_connector.field_sitemap_base_settings_email_alarm
+#: model:ir.model.fields,help:sga_swisspost_soap_connector.field_web_app_settings_email_alarm
+msgid "Incident/Alerting Errors"
+msgstr "Alerta de Errores"
+
+#. module: sga_swisspost_soap_connector
+#: model:ir.ui.view,arch_db:sga_swisspost_soap_connector.product_template_only_form_view_sga_soap
+#: model:ir.ui.view,arch_db:sga_swisspost_soap_connector.stock_view_picking_form_sga_soap
+msgid "Integración Swiss Post"
+msgstr "Integración Swiss Post"
+
+#. module: sga_swisspost_soap_connector
+#: selection:res.config.settings,operating_mode:0
+#: selection:robots_txt.settings,operating_mode:0
+#: selection:seo_analytics.settings,operating_mode:0
+#: selection:seo_general.settings,operating_mode:0
+#: selection:sitemap_base.settings,operating_mode:0
+#: selection:web_app.settings,operating_mode:0
+msgid "Integración-Test"
+msgstr "Integración-Test"
+
+#. module: sga_swisspost_soap_connector
+#: selection:product.template,sga_state:0
+#: selection:stock.picking,sga_state:0
+#: selection:stock.warehouse,sga_state:0
+msgid "Integrated"
+msgstr "Integrado"
+
+#. module: sga_swisspost_soap_connector
+#: model:ir.model.fields,help:sga_swisspost_soap_connector.field_product_product_sga_state
+#: model:ir.model.fields,help:sga_swisspost_soap_connector.field_product_template_sga_state
+#: model:ir.model.fields,help:sga_swisspost_soap_connector.field_stock_picking_sga_state
+#: model:ir.model.fields,help:sga_swisspost_soap_connector.field_stock_warehouse_sga_state
+msgid "Integration Status"
+msgstr "Estado de integración"
+
+#. module: sga_swisspost_soap_connector
+#: selection:res.config.settings,soap_url:0
+#: selection:robots_txt.settings,soap_url:0
+#: selection:seo_analytics.settings,soap_url:0
+#: selection:seo_general.settings,soap_url:0
+#: selection:sitemap_base.settings,soap_url:0
+#: selection:web_app.settings,soap_url:0
+msgid "Integration and aceptance"
+msgstr "Integración y aceptación"
+
+#. module: sga_swisspost_soap_connector
+#: model:ir.model.fields,field_description:sga_swisspost_soap_connector.field_product_product_sga_integration_type
+#: model:ir.model.fields,field_description:sga_swisspost_soap_connector.field_product_template_sga_integration_type
+#: model:ir.model.fields,field_description:sga_swisspost_soap_connector.field_stock_picking_sga_integration_type
+#: model:ir.model.fields,field_description:sga_swisspost_soap_connector.field_stock_picking_type_sga_integration_type
+#: model:ir.model.fields,field_description:sga_swisspost_soap_connector.field_stock_warehouse_sga_integration_type
+msgid "Integration type"
+msgstr "Tipo de integración"
+
+#. module: sga_swisspost_soap_connector
+#: model:ir.model.fields,field_description:sga_swisspost_soap_connector.field_sga_swiss_post_soap___last_update
+msgid "Last Modified on"
+msgstr "Última modificación en"
+
+#. module: sga_swisspost_soap_connector
+#: model:ir.model.fields,field_description:sga_swisspost_soap_connector.field_stock_warehouse_last_synchronization
+msgid "Last Synchronization"
+msgstr "Última sincronización"
+
+#. module: sga_swisspost_soap_connector
+#: model:ir.model.fields,field_description:sga_swisspost_soap_connector.field_sga_swiss_post_soap_write_uid
+msgid "Last Updated by"
+msgstr "Última actualización de"
+
+#. module: sga_swisspost_soap_connector
+#: model:ir.model.fields,field_description:sga_swisspost_soap_connector.field_sga_swiss_post_soap_write_date
+msgid "Last Updated on"
+msgstr "Última actualización en"
+
+#. module: sga_swisspost_soap_connector
+#: model:ir.model.fields,field_description:sga_swisspost_soap_connector.field_product_product_length
+#: model:ir.model.fields,field_description:sga_swisspost_soap_connector.field_product_template_length
+msgid "Length"
+msgstr "Longitud"
+
+#. module: sga_swisspost_soap_connector
+#: model:ir.model.fields,help:sga_swisspost_soap_connector.field_product_product_sga_integrated
+#: model:ir.model.fields,help:sga_swisspost_soap_connector.field_product_template_sga_integrated
+#: model:ir.model.fields,help:sga_swisspost_soap_connector.field_stock_picking_sga_integrated
+#: model:ir.model.fields,help:sga_swisspost_soap_connector.field_stock_picking_type_sga_integrated
+#: model:ir.model.fields,help:sga_swisspost_soap_connector.field_stock_warehouse_sga_integrated
+msgid "Marcar si tiene un tipo de integración con el sga"
+msgstr "Marcar si tiene un tipo de integración con el sga"
+
+#. module: sga_swisspost_soap_connector
+#: model:ir.model.fields,field_description:sga_swisspost_soap_connector.field_res_config_settings_operating_mode
+#: model:ir.model.fields,field_description:sga_swisspost_soap_connector.field_robots_txt_settings_operating_mode
+#: model:ir.model.fields,field_description:sga_swisspost_soap_connector.field_seo_analytics_settings_operating_mode
+#: model:ir.model.fields,field_description:sga_swisspost_soap_connector.field_seo_general_settings_operating_mode
+#: model:ir.model.fields,field_description:sga_swisspost_soap_connector.field_sitemap_base_settings_operating_mode
+#: model:ir.model.fields,field_description:sga_swisspost_soap_connector.field_web_app_settings_operating_mode
+msgid "Mode"
+msgstr "Modo"
+
+#. module: sga_swisspost_soap_connector
+#: selection:product.template,sga_state:0
+#: selection:stock.picking,sga_state:0
+#: selection:stock.warehouse,sga_state:0
+msgid "Not Integrated"
+msgstr "No integrado"
+
+#. module: sga_swisspost_soap_connector
+#: model:ir.model.fields,help:sga_swisspost_soap_connector.field_res_config_settings_operating_mode
+#: model:ir.model.fields,help:sga_swisspost_soap_connector.field_robots_txt_settings_operating_mode
+#: model:ir.model.fields,help:sga_swisspost_soap_connector.field_seo_analytics_settings_operating_mode
+#: model:ir.model.fields,help:sga_swisspost_soap_connector.field_seo_general_settings_operating_mode
+#: model:ir.model.fields,help:sga_swisspost_soap_connector.field_sitemap_base_settings_operating_mode
+#: model:ir.model.fields,help:sga_swisspost_soap_connector.field_web_app_settings_operating_mode
+msgid "Operating Mode"
+msgstr "Modo de operación"
+
+#. module: sga_swisspost_soap_connector
+#: model:ir.ui.view,arch_db:sga_swisspost_soap_connector.sga_swiss_post_soap_search
+#: model:ir.ui.view,arch_db:sga_swisspost_soap_connector.sga_swiss_post_soap_tree
+msgid "Operation Type"
+msgstr "Tipo de operación"
+
+#. module: sga_swisspost_soap_connector
+#: model:ir.model.fields,field_description:sga_swisspost_soap_connector.field_sga_swiss_post_soap_operation_type
+#: model:ir.model.fields,help:sga_swisspost_soap_connector.field_sga_swiss_post_soap_operation_type
+msgid "Operation type"
+msgstr "Tipo de operación"
+
+#. module: sga_swisspost_soap_connector
+#: model:ir.model.fields,field_description:sga_swisspost_soap_connector.field_stock_picking_type_swiss_soap_file
+msgid "Order type"
+msgstr "Tipo de pedido"
+
+#. module: sga_swisspost_soap_connector
+#: model:ir.model.fields,field_description:sga_swisspost_soap_connector.field_res_config_settings_partner_no
+#: model:ir.model.fields,field_description:sga_swisspost_soap_connector.field_robots_txt_settings_partner_no
+#: model:ir.model.fields,field_description:sga_swisspost_soap_connector.field_seo_analytics_settings_partner_no
+#: model:ir.model.fields,field_description:sga_swisspost_soap_connector.field_seo_general_settings_partner_no
+#: model:ir.model.fields,field_description:sga_swisspost_soap_connector.field_sitemap_base_settings_partner_no
+#: model:ir.model.fields,field_description:sga_swisspost_soap_connector.field_web_app_settings_partner_no
+msgid "PartnerNo"
+msgstr "PartnerNo"
+
+#. module: sga_swisspost_soap_connector
+#: model:ir.model.fields,field_description:sga_swisspost_soap_connector.field_sga_swiss_post_soap_picking_id
+msgid "Picking"
+msgstr "Albarán"
+
+#. module: sga_swisspost_soap_connector
+#: model:ir.ui.view,arch_db:sga_swisspost_soap_connector.sga_swiss_post_soap_search
+msgid "Pickings"
+msgstr "Albaranes"
+
+#. module: sga_swisspost_soap_connector
+#: model:ir.model.fields,field_description:sga_swisspost_soap_connector.field_res_config_settings_warehouse_id
+#: model:ir.model.fields,field_description:sga_swisspost_soap_connector.field_robots_txt_settings_warehouse_id
+#: model:ir.model.fields,field_description:sga_swisspost_soap_connector.field_seo_analytics_settings_warehouse_id
+#: model:ir.model.fields,field_description:sga_swisspost_soap_connector.field_seo_general_settings_warehouse_id
+#: model:ir.model.fields,field_description:sga_swisspost_soap_connector.field_sitemap_base_settings_warehouse_id
+#: model:ir.model.fields,field_description:sga_swisspost_soap_connector.field_web_app_settings_warehouse_id
+msgid "Plant"
+msgstr "Planta"
+
+#. module: sga_swisspost_soap_connector
+#: model:ir.model.fields,field_description:sga_swisspost_soap_connector.field_sga_swiss_post_soap_product_tmpl_id
+msgid "Product"
+msgstr "Producto"
+
+#. module: sga_swisspost_soap_connector
+#: model:ir.model,name:sga_swisspost_soap_connector.model_product_template
+msgid "Product Template"
+msgstr "Plantilla de producto"
+
+#. module: sga_swisspost_soap_connector
+#: model:ir.ui.view,name:sga_swisspost_soap_connector.view_template_property_form_sga_soap
+msgid "Product template Unit Sga Soap"
+msgstr "Unidad de producto"
+
+#. module: sga_swisspost_soap_connector
+#: selection:res.config.settings,operating_mode:0
+#: selection:res.config.settings,soap_url:0
+#: selection:robots_txt.settings,operating_mode:0
+#: selection:robots_txt.settings,soap_url:0
+#: selection:seo_analytics.settings,operating_mode:0
+#: selection:seo_analytics.settings,soap_url:0
+#: selection:seo_general.settings,operating_mode:0
+#: selection:seo_general.settings,soap_url:0
+#: selection:sitemap_base.settings,operating_mode:0
+#: selection:sitemap_base.settings,soap_url:0
+#: selection:web_app.settings,operating_mode:0
+#: selection:web_app.settings,soap_url:0
+msgid "Production"
+msgstr "Producción"
+
+#. module: sga_swisspost_soap_connector
+#: model:ir.ui.view,arch_db:sga_swisspost_soap_connector.sga_swiss_post_soap_search
+msgid "Products"
+msgstr "Productos"
+
+#. module: sga_swisspost_soap_connector
+#: selection:stock.picking.type,swiss_soap_file:0
+msgid "Purchases"
+msgstr "Compras"
+
+#. module: sga_swisspost_soap_connector
+#: model:ir.ui.view,arch_db:sga_swisspost_soap_connector.stock_view_picking_form_sga_soap
+msgid "Recibir del SGA"
+msgstr "Recibir del SGA"
+
+#. module: sga_swisspost_soap_connector
+#: model:ir.model.fields,field_description:sga_swisspost_soap_connector.field_sga_swiss_post_soap_response
+msgid "Response"
+msgstr "Respuesta"
+
+#. module: sga_swisspost_soap_connector
+#: model:ir.model.fields,help:sga_swisspost_soap_connector.field_sga_swiss_post_soap_response
+msgid "Response from Web Service"
+msgstr "Respuesta del Web Service"
+
+#. module: sga_swisspost_soap_connector
+#: model:ir.actions.act_window,name:sga_swisspost_soap_connector.action_sga_swiss_post_soap_view
+#: model:ir.ui.menu,name:sga_swisspost_soap_connector.menu_ga_swiss_post_soap_views
+#: model:ir.ui.menu,name:sga_swisspost_soap_connector.menu_sga_swiss
+#: model:ir.ui.view,arch_db:sga_swisspost_soap_connector.sga_swiss_post_soap_form
+#: model:ir.ui.view,arch_db:sga_swisspost_soap_connector.sga_swiss_post_soap_search
+#: model:ir.ui.view,arch_db:sga_swisspost_soap_connector.sga_swiss_post_soap_tree
+msgid "SGA SWISS POST"
+msgstr "SGA SWISS POST"
+
+#. module: sga_swisspost_soap_connector
+#: model:ir.ui.view,arch_db:sga_swisspost_soap_connector.stock_picking_type_sga_form
+msgid "SWISS POST file"
+msgstr "Archivo SWISS POST"
+
+#. module: sga_swisspost_soap_connector
+#: selection:stock.picking.type,swiss_soap_file:0
+msgid "Sales"
+msgstr "Ventas"
+
+#. module: sga_swisspost_soap_connector
+#: code:addons/sga_swisspost_soap_connector/models/soap_connect.py:77
+#: code:addons/sga_swisspost_soap_connector/models/soap_connect.py:104
+#, python-format
+msgid "Seems that data_type or xml_data are missing."
+msgstr "Faltan el tipo de archivo o los datos xml."
+
+#. module: sga_swisspost_soap_connector
+#: model:ir.model.fields,help:sga_swisspost_soap_connector.field_res_config_settings_soap_url
+#: model:ir.model.fields,help:sga_swisspost_soap_connector.field_robots_txt_settings_soap_url
+#: model:ir.model.fields,help:sga_swisspost_soap_connector.field_seo_analytics_settings_soap_url
+#: model:ir.model.fields,help:sga_swisspost_soap_connector.field_seo_general_settings_soap_url
+#: model:ir.model.fields,help:sga_swisspost_soap_connector.field_sitemap_base_settings_soap_url
+#: model:ir.model.fields,help:sga_swisspost_soap_connector.field_web_app_settings_soap_url
+msgid "Selected Webservice"
+msgstr "Webservice Seleccionado"
+
+#. module: sga_swisspost_soap_connector
+#: selection:stock.picking,sga_state:0
+#: selection:stock.warehouse,sga_state:0
+msgid "Send Error"
+msgstr "Error de envío"
+
+#. module: sga_swisspost_soap_connector
+#: model:ir.model.fields,field_description:sga_swisspost_soap_connector.field_res_config_settings_sender_id
+#: model:ir.model.fields,field_description:sga_swisspost_soap_connector.field_robots_txt_settings_sender_id
+#: model:ir.model.fields,field_description:sga_swisspost_soap_connector.field_seo_analytics_settings_sender_id
+#: model:ir.model.fields,field_description:sga_swisspost_soap_connector.field_seo_general_settings_sender_id
+#: model:ir.model.fields,field_description:sga_swisspost_soap_connector.field_sitemap_base_settings_sender_id
+#: model:ir.model.fields,field_description:sga_swisspost_soap_connector.field_web_app_settings_sender_id
+msgid "Sender-ID"
+msgstr "Sender-ID"
+
+#. module: sga_swisspost_soap_connector
+#: model:ir.model.fields,field_description:sga_swisspost_soap_connector.field_product_product_sga_integrated
+#: model:ir.model.fields,field_description:sga_swisspost_soap_connector.field_product_template_sga_integrated
+#: model:ir.model.fields,field_description:sga_swisspost_soap_connector.field_stock_picking_sga_integrated
+#: model:ir.model.fields,field_description:sga_swisspost_soap_connector.field_stock_picking_type_sga_integrated
+#: model:ir.model.fields,field_description:sga_swisspost_soap_connector.field_stock_warehouse_sga_integrated
+msgid "Sga"
+msgstr "Sga"
+
+#. module: sga_swisspost_soap_connector
+#: model:ir.model.fields,field_description:sga_swisspost_soap_connector.field_product_product_sga_state
+#: model:ir.model.fields,field_description:sga_swisspost_soap_connector.field_product_template_sga_state
+#: model:ir.model.fields,field_description:sga_swisspost_soap_connector.field_stock_picking_sga_state
+#: model:ir.model.fields,field_description:sga_swisspost_soap_connector.field_stock_warehouse_sga_state
+msgid "Sga Status"
+msgstr "Estado sga"
+
+#. module: sga_swisspost_soap_connector
+#: model:ir.model.fields,field_description:sga_swisspost_soap_connector.field_res_config_settings_sprach_code
+#: model:ir.model.fields,field_description:sga_swisspost_soap_connector.field_robots_txt_settings_sprach_code
+#: model:ir.model.fields,field_description:sga_swisspost_soap_connector.field_seo_analytics_settings_sprach_code
+#: model:ir.model.fields,field_description:sga_swisspost_soap_connector.field_seo_general_settings_sprach_code
+#: model:ir.model.fields,field_description:sga_swisspost_soap_connector.field_sitemap_base_settings_sprach_code
+#: model:ir.model.fields,field_description:sga_swisspost_soap_connector.field_web_app_settings_sprach_code
+msgid "Sprachcode"
+msgstr "Sprachcode"
+
+#. module: sga_swisspost_soap_connector
+#: model:ir.model.fields,field_description:sga_swisspost_soap_connector.field_res_config_settings_supplier_no
+#: model:ir.model.fields,field_description:sga_swisspost_soap_connector.field_robots_txt_settings_supplier_no
+#: model:ir.model.fields,field_description:sga_swisspost_soap_connector.field_seo_analytics_settings_supplier_no
+#: model:ir.model.fields,field_description:sga_swisspost_soap_connector.field_seo_general_settings_supplier_no
+#: model:ir.model.fields,field_description:sga_swisspost_soap_connector.field_sitemap_base_settings_supplier_no
+#: model:ir.model.fields,field_description:sga_swisspost_soap_connector.field_web_app_settings_supplier_no
+msgid "SupplierNo"
+msgstr "SupplierNo"
+
+#. module: sga_swisspost_soap_connector
+#: selection:product.template,sga_integration_type:0
+#: selection:stock.picking.type,sga_integration_type:0
+#: selection:stock.warehouse,sga_integration_type:0
+msgid "Swiss POST"
+msgstr "Swiss POST"
+
+#. module: sga_swisspost_soap_connector
+#: model:ir.ui.view,arch_db:sga_swisspost_soap_connector.res_config_settings_swiss_post_form
+msgid "Swiss Post SOAP connector configuration"
+msgstr "Configturación para Swiss Post SOAP"
+
+#. module: sga_swisspost_soap_connector
+#: model:ir.ui.view,arch_db:sga_swisspost_soap_connector.stock_view_warehouse_sga_soap
+msgid "Synchronization"
+msgstr "Sincronización"
+
+#. module: sga_swisspost_soap_connector
+#: model:ir.model,name:sga_swisspost_soap_connector.model_stock_picking_type
+msgid "The operation type determines the picking view"
+msgstr "El tipo de operación determina la vista de la operación"
+
+#. module: sga_swisspost_soap_connector
+#: code:addons/sga_swisspost_soap_connector/models/stock_warehouse.py:50
+#, python-format
+msgid "There is already a warehouse connected to the Swiss Post SOAP"
+msgstr "Ya existe un almacén configurado para Swiss Post SOAP"
+
+#. module: sga_swisspost_soap_connector
+#: model:ir.model,name:sga_swisspost_soap_connector.model_stock_picking
+msgid "Transfer"
+msgstr "Transferir"
+
+#. module: sga_swisspost_soap_connector
+#: selection:res.config.settings,soap_url:0
+#: selection:robots_txt.settings,soap_url:0
+#: selection:seo_analytics.settings,soap_url:0
+#: selection:seo_general.settings,soap_url:0
+#: selection:sitemap_base.settings,soap_url:0
+#: selection:web_app.settings,soap_url:0
+msgid "Trial"
+msgstr "Prueba"
+
+#. module: sga_swisspost_soap_connector
+#: model:ir.model.fields,help:sga_swisspost_soap_connector.field_res_config_settings_partner_no
+#: model:ir.model.fields,help:sga_swisspost_soap_connector.field_robots_txt_settings_partner_no
+#: model:ir.model.fields,help:sga_swisspost_soap_connector.field_seo_analytics_settings_partner_no
+#: model:ir.model.fields,help:sga_swisspost_soap_connector.field_seo_general_settings_partner_no
+#: model:ir.model.fields,help:sga_swisspost_soap_connector.field_sitemap_base_settings_partner_no
+#: model:ir.model.fields,help:sga_swisspost_soap_connector.field_web_app_settings_partner_no
+msgid "WAB-CPD-Partner-No"
+msgstr "WAB-CPD-Partner-No"
+
+#. module: sga_swisspost_soap_connector
+#: model:ir.model.fields,help:sga_swisspost_soap_connector.field_res_config_settings_supplier_no
+#: model:ir.model.fields,help:sga_swisspost_soap_connector.field_robots_txt_settings_supplier_no
+#: model:ir.model.fields,help:sga_swisspost_soap_connector.field_seo_analytics_settings_supplier_no
+#: model:ir.model.fields,help:sga_swisspost_soap_connector.field_seo_general_settings_supplier_no
+#: model:ir.model.fields,help:sga_swisspost_soap_connector.field_sitemap_base_settings_supplier_no
+#: model:ir.model.fields,help:sga_swisspost_soap_connector.field_web_app_settings_supplier_no
+msgid "WBL-Supplier-No"
+msgstr "WBL-Supplier-No"
+
+#. module: sga_swisspost_soap_connector
+#: selection:stock.picking,sga_state:0
+#: selection:stock.warehouse,sga_state:0
+msgid "Waiting"
+msgstr "En espera"
+
+#. module: sga_swisspost_soap_connector
+#: model:ir.model,name:sga_swisspost_soap_connector.model_stock_warehouse
+#: model:ir.model.fields,field_description:sga_swisspost_soap_connector.field_sga_swiss_post_soap_warehouse_id
+msgid "Warehouse"
+msgstr "Almacén"
+
+#. module: sga_swisspost_soap_connector
+#: model:ir.model.fields,help:sga_swisspost_soap_connector.field_res_config_settings_warehouse_id
+#: model:ir.model.fields,help:sga_swisspost_soap_connector.field_robots_txt_settings_warehouse_id
+#: model:ir.model.fields,help:sga_swisspost_soap_connector.field_seo_analytics_settings_warehouse_id
+#: model:ir.model.fields,help:sga_swisspost_soap_connector.field_seo_general_settings_warehouse_id
+#: model:ir.model.fields,help:sga_swisspost_soap_connector.field_sitemap_base_settings_warehouse_id
+#: model:ir.model.fields,help:sga_swisspost_soap_connector.field_web_app_settings_warehouse_id
+msgid "Warehouse-ID"
+msgstr "Warehouse-ID"
+
+#. module: sga_swisspost_soap_connector
+#: model:ir.ui.view,arch_db:sga_swisspost_soap_connector.sga_swiss_post_soap_search
+msgid "Warehouses"
+msgstr "Almacenes"
+
+#. module: sga_swisspost_soap_connector
+#: model:ir.model.fields,field_description:sga_swisspost_soap_connector.field_res_config_settings_soap_url
+#: model:ir.model.fields,field_description:sga_swisspost_soap_connector.field_robots_txt_settings_soap_url
+#: model:ir.model.fields,field_description:sga_swisspost_soap_connector.field_seo_analytics_settings_soap_url
+#: model:ir.model.fields,field_description:sga_swisspost_soap_connector.field_seo_general_settings_soap_url
+#: model:ir.model.fields,field_description:sga_swisspost_soap_connector.field_sitemap_base_settings_soap_url
+#: model:ir.model.fields,field_description:sga_swisspost_soap_connector.field_web_app_settings_soap_url
+msgid "Webservice"
+msgstr "Webservice"
+
+#. module: sga_swisspost_soap_connector
+#: model:ir.model.fields,field_description:sga_swisspost_soap_connector.field_product_product_width
+#: model:ir.model.fields,field_description:sga_swisspost_soap_connector.field_product_template_width
+msgid "Width"
+msgstr "Ancho"
+
+#. module: sga_swisspost_soap_connector
+#: model:ir.model.fields,field_description:sga_swisspost_soap_connector.field_sga_swiss_post_soap_xml_data
+msgid "XML Data"
+msgstr "Datos XML"
+
+#. module: sga_swisspost_soap_connector
+#: model:ir.model.fields,help:sga_swisspost_soap_connector.field_res_config_settings_depositor_no
+#: model:ir.model.fields,help:sga_swisspost_soap_connector.field_robots_txt_settings_depositor_no
+#: model:ir.model.fields,help:sga_swisspost_soap_connector.field_seo_analytics_settings_depositor_no
+#: model:ir.model.fields,help:sga_swisspost_soap_connector.field_seo_general_settings_depositor_no
+#: model:ir.model.fields,help:sga_swisspost_soap_connector.field_sitemap_base_settings_depositor_no
+#: model:ir.model.fields,help:sga_swisspost_soap_connector.field_web_app_settings_depositor_no
+msgid "YC Debitor Account"
+msgstr "YC Debitor Account"
+
+#. module: sga_swisspost_soap_connector
+#: model:ir.model.fields,help:sga_swisspost_soap_connector.field_res_config_settings_sprach_code
+#: model:ir.model.fields,help:sga_swisspost_soap_connector.field_robots_txt_settings_sprach_code
+#: model:ir.model.fields,help:sga_swisspost_soap_connector.field_seo_analytics_settings_sprach_code
+#: model:ir.model.fields,help:sga_swisspost_soap_connector.field_seo_general_settings_sprach_code
+#: model:ir.model.fields,help:sga_swisspost_soap_connector.field_sitemap_base_settings_sprach_code
+#: model:ir.model.fields,help:sga_swisspost_soap_connector.field_web_app_settings_sprach_code
+msgid "e.g. Alert-Message"
+msgstr "e.g. Alert-Message"
+
+#. module: sga_swisspost_soap_connector
+#: model:ir.model.fields,field_description:sga_swisspost_soap_connector.field_sga_swiss_post_soap_model
+msgid "model"
+msgstr "Modelo"
+
+#. module: sga_swisspost_soap_connector
+#: model:ir.ui.view,name:sga_swisspost_soap_connector.product_template_only_form_view_sga_soap
+msgid "product.template.only.form.view.sga.soap"
+msgstr "product.template.only.form.view.sga.soap"
+
+#. module: sga_swisspost_soap_connector
+#: model:ir.model,name:sga_swisspost_soap_connector.model_res_config_settings
+msgid "res.config.settings"
+msgstr "res.config.settings"
+
+#. module: sga_swisspost_soap_connector
+#: model:ir.ui.view,name:sga_swisspost_soap_connector.res_config_settings_swiss_post_form
+msgid "res.config.settings.swiss.post.form"
+msgstr "res.config.settings.swiss.post.form"
+
+#. module: sga_swisspost_soap_connector
+#: model:ir.model,name:sga_swisspost_soap_connector.model_sga_swiss_post_soap
+msgid "sga_swiss_post_soap"
+msgstr "sga_swiss_post_soap"
+
+#. module: sga_swisspost_soap_connector
+#: model:ir.ui.view,name:sga_swisspost_soap_connector.sga_swiss_post_soap_form
+msgid "sga_swiss_post_soap.form"
+msgstr "sga_swiss_post_soap.form"
+
+#. module: sga_swisspost_soap_connector
+#: model:ir.ui.view,name:sga_swisspost_soap_connector.sga_swiss_post_soap_search
+msgid "sga_swiss_post_soap.search"
+msgstr "sga_swiss_post_soap.search"
+
+#. module: sga_swisspost_soap_connector
+#: model:ir.ui.view,name:sga_swisspost_soap_connector.sga_swiss_post_soap_tree
+msgid "sga_swiss_post_soap.tree"
+msgstr "sga_swiss_post_soap.tree"
+
+#. module: sga_swisspost_soap_connector
+#: model:ir.ui.view,name:sga_swisspost_soap_connector.stock_picking_type_sga_form
+msgid "stock.picking.type.sga.form"
+msgstr "stock.picking.type.sga.form"
+
+#. module: sga_swisspost_soap_connector
+#: model:ir.ui.view,name:sga_swisspost_soap_connector.stock_view_picking_form_sga_soap
+msgid "stock.view.picking.form.sga.soap"
+msgstr "stock.view.picking.form.sga.soap"
+
+#. module: sga_swisspost_soap_connector
+#: model:ir.ui.view,name:sga_swisspost_soap_connector.stock_view_warehouse_sga_soap
+msgid "stock.view.warehouse.sga.soap"
+msgstr "stock.view.warehouse.sga.soap"
