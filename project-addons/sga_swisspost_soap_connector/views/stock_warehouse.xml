@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    
+    <record id="stock_view_warehouse_sga_soap" model="ir.ui.view">
+        <field name="name">stock.view.warehouse.sga.soap</field>
+        <field name="model">stock.warehouse</field>
+        <field name="inherit_id" ref="stock.view_warehouse"/>
+        <field name="arch" type="xml">
+            <field name="code" position="after">
+                <field name="sga_integrated" />
+                <field name="sga_integration_type"  attrs="{'invisible': [('sga_integrated','!=',True)]}"/>
+                <field name="sga_state" widget="statusbar" attrs="{'invisible':[('sga_integrated', '!=', True)]}" statusbar_visible="get-error,not-integrated,integrated,error,waiting,send-error"
+                    statusbar_colors='{"get-error":"red", "send-error": "red", "not-integrated":"grey", "integrated":"green", "waiting": "green"}'/>
+                <button name="inventory_synchronization" string="Synchronization" type="object"
+                    class="oe_stat_button" icon="fa-shopping-cart" attrs="{'invisible':[('sga_integrated', '!=', True),('sga_integration_type','!=', 'sga_swiss_post')]}"/>
+            </field>
+        </field>
+    </record>
+    
+</odoo>
