@@ -27,4 +27,5 @@ class Website(models.Model):
         country = self.get_current_country()
         res['warehouse_id'] = self.env['stock.warehouse'].sudo(
             ).get_warehouse_id(country.country_code).id
+        res['fiscal_position_id'] = country.fiscal_position_id.id
         return res

@@ -10,6 +10,7 @@
                 <field name="website_available"/>
             </field>
             <group name="country_group" position="after">
+                <field name="fiscal_position_id"/>
                 <field name="warehouse_ids"/>
             </group>
 
