@@ -38,14 +38,13 @@ class ProductRecipe(models.Model):
     _rec_name = 'title'
 
     title = fields.Char(_('Title'), index=True, required=True, translate=True)
-    subtitle = fields.Char(_('Subtitle'), index=True, required=True, translate=True)
+    subtitle = fields.Char(_('Subtitle'), index=True, required=True, translate=True, default=_("Ingredients"))
     sequence = fields.Integer(_('Internal Sequence'), default=1,
                               help=_('Gives the sequence order when displaying a recipe list'))
     website_sequence = fields.Integer(_('Website Sequence'), default=lambda self: self._default_website_sequence(),
                                       help=_("Determine the display order in the Website"))
-    description = fields.Html(_("Full Description"), strip_style=True, required=True, translate=True)
-    description_short = fields.Text(_("Short Description"), help=_("Short Description (Optional)"),
-                                    strip_style=True, translate=True)
+    ingredients = fields.Html(_("Ingredients list"), strip_style=True, required=True, translate=True)
+    description = fields.Html(_("Description"), strip_style=True, required=True, translate=True)
     product_ids = fields.Many2many('product.template', string='Products',
                                    help=_("Products that contains the recipe"))
     recipe_image_ids = fields.One2many('recipe.image', 'recipe_tmpl_id', string='Images')
