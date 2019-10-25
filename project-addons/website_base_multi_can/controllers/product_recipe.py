@@ -11,7 +11,7 @@ class RecipeController(http.Controller):
         recipes = request.env['product.recipe']
         domain = []
         values = {'recipe_list': recipes.search(domain, order='website_sequence desc')}
-        return request.render('website_base_multi_can.can_recipes_list_template', values)
+        return request.render('website_base_multi_can.recipes_list_template', values)
 
     @http.route(['/recipe/<path:path>'], type='http', auth='public', website=True)
     def get_one_recipe(self, path):
@@ -19,7 +19,7 @@ class RecipeController(http.Controller):
         recipe = recipes.search([('slug', '=', path)], limit=1)
         if recipe:
             values = {'recipe': recipe}
-            result = request.render('website_base_multi_can.can_recipe_template', values)
+            result = request.render('website_base_multi_can.recipe_template', values)
         else:
             result = request.env['ir.http'].reroute('/404')
         return result

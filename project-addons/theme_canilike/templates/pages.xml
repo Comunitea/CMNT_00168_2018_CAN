@@ -35,16 +35,6 @@
             <field name="view_id" ref="website_crm_contactus_form"/>
         </record>
 
-        <record id="website.menu_contactus" model="website.menu">
-            <field name="name">Contact us</field>
-            <field name="url">/contactus</field>
-            <field name="sequence" type="int">50</field>
-            <field name="parent_id" ref="website.main_menu"/>
-            <field name="website_id" ref="website.default_website"/>
-            <field name="user_logged">False</field>
-            <field name="user_not_logged">False</field>
-        </record>
-
         <!--Payment and shipping-->
         <record id="payment_and_shipping_page" model="website.page">
             <field name="name">Payment and shipping</field>
@@ -61,17 +51,6 @@
             <field name="website_ids" eval="[(6, 0, [ref('website.default_website')])]"/>
             <field name="url">/aboutus</field>
             <field name="view_id"  ref="theme_canilike.about_us"/>
-        </record>
-
-        <record id="menu_aboutus" model="website.menu">
-            <field name="name">About Us</field>
-            <field name="url">/aboutus</field>
-<!--            <field name="page_id" ref="theme_canilike.aboutus_page"/>-->
-            <field name="sequence" type="int">40</field>
-            <field name="parent_id" ref="website.main_menu"/>
-            <field name="website_id" ref="website.default_website"/>
-            <field name="user_logged">True</field>
-            <field name="user_not_logged">True</field>
         </record>
 
     </data>
