@@ -124,7 +124,7 @@
 			<attribute name="t-attf-class">sgeede-infinite-get</attribute>
 		</xpath>
 
-		<xpath expr="//div[@id='products_grid']//tr[@t-foreach='bins']" position="inside">
+		<xpath expr="//div[@id='products_grid']//div[@t-foreach='bins']" position="inside">
 			<t t-if="category">
 				<div class="sgeede-infinite-pagination">
 					<t t-if="int(pager['page']['num']) + 1 &lt;= int(pager['page_count'])">
