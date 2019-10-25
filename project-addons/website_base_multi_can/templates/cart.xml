@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <!-- Hook to hide address checkout extra info by website_sale_hide_price module -->
+    <template id="wbm_website_sale_extra_info" name="Checkout Extra Info Base" inherit_id="website_sale.extra_info">
+        <!-- Replace title -->
+        <xpath expr="//h2" position="replace">
+            <h2 class="mb16 mt16 text-center">Extra Info</h2>
+        </xpath>
+        <!-- Change feedback to Notes -->
+        <xpath expr="//label[@for='Give us your feedback...']" position="replace">
+            <label class="control-label" for="note">Note</label>
+        </xpath>
+        <xpath expr="//textarea[@name='Give us your feedback...']" position="attributes">
+            <attribute name="name">note</attribute>
+        </xpath>
+    </template>
+</odoo>

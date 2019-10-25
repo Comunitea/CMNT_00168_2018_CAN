@@ -3,12 +3,22 @@
    ========================================================================== */
 
 .wp_breadcrumbs_base {
-    &:extend(.wrapper-l);
+    //&:extend(.wrapper-l);
     padding-top: 1em;
     padding-bottom: 1em;
 }
 .breadcrumb {
     background-color: transparent;
-    padding: 0;
+    padding: .75em 0;
     margin: 0;
+    border-top: 1px solid @color-main-light;
+    border-bottom: 1px solid @color-main-light;
+    a {
+        color: @color-secondary;
+    }
 }
+
+/* Reset styles */
+.wp_breadcrumbs_base {
+    margin: 0;
+    }

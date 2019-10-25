@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+
+    <template id="website_sale_product" name="Product Base" active="False" customize_show="True" inherit_id="website_sale.product">
+
+        <!-- Remove the product breadcrumb's bar -->
+        <xpath expr="//ol[hasclass('breadcrumb')]" position="attributes">
+            <attribute name="t-if">True == False</attribute>
+        </xpath>
+
+        <xpath expr="//a[@id='add_to_cart']" position="attributes">
+            <attribute name="class">btn btn-default btn-lg mt8 js_check_product</attribute>
+        </xpath>
+
+        <!-- Image URL and attributes -->
+        <xpath expr="//div[hasclass('carousel-inner')]/div[2]" position="replace">
+            <div t-attf-class="item#{'' if variant_img else ' active'}">
+                <img t-att-alt="product.name" t-att-title="product.name" class="product_detail_img js_variant_img"
+                     t-attf-src="/website/image/product.template/{{product.id}}/image/"/>
+            </div>
+        </xpath>
+        <xpath expr="//div[hasclass('carousel-inner')]/t/div[hasclass('item')]" position="replace">
+            <div class="item">
+                <img t-att-alt="pimg.name" t-att-title="pimg.name" class="product_detail_img"
+                     t-attf-src="/web/image/product.image/{{pimg.id}}/image/"/>
+            </div>
+        </xpath>
+
+        <!-- Hide guarantee -->
+        <xpath expr="//div[@id='product_details']//hr[last()]" position="replace"/>
+        <xpath expr="//div[@id='product_details']/p[last()]" position="replace"/>
+
+        <xpath expr="//div[@id='product_details']//div[hasclass('o_not_editable')]/p" position="replace"/>
+        <xpath expr="//div[@id='product_details']//hr[@t-if='product.description_sale']" position="replace"/>
+
+        <!-- Hide search bar -->
+        <xpath expr="//t[@t-call='website_sale.search']" position="attributes">
+            <attribute name="t-if">True == False</attribute>
+        </xpath>
+
+        <!-- Add breadcrumbs -->
+<!--        <xpath expr="//div[@id='wrap']//section[@id='product_detail']" position="before">-->
+<!--            <t t-call="breadcrumbs_base.bcb_main_wrap"/>-->
+<!--        </xpath>-->
+
+        <!-- Reposition the full description -->
+<!--        <xpath expr="//div[@id='product_full_description']" position="replace">-->
+<!--            <div id="product_full_description" class="container mt32"/>-->
+<!--        </xpath>-->
+
+        <xpath expr="//div[@id='product_full_description']" position="after">
+            <div class="container mt32" t-if="product.recipe_ids">
+                <h3>Recipes with <t t-esc="product.name"/></h3>
+                <div class="row mt16" style="">
+                    <t t-foreach="product.recipe_ids" t-as="recipe">
+                        <div class="col-md-2 thumbnail" style="width: 170px; height:130px; float:left; display:inline; margin-right: 10px; overflow:hidden;">
+                            <div class="mt16 text-center" style="height: 100%;">
+                                <div t-field="recipe.image_small" t-options="{'widget': 'image', 'class': 'img-rounded shadow o_alternative_product' }"/>
+                                <h5>
+                                    <a t-attf-href="/recipe/#{ recipe.slug }" style="display: block">
+                                        <span t-att-title="recipe.title" t-field="recipe.title" class="o_text_overflow" style="display: block;"/>
+                                    </a>
+                                </h5>
+                            </div>
+                        </div>
+                    </t>
+                </div>
+            </div>
+        </xpath>
+
+    </template>
+
+    <template id="website_sale_product_price" name="Product description Base" inherit_id="website_sale.product_price">
+        <xpath expr="//div[@itemprop='offers']" position="after">
+            <div class="oe_structure mt48 mb48" id="product_full_description_relocated" t-if="product.description">
+                <div class="container" t-if="len(product.description) > 15" itemprop="description">
+                    <div class="row">
+                        <div class="col-md-12" t-field="product.description"/>
+                    </div>
+                </div>
+            </div>
+        </xpath>
+    </template>
+
+    <template id="website_sale_products" name="Products Base" inherit_id="website_sale.products">
+        <!-- Hide search bar -->
+        <xpath expr="//t[@t-call='website_sale.search']" position="attributes">
+            <attribute name="t-if">True == False</attribute>
+        </xpath>
+        <!-- Replace products table -->
+        <xpath expr="//div[hasclass('container', 'oe_website_sale')]/div[hasclass('row')]" position="replace">
+            <div class="shop-list">
+                <div class="hidden shop-categories" id="products_grid_before"/>
+                <div class="shop-content" id="products_grid">
+                    <div t-foreach="bins" t-as="tr_product">
+                        <t t-foreach="tr_product" t-as="td_product">
+                            <t t-if="td_product">
+                                <t t-set="product" t-value="td_product['product']" />
+                                <div class="oe_product_cart shop-element" t-att-data-publish="product.website_published and 'on' or 'off'">
+                                    <t t-set="product_image_big" t-value="no" />
+                                    <t t-call="website_sale.products_item" />
+                                </div>
+                            </t>
+                            <td t-if="not td_product" class="oe-height-2" />
+                        </t>
+                    </div>
+                    <t t-if="not bins">
+                        <div class="text-center text-muted oe_product">
+                            <h3 class="css_editable_display">No product defined.</h3>
+                            <p groups="sales_team.group_sale_manager">Click <i>'New'</i> in the top-right corner to create your first product.</p>
+                        </div>
+                    </t>
+                </div>
+            </div>
+        </xpath>
+    </template>
+
+    <template id="website_sale_products_infinite_scroll" name="SGEEDE Infinite Scroll Base" active="True" customize_show="True" inherit_id="website_base_multi_can.website_sale_products">
+        <xpath expr="//div[@id='products_grid']" position="attributes">
+			<attribute name="t-attf-class">sgeede-infinite-scroll</attribute>
+		</xpath>
+
+		<xpath expr="//div[@id='products_grid']//div[@t-foreach='bins']" position="attributes">
+			<attribute name="t-attf-class">sgeede-infinite-get</attribute>
+		</xpath>
+
+		<xpath expr="//div[@id='products_grid']//tr[@t-foreach='bins']" position="inside">
+			<t t-if="category">
+				<div class="sgeede-infinite-pagination">
+					<t t-if="int(pager['page']['num']) + 1 &lt;= int(pager['page_count'])">
+						<a t-att-href="'/category/%s/page/%d' % (category.slug, int(pager['page']['num']) + 1) if category.slug else pager['page_next']['url']" style="display: none">
+                            Page <span t-esc="int(pager['page']['num']) + 1"/>
+                        </a>
+						<!-- how to check category ? -->
+					</t>
+					<span class="max-page" t-esc="pager['page_count']" style="display: none"/>
+				</div>
+			</t>
+			<t t-if="not category">
+				<div class="sgeede-infinite-pagination">
+					<t t-if="int(pager['page']['num']) + 1 &lt;= int(pager['page_count'])">
+						<a t-att-href="pager['page_next']['url']" style="display: none">Page <span t-esc="int(pager['page']['num']) + 1"/></a>
+						<!-- taken from website.pager allow sorting functionality -->
+					</t>
+					<span class="max-page" t-esc="pager['page_count']" style="display: none"/>
+				</div>
+			</t>
+		</xpath>
+    </template>
+
+</odoo>

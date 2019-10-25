@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+
+    <!-- Legal footer links replacement -->
+    <template id="ecommerce_base_website_layout_footer_copyright" name="Footer Copyright Base" inherit_id="ecommerce_base.website_layout_footer_copyright">
+        <xpath expr="//footer//div[hasclass('container', 'mt16', 'mb16')]" position="replace">
+            <p class="footer-copyright">
+                Copyright &amp;copy; <span t-field="res_company.name">Company name</span>
+            </p>
+        </xpath>
+    </template>
+
+</odoo>

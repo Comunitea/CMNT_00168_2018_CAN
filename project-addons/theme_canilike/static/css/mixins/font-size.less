@@ -25,3 +25,26 @@
 	font-size: ~"@{pxValue}px";
 	font-size: ~"@{remValue}rem";
 }
+
+
+/**
+ * fluid font size based on screen width
+ *
+ * Example:
+ *
+ * .font-fluid(@screen-s, @screen-xl, 24px, 51px);
+ *
+ */
+.font-fluid(@min-vw, @max-vw, @min-size, @max-size) {
+
+    font-size: @min-size;
+
+    @media screen and (min-width: @min-vw) {
+        font-size: calc( @min-size ~" + " unit(@max-size - @min-size) ~" * ((100vw - " @min-vw ~") /" unit(@max-vw - @min-vw) ~")" );
+    }
+
+    @media screen and (min-width: @max-vw) {
+        font-size: @max-size;
+        line-height: 1.4em;
+    }
+}

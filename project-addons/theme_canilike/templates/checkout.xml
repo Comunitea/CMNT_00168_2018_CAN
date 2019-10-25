@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <odoo>
 
-    <template id="can_website_sale_checkout" name="GeoIP Canilike Website sale checkout" inherit_id="website_sale.checkout">
+    <template id="website_sale_checkout" name="GeoIP Canilike Website sale checkout" inherit_id="website_sale.checkout">
         <xpath expr="//div[@id='wrap']//t[@t-set='same_shipping']" position="after">
             <t t-set="current_country" t-value="website.get_current_country()" />
             <t t-set="allowed_shipping" t-value="order._check_shipping_location()" />
@@ -24,7 +24,7 @@
 
     </template>
 
-    <template id="can_website_sale_address_kanban" name="GeoIP Canilike Kanban Address" inherit_id="website_sale.address_kanban">
+    <template id="website_sale_address_kanban" name="GeoIP Canilike Kanban Address" inherit_id="website_sale.address_kanban">
         <xpath expr="//form" position="before">
             <t t-if="no_check">
                 <t t-set="allowed_current_address" t-value="True" />

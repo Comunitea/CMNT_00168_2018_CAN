@@ -1,6 +1,6 @@
-================
-Can I Like Theme
-================
+==============
+Canilike Theme
+==============
 
 .. |badge1| image:: https://img.shields.io/badge/maturity-Production-green.png
     :target: https://odoo-community.org/page/development-status
@@ -40,6 +40,8 @@ Contributors
 Pavel Smirnov, pavel@comunitea.com
 
 Rubén Seijas, ruben@comunitea.com
+
+Vicente Gutiérrez, vicente@comunitea.com
 
 Maintainer
 ~~~~~~~~~~

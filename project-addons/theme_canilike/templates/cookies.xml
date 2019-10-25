@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
 
-    <template id="can_website_cookie_notice_message" name="Canilike Cookies notice Template" inherit_id="website_cookie_notice.message">
+    <template id="website_cookie_notice_message" name="Canilike Cookies notice" inherit_id="website_cookie_notice.message">
         <!-- Replace cookie notice message -->
         <xpath expr="//div[@id='website_cookie_notice']" position="replace">
             <div t-if="request and not request.session.get('accepted_cookies')" id="website_cookie_notice" class="cc-cookies cookies-advise">

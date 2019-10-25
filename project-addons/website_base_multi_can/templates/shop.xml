@@ -2,7 +2,7 @@
 <odoo>
 
     <!-- Product item used by /shop and /shop/cart -->
-    <template id="wbm_website_sale_products_item" name="Product Item Template" inherit_id="website_sale.products_item">
+    <template id="wbm_website_sale_products_item" name="Products Item Base" inherit_id="website_sale.products_item">
 
         <!-- Include default code in product item -->
         <xpath expr="//section/h5" position="before">

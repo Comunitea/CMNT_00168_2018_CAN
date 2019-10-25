@@ -1,48 +1,77 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <odoo>
 
-    <template id="can_website_footer_custom_template" name="Footer Custom Canilike Template" inherit_id="website_multi_theme.auto_view_can_website_footer_default">
+    <template id="website_footer_default" name="Footer Custom Canilike" inherit_id="website_multi_theme.auto_view_can_website_footer_default">
         <!-- Put footer on checkout again -->
         <xpath expr="//div[@id='footer']" position="attributes">
             <attribute name="t-if"/>
         </xpath>
 
         <xpath expr="//div[@id='footer']//div[hasclass('row')]" position="replace">
-            <div>
-                <h4 t-esc="website.name"/>
-                <ul>
-                    <li><a href="/aboutus" alt="About Us Link" title="About Us" rel="nofollow" target="_blank">About Us</a></li>
-                    <li><a href="/contactus" alt="Contact Us Link" title="Contact Us" rel="nofollow" target="_blank">Contact Us</a></li>
-                    <li><a href="/payment-and-shipping" alt="Payment and Shipping Link" title="Payment and Shipping" rel="nofollow" target="_blank">Payment and Shipping</a></li>
-                </ul>
-            </div>
-            <div>
-                <h4>Social Media</h4>
-                <ul>
-                    <li><a t-att-href="website.social_facebook" t-if="website.social_facebook" rel="nofollow" target="_blank">Facebook</a></li>
-                    <li><a t-att-href="website.social_twitter" t-if="website.social_twitter" rel="nofollow" target="_blank">Twitter</a></li>
-                    <li><a t-att-href="website.social_youtube" t-if="website.social_youtube" rel="nofollow" target="_blank">Youtube</a></li>
-                    <li><a t-att-href="website.social_instagram" t-if="website.social_instagram" rel="nofollow" target="_blank">Instagram</a></li>
-                </ul>
-            </div>
-            <div>
-                <h4>Legal</h4>
-                <ul>
-                    <li><a href="/legal/terms-of-use" alt="Terms of Use Link" title="Terms of Use" rel="nofollow" target="_blank">Terms of Use</a></li>
-                    <li><a href="/legal/privacy-policy" alt="Privacy Policy Link" title="Privacy Policy" rel="nofollow" target="_blank">Privacy Policy</a></li>
-                    <li><a href="/legal/advice" alt="Legal Advise Link" title="Legal Advise" rel="nofollow" target="_blank">Legal Advise</a></li>
-                </ul>
+            <div class="footer-content">
+                <div>
+                    <h4 t-esc="website.name"/>
+                    <ul>
+                        <li><a href="/aboutus" alt="About us link" title="About us" rel="nofollow" target="_blank">About us</a></li>
+                        <li><a href="/contactus" alt="Contact link" title="Contact" rel="nofollow" target="_blank">Contact</a></li>
+                        <li><a href="/payment-and-shipping" alt="Payment and Shipping Link" title="Payment and Shipping" rel="nofollow" target="_blank">Payment and Shipping</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 t-if="website.social_facebook or website.social_twitter or website.social_linkedin or website.social_youtube or website.social_instagram or website.social_github">
+                        Social Media
+                    </h4>
+                    <ul>
+                        <li><a t-att-href="website.social_facebook" t-if="website.social_facebook" rel="nofollow" target="_blank">Facebook</a></li>
+                        <li><a t-att-href="website.social_twitter" t-if="website.social_twitter" rel="nofollow" target="_blank">Twitter</a></li>
+                        <li><a t-att-href="website.social_linkedin" t-if="website.social_linkedin" rel="nofollow" target="_blank">Linkedin</a></li>
+                        <li><a t-att-href="website.social_youtube" t-if="website.social_youtube" rel="nofollow" target="_blank">Youtube</a></li>
+                        <li><a t-att-href="website.social_instagram" t-if="website.social_instagram" rel="nofollow" target="_blank">Instagram</a></li>
+                        <li><a t-att-href="website.social_github" t-if="website.social_github" rel="nofollow" target="_blank">Instagram</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="/legal/terms-of-use" alt="Terms of use Link" title="Terms of use" rel="nofollow" target="_blank">Terms of use</a></li>
+                        <li><a href="/legal/privacy-policy" alt="Privacy policy link" title="Privacy policy" rel="nofollow" target="_blank">Privacy policy</a></li>
+                        <li><a href="/legal/advice" alt="Legal advice link" title="Legal Advice" rel="nofollow" target="_blank">Legal Advice</a></li>
+                    </ul>
+                </div>
+                <div data-toggle="tooltip" title="Igape" class="footer-igape">
+                    <a href="#" data-toggle="modal" data-target="#igapeModal" rel="nofollow">
+                        <img t-att-src="'/theme_canilike/static/img/canilike/ue.jpg'" alt="European Union"/><span>European Union</span>
+                    </a>
+                </div>
             </div>
         </xpath>
     </template>
 
-    <!-- Legal footer links replacement -->
-    <template id="can_website_layout_footer_copyright" inherit_id="website.layout_footer_copyright" name="Footer Copyright Legal Link Replace">
-        <xpath expr="//footer//div[hasclass('container', 'mt16', 'mb16')]" position="replace">
-            <p class="footer-copyright">
-                Copyright &amp;copy; <span t-field="res_company.name">Company name</span>
-            </p>
-        </xpath>
+    <template id="igape_modal" name="Igape Modal Canilike">
+        <div class="modal fade" id="igapeModal" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+            <div class="modal-dialog igape" role="document">
+                <div class="modal-content">
+                    <button class="close" data-dismiss="modal"><span>Close</span></button>
+                    <div class="modal-header">
+                        <img t-att-src="'/theme_canilike/static/img/canilike/igape.jpg'" alt="Igape Logo"/>
+                        <h4 class="modal-title" id="modalLabel">AXUDAS DO IGAPE PROGRAMA PLAN FOEXGA 2019-2020</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            Esta empresa participa nun proxecto de internacionalización a través do programa do Igape Plan Foexga 2019-2020.
+                            O obxectivo principal destas axudas é incentivar e estimular o comercio exterior galego e a internacionalización das pemes galegas.
+                            O resultado que se pretende é aumentar a base de empresas exportadoras e consolidar a presenza de empresas galegas nos mercados internacionais.
+                        </p>
+                        <ul>
+                            <li>OPERACIÓN COFINANCIADA POLA UNIÓN EUROPEA</li>
+                            <li>PROGRAMA OPERATIVO FEDER GALICIA 2014-2020</li>
+                            <li>CONSEGUIR UN TECIDO EMPRESARIAL MÁIS COMPETITIVO</li>
+                            <li>UNHA MANEIRA DE FACER EUROPA</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
     </template>
 
 </odoo>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <odoo>
 
-    <template id="can_website_sale_product" name="Product Canilike Template" inherit_id="website_multi_theme.auto_view_can_website_sale_product">
+    <template id="website_sale_product" name="Product Canilike" inherit_id="website_base_multi_can.website_sale_product">
 
         <!-- Add to wishlist button -->
         <xpath expr="//a[@id='add_to_cart']" position="after">
@@ -14,68 +14,9 @@
             </t>
         </xpath>
 
-        <xpath expr="//a[@id='add_to_cart']" position="attributes">
-            <attribute name="class">btn btn-default btn-lg mt8 js_check_product</attribute>
-        </xpath>
-
-        <!-- Image URL and attributes -->
-        <xpath expr="//div[hasclass('carousel-inner')]/div[2]" position="replace">
-            <div t-attf-class="item#{'' if variant_img else ' active'}">
-                <img t-att-alt="product.name" t-att-title="product.name" class="product_detail_img js_variant_img"
-                     t-attf-src="/website/image/product.template/{{product.id}}/image/"/>
-            </div>
-        </xpath>
-        <xpath expr="//div[hasclass('carousel-inner')]/t/div[hasclass('item')]" position="replace">
-            <div class="item">
-                <img t-att-alt="pimg.name" t-att-title="pimg.name" class="product_detail_img"
-                     t-attf-src="/web/image/product.image/{{pimg.id}}/image/"/>
-            </div>
-        </xpath>
-
-        <!-- Hide guarantee -->
-        <xpath expr="//div[@id='product_details']//hr[last()]" position="replace"/>
-        <xpath expr="//div[@id='product_details']/p[last()]" position="replace"/>
-
-        <xpath expr="//div[@id='product_details']//div[hasclass('o_not_editable')]/p" position="replace"/>
-        <xpath expr="//div[@id='product_details']//hr[@t-if='product.description_sale']" position="replace"/>
-
-        <!-- Hide search bar -->
-        <xpath expr="//t[@t-call='website_sale.search']" position="replace"/>
-
-        <!-- Add breadcrumbs -->
-        <xpath expr="//div[@id='wrap']//section[@id='product_detail']" position="before">
-            <t t-call="breadcrumbs_base.bcb_main_wrap"/>
-        </xpath>
-
-        <!-- Reposition the full description -->
-
-        <xpath expr="//div[@id='product_full_description']" position="replace">
-            <div id="product_full_description" class="container mt32"/>
-        </xpath>
-
-        <xpath expr="//div[@id='product_full_description']" position="after">
-            <div class="container mt32" t-if="product.recipe_ids">
-                <h3>Recipes with <t t-esc="product.name"/></h3>
-                <div class="row mt16" style="">
-                    <t t-foreach="product.recipe_ids" t-as="recipe">
-                        <div class="col-md-2 thumbnail" style="width: 170px; height:130px; float:left; display:inline; margin-right: 10px; overflow:hidden;">
-                            <div class="mt16 text-center" style="height: 100%;">
-                                <div t-field="recipe.image_small" t-options="{'widget': 'image', 'class': 'img-rounded shadow o_alternative_product' }"/>
-                                <h5>
-                                    <a t-attf-href="/recipe/#{ recipe.slug }" style="display: block">
-                                        <span t-att-title="recipe.title" t-field="recipe.title" class="o_text_overflow" style="display: block;"/>
-                                    </a>
-                                </h5>
-                            </div>
-                        </div>
-                    </t>
-                </div>
-            </div>
-        </xpath>
-
     </template>
 
-    <template id="can_website_sale_product_price" name="Product description Canilike" inherit_id="website_sale.product_price">
+    <template id="website_sale_product_price" name="Product Price Canilike" inherit_id="website_sale.product_price">
         <xpath expr="//div[@itemprop='offers']" position="after">
             <div class="oe_structure mt48 mb48" id="product_full_description_relocated" t-if="product.description">
                 <div class="container" t-if="len(product.description) > 15" itemprop="description">
@@ -85,11 +26,6 @@
                 </div>
             </div>
         </xpath>
-    </template>
-
-    <template id="can_website_sale_products" name="Products Canilike" inherit_id="website_sale.products">
-        <!-- Hide search bar -->
-        <xpath expr="//t[@t-call='website_sale.search']" position="replace"/>
     </template>
 
 </odoo>

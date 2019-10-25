@@ -11,11 +11,12 @@
         <!-- Home -->
         <record id="website.menu_homepage" model="website.menu">
             <field name="name">Home</field>
-            <field name="website_id" ref="website.default_website"/>
             <field name="url">/</field>
             <field name="parent_id" ref="website.main_menu"/>
             <field name="sequence" type="int">10</field>
             <field name="website_id" ref="website.default_website"/>
+            <field name="user_logged">False</field>
+            <field name="user_not_logged">False</field>
         </record>
 
         <!-- split between ir_ui_view & website_page record to keep external_id on ir_ui_view -->
@@ -26,7 +27,7 @@
             <field name="arch" type="xml">
                 <t name="Home" priority="29" t-name="website.homepage">
                     <t t-set="pageName" t-value="'homepage'"/>
-                    <t t-call="theme_canilike.can_home_content_template"/>
+                    <t t-call="theme_canilike.home"/>
                 </t>
             </field>
         </record>
@@ -46,35 +47,19 @@
             <field name="sequence" type="int">20</field>
             <field name="parent_id" ref="website.main_menu"/>
             <field name="website_id" ref="website.default_website"/>
-        </record>
-
-        <!--About Us-->
-        <record id="can_menu_aboutus" model="website.menu">
-            <field name="name">About Us</field>
-            <field name="url">/aboutus</field>
-            <field name="page_id" ref="website.aboutus_page"/>
-            <field name="sequence" type="int">40</field>
-            <field name="parent_id" ref="website.main_menu"/>
-            <field name="website_id" ref="website.default_website"/>
-        </record>
-
-        <!--Contact Us-->
-        <record id="website.menu_contactus" model="website.menu">
-            <field name="name">Contact us</field>
-            <field name="url">/contactus</field>
-            <field name="page_id" ref="website.contactus_page"/>
-            <field name="sequence" type="int">50</field>
-            <field name="parent_id" ref="website.main_menu"/>
-            <field name="website_id" ref="website.default_website"/>
+            <field name="user_logged">True</field>
+            <field name="user_not_logged">True</field>
         </record>
 
         <!--Recipes-->
-        <record id="can_menu_recipes" model="website.menu">
+        <record id="menu_recipes" model="website.menu">
             <field name="name">Recipes</field>
             <field name="url">/recipes</field>
             <field name="sequence" type="int">30</field>
             <field name="parent_id" ref="website.main_menu"/>
             <field name="website_id" ref="website.default_website"/>
+            <field name="user_logged">True</field>
+            <field name="user_not_logged">True</field>
         </record>
 
     </data>

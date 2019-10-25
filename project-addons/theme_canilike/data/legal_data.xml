@@ -1,10 +1,31 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <odoo>
 
-    <template id="can_advise_page" name="Aviso legal - Canilike"/>
+    <template id="advise" name="Legal Advice - Advice Canilike">
+        <t t-call="website.layout">
+            <div class="page-advise">
+                <h1 class="text-center">Legal Advice - Advice Canilike</h1>
+                <p class="text-center mt32">Don't worry! We are working on it.</p>
+            </div>
+        </t>
+    </template>
 
-    <template id="can_privacy_page" name="Política de privacidad - Canilike"/>
+    <template id="privacy" name="Legal Advice - Privacy Policy Canilike">
+        <t t-call="website.layout">
+            <div class="page-privacy">
+                <h1 class="text-center">Legal Advice - Privacy Policy Canilike</h1>
+                <p class="text-center mt32">Don't worry! We are working on it.</p>
+            </div>
+        </t>
+    </template>
 
-    <template id="can_terms_page" name="Terminos legales - Canilike"/>
+    <template id="terms" name="Legal Advice - Legal Terms Canilike">
+        <t t-call="website.layout">
+            <div class="page-terms">
+                <h1 class="text-center">Legal Advice - Legal Terms Canilike</h1>
+                <p class="text-center mt32">Don't worry! We are working on it.</p>
+            </div>
+        </t>
+    </template>
 
 </odoo>

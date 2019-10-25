@@ -3,25 +3,17 @@
    ========================================================================== */
 
 footer{
-    .font-size(14);
-    background-color: @color-corp;
-    color: white;
+    .font-size(13);
+    background-color: #73bcf9;
+    color: @color-corp;
 
     #footer {
         &:extend(.wrapper-l);
         padding-top: 3em;
-        @media (min-width: @screen-m) {
-            display: flex;
-            >div {
-                &:not(:last-child) {
-                    margin-right: 4em;
-                }
-            }
-        }
     }
 
     a {
-        color: @color-secondary;
+        color: @color-corp;
         text-decoration: none;
         &:hover {
             color: white;
@@ -53,8 +45,8 @@ footer{
     .footer-copyright {
         &:extend(.wrapper-l);
         .font-size(13);
-        margin-top: 0;
-        padding-bottom: 14rem;
+        margin-top: 3rem;
+        padding-bottom: 8rem;
         // &::before {
         //     content: "";
         //     width: 120px;
@@ -66,3 +58,25 @@ footer{
         // }
     }
 }
+
+.footer-content {
+
+        @media (min-width: @screen-m) {
+            display: flex;
+            >div {
+                &:not(:last-child) {
+                    margin-right: 4em;
+                }
+            }
+        }
+    &::before {
+        content:"";
+        width: 160px;
+        height: 100px;
+        display:block;
+        background-image: url('/theme_canilike/static/img/canilike/can-color.png');
+        background-size:100%;
+        background-repeat: no-repeat;
+        margin-right: 2em;
+    }
+    }

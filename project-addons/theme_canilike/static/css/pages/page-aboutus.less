@@ -1,2 +1,85 @@
 .page-aboutus {
+    color: @color-corp;
+    h2 {
+        .font-fluid(@screen-s, @screen-xl, 18px, 26px);
+        font-weight: 300;
+        margin-bottom: 1em;
+        text-transform: uppercase;
+        color: @color-secondary;
+    }
+    p {
+        margin-bottom: 1em;
+        line-height: 1.4em;
+        .font-fluid(@screen-s, @screen-xl, 14px, 16px);
+    }
+    img {
+        width: 100%;
+        margin-top: 2em;
+        margin-bottom: 2em;
+        }
+}
+.block-large {
+    background-color: #7df2ac;
+    h2 {
+        color :white;
+        }
+    p {
+        .font-fluid(@screen-s, @screen-xl, 14px, 18px);
+    }
+    ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+    li {
+        margin-bottom: 1em;
+       // border-bottom: 1px solid fade(white, 70%);
+        border-bottom: 1px solid @color-corp;
+        padding-bottom: 1em;
+        .font-fluid(@screen-s, @screen-xl, 14px, 18px);
+        &::before {
+                content:">";
+                margin-right: .25em;
+                color: @color-corp;
+            }
+
+    }
+}
+.block-large-content {
+    &:extend(.wrapper-s);
+    padding-top: 3em;
+    padding-bottom: 3em;
+
+}
+
+
+.back-color {
+    background-image:url('/theme_canilike/static/img/canilike/back-canilike.png');
+    background-color: @color-corp;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    p {
+        color: white;
+
+    }
+}
+
+.columns {
+    @media (min-width: @screen-m) {
+    column-count: 2;
+    column-gap: 2em;
+    }
+}
+
+.txt-info {
+    &:extend(.wrapper);
+    padding-top: 2em;
+    padding-bottom: 2em;
+    @media (min-width: @screen-m) {
+     display: flex;
+     justify-content: space-between;
+     > div {
+         width: 45%;
+     }
+    }
 }

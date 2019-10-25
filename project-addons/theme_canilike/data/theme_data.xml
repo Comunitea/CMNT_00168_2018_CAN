@@ -6,14 +6,12 @@
         <field name="name">MultiWebsite Canilike Theme</field>
         <field name="converted_theme_addon">theme_canilike</field>
         <field name="dependency_ids" eval="[(4, ref('website_multi_theme.theme_default'))]"/>
-<!--        <field name="asset_ids" eval="[(4, ref('theme_canilike.can_multi_asset'))]"/>-->
     </record>
 
     <!-- List provided assets  -->
-    <record model="website.theme.asset" id="can_multi_asset">
+    <record model="website.theme.asset" id="multi_asset">
         <field name="name">website_theme_asset_canilike</field>
         <field name="theme_id" ref="theme_canilike.theme_canilike_multi"/>
-<!--        <field name="view_id" ref="theme_canilike.anz_website_assets_frontend"/>-->
     </record>
 
     <!-- Themes should always call this method after adding their stuff,

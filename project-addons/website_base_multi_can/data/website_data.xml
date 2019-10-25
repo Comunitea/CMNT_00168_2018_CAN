@@ -2,6 +2,13 @@
 <odoo>
         <data>
 
+            <!-- Functions -->
+            <function model="ir.model.fields" name="formbuilder_whitelist">
+                <value>sale.order</value>
+                <!-- Add to portal orders -->
+                <value eval="['note']"/>
+            </function>
+
             <!--Convert Default Website in Canilike website-->
             <record id="website.default_website" model="website">
                 <field name="name">Canilike</field>

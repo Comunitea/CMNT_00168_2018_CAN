@@ -38,7 +38,7 @@
                         <field name="slug"/>
                         <field name="sequence"/>
                         <field name="website_sequence"/>
-                        <field name="description_short"/>
+                        <field name="ingredients"/>
                         <field name="description"/>
                     </group>
                     <group string="Products">
@@ -81,7 +81,7 @@
                 <field name="website_published"/>
                 <field name="title"/>
                 <field name="subtitle"/>
-                <field name="description_short"/>
+                <field name="ingredients"/>
                 <field name="product_ids" widget="many2many_tags"/>
             </tree>
         </field>
@@ -123,7 +123,7 @@
                         <tree>
                             <field name="title"/>
                             <field name="subtitle"/>
-                            <field name="description_short"/>
+                            <field name="ingredients"/>
                             <field name="product_ids" widget="many2many_tags"/>
                         </tree>
                         <form>
@@ -133,7 +133,7 @@
                                 <field name="subtitle"/>
                             </group>
                             <group string="Descriptions">
-                                <field name="description_short"/>
+                                <field name="ingredients"/>
                                 <field name="description"/>
                             </group>
                             <group string="Products">
