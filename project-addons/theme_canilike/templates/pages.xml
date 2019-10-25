@@ -38,7 +38,6 @@
         <record id="website.menu_contactus" model="website.menu">
             <field name="name">Contact us</field>
             <field name="url">/contactus</field>
-            <field name="page_id" ref="website.contactus_page"/>
             <field name="sequence" type="int">50</field>
             <field name="parent_id" ref="website.main_menu"/>
             <field name="website_id" ref="website.default_website"/>
