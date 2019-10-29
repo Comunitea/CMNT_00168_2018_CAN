@@ -21,8 +21,8 @@
                 </div>
 
                 <div class="txt-info">
-                    <img t-att-src="'/theme_canilike/static/img/canilike/conservación.png'" alt="conservation"/>
                     <div>
+                        <img t-att-src="'/theme_canilike/static/img/canilike/conservación.png'" alt="conservation"/>
                         <h2>El proceso de conservación: el valor de lo natural</h2>
                         <div class="columns">
                             <p>Sin conservantes. Sin química. Sin nada que te arrebate el sabor 100% natural de los pescados y mariscos. Los métodos utilizados en la industria conservera gallega son una sólida garantía de calidad y fiabilidad.</p>
