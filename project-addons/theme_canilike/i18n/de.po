@@ -1,0 +1,708 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* theme_canilike
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 11.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-10-23 16:49+0000\n"
+"PO-Revision-Date: 2019-10-23 16:49+0000\n"
+"Last-Translator: Rubén <ruben@comunitea.com>\n"
+"Language-Team: Es-es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \
+
+#. module: theme_canilike
+#: model:ir.ui.view,arch_db:theme_canilike.website_cookie_notice_message
+msgid ". To disable them, configure your browser properly. If you keep using this website, you are accepting those."
+msgstr ". Um sie zu deaktivieren, konfigurieren Sie Ihren Browser richtig. Wenn Sie diese Website weiterhin nutzen, akzeptieren Sie diese."
+
+#. module: theme_canilike
+#: model:ir.ui.view,arch_db:theme_canilike.about_us
+#: model:ir.ui.view,arch_db:theme_canilike.aboutus_page_ir_ui_view
+#: model:website.page,arch_db:theme_canilike.aboutus_page
+msgid "<b>Por su mínimo impacto ecológico.</b> Las conservas no necesitan frío, por lo que no requieren energía para preservarlas en óptimas condiciones. Además, nuestros envases son 100% reciclables."
+msgstr "<b>Für seine minimale ökologische Auswirkung.</b> Die Konserven müssen nicht gekühlt werden und benötigen daher keine Energie, die sie unter optimalen Bedingungen haltbar machen. Darüber hinaus sind unsere Behälter zu 100% recycelbar."
+
+#. module: theme_canilike
+#: model:ir.ui.view,arch_db:theme_canilike.about_us
+#: model:ir.ui.view,arch_db:theme_canilike.aboutus_page_ir_ui_view
+#: model:website.page,arch_db:theme_canilike.aboutus_page
+msgid "<b>Por su sabor.</b> Nuestras conservas de pescado y mariscos ofrecen una amplia variedad de ideas y sabores para tu despensa y tu cocina."
+msgstr "<b>Wegen seinem Geschmack.</b> Unsere Fisch- und Meeresfrüchte Konserven bieten eine Vielzahl von Ideen und Aromen für Ihre Speisekammer und Ihre Küche an."
+
+#. module: theme_canilike
+#: model:ir.ui.view,arch_db:theme_canilike.about_us
+#: model:ir.ui.view,arch_db:theme_canilike.aboutus_page_ir_ui_view
+#: model:website.page,arch_db:theme_canilike.aboutus_page
+msgid "<b>Por tu salud.</b> Nuestras conservas aportan todas las cualidades nutritivas de los mejores productos del mar."
+msgstr "<b>Für Ihre Gesundheit.</b> Unsere Produkte beinhalten keine Konservierungsstoffe."
+
+#. module: theme_canilike
+#: model:ir.ui.view,arch_db:theme_canilike.about_us
+#: model:ir.ui.view,arch_db:theme_canilike.aboutus_page_ir_ui_view
+#: model:website.page,arch_db:theme_canilike.aboutus_page
+msgid "<b>Porque son naturales.</b> Nuestros productos no tienen conservantes."
+msgstr "<b>Weil sie natürlich sind.</b> Unsere Produkte beinhalten keine Konservierungsstoffe."
+
+#. module: theme_canilike
+#: model:ir.ui.view,name:theme_canilike.home
+msgid "Home Canilike"
+msgstr "Home Canilike"
+
+#. module: theme_canilike
+#: model:ir.ui.view,arch_db:theme_canilike.home
+msgid "More information..."
+msgstr "Mehr Infos..."
+
+#. module: theme_canilike
+#: model:ir.ui.view,arch_db:theme_canilike.home
+msgid "<font style=\"\" class=\"text-epsilon\">QUALITY IS FOUND IN NATURE.<br/></font>\n"
+"                                        <font style=\"font-size: 24px;\" class=\"text-epsilon\">THE IMPORTANCE IS IN PRESERVING IT.</font>"
+msgstr "<font style=\"\" class=\"text-epsilon\">DIE QUALITÄT LIEGT IN DER NATÜRLICHKEIT.<br/></font>\n"
+"                                        <font style=\"font-size: 24px;\" class=\"text-epsilon\">WICHTIG IST, SIE ZU KONSERVIEREN.</font>"
+
+#. module: theme_canilike
+#: model:ir.ui.view,arch_db:theme_canilike.home
+msgid "Meet our products"
+msgstr "Lernen Sie unsere Produkte kenne">"
+
+#. module: theme_canilike
+#: model:ir.ui.view,arch_db:theme_canilike.home
+msgid "<font style=\"color: rgb(156, 156, 148);\">The lush wealth of the Galician sea is unique: it combines abundance and quality. It is natural that the canning industry settled in Galicia almost two hundred years ago. Preserving the delicious product from Galician waters was a necessity, rather than just a business. But in order to talk about the authentic origin of this preservation system, we have to travel in space and time...</font>"
+msgstr "<font style=\"color: rgb(156, 156, 148);\">Mit seinem üppigen Reichtum ist das galizische Meer einzigartig: Es verbindet Menge und Qualität. Es ist selbstverständlich, dass sich die Konservenindustrie vor fast zweihundert Jahren in Galizien niedergelassen hat. Mehr als ein Geschäft war es, das köstliche Produkt aus den galizischen Gewässern zu konservieren. Damit wir aber über den tatsächlichen Ursprung des Konservierungssystem sprechen können, müssen wir durch Raum und Zeit reisen...</font>"
+
+#. module: theme_canilike
+#: model:ir.ui.view,arch_db:theme_canilike.home
+msgid "<font style=\"color: rgb(156, 156, 148);\">If we could peek into the pantries of a hundred Spanish families, canned food would be found in more than ninety. How could it be any other way? A delicious natural product easy to store, competitively priced and with expiration dates that allow ample room for consumption. These are enough guarantees to become an essential product.<font style=\"color: rgb(156, 156, 148);\"><br/></font></font>"
+msgstr "<font style=\"color: rgb(156, 156, 148);\">Wenn wir Einblick in die Vorratskammern von hundert spanischen Familien hätten, würden wir in mehr als neunzig davon Konservendosen finden. Wie könnte es auch anders sein? Ein natürliches Produkt, köstlich, einfach zu lagern, mit konkurrenzfähigen Preisen und mit Verfallsdaten, die eine ausreichende Zeitspanne für den Verzehr erlauben. Genügend Garantien um nicht mehr darauf verzichten zu können...<font style=\"color: rgb(156, 156, 148);\"><br/></font></font>"
+
+#. module: theme_canilike
+#: model:ir.ui.view,arch_db:theme_canilike.home
+msgid "<font style=\"color: rgb(156, 156, 148);\">No preservatives. No chemicals. Nothing is added that can take away the 100% natural taste of fish and shellfish. The methods used in the Galician canning industry are a solid guarantee of quality and reliability.</font>\n"
+"                                        <font style=\"color: rgb(156, 156, 148);\">Our canned products are able to please the most demanding consumers. Unlike in other packaged foods, no tricks or artifice are used in canned foods to deceive the palate. They are unnecessary. The only necessary thing is the protection of the extraordinary qualities of the product extracted from Galician waters.<font style=\"color: rgb(156, 156, 148);\">&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;</font></font>"
+msgstr "<font style=\"color: rgb(156, 156, 148);\">Ohne Konservierungsmittel. Ohne Chemie. Nichts, was den 100% natürlichen Geschmack von Fisch und Meeresfrüchten beeinträchtigt könnte.</font>\n"
+"                                        <font style=\"color: rgb(156, 156, 148);\">Die in der galizischen Konservenindustrie angewandten Methoden, sind eine solide Garantie für Qualität und Zuverlässigkeit...<font style=\"color: rgb(156, 156, 148);\">&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;</font></font>"
+
+#. module: theme_canilike
+#: model:ir.ui.view,arch_db:theme_canilike.home
+msgid "<font style=\"font-size: 24px;\" class=\"text-epsilon\">The preservation process:<br/>the value of the natural product</font>"
+msgstr "<font style=\"font-size: 24px;\" class=\"text-epsilon\">Der Prozess der Konservierung:<br/>der Wert des Natürlichen</font>"
+
+#. module: theme_canilike
+#: model:ir.ui.view,arch_db:theme_canilike.home
+msgid "<font style=\"font-size: 24px;\" class=\"text-epsilon\">Canned food in Galicia:<br/>the value of tradition</font>"
+msgstr "<font style=\"font-size: 24px;\" class=\"text-epsilon\">Die Konserven in Galizien:<br/>el valor de la tradición</font>"
+
+#. module: theme_canilike
+#: model:ir.ui.view,arch_db:theme_canilike.home
+msgid "<font style=\"font-size: 24px;\" class=\"text-epsilon\">Memories of flavors: <br/>in Galicia and in the world</font>"
+msgstr "<font style=\"font-size: 24px;\" class=\"text-epsilon\">Recuerdos de sabores: <br/>der Wert der Tradition</font>"
+
+#. module: theme_canilike
+#: model:ir.ui.view,arch_db:theme_canilike.payment_and_shipping
+#: model:ir.ui.view,arch_db:theme_canilike.payment_and_shipping_page_ir_ui_view
+#: model:website.page,arch_db:theme_canilike.payment_and_shipping_page
+msgid "<font style=\"\" class=\"text-epsilon\">Payment and shipping<br/></font>"
+msgstr "<font style=\"\" class=\"text-epsilon\">Zahlung und Versand<br/></font
+
+#. module: theme_canilike
+#: model:ir.ui.view,arch_db:theme_canilike.website_sale_address_kanban
+msgid "<i class=\"fa fa-check\"/> Ship to this address"
+msgstr "<i class=\"fa fa-check\"/> An diese Adresse liefern"
+
+#. module: theme_canilike
+#: model:ir.ui.view,arch_db:theme_canilike.website_sale_product
+msgid "<i class=\"fa fa-heart\"/> Add to Wishlist"
+msgstr "<i class=\"fa fa-heart\"/> Zur Wunschliste hinzufügen"
+
+#. module: theme_canilike
+#: model:ir.ui.view,arch_db:theme_canilike.website_sale_address_kanban
+msgid "<i class=\"fa fa-times\"/> You can't ship to this address"
+msgstr "<i class=\"fa fa-times\"/> Sie können nicht an diese Adresse versenden"
+
+#. module: theme_canilike
+#: model:ir.ui.view,arch_db:theme_canilike.igape_modal
+#: model:ir.ui.view,arch_db:theme_canilike.location_selection_modal
+msgid "<span>Close</span>"
+msgstr "<span>Schließen</span>"
+
+#. module: theme_canilike
+#: model:ir.ui.view,arch_db:theme_canilike.website_footer_default
+msgid "<span>European Union</span>"
+msgstr "<span>Europäische Union</span>"
+
+#. module: theme_canilike
+#: model:ir.ui.view,arch_db:theme_canilike.website_layout
+msgid "<span>Location Options</span>"
+msgstr "<span>Standortoptionen</span>"
+
+#. module: theme_canilike
+#: model:ir.ui.view,arch_db:theme_canilike.about_us
+#: model:ir.ui.view,arch_db:theme_canilike.aboutus_page_ir_ui_view
+#: model:website.page,arch_db:theme_canilike.aboutus_page
+msgid "A un ingenioso cocinero llamado Nicolas Appert se le ocurrió esterilizar en agua hirviendo un frasco de cristal sellado con corcho. Los resultados fueron magníficos. Su propuesta no sólo obtuvo el premio, sino que inauguró un nuevo camino. Siguiendo sus pasos, el inglés Peter Durand patentó en 1810 un sistema de conservación en cajas de hojalata soldadas. La ruta hacia los procedimientos modernos estaba trazada y la evolución era ya imparable. Durante la segunda mitad del siglo XIX la industria conservera del pescado consolidó una sólida posición en el continente europeo."
+msgstr "Ein einfallsreicher Koch namens Nicolas Appert hatte die Idee, ein mit Kork versiegeltes Glas in kochendem Wasser zu sterilisieren. Das Resultat war großartig. Mit seinem Vorschlag gewann er nicht nur die Auszeichnung, sondern eröffnete auch einen neuen Weg. Der Engländer Peter Durand  patentierte 1810 ein Konservierungssystem mit verschweißten Blechdosen und trat so in die Fussstapfen seines Vorgängers. Der Weg zum modernen Verfahren war gezeichnet und dessen Entwicklung nicht mehr aufzuhalten. In der zweiten Hälfte des 19. Jahrhunderts festigte die Fischkonservenindustrie ihre Stellung auf dem europäischen Kontinent."
+
+#. module: theme_canilike
+#: model:ir.ui.view,arch_db:theme_canilike.igape_modal
+msgid "AXUDAS DO IGAPE PROGRAMA PLAN FOEXGA 2019-2020"
+msgstr "AXUDAS DO IGAPE PROGRAMA PLAN FOEXGA 2019-2020"
+
+#. module: theme_canilike
+#: model:website.menu,name:theme_canilike.menu_aboutus
+msgid "About Us"
+msgstr "Über uns"
+
+#. module: theme_canilike
+#: model:ir.ui.view,arch_db:theme_canilike.website_footer_default
+#: model:website.page,name:theme_canilike.aboutus_page
+msgid "About us"
+msgstr "Über uns"
+
+#. module: theme_canilike
+#: model:ir.ui.view,name:theme_canilike.about_us
+#: model:ir.ui.view,name:theme_canilike.aboutus_page_ir_ui_view
+msgid "About us Canilike"
+msgstr "Über uns Canilike"
+
+#. module: theme_canilike
+#: model:ir.ui.view,arch_db:theme_canilike.website_footer_default
+msgid "About us link"
+msgstr "Über uns link"
+
+#. module: theme_canilike
+#: model:ir.ui.view,arch_db:theme_canilike.website_sale_product
+msgid "Add to Wishlist"
+msgstr "Zur Wunschliste hinzufügen"
+
+#. module: theme_canilike
+#: model:ir.ui.view,name:theme_canilike.website_assets_frontend
+msgid "Assets Canilike"
+msgstr "Assets Canilike"
+
+#. module: theme_canilike
+#: model:ir.ui.view,arch_db:theme_canilike.location_selection_modal
+msgid "Available languages"
+msgstr "Verfügbare Sprachen"
+
+#. module: theme_canilike
+#: model:ir.ui.view,arch_db:theme_canilike.location_selection_modal
+msgid "Available warehouses"
+msgstr "Verfügbare Lager"
+
+#. module: theme_canilike
+#: model:ir.ui.view,arch_db:theme_canilike.igape_modal
+msgid "CONSEGUIR UN TECIDO EMPRESARIAL MÁIS COMPETITIVO"
+msgstr "CONSEGUIR UN TECIDO EMPRESARIAL MÁIS COMPETITIVO"
+
+#. module: theme_canilike
+#: model:ir.ui.view,arch_db:theme_canilike.header_logo
+msgid "Can i like"
+msgstr "Can i like"
+
+#. module: theme_canilike
+#: model:ir.ui.view,name:theme_canilike.website_cookie_notice_message
+msgid "Canilike Cookies notice"
+msgstr "Canilike Cookies notice"
+
+#. module: theme_canilike
+#: model:ir.ui.view,arch_db:theme_canilike.website_layout
+msgid "Cart"
+msgstr "Wagen"
+
+#. module: theme_canilike
+#: model:ir.ui.view,arch_db:theme_canilike.about_us
+#: model:ir.ui.view,arch_db:theme_canilike.aboutus_page_ir_ui_view
+#: model:website.page,arch_db:theme_canilike.aboutus_page
+msgid "Cerrando los ojos para hacer memoria regresan a mi boca un montón de sabores. Las recetas de mi madre y mi abuela, que con un par de latas y diez minutos podían preparar maravillas dignas de cocineros reputados. Las incursiones a hurtadillas en el armario de la cocina, buscando unos mejillones con los que matar el hambre a media tarde. Y por supuesto, las cenas de estudiante, calmando el gusanillo con unas ricas conservas después de tomar unas copas con mis amigos."
+msgstr "Wenn ich die Augen schließe und zurückdenke, kehren wieder jede Menge Aromen in meinem Mund zurück. Die Rezepte meiner Mutter und meiner Großmutter, welche mit ein paar Dosen und zehn Minuten Wunder vollbringen konnten, die namhaften Köchen würdig waren. Die heimlichen Ausflüge an den Küchenschrank um ein paar Muscheln zu suchen, welche den kleinen Hunger am Nachmittag stillten. Und natürlich die Abendessen als Studenten, als ich nach dem Trinken mit den Freunden noch mit leckeren Konserven den leeren Magen füllte."
+
+#. module: theme_canilike
+#: model:ir.ui.view,arch_db:theme_canilike.website_footer_default
+msgid "Contact"
+msgstr "Kontakt"
+
+#. module: theme_canilike
+#: model:ir.ui.view,name:theme_canilike.website_crm_contactus_form
+msgid "Contact Form Canilike"
+msgstr "Contact Form Canilike"
+
+#. module: theme_canilike
+#: model:ir.ui.view,arch_db:theme_canilike.website_footer_default
+msgid "Contact link"
+msgstr "Kontakt link"
+
+#. module: theme_canilike
+#: model:ir.ui.view,arch_db:theme_canilike.payment_and_shipping
+#: model:ir.ui.view,arch_db:theme_canilike.payment_and_shipping_page_ir_ui_view
+#: model:website.page,arch_db:theme_canilike.payment_and_shipping_page
+msgid "Current warehouse:"
+msgstr "Aktuelles Lager:"
+
+#. module: theme_canilike
+#: model:ir.ui.view,arch_db:theme_canilike.about_us
+#: model:ir.ui.view,arch_db:theme_canilike.aboutus_page_ir_ui_view
+#: model:website.page,arch_db:theme_canilike.aboutus_page
+msgid "Dicen que no hay nada más importante que aquello que sólo echamos de menos cuando desaparece por completo. Como el aire, como el agua, como las grandes amistades. Ya adulto, me he encontrado a mí mismo buscando latas de conservas en tiendas y supermercados de multitud de países, en aquellos destinos a los que la vida me ha llevado. Y me ha sorprendido descubrir que, a pesar de la merecida fama de la gastronomía española en el mundo, las conservas continúan siendo inexplicables desconocidas en numerosos puntos del mapa."
+msgstr "Man sagt, dass es nichts Wichtigeres gibt als das, was wir vermissen, wenn es vollständig verschwunden ist. So wie die Luft, das Wasser, die guten Freundschaften. Als Erwachsener habe ich mich selber beim Suchen von Konservendosen gefunden. Sowohl in Geschäften und Supermärkten in vielen verschiedenen Ländern wie auch an Orten, an die mich das Leben geführt hat. Es hat mich überrascht zu entdecken, dass trotz des verdienten Ruhmes der spanischen Küche, die Konserven unerklärlicherweise nach wie vor in vielen Teilen der Welt unbekannt sind."
+
+#. module: theme_canilike
+#: model:ir.ui.view,arch_db:theme_canilike.advise
+#: model:ir.ui.view,arch_db:theme_canilike.privacy
+#: model:ir.ui.view,arch_db:theme_canilike.terms
+msgid "Don't worry! We are working on it."
+msgstr "Mach dir keine Sorgen! Wir arbeiten daran."
+
+#. module: theme_canilike
+#: model:ir.ui.view,arch_db:theme_canilike.about_us
+#: model:ir.ui.view,arch_db:theme_canilike.aboutus_page_ir_ui_view
+#: model:website.page,arch_db:theme_canilike.aboutus_page
+msgid "El mar gallego es único en su exuberante riqueza: reúne abundancia y calidad. Es natural que la industria conservera se asentase en Galicia hace casi doscientos años. Más que un negocio, preservar el delicioso producto procedente de las aguas gallegas era una necesidad. Pero para hablar del auténtico origen de este sistema de conservación tenemos que viajar en el espacio y en el tiempo… y hablar de Napoleón Bonaparte. Sí, Napoleón, el célebre emperador francés."
+msgstr "Mit seinem üppigen Reichtum ist das galizische Meer einzigartig: Es verbindet Menge und Qualität. Es ist selbstverständlich, dass sich die Konservenindustrie vor fast zweihundert Jahren in Galizien niedergelassen hat. Mehr als ein Geschäft war es, das köstliche Produkt aus den galizischen Gewässern zu konservieren. Damit wir aber über den tatsächlichen Ursprung des Konservierungssystem sprechen können, müssen wir durch Raum und Zeit reisen...und über Napoleon Bonaparte sprechen. Ja genau, Napoleon. Der berühmte französische Kaiser."
+
+#. module: theme_canilike
+#: model:ir.ui.view,arch_db:theme_canilike.about_us
+#: model:ir.ui.view,arch_db:theme_canilike.aboutus_page_ir_ui_view
+#: model:website.page,arch_db:theme_canilike.aboutus_page
+msgid "El proceso de conservación: el valor de lo natural"
+msgstr "Der Prozess der Konservierung: der Wert des Natürlichen"
+
+#. module: theme_canilike
+#: model:ir.ui.view,arch_db:theme_canilike.about_us
+#: model:ir.ui.view,arch_db:theme_canilike.aboutus_page_ir_ui_view
+#: model:website.page,arch_db:theme_canilike.aboutus_page
+msgid "El proceso es riguroso de principio a fin, bajo estrictos criterios de higiene y seguridad. El pescado fresco llega refrigerado a las plantas conserveras, donde también es resguardado en cámaras de refrigeración. Un equipo de expertos evalúa en profundidad las condiciones del producto recibido, asegurándose de que su estado es óptimo para el consumo."
+msgstr "Der Prozess ist von Anfang bis Ende präzise und unterliegt strengen Hygiene- und Sicherheitskriterien. Der frische Fisch kommt gekühlt in den Konservenfabriken an, wo er in Kühlräumen gelagert wird. Ein Expertenteam bewertet die Bedingungen des erhaltenen Produkts sorgfältig und stellt sicher, dass der Zustand für den Verzehr gewährleistet ist.."
+
+#. module: theme_canilike
+#: model:ir.ui.view,arch_db:theme_canilike.about_us
+#: model:ir.ui.view,arch_db:theme_canilike.aboutus_page_ir_ui_view
+#: model:website.page,arch_db:theme_canilike.aboutus_page
+msgid "El sector experimentó un espectacular auge que avivó el interés del empresariado local. Muchas familias gallegas fundaron compañías propias para competir con catalanes y franceses. Algunas de ellas continúan activas, con marcas que ofrecen productos de máxima calidad avalados por el prestigio de una tradición centenaria. En la actualidad, la industria conservera de Galicia es líder indiscutible en el mercado nacional e internacional. Los tiempos han cambiado: no hay secretos técnicos como antaño. Lo que de verdad marca la diferencia es el sabor natural. Y el gallego es único en el mundo."
+msgstr "Die Branche erlebte einen spektakulären Boom, der das Interesse der lokalen Unternehmer weckte. Viele galizische Familien gründeten ihre eigenen Unternehmen, um mit den Katalanen und Franzosen zu konkurrieren. Einige von ihnen sind nach wie vor aktiv und bieten Markenprodukte von höchster Qualität an, die auf dem Prestige einer jahrhundertealten Tradition beruhen. Heutzutage ist die Konservenindustrie in Galizien der unbestrittene Leader auf dem nationalen und internationalen Markt. Die Zeiten haben sich geändert: Es gibt keine technischen Geheimnisse mehr wie noch vor Jahren. Was den wirklichen Unterschied ausmacht, ist der natürliche Geschmack. Und der Galizische ist einzigartig auf der ganzen Welt."
+
+#. module: theme_canilike
+#: model:ir.ui.view,arch_db:theme_canilike.about_us
+#: model:ir.ui.view,arch_db:theme_canilike.aboutus_page_ir_ui_view
+#: model:website.page,arch_db:theme_canilike.aboutus_page
+msgid "El seguimiento no termina cuando se cierra el envase. También después del enlatado se llevan a cabo controles de calidad, tanto desde dentro de la propia empresa como desde certificadoras externas. Es difícil encontrar en el mercado un producto sometido a tantos exámenes, sin que ese conjunto de garantías suponga renunciar a propiedades naturales."
+msgstr "Die Überwachung endet nicht mit dem Verschliessen der Verpackung. Auch nach dem Einmachen werden Qualitätskontrollen, sowohl innerhalb des Unternehmens, wie auch von externen Experten für Zertifizierungen, durchgeführt. Es ist schwierig, auf dem Markt ein Produkt zu finden, welches so vielen Tests ausgesetzt ist, ohne dass die ganzen Gewährleistungen Auswirkungen auf die natürlichen Eigenschaften des Produkts haben."
+
+#. module: theme_canilike
+#: model:ir.ui.view,arch_db:theme_canilike.about_us
+#: model:ir.ui.view,arch_db:theme_canilike.aboutus_page_ir_ui_view
+#: model:website.page,arch_db:theme_canilike.aboutus_page
+msgid "En España hay una figura clave en el proceso: los fomentadores. Eran empresarios catalanes que se habían instalado en las costas gallegas para explotar la sardina, huyendo de la escasez mediterránea a mediados del XVIII. Sus talleres trabajaban fundamentalmente con técnicas de salazón. Sin embargo, hacia 1880 surgió una magnífica oportunidad de mercado: la sardina desapareció de los mares franceses. El país vecino aseguraba una potente demanda del producto y además brindaba capital y conocimiento técnico. Los sistemas de conserva hermética irrumpieron en Galicia a través de los acuerdos comerciales suscritos con Francia."
+msgstr "In Spanien gibt es eine Schlüsselfigur in diesem Prozess: «los fomentadores». Das waren katalanische Geschäftsleute, die Mitte des 18. Jahrhunderts wegen der Knappheit der Sardinen im Mittelmeer, an die galizische Küste flohen und sich dort niedergelassen hatten um zu fischen. Deren Betriebe beschäftigten sich hauptsächlich mit der Technik des Salzen. Um 1880 ergab sich jedoch eine großartige Marktchance: Die Sardine verschwand aus den französischen Meeren. Das Nachbarland sicherte die potentielle Produktnachfrage und bot Kapital und technisches Wissen. Durch die Handelsabkommen mit Frankreich, drangen die hermetischen Konservensysteme nach Galizien durc"
+
+#. module: theme_canilike
+#: model:ir.ui.view,arch_db:theme_canilike.about_us
+#: model:ir.ui.view,arch_db:theme_canilike.aboutus_page_ir_ui_view
+#: model:website.page,arch_db:theme_canilike.aboutus_page
+msgid "Entre finales del siglo XVIII y comienzos del XIX, Napoleón emprendió un sinfín de campañas militares. Sus tropas eran numerosas y se movían por todo tipo de territorios, expuestas a las más diversas condiciones climatológicas. Y por supuesto, necesitaban comer bien para mantenerse fuertes. Así que Bonaparte decidió estimular el talento científico. Anunció una recompensa de 12.000 francos para quien idease la mejor manera de conservar alimentos en perfecto estado."
+msgstr "Napoleon unternahm zwischen Ende des 18. Jahrhunderts und dem Beginn des 19. Jahrhunderts endlose Feldzüge. Seine zahlreichen Truppen zogen durch verschiedenste Gebiete, die den unterschiedlichsten Wetterbedingungen ausgesetzt waren. Und natürlich mussten sie sich gut ernähren, um bei Kräften zu bleiben. Deshalb beschloss Bonaparte, wissenschaftliche Talente zu fördern. Er versprach eine Belohnung von 12 000 französischen Franken für denjenigen, der die beste Möglichkeit entwickelt, Lebensmittel in einwandfreiem Zustand zu erhalten."
+
+#. module: theme_canilike
+#: model:ir.ui.view,arch_db:theme_canilike.igape_modal
+msgid "Esta empresa participa nun proxecto de internacionalización a través do programa do Igape Plan Foexga 2019-2020.\n"
+"                            O obxectivo principal destas axudas é incentivar e estimular o comercio exterior galego e a internacionalización das pemes galegas.\n"
+"                            O resultado que se pretende é aumentar a base de empresas exportadoras e consolidar a presenza de empresas galegas nos mercados internacionais."
+msgstr "Esta empresa participa nun proxecto de internacionalización a través do programa do Igape Plan Foexga 2019-2020.\n"
+"                            O obxectivo principal destas axudas é incentivar e estimular o comercio exterior galego e a internacionalización das pemes galegas.\n"
+"                            O resultado que se pretende é aumentar a base de empresas exportadoras e consolidar a presenza de empresas galegas nos mercados internacionais."
+
+#. module: theme_canilike
+#: model:ir.ui.view,arch_db:theme_canilike.website_footer_default
+msgid "European Union"
+msgstr "Europäische Union"
+
+#. module: theme_canilike
+#: model:ir.ui.view,arch_db:theme_canilike.website_footer_default
+msgid "Facebook"
+msgstr "Facebook"
+
+#. module: theme_canilike
+#: model:ir.ui.view,name:theme_canilike.website_footer_default
+msgid "Footer Custom Canilike"
+msgstr "Footer Custom Canilike"
+
+#. module: theme_canilike
+#: model:ir.ui.view,arch_db:theme_canilike.payment_and_shipping
+#: model:ir.ui.view,arch_db:theme_canilike.payment_and_shipping_page_ir_ui_view
+#: model:website.page,arch_db:theme_canilike.payment_and_shipping_page
+msgid "From this warehouse you can ship your order to:"
+msgstr "Von diesem Lager aus können Sie Ihre Bestellung versenden an::"
+
+#. module: theme_canilike
+#: model:ir.ui.view,name:theme_canilike.website_sale_address_kanban
+msgid "GeoIP Canilike Kanban Address"
+msgstr "GeoIP Canilike Kanban Address"
+
+#. module: theme_canilike
+#: model:ir.ui.view,name:theme_canilike.website_sale_checkout
+msgid "GeoIP Canilike Website sale checkout"
+msgstr "GeoIP Canilike Website sale checkout"
+
+#. module: theme_canilike
+#: model:ir.ui.view,name:theme_canilike.header_logo
+msgid "Header Logo Canilike"
+msgstr "Header Logo Canilike"
+
+#. module: theme_canilike
+#: model:ir.ui.view,name:theme_canilike.header_search_box
+msgid "Header Search Box Canilike"
+msgstr "Header Search Box Canilike"
+
+#. module: theme_canilike
+#: model:ir.ui.view,name:theme_canilike.header_submenus
+msgid "Header Submenus Canilike"
+msgstr "Header Submenus Canilike"
+
+#. module: theme_canilike
+#: model:ir.ui.view,arch_db:theme_canilike.website_footer_default
+msgid "Igape"
+msgstr "Igape"
+
+#. module: theme_canilike
+#: model:ir.ui.view,arch_db:theme_canilike.igape_modal
+msgid "Igape Logo"
+msgstr "Igape Logo"
+
+#. module: theme_canilike
+#: model:ir.ui.view,name:theme_canilike.igape_modal
+msgid "Igape Modal Canilike"
+msgstr "Igape Modal Canilike"
+
+#. module: theme_canilike
+#: model:ir.ui.view,arch_db:theme_canilike.website_footer_default
+msgid "Instagram"
+msgstr "Instagram"
+
+#. module: theme_canilike
+#: model:ir.ui.view,arch_db:theme_canilike.about_us
+#: model:ir.ui.view,arch_db:theme_canilike.aboutus_page_ir_ui_view
+#: model:website.page,arch_db:theme_canilike.aboutus_page
+msgid "Las conservas en Galicia: el valor de la tradición"
+msgstr "Die Konserven in Galizien : der Wert der Tradition"
+
+#. module: theme_canilike
+#: model:ir.ui.view,arch_db:theme_canilike.website_footer_default
+msgid "Legal"
+msgstr "Legal"
+
+#. module: theme_canilike
+#: model:ir.ui.view,arch_db:theme_canilike.website_footer_default
+msgid "Legal Advice"
+msgstr "Rechtsberatung"
+
+#. module: theme_canilike
+#: model:ir.ui.view,arch_db:theme_canilike.advise
+#: model:ir.ui.view,name:theme_canilike.advise
+msgid "Legal Advice - Advice Canilike"
+msgstr "Legal Advice - Advice Canilike"
+
+#. module: theme_canilike
+#: model:ir.ui.view,arch_db:theme_canilike.terms
+#: model:ir.ui.view,name:theme_canilike.terms
+msgid "Legal Advice - Legal Terms Canilike"
+msgstr "Legal Advice - Legal Terms Canilike"
+
+#. module: theme_canilike
+#: model:ir.ui.view,arch_db:theme_canilike.privacy
+#: model:ir.ui.view,name:theme_canilike.privacy
+msgid "Legal Advice - Privacy Policy Canilike"
+msgstr "Legal Advice - Datenschutzerklärung Canilike"
+
+#. module: theme_canilike
+#: model:ir.ui.view,arch_db:theme_canilike.website_footer_default
+msgid "Legal advice link"
+msgstr "Rechtsberatung link"
+
+#. module: theme_canilike
+#: model:ir.ui.view,arch_db:theme_canilike.website_footer_default
+msgid "Linkedin"
+msgstr "Linkedin"
+
+#. module: theme_canilike
+#: model:ir.ui.view,arch_db:theme_canilike.payment_and_shipping
+#: model:ir.ui.view,arch_db:theme_canilike.payment_and_shipping_page_ir_ui_view
+#: model:website.page,arch_db:theme_canilike.payment_and_shipping_page
+msgid "List of available payment methods."
+msgstr "Liste der verfügbaren Zahlungsmethoden"
+
+#. module: theme_canilike
+#: model:ir.ui.view,arch_db:theme_canilike.payment_and_shipping
+#: model:ir.ui.view,arch_db:theme_canilike.payment_and_shipping_page_ir_ui_view
+#: model:website.page,arch_db:theme_canilike.payment_and_shipping_page
+msgid "List of available shipping methods."
+msgstr "Liste der verfügbaren Versandarten."
+
+#. module: theme_canilike
+#: model:ir.ui.view,arch_db:theme_canilike.website_layout
+msgid "Location Options"
+msgstr "Standortoptionen"
+
+#. module: theme_canilike
+#: model:ir.ui.view,name:theme_canilike.location_selection_modal
+msgid "Location selection modal Canilike"
+msgstr "Location selection modal Canilike"
+
+#. module: theme_canilike
+#: model:ir.ui.view,arch_db:theme_canilike.website_layout
+msgid "Logout"
+msgstr "Ausloggen"
+
+#. module: theme_canilike
+#: model:ir.ui.view,name:theme_canilike.website_layout
+msgid "Main layout Canilike"
+msgstr "Main layout Canilike"
+
+#. module: theme_canilike
+#: model:website.theme,name:theme_canilike.theme_canilike_multi
+msgid "MultiWebsite Canilike Theme"
+msgstr "MultiWebsite Canilike Theme"
+
+#. module: theme_canilike
+#: model:ir.ui.view,arch_db:theme_canilike.website_layout
+msgid "My Account"
+msgstr "Mein Konto"
+
+#. module: theme_canilike
+#: model:ir.ui.view,arch_db:theme_canilike.about_us
+#: model:ir.ui.view,arch_db:theme_canilike.aboutus_page_ir_ui_view
+#: model:website.page,arch_db:theme_canilike.aboutus_page
+msgid "Nuestras conservas son capaces de complacer a los consumidores más exigentes. A diferencia de otros alimentos envasados, en las conservas no hay trucos o artificios para engañar paladares. No son necesarios. Basta con proteger las extraordinarias cualidades del producto extraído de aguas gallegas."
+msgstr "Unsere Konserven sind in der Lage, die anspruchsvollsten Verbraucher zufrieden zu stellen. Im Gegensatz zu anderen abgepackten Lebensmitteln gibt es in der Konservierung keine Tricks oder Kniffe, um den Gaumen zu täuschen. Diese sind nicht notwendig. Es reicht, die außergewöhnlichen Eigenschaften des Produkts, welche aus galizischen Gewässern gewonnen werden, zu schützen."
+
+#. module: theme_canilike
+#: model:ir.ui.view,arch_db:theme_canilike.website_cookie_notice_message
+msgid "OK"
+msgstr "OK"
+
+#. module: theme_canilike
+#: model:ir.ui.view,arch_db:theme_canilike.igape_modal
+msgid "OPERACIÓN COFINANCIADA POLA UNIÓN EUROPEA"
+msgstr "OPERACIÓN COFINANCIADA POLA UNIÓN EUROPEA"
+
+#. module: theme_canilike
+#: model:ir.ui.view,arch_db:theme_canilike.igape_modal
+msgid "PROGRAMA OPERATIVO FEDER GALICIA 2014-2020"
+msgstr "PROGRAMA OPERATIVO FEDER GALICIA 2014-2020"
+
+#. module: theme_canilike
+#: model:ir.ui.view,arch_db:theme_canilike.website_footer_default
+msgid "Payment and Shipping"
+msgstr "Zahlung und Versand"
+
+#. module: theme_canilike
+#: model:ir.ui.view,arch_db:theme_canilike.website_footer_default
+msgid "Payment and Shipping Link"
+msgstr "Zahlung und Versand Link"
+
+#. module: theme_canilike
+#: model:website.page,name:theme_canilike.payment_and_shipping_page
+msgid "Payment and shipping"
+msgstr "Zahlung und Versand"
+
+#. module: theme_canilike
+#: model:ir.ui.view,name:theme_canilike.payment_and_shipping
+#: model:ir.ui.view,name:theme_canilike.payment_and_shipping_page_ir_ui_view
+msgid "Payment and shipping Canilike"
+msgstr "Zahlung und Versand Canilike"
+
+#. module: theme_canilike
+#: model:ir.ui.view,arch_db:theme_canilike.payment_and_shipping
+#: model:ir.ui.view,arch_db:theme_canilike.payment_and_shipping_page_ir_ui_view
+#: model:website.page,arch_db:theme_canilike.payment_and_shipping_page
+msgid "Payment and shipping info"
+msgstr "Zahlung und Versand information"
+
+#. module: theme_canilike
+#: model:ir.ui.view,arch_db:theme_canilike.payment_and_shipping
+#: model:ir.ui.view,arch_db:theme_canilike.payment_and_shipping_page_ir_ui_view
+#: model:website.page,arch_db:theme_canilike.payment_and_shipping_page
+msgid "Payment methods"
+msgstr "Zahlungsmethoden"
+
+#. module: theme_canilike
+#: model:ir.ui.view,arch_db:theme_canilike.about_us
+#: model:ir.ui.view,arch_db:theme_canilike.aboutus_page_ir_ui_view
+#: model:website.page,arch_db:theme_canilike.aboutus_page
+msgid "Por eso estoy aquí. Por aquellos recuerdos de sabores. Porque quiero que otros prueben sabores que son para mí auténticos tesoros. Porque conozco este excelente producto, conozco a los proveedores que aseguran su calidad; y estoy convencido de que quien lo conoce, no puede hacer más que acostumbrarse a vivir con él."
+msgstr "Deshalb bin ich hier. Wegen dieser Erinnerungen an die Aromen. Weil ich möchte, dass andere die Geschmäcker probieren, welche für mich wahre Schätze sind. Weil ich dieses ausgezeichnete Produkt kenne. Ich kenne die Lieferanten, die die Qualität sicherstellen und ich bin überzeugt, dass jeder, der es kennt, es nicht mehr aus seinem Leben denken kann."
+
+#. module: theme_canilike
+#: model:ir.ui.view,arch_db:theme_canilike.website_footer_default
+msgid "Privacy policy"
+msgstr "Datenschutzerklärung"
+
+#. module: theme_canilike
+#: model:ir.ui.view,arch_db:theme_canilike.website_footer_default
+msgid "Privacy policy link"
+msgstr "Datenschutzerklärung link"
+
+#. module: theme_canilike
+#: model:ir.ui.view,name:theme_canilike.website_sale_product
+msgid "Product Canilike"
+msgstr "Produkt Canilike"
+
+#. module: theme_canilike
+#: model:ir.ui.view,name:theme_canilike.website_sale_product_price
+msgid "Product Price Canilike"
+msgstr "Produkt Price Canilike"
+
+#. module: theme_canilike
+#: model:ir.model,name:theme_canilike.model_sale_order
+msgid "Quotation"
+msgstr "Angebot"
+
+#. module: theme_canilike
+#: model:website.menu,name:theme_canilike.menu_recipes
+msgid "Recipes"
+msgstr "Rezepte"
+
+#. module: theme_canilike
+#: model:ir.ui.view,arch_db:theme_canilike.about_us
+#: model:ir.ui.view,arch_db:theme_canilike.aboutus_page_ir_ui_view
+#: model:website.page,arch_db:theme_canilike.aboutus_page
+msgid "Recuerdos de sabores: en Galicia y en el mundo"
+msgstr "Geschmackserinnerungen: in Galizien und auf der ganzen Welt"
+
+#. module: theme_canilike
+#: model:ir.ui.view,arch_db:theme_canilike.location_selection_modal
+msgid "Select Location"
+msgstr "Ort auswählen"
+
+#. module: theme_canilike
+#: model:ir.ui.view,arch_db:theme_canilike.website_sale_address_kanban
+msgid "Select this address"
+msgstr "Wählen Sie diese Adresse aus"
+
+#. module: theme_canilike
+#: model:ir.ui.view,arch_db:theme_canilike.payment_and_shipping
+#: model:ir.ui.view,arch_db:theme_canilike.payment_and_shipping_page_ir_ui_view
+#: model:website.page,arch_db:theme_canilike.payment_and_shipping_page
+msgid "Shipping methods"
+msgstr "Versandarten"
+
+#. module: theme_canilike
+#: model:ir.ui.view,arch_db:theme_canilike.about_us
+#: model:ir.ui.view,arch_db:theme_canilike.aboutus_page_ir_ui_view
+#: model:website.page,arch_db:theme_canilike.aboutus_page
+msgid "Si pudiésemos asomarnos a las despensas de un centenar de familias españolas, en más de noventa encontraríamos latas de conservas. ¿Cómo podría ser de otro modo? Un producto natural, delicioso, fácil de almacenar, de precio competitivo y con fechas de caducidad que conceden un amplio margen para su consumo. Avales de sobra para convertirse en un imprescindible."
+msgstr "Wenn wir Einblick in die Vorratskammern von hundert spanischen Familien hätten, würden wir in mehr als neunzig davon Konservendosen finden. Wie könnte es auch anders sein? Ein natürliches Produkt, köstlich, einfach zu lagern, mit konkurrenzfähigen Preisen und mit Verfallsdaten, die eine ausreichende Zeitspanne für den Verzehr erlauben. Genügend Garantien um nicht mehr darauf verzichten zu können."
+
+#. module: theme_canilike
+#: model:ir.ui.view,arch_db:theme_canilike.about_us
+#: model:ir.ui.view,arch_db:theme_canilike.aboutus_page_ir_ui_view
+#: model:website.page,arch_db:theme_canilike.aboutus_page
+msgid "Sin conservantes. Sin química. Sin nada que te arrebate el sabor 100% natural de los pescados y mariscos. Los métodos utilizados en la industria conservera gallega son una sólida garantía de calidad y fiabilidad."
+msgstr "Ohne Konservierungsmittel. Ohne Chemie. Nichts, was den 100% natürlichen Geschmack von Fisch und Meeresfrüchten beeinträchtigt könnte. Die in der galizischen Konservenindustrie angewandten Methoden, sind eine solide Garantie für Qualität und Zuverlässigkeit."
+
+#. module: theme_canilike
+#: model:ir.ui.view,arch_db:theme_canilike.website_footer_default
+msgid "Social Media"
+msgstr "Sozialen Medien"
+
+#. module: theme_canilike
+#: model:ir.ui.view,arch_db:theme_canilike.location_selection_modal
+#: model:ir.ui.view,arch_db:theme_canilike.payment_and_shipping
+#: model:ir.ui.view,arch_db:theme_canilike.payment_and_shipping_page_ir_ui_view
+#: model:website.page,arch_db:theme_canilike.payment_and_shipping_page
+msgid "Switching from one warehouse to another will empty your current cart because each warehouse has different products."
+msgstr "Wenn Sie von einem Lager in ein anderes wechseln, wird Ihr aktueller Einkaufswagen geleert, da jedes Lager unterschiedliche Produkte enthält."
+
+#. module: theme_canilike
+#: model:ir.ui.view,arch_db:theme_canilike.about_us
+#: model:ir.ui.view,arch_db:theme_canilike.aboutus_page_ir_ui_view
+#: model:website.page,arch_db:theme_canilike.aboutus_page
+msgid "Sólo los pescados y mariscos de máxima calidad continúan adelante en el proceso. Esterilizando los alimentos a temperaturas superiores a 100ºC garantizamos que los productos se mantengan inalterados en su lata durante largos periodos de tiempo. Cualquier germen potencialmente dañino queda destruido. Y todo esto sin afectar a la calidad nutritiva ni al sabor original del producto que llega a tu mesa."
+msgstr "Nur die qualitativ hochwertigsten Fische und Meeresfrüchte werden weiter verarbeitet. Durch die Sterilisation der Lebensmittel bei Temperaturen über 100 ° C garantieren wir, dass die Produkte über lange Zeiträume in der Dose erhalten bleiben. Jeder potentiell schädliche Keim wird vernichtet. Und das alles, ohne die Ernährungsqualität oder den ursprünglichen Geschmack des Produkts, welches auf Ihrem Tisch landet, zu beeinträchtigen."
+
+#. module: theme_canilike
+#: model:ir.ui.view,arch_db:theme_canilike.website_footer_default
+msgid "Terms of use"
+msgstr "Nutzungsbedingungen"
+
+#. module: theme_canilike
+#: model:ir.ui.view,arch_db:theme_canilike.website_footer_default
+msgid "Terms of use Link"
+msgstr "Nutzungsbedingungen Link"
+
+#. module: theme_canilike
+#: model:ir.ui.view,arch_db:theme_canilike.location_selection_modal
+#: model:ir.ui.view,arch_db:theme_canilike.payment_and_shipping
+#: model:ir.ui.view,arch_db:theme_canilike.payment_and_shipping_page_ir_ui_view
+#: model:website.page,arch_db:theme_canilike.payment_and_shipping_page
+msgid "The prices and availability of the products may change depending on the selected warehouse."
+msgstr "Die Preise und die Verfügbarkeit der Produkte können sich je nach ausgewähltem Lager ändern"
+
+#. module: theme_canilike
+#: model:ir.ui.view,arch_db:theme_canilike.header_logo
+msgid "Tradition canning updated"
+msgstr "Die aktualisierte Tradition"
+
+#. module: theme_canilike
+#: model:ir.ui.view,arch_db:theme_canilike.website_footer_default
+msgid "Twitter"
+msgstr "Twitter"
+
+#. module: theme_canilike
+#: model:ir.ui.view,arch_db:theme_canilike.igape_modal
+msgid "UNHA MANEIRA DE FACER EUROPA"
+msgstr "UNHA MANEIRA DE FACER EUROPA"
+
+#. module: theme_canilike
+#: model:ir.model,name:theme_canilike.model_stock_warehouse
+msgid "Warehouse"
+msgstr "Warehouse"
+
+#. module: theme_canilike
+#: model:ir.ui.view,arch_db:theme_canilike.website_cookie_notice_message
+msgid "We use cookies in this website. Read about them in our"
+msgstr "We use cookies in this website. Read about them in our"
+
+#. module: theme_canilike
+#: model:ir.model,name:theme_canilike.model_website
+msgid "Website"
+msgstr "Webseite"
+
+#. module: theme_canilike
+#: model:ir.ui.view,arch_db:theme_canilike.website_sale_address_kanban
+msgid "You can't ship to this address"
+msgstr "You can't ship to this address"
+
+#. module: theme_canilike
+#: model:ir.ui.view,arch_db:theme_canilike.website_footer_default
+msgid "Youtube"
+msgstr "Youtube"
+
+#. module: theme_canilike
+#: model:ir.ui.view,arch_db:theme_canilike.about_us
+#: model:ir.ui.view,arch_db:theme_canilike.aboutus_page_ir_ui_view
+#: model:website.page,arch_db:theme_canilike.aboutus_page
+msgid "conservation"
+msgstr "conservation"
+
+#. module: theme_canilike
+#: model:ir.ui.view,arch_db:theme_canilike.website_cookie_notice_message
+msgid "privacy policy"
+msgstr "datenschutzerklärung"
+
+#. module: theme_canilike
+#: model:ir.ui.view,arch_db:theme_canilike.about_us
+#: model:ir.ui.view,arch_db:theme_canilike.aboutus_page_ir_ui_view
+#: model:website.page,arch_db:theme_canilike.aboutus_page
+msgid "process"
+msgstr "prozess"
+
+#. module: theme_canilike
+#: model:ir.ui.view,arch_db:theme_canilike.about_us
+#: model:ir.ui.view,arch_db:theme_canilike.aboutus_page_ir_ui_view
+#: model:website.page,arch_db:theme_canilike.aboutus_page
+msgid "¿Por qué?"
+msgstr "Warum?"
