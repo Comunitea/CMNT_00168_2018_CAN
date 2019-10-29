@@ -66,7 +66,7 @@ msgstr "<font style=\"font-size: 24px;\" class=\"text-epsilon\">Las conservas en
 
 #. module: theme_canilike
 #: model:ir.ui.view,arch_db:theme_canilike.home
-msgid "<font style=\"font-size: 24px;\" class=\"text-epsilon\">>Memories of flavors: <br/>in Galicia and in the world</font>"
+msgid "<font style=\"font-size: 24px;\" class=\"text-epsilon\">Memories of flavors: <br/>in Galicia and in the world</font>"
 msgstr "<font style=\"font-size: 24px;\" class=\"text-epsilon\">Recuerdos de sabores: <br/>en Galicia y en el mundo</font>"
 
 #. module: theme_canilike
