@@ -28,17 +28,7 @@ msgstr "Más información..."
 #. module: theme_canilike
 #: model:ir.ui.view,arch_db:theme_canilike.home
 msgid "Meet our products"
-msgstr "Conoce nuestros productos
-
-#. module: theme_canilike
-#: model:ir.ui.view,arch_db:theme_canilike.home
-msgid "&amp;nbsp;"
-msgstr "&amp;nbsp;"
-
-#. module: theme_canilike
-#: model:ir.ui.view,arch_db:theme_canilike.website_cookie_notice_message
-msgid ". To disable them, configure your browser properly. If you keep using this website, you are accepting those."
-msgstr ". Para desactivarlas, configure adecuadamente su navegador. Si continúa usando este sitio web, está aceptándolas."
+msgstr "Conoce nuestros productos"
 
 #. module: theme_canilike
 #: model:ir.ui.view,arch_db:theme_canilike.home
@@ -54,7 +44,7 @@ msgstr "<font style=\"color: rgb(156, 156, 148);\">El mar gallego es único en s
 
 #. module: theme_canilike
 #: model:ir.ui.view,arch_db:theme_canilike.home
-msgid "<font style=\"color: rgb(156, 156, 148);\">Si pudiésemos asomarnos a las despensas de un centenar de familias españolas, en más de noventa encontraríamos latas de conservas. ¿Cómo podría ser de otro modo? Un producto natural, delicioso, fácil de almacenar, de precio competitivo y con fechas de caducidad que conceden un amplio margen para su consumo. Avales de sobra para convertirse en un imprescindible...<font style=\"color: rgb(156, 156, 148);\"><br/></font></font>"
+msgid "<font style=\"color: rgb(156, 156, 148);\">If we could peek into the pantries of a hundred Spanish families, canned food would be found in more than ninety. How could it be any other way? A delicious natural product easy to store, competitively priced and with expiration dates that allow ample room for consumption. These are enough guarantees to become an essential product.<font style=\"color: rgb(156, 156, 148);\"><br/></font></font>"
 msgstr "<font style=\"color: rgb(156, 156, 148);\">Si pudiésemos asomarnos a las despensas de un centenar de familias españolas, en más de noventa encontraríamos latas de conservas. ¿Cómo podría ser de otro modo? Un producto natural, delicioso, fácil de almacenar, de precio competitivo y con fechas de caducidad que conceden un amplio margen para su consumo. Avales de sobra para convertirse en un imprescindible...<font style=\"color: rgb(156, 156, 148);\"><br/></font></font>"
 
 #. module: theme_canilike
@@ -80,20 +70,16 @@ msgid "<font style=\"font-size: 24px;\" class=\"text-epsilon\">>Memories of flav
 msgstr "<font style=\"font-size: 24px;\" class=\"text-epsilon\">Recuerdos de sabores: <br/>en Galicia y en el mundo</font>"
 
 #. module: theme_canilike
-#: model:ir.ui.view,arch_db:theme_canilike.aboutus_page_ir_ui_view
-#: model:ir.ui.view,arch_db:theme_canilike.about_us
-#: model:website.page,arch_db:theme_canilike.aboutus_page
-msgid "Nuestras conservas son capaces de complacer a los consumidores más exigentes. A diferencia de otros alimentos envasados, en las conservas no hay trucos o artificios para engañar paladares.\n"
-"                    No son necesarios. Basta con proteger las extraordinarias cualidades del producto extraído de aguas gallegas."
-msgstr "Nuestras conservas son capaces de complacer a los consumidores más exigentes. A diferencia de otros alimentos envasados, en las conservas no hay trucos o artificios para engañar paladares.\n"
-"                    No son necesarios. Basta con proteger las extraordinarias cualidades del producto extraído de aguas gallegas."
+#: model:ir.ui.view,arch_db:theme_canilike.website_cookie_notice_message
+msgid ". To disable them, configure your browser properly. If you keep using this website, you are accepting those."
+msgstr ". Para desactivarlas, configure adecuadamente su navegador. Si continúa usando este sitio web, está aceptándolas."
 
 #. module: theme_canilike
 #: model:ir.ui.view,arch_db:theme_canilike.payment_and_shipping
 #: model:ir.ui.view,arch_db:theme_canilike.payment_and_shipping_page_ir_ui_view
 #: model:website.page,arch_db:theme_canilike.payment_and_shipping_page
 msgid "<font style=\"\" class=\"text-epsilon\">Payment and shipping<br/></font>"
-msgstr "<font style=\"\" class=\"text-epsilon\">Payment and shipping<br/></font>"
+msgstr "<font style=\"\" class=\"text-epsilon\">Pago y envío<br/></font>"
 
 #. module: theme_canilike
 #: model:ir.ui.view,arch_db:theme_canilike.website_sale_address_kanban
@@ -126,6 +112,15 @@ msgstr "A un ingenioso cocinero llamado Nicolas Appert se le ocurrió esteriliza
 "                    Durante la segunda mitad del siglo XIX la industria conservera del pescado consolidó una sólida posición en el continente europeo."
 
 #. module: theme_canilike
+#: model:ir.ui.view,arch_db:theme_canilike.aboutus_page_ir_ui_view
+#: model:ir.ui.view,arch_db:theme_canilike.about_us
+#: model:website.page,arch_db:theme_canilike.aboutus_page
+msgid "Nuestras conservas son capaces de complacer a los consumidores más exigentes. A diferencia de otros alimentos envasados, en las conservas no hay trucos o artificios para engañar paladares.\n"
+"                    No son necesarios. Basta con proteger las extraordinarias cualidades del producto extraído de aguas gallegas."
+msgstr "Nuestras conservas son capaces de complacer a los consumidores más exigentes. A diferencia de otros alimentos envasados, en las conservas no hay trucos o artificios para engañar paladares.\n"
+"                    No son necesarios. Basta con proteger las extraordinarias cualidades del producto extraído de aguas gallegas."
+
+#. module: theme_canilike
 #: model:website.menu,name:theme_canilike.menu_aboutus
 msgid "About Us"
 msgstr "Nosotros"
@@ -139,11 +134,6 @@ msgstr "Nosotros"
 #: model:ir.ui.view,name:theme_canilike.about_us
 msgid "About us Canilike"
 msgstr "About us Canilike"
-
-#. module: theme_canilike
-#: model:ir.ui.view,name:theme_canilike.aboutus_page_ir_ui_view
-msgid "About us Canilike (Website #10)"
-msgstr "About us Canilike (Website #10)"
 
 #. module: theme_canilike
 #: model:ir.ui.view,arch_db:theme_canilike.website_sale_product
@@ -441,16 +431,6 @@ msgstr "Lista de los métodos de envío disponibles."
 
 #. module: theme_canilike
 #: model:ir.ui.view,arch_db:theme_canilike.website_layout
-msgid "<span class=\"hidden-xs\">Location</span>"
-msgstr "<span class=\"hidden-xs\">Localización</span>"
-
-#. module: theme_canilike
-#: model:ir.ui.view,arch_db:theme_canilike.website_layout
-msgid "<span class=\"hidden-xs\">Language</span>"
-msgstr "<span class=\"hidden-xs\">Idioma</span>"
-
-#. module: theme_canilike
-#: model:ir.ui.view,arch_db:theme_canilike.website_layout
 msgid "<span>Location Options</span>"
 msgstr "<span>Opciones Localización</span>"
 
@@ -513,11 +493,6 @@ msgstr "Payment and shipping"
 #: model:ir.ui.view,name:theme_canilike.payment_and_shipping
 msgid "Payment and shipping Canilike"
 msgstr "Payment and shipping Canilike"
-
-#. module: theme_canilike
-#: model:ir.ui.view,name:theme_canilike.payment_and_shipping_page_ir_ui_view
-msgid "Payment and shipping Canilike (Website #10)"
-msgstr "Payment and shipping Canilike (Website #10)"
 
 #. module: theme_canilike
 #: model:ir.ui.view,arch_db:theme_canilike.payment_and_shipping
