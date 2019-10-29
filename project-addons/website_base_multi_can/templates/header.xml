@@ -4,7 +4,7 @@
     <!-- Call breadcrumbs -->
     <template id="wbm_website_layout" name="Main Layout Base" active="True" customize_show="True" inherit_id="website.layout">
         <xpath expr="//div[@id='wrapwrap']//div[hasclass('navbar')]" position="after">
-            <t t-call="breadcrumbs_base.bcb_main_wrap" t-if="('website_sale.products' or 'recipe' or 'portal') in xmlid"/>
+            <t t-call="breadcrumbs_base.bcb_main_wrap" t-if="'website_sale.products' in xmlid or 'recipe' in xmlid  or 'portal' in xmlid"/>
         </xpath>
     </template>
 
@@ -18,23 +18,8 @@
         </xpath>
     </template>
 
-    <!-- Remove Wishlist icon text -->
-    <template id="website_sale_header_wishlist" name="Header Shop Wishlist Base" inherit_id="website_sale_wishlist.header">
-        <xpath expr="//header//ul[@id='top_menu']/li[@id='my_cart']" position="after">
-            <t t-if="request.env.ref('website_multi_theme.auto_view_can_website_sale_wishlist_add_to_wishlist').active">
-                <t t-set='wishcount' t-value="len(request.env['product.wishlist'].current())"/>
-                <li id="my_wish" t-att-style="not wishcount and 'display:none;'">
-                    <a href="/shop/wishlist">
-                        <i class="fa fa-heart"/>
-                        <sup t-attf-class="my_wish_quantity o_animate_blink label label-primary"><t t-esc='wishcount'/></sup>
-                    </a>
-                </li>
-            </t>
-        </xpath>
-    </template>
-
     <!-- Add language selector -->
-    <template id="wbm_portal_frontend_layout" name="Frontend Layout Template" inherit_id="portal.frontend_layout">
+    <template id="wbm_portal_frontend_layout" name="Frontend Layout Base" inherit_id="portal.frontend_layout">
         <xpath expr="//ul[@id='top_menu']" position="inside">
             <t t-if="(request and request.is_frontend_multilang and len(languages) &gt; 1)">
                 <li class="divider"/>
