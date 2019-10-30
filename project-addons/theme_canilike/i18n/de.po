@@ -13,12 +13,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
-"Plural-Forms: \
-
-#. module: theme_canilike
-#: model:ir.ui.view,arch_db:theme_canilike.website_cookie_notice_message
-msgid ". To disable them, configure your browser properly. If you keep using this website, you are accepting those."
-msgstr ". Um sie zu deaktivieren, konfigurieren Sie Ihren Browser richtig. Wenn Sie diese Website weiterhin nutzen, akzeptieren Sie diese."
+"Plural-Forms: \n"
 
 #. module: theme_canilike
 #: model:ir.ui.view,arch_db:theme_canilike.about_us
@@ -68,12 +63,12 @@ msgstr "<font style=\"\" class=\"text-epsilon\">DIE QUALITÄT LIEGT IN DER NATÜ
 #. module: theme_canilike
 #: model:ir.ui.view,arch_db:theme_canilike.home
 msgid "Meet our products"
-msgstr "Lernen Sie unsere Produkte kenne">"
+msgstr "Lernen Sie unsere Produkte kenne"
 
 #. module: theme_canilike
 #: model:ir.ui.view,arch_db:theme_canilike.home
 msgid "<font style=\"color: rgb(156, 156, 148);\">The lush wealth of the Galician sea is unique: it combines abundance and quality. It is natural that the canning industry settled in Galicia almost two hundred years ago. Preserving the delicious product from Galician waters was a necessity, rather than just a business. But in order to talk about the authentic origin of this preservation system, we have to travel in space and time...</font>"
-msgstr "<font style=\"color: rgb(156, 156, 148);\">Mit seinem üppigen Reichtum ist das galizische Meer einzigartig: Es verbindet Menge und Qualität. Es ist selbstverständlich, dass sich die Konservenindustrie vor fast zweihundert Jahren in Galizien niedergelassen hat. Mehr als ein Geschäft war es, das köstliche Produkt aus den galizischen Gewässern zu konservieren. Damit wir aber über den tatsächlichen Ursprung des Konservierungssystem sprechen können, müssen wir durch Raum und Zeit reisen...</font>"
+msgstr "<font style=\"color: rgb(156, 156, 148);\">Mit seinem üppigen Reichtum ist das galizische Meer einzigartig: Es verbindet Menge und Qualität. Es ist selbstverständlich, dass sich die Konservenindustrie vor fast zweihundert Jahren in Galizien niedergelassen hat. Mehr als ein Geschäft war es, das köstliche Produkt aus den galizischen Gewässern zu konservieren...</font>"
 
 #. module: theme_canilike
 #: model:ir.ui.view,arch_db:theme_canilike.home
@@ -83,7 +78,7 @@ msgstr "<font style=\"color: rgb(156, 156, 148);\">Wenn wir Einblick in die Vorr
 #. module: theme_canilike
 #: model:ir.ui.view,arch_db:theme_canilike.home
 msgid "<font style=\"color: rgb(156, 156, 148);\">No preservatives. No chemicals. Nothing is added that can take away the 100% natural taste of fish and shellfish. The methods used in the Galician canning industry are a solid guarantee of quality and reliability.</font>\n"
-"                                        <font style=\"color: rgb(156, 156, 148);\">Our canned products are able to please the most demanding consumers. Unlike in other packaged foods, no tricks or artifice are used in canned foods to deceive the palate. They are unnecessary. The only necessary thing is the protection of the extraordinary qualities of the product extracted from Galician waters.<font style=\"color: rgb(156, 156, 148);\">&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;</font></font>"
+"                                        <font style=\"color: rgb(156, 156, 148);\">Our canned products are able to please the most demanding consumers. Unlike in other packaged foods, no tricks or artifice are used in canned foods to ...<font style=\"color: rgb(156, 156, 148);\">&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;</font></font>"
 msgstr "<font style=\"color: rgb(156, 156, 148);\">Ohne Konservierungsmittel. Ohne Chemie. Nichts, was den 100% natürlichen Geschmack von Fisch und Meeresfrüchten beeinträchtigt könnte.</font>\n"
 "                                        <font style=\"color: rgb(156, 156, 148);\">Die in der galizischen Konservenindustrie angewandten Methoden, sind eine solide Garantie für Qualität und Zuverlässigkeit...<font style=\"color: rgb(156, 156, 148);\">&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;</font></font>"
 
@@ -95,19 +90,19 @@ msgstr "<font style=\"font-size: 24px;\" class=\"text-epsilon\">Der Prozess der 
 #. module: theme_canilike
 #: model:ir.ui.view,arch_db:theme_canilike.home
 msgid "<font style=\"font-size: 24px;\" class=\"text-epsilon\">Canned food in Galicia:<br/>the value of tradition</font>"
-msgstr "<font style=\"font-size: 24px;\" class=\"text-epsilon\">Die Konserven in Galizien:<br/>el valor de la tradición</font>"
+msgstr "<font style=\"font-size: 24px;\" class=\"text-epsilon\">Die Konserven in Galizien:<br/>der Wert der Tradition</font>"
 
 #. module: theme_canilike
 #: model:ir.ui.view,arch_db:theme_canilike.home
 msgid "<font style=\"font-size: 24px;\" class=\"text-epsilon\">Memories of flavors: <br/>in Galicia and in the world</font>"
-msgstr "<font style=\"font-size: 24px;\" class=\"text-epsilon\">Recuerdos de sabores: <br/>der Wert der Tradition</font>"
+msgstr "<font style=\"font-size: 24px;\" class=\"text-epsilon\">Geschmackserinnerungen: <br/>in Galizien und auf der ganzen Welt</font>"
 
 #. module: theme_canilike
 #: model:ir.ui.view,arch_db:theme_canilike.payment_and_shipping
 #: model:ir.ui.view,arch_db:theme_canilike.payment_and_shipping_page_ir_ui_view
 #: model:website.page,arch_db:theme_canilike.payment_and_shipping_page
 msgid "<font style=\"\" class=\"text-epsilon\">Payment and shipping<br/></font>"
-msgstr "<font style=\"\" class=\"text-epsilon\">Zahlung und Versand<br/></font
+msgstr "<font style=\"\" class=\"text-epsilon\">Zahlung und Versand<br/></font>"
 
 #. module: theme_canilike
 #: model:ir.ui.view,arch_db:theme_canilike.website_sale_address_kanban
@@ -131,7 +126,7 @@ msgid "<span>Close</span>"
 msgstr "<span>Schließen</span>"
 
 #. module: theme_canilike
-#: model:ir.ui.view,arch_db:theme_canilike.website_footer_default
+#: model:ir.ui.view,arch_db:theme_canilike.website.footer_default
 msgid "<span>European Union</span>"
 msgstr "<span>Europäische Union</span>"
 
@@ -158,7 +153,7 @@ msgid "About Us"
 msgstr "Über uns"
 
 #. module: theme_canilike
-#: model:ir.ui.view,arch_db:theme_canilike.website_footer_default
+#: model:ir.ui.view,arch_db:theme_canilike.website.footer_default
 #: model:website.page,name:theme_canilike.aboutus_page
 msgid "About us"
 msgstr "Über uns"
@@ -170,7 +165,7 @@ msgid "About us Canilike"
 msgstr "Über uns Canilike"
 
 #. module: theme_canilike
-#: model:ir.ui.view,arch_db:theme_canilike.website_footer_default
+#: model:ir.ui.view,arch_db:theme_canilike.website.footer_default
 msgid "About us link"
 msgstr "Über uns link"
 
@@ -205,11 +200,6 @@ msgid "Can i like"
 msgstr "Can i like"
 
 #. module: theme_canilike
-#: model:ir.ui.view,name:theme_canilike.website_cookie_notice_message
-msgid "Canilike Cookies notice"
-msgstr "Canilike Cookies notice"
-
-#. module: theme_canilike
 #: model:ir.ui.view,arch_db:theme_canilike.website_layout
 msgid "Cart"
 msgstr "Wagen"
@@ -222,7 +212,7 @@ msgid "Cerrando los ojos para hacer memoria regresan a mi boca un montón de sab
 msgstr "Wenn ich die Augen schließe und zurückdenke, kehren wieder jede Menge Aromen in meinem Mund zurück. Die Rezepte meiner Mutter und meiner Großmutter, welche mit ein paar Dosen und zehn Minuten Wunder vollbringen konnten, die namhaften Köchen würdig waren. Die heimlichen Ausflüge an den Küchenschrank um ein paar Muscheln zu suchen, welche den kleinen Hunger am Nachmittag stillten. Und natürlich die Abendessen als Studenten, als ich nach dem Trinken mit den Freunden noch mit leckeren Konserven den leeren Magen füllte."
 
 #. module: theme_canilike
-#: model:ir.ui.view,arch_db:theme_canilike.website_footer_default
+#: model:ir.ui.view,arch_db:theme_canilike.website.footer_default
 msgid "Contact"
 msgstr "Kontakt"
 
@@ -232,7 +222,7 @@ msgid "Contact Form Canilike"
 msgstr "Contact Form Canilike"
 
 #. module: theme_canilike
-#: model:ir.ui.view,arch_db:theme_canilike.website_footer_default
+#: model:ir.ui.view,arch_db:theme_canilike.website.footer_default
 msgid "Contact link"
 msgstr "Kontakt link"
 
@@ -316,17 +306,17 @@ msgstr "Esta empresa participa nun proxecto de internacionalización a través d
 "                            O resultado que se pretende é aumentar a base de empresas exportadoras e consolidar a presenza de empresas galegas nos mercados internacionais."
 
 #. module: theme_canilike
-#: model:ir.ui.view,arch_db:theme_canilike.website_footer_default
+#: model:ir.ui.view,arch_db:theme_canilike.website.footer_default
 msgid "European Union"
 msgstr "Europäische Union"
 
 #. module: theme_canilike
-#: model:ir.ui.view,arch_db:theme_canilike.website_footer_default
+#: model:ir.ui.view,arch_db:theme_canilike.website.footer_default
 msgid "Facebook"
 msgstr "Facebook"
 
 #. module: theme_canilike
-#: model:ir.ui.view,name:theme_canilike.website_footer_default
+#: model:ir.ui.view,name:theme_canilike.website.footer_default
 msgid "Footer Custom Canilike"
 msgstr "Footer Custom Canilike"
 
@@ -363,7 +353,7 @@ msgid "Header Submenus Canilike"
 msgstr "Header Submenus Canilike"
 
 #. module: theme_canilike
-#: model:ir.ui.view,arch_db:theme_canilike.website_footer_default
+#: model:ir.ui.view,arch_db:theme_canilike.website.footer_default
 msgid "Igape"
 msgstr "Igape"
 
@@ -378,7 +368,7 @@ msgid "Igape Modal Canilike"
 msgstr "Igape Modal Canilike"
 
 #. module: theme_canilike
-#: model:ir.ui.view,arch_db:theme_canilike.website_footer_default
+#: model:ir.ui.view,arch_db:theme_canilike.website.footer_default
 msgid "Instagram"
 msgstr "Instagram"
 
@@ -390,12 +380,12 @@ msgid "Las conservas en Galicia: el valor de la tradición"
 msgstr "Die Konserven in Galizien : der Wert der Tradition"
 
 #. module: theme_canilike
-#: model:ir.ui.view,arch_db:theme_canilike.website_footer_default
+#: model:ir.ui.view,arch_db:theme_canilike.website.footer_default
 msgid "Legal"
 msgstr "Legal"
 
 #. module: theme_canilike
-#: model:ir.ui.view,arch_db:theme_canilike.website_footer_default
+#: model:ir.ui.view,arch_db:theme_canilike.website.footer_default
 msgid "Legal Advice"
 msgstr "Rechtsberatung"
 
@@ -418,12 +408,12 @@ msgid "Legal Advice - Privacy Policy Canilike"
 msgstr "Legal Advice - Datenschutzerklärung Canilike"
 
 #. module: theme_canilike
-#: model:ir.ui.view,arch_db:theme_canilike.website_footer_default
+#: model:ir.ui.view,arch_db:theme_canilike.website.footer_default
 msgid "Legal advice link"
 msgstr "Rechtsberatung link"
 
 #. module: theme_canilike
-#: model:ir.ui.view,arch_db:theme_canilike.website_footer_default
+#: model:ir.ui.view,arch_db:theme_canilike.website.footer_default
 msgid "Linkedin"
 msgstr "Linkedin"
 
@@ -479,11 +469,6 @@ msgid "Nuestras conservas son capaces de complacer a los consumidores más exige
 msgstr "Unsere Konserven sind in der Lage, die anspruchsvollsten Verbraucher zufrieden zu stellen. Im Gegensatz zu anderen abgepackten Lebensmitteln gibt es in der Konservierung keine Tricks oder Kniffe, um den Gaumen zu täuschen. Diese sind nicht notwendig. Es reicht, die außergewöhnlichen Eigenschaften des Produkts, welche aus galizischen Gewässern gewonnen werden, zu schützen."
 
 #. module: theme_canilike
-#: model:ir.ui.view,arch_db:theme_canilike.website_cookie_notice_message
-msgid "OK"
-msgstr "OK"
-
-#. module: theme_canilike
 #: model:ir.ui.view,arch_db:theme_canilike.igape_modal
 msgid "OPERACIÓN COFINANCIADA POLA UNIÓN EUROPEA"
 msgstr "OPERACIÓN COFINANCIADA POLA UNIÓN EUROPEA"
@@ -494,12 +479,12 @@ msgid "PROGRAMA OPERATIVO FEDER GALICIA 2014-2020"
 msgstr "PROGRAMA OPERATIVO FEDER GALICIA 2014-2020"
 
 #. module: theme_canilike
-#: model:ir.ui.view,arch_db:theme_canilike.website_footer_default
+#: model:ir.ui.view,arch_db:theme_canilike.website.footer_default
 msgid "Payment and Shipping"
 msgstr "Zahlung und Versand"
 
 #. module: theme_canilike
-#: model:ir.ui.view,arch_db:theme_canilike.website_footer_default
+#: model:ir.ui.view,arch_db:theme_canilike.website.footer_default
 msgid "Payment and Shipping Link"
 msgstr "Zahlung und Versand Link"
 
@@ -536,12 +521,12 @@ msgid "Por eso estoy aquí. Por aquellos recuerdos de sabores. Porque quiero que
 msgstr "Deshalb bin ich hier. Wegen dieser Erinnerungen an die Aromen. Weil ich möchte, dass andere die Geschmäcker probieren, welche für mich wahre Schätze sind. Weil ich dieses ausgezeichnete Produkt kenne. Ich kenne die Lieferanten, die die Qualität sicherstellen und ich bin überzeugt, dass jeder, der es kennt, es nicht mehr aus seinem Leben denken kann."
 
 #. module: theme_canilike
-#: model:ir.ui.view,arch_db:theme_canilike.website_footer_default
+#: model:ir.ui.view,arch_db:theme_canilike.website.footer_default
 msgid "Privacy policy"
 msgstr "Datenschutzerklärung"
 
 #. module: theme_canilike
-#: model:ir.ui.view,arch_db:theme_canilike.website_footer_default
+#: model:ir.ui.view,arch_db:theme_canilike.website.footer_default
 msgid "Privacy policy link"
 msgstr "Datenschutzerklärung link"
 
@@ -594,7 +579,7 @@ msgstr "Versandarten"
 #: model:ir.ui.view,arch_db:theme_canilike.aboutus_page_ir_ui_view
 #: model:website.page,arch_db:theme_canilike.aboutus_page
 msgid "Si pudiésemos asomarnos a las despensas de un centenar de familias españolas, en más de noventa encontraríamos latas de conservas. ¿Cómo podría ser de otro modo? Un producto natural, delicioso, fácil de almacenar, de precio competitivo y con fechas de caducidad que conceden un amplio margen para su consumo. Avales de sobra para convertirse en un imprescindible."
-msgstr "Wenn wir Einblick in die Vorratskammern von hundert spanischen Familien hätten, würden wir in mehr als neunzig davon Konservendosen finden. Wie könnte es auch anders sein? Ein natürliches Produkt, köstlich, einfach zu lagern, mit konkurrenzfähigen Preisen und mit Verfallsdaten, die eine ausreichende Zeitspanne für den Verzehr erlauben. Genügend Garantien um nicht mehr darauf verzichten zu können."
+msgstr "Wenn wir Einblick in die Vorratskammern von hundert spanischen Familien hätten, würden wir in mehr als neunzig davon Konservendosen finden. Wie könnte es auch anders sein? Ein natürliches Produkt, köstlich, einfach zu lagern, mit konkurrenzfähigen Preisen und mit Verfallsdaten, die eine ausreichende Zeitspanne für..."
 
 #. module: theme_canilike
 #: model:ir.ui.view,arch_db:theme_canilike.about_us
@@ -604,9 +589,15 @@ msgid "Sin conservantes. Sin química. Sin nada que te arrebate el sabor 100% na
 msgstr "Ohne Konservierungsmittel. Ohne Chemie. Nichts, was den 100% natürlichen Geschmack von Fisch und Meeresfrüchten beeinträchtigt könnte. Die in der galizischen Konservenindustrie angewandten Methoden, sind eine solide Garantie für Qualität und Zuverlässigkeit."
 
 #. module: theme_canilike
-#: model:ir.ui.view,arch_db:theme_canilike.website_footer_default
+#: model:ir.ui.view,arch_db:theme_canilike.website.footer_default
 msgid "Social Media"
 msgstr "Sozialen Medien"
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.products
+#: model:website.menu,name:website_sale.menu_shop
+msgid "Shop"
+msgstr "Geschäft"
 
 #. module: theme_canilike
 #: model:ir.ui.view,arch_db:theme_canilike.location_selection_modal
@@ -624,12 +615,12 @@ msgid "Sólo los pescados y mariscos de máxima calidad continúan adelante en e
 msgstr "Nur die qualitativ hochwertigsten Fische und Meeresfrüchte werden weiter verarbeitet. Durch die Sterilisation der Lebensmittel bei Temperaturen über 100 ° C garantieren wir, dass die Produkte über lange Zeiträume in der Dose erhalten bleiben. Jeder potentiell schädliche Keim wird vernichtet. Und das alles, ohne die Ernährungsqualität oder den ursprünglichen Geschmack des Produkts, welches auf Ihrem Tisch landet, zu beeinträchtigen."
 
 #. module: theme_canilike
-#: model:ir.ui.view,arch_db:theme_canilike.website_footer_default
+#: model:ir.ui.view,arch_db:theme_canilike.website.footer_default
 msgid "Terms of use"
 msgstr "Nutzungsbedingungen"
 
 #. module: theme_canilike
-#: model:ir.ui.view,arch_db:theme_canilike.website_footer_default
+#: model:ir.ui.view,arch_db:theme_canilike.website.footer_default
 msgid "Terms of use Link"
 msgstr "Nutzungsbedingungen Link"
 
@@ -647,7 +638,7 @@ msgid "Tradition canning updated"
 msgstr "Die aktualisierte Tradition"
 
 #. module: theme_canilike
-#: model:ir.ui.view,arch_db:theme_canilike.website_footer_default
+#: model:ir.ui.view,arch_db:theme_canilike.website.footer_default
 msgid "Twitter"
 msgstr "Twitter"
 
@@ -662,11 +653,6 @@ msgid "Warehouse"
 msgstr "Warehouse"
 
 #. module: theme_canilike
-#: model:ir.ui.view,arch_db:theme_canilike.website_cookie_notice_message
-msgid "We use cookies in this website. Read about them in our"
-msgstr "We use cookies in this website. Read about them in our"
-
-#. module: theme_canilike
 #: model:ir.model,name:theme_canilike.model_website
 msgid "Website"
 msgstr "Webseite"
@@ -677,7 +663,7 @@ msgid "You can't ship to this address"
 msgstr "You can't ship to this address"
 
 #. module: theme_canilike
-#: model:ir.ui.view,arch_db:theme_canilike.website_footer_default
+#: model:ir.ui.view,arch_db:theme_canilike.website.footer_default
 msgid "Youtube"
 msgstr "Youtube"
 
@@ -689,9 +675,39 @@ msgid "conservation"
 msgstr "conservation"
 
 #. module: theme_canilike
+#: model:ir.ui.view,name:theme_canilike.website_cookie_notice_message
+msgid "Canilike Cookies notice"
+msgstr "Canilike Cookies notice"
+
+#. module: theme_canilike
+#: model:ir.ui.view,name:theme_canilike.website_cookie_notice_message
+msgid "We use cookies in this website. Read about them in our"
+msgstr "Wir verwenden Cookies in dieser Webseite. Lesen Sie mehr zu diesen in unserer"
+
+#. module: theme_canilike
 #: model:ir.ui.view,arch_db:theme_canilike.website_cookie_notice_message
 msgid "privacy policy"
 msgstr "datenschutzerklärung"
+
+#. module: theme_canilike
+#: model:ir.ui.view,name:theme_canilike.website_cookie_notice_message
+msgid ". To disable them, configure your browser properly. If you keep using this website, you are accepting those."
+msgstr ". Sie können diese Nutzung in ihren Browsereinstellungen deaktivieren. Durch die weitere Nutzung unserer Website erklären Sie sich damit einverstanden."
+
+#. module: website_cookie_notice
+#: model:ir.ui.view,arch_db:website_cookie_notice.message
+msgid "We use cookies in this website. Read about them in our"
+msgstr "Wir verwenden Cookies in dieser Webseite. Lesen Sie mehr zu diesen in unserer"
+
+#. module: website_cookie_notice
+#: model:ir.ui.view,arch_db:website_cookie_notice.message
+msgid "privacy policy"
+msgstr "datenschutzerklärung"
+
+#. module: website_cookie_notice
+#: model:ir.ui.view,arch_db:website_cookie_notice.message
+msgid ". To disable them, configure your browser properly. If you keep using this website, you are accepting those."
+msgstr ". Sie können diese Nutzung in ihren Browsereinstellungen deaktivieren. Durch die weitere Nutzung unserer Website erklären Sie sich damit einverstanden."
 
 #. module: theme_canilike
 #: model:ir.ui.view,arch_db:theme_canilike.about_us
@@ -706,3 +722,62 @@ msgstr "prozess"
 #: model:website.page,arch_db:theme_canilike.aboutus_page
 msgid "¿Por qué?"
 msgstr "Warum?"
+
+#. module: website
+#: model:ir.ui.view,arch_db:website.contactus
+#: model:ir.ui.view,arch_db:website.contactus_page_ir_ui_view
+#: model:ir.ui.view,arch_db:website.footer_default
+#: model:ir.ui.view,arch_db:website.s_banner
+#: model:ir.ui.view,arch_db:website.s_big_message
+#: model:ir.ui.view,arch_db:website.s_comparisons
+#: model:website.menu,name:website.menu_contactus
+#: model:website.page,arch_db:website.contactus_page
+msgid "Contact us"
+msgstr "Kontakt"
+
+#. module: website
+#: model:ir.ui.view,arch_db:website.contactus
+#: model:ir.ui.view,arch_db:website.contactus_page_ir_ui_view
+#: model:website.page,arch_db:website.contactus_page
+msgid "Contact us about anything related to our company or services."
+msgstr "Kontaktieren Sie uns bei Fragen zu unseren Produkten und Dienstleistungen."
+
+#. module: website
+#: model:ir.ui.view,arch_db:website.contactus
+#: model:ir.ui.view,arch_db:theme_canilike.about_us
+msgid "Your Name"
+msgstr "Ihr Name"
+
+#. module: website_crm
+#: model:ir.ui.view,arch_db:website_crm.contactus_form
+msgid "Phone Number"
+msgstr "Telefonnummer"
+
+#. module: website_crm
+#: model:ir.ui.view,arch_db:website_crm.contactus_form
+msgid "Your Company"
+msgstr "Ihr Unternehmen"
+
+#. module: website_crm
+#: model:ir.ui.view,arch_db:website_crm.contactus_form
+msgid "Subject"
+msgstr "Betreff"
+
+#. module: website_crm
+#: model:ir.ui.view,arch_db:website_crm.contactus_form
+msgid "Your Question"
+msgstr "Ihre Frage"
+
+#. module: website_crm
+#: model:ir.ui.view,arch_db:website_crm.contactus_form
+msgid ""
+"<span class=\"btn btn-primary btn-lg o_website_form_send\">Send</span>\n"
+"                                <span id=\"o_website_form_result\"/>"
+msgstr ""
+"<span class=\"btn btn-primary btn-lg o_website_form_send\">Senden</span>\n"
+"                                <span id=\"o_website_form_result\"/>"
+
+#. module: website_base_multi_can
+#: model:ir.ui.view,arch_db:website_base_multi_can.accept_legal_terms_without_check_snippet
+msgid "I accept the"
+msgstr "Ich akzeptiere das"

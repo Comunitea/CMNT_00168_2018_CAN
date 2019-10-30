@@ -103,7 +103,12 @@
         </div>
     </template>
 
-    <template id="website_layout" name="Main layout Canilike" inherit_id="website_base_multi_can.wbm_website_layout">
+    <template id="website_layout" name="Main layout Canilike" inherit_id="website.layout">
+
+        <!-- Call breadcrumbs -->
+        <xpath expr="//div[@id='wrapwrap']//div[hasclass('navbar')]" position="after">
+            <t t-call="website_base_multi_can.breadcrumbs_bar" t-if="'website_sale.products' in xmlid or 'recipe' in xmlid  or 'portal' in xmlid"/>
+        </xpath>
 
         <!-- Replace original header submenus -->
         <xpath expr="//t[@t-foreach='website.menu_id.child_id']" position="replace"/>

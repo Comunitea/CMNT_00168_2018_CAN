@@ -87,8 +87,12 @@
         <xpath expr="//t[@t-call='website_sale.search']" position="attributes">
             <attribute name="t-if">True == False</attribute>
         </xpath>
+        <!-- Delete container -->
+        <xpath expr="//div[hasclass('container', 'oe_website_sale')]" position="attributes">
+            <attribute name="class">wrapper oe_website_sale</attribute>
+        </xpath>
         <!-- Replace products table -->
-        <xpath expr="//div[hasclass('container', 'oe_website_sale')]/div[hasclass('row')]" position="replace">
+        <xpath expr="//div[hasclass('wrapper', 'oe_website_sale')]/div[hasclass('row')]" position="replace">
             <div class="shop-list">
                 <div class="hidden shop-categories" id="products_grid_before"/>
                 <div class="shop-content" id="products_grid">

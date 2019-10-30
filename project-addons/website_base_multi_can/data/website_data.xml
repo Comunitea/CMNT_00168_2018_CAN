@@ -22,7 +22,7 @@
 <!--                <field name="social_facebook"></field>-->
 <!--                <field name="social_youtube"></field>-->
 <!--                <field name="social_linkedin"></field>-->
-<!--                <field name="social_instagram"></field>-->
+                <field name="social_instagram">https://www.instagram.com</field>
                 <field name="base_url">https://_______domain_________/</field>
                 <field name="email">info@canilike.com</field>
                 <field name="phone">111-222-333</field>
