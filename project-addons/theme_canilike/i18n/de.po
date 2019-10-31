@@ -19,28 +19,28 @@ msgstr ""
 #: model:ir.ui.view,arch_db:theme_canilike.about_us
 #: model:ir.ui.view,arch_db:theme_canilike.aboutus_page_ir_ui_view
 #: model:website.page,arch_db:theme_canilike.aboutus_page
-msgid "<b>Por su mínimo impacto ecológico.</b> Las conservas no necesitan frío, por lo que no requieren energía para preservarlas en óptimas condiciones. Además, nuestros envases son 100% reciclables."
+msgid "<b>Because of the minimal ecological impact.</b> Canned foods do not need cold storage, so they do not require energy to be preserved in optimal conditions. Besides, our containers are 100% recyclable."
 msgstr "<b>Für seine minimale ökologische Auswirkung.</b> Die Konserven müssen nicht gekühlt werden und benötigen daher keine Energie, die sie unter optimalen Bedingungen haltbar machen. Darüber hinaus sind unsere Behälter zu 100% recycelbar."
 
 #. module: theme_canilike
 #: model:ir.ui.view,arch_db:theme_canilike.about_us
 #: model:ir.ui.view,arch_db:theme_canilike.aboutus_page_ir_ui_view
 #: model:website.page,arch_db:theme_canilike.aboutus_page
-msgid "<b>Por su sabor.</b> Nuestras conservas de pescado y mariscos ofrecen una amplia variedad de ideas y sabores para tu despensa y tu cocina."
+msgid "<b>Because of the taste.</b> Our canned fish and shellfish offer a wide variety of ideas and flavors for your pantry and your cuisine."
 msgstr "<b>Wegen seinem Geschmack.</b> Unsere Fisch- und Meeresfrüchte Konserven bieten eine Vielzahl von Ideen und Aromen für Ihre Speisekammer und Ihre Küche an."
 
 #. module: theme_canilike
 #: model:ir.ui.view,arch_db:theme_canilike.about_us
 #: model:ir.ui.view,arch_db:theme_canilike.aboutus_page_ir_ui_view
 #: model:website.page,arch_db:theme_canilike.aboutus_page
-msgid "<b>Por tu salud.</b> Nuestras conservas aportan todas las cualidades nutritivas de los mejores productos del mar."
+msgid "<b>Because of your health.</b> Our canned foods provide all the nutritional qualities of the best sea products."
 msgstr "<b>Für Ihre Gesundheit.</b> Unsere Produkte beinhalten keine Konservierungsstoffe."
 
 #. module: theme_canilike
 #: model:ir.ui.view,arch_db:theme_canilike.about_us
 #: model:ir.ui.view,arch_db:theme_canilike.aboutus_page_ir_ui_view
 #: model:website.page,arch_db:theme_canilike.aboutus_page
-msgid "<b>Porque son naturales.</b> Nuestros productos no tienen conservantes."
+msgid "<b>Because they are natural.</b> Our products do not contain preservatives."
 msgstr "<b>Weil sie natürlich sind.</b> Unsere Produkte beinhalten keine Konservierungsstoffe."
 
 #. module: theme_canilike
@@ -73,7 +73,7 @@ msgstr "<font style=\"color: rgb(156, 156, 148);\">Mit seinem üppigen Reichtum�
 #. module: theme_canilike
 #: model:ir.ui.view,arch_db:theme_canilike.home
 msgid "<font style=\"color: rgb(156, 156, 148);\">If we could peek into the pantries of a hundred Spanish families, canned food would be found in more than ninety. How could it be any other way? A delicious natural product easy to store, competitively priced and with expiration dates that allow ample room for consumption. These are enough guarantees to become an essential product.<font style=\"color: rgb(156, 156, 148);\"><br/></font></font>"
-msgstr "<font style=\"color: rgb(156, 156, 148);\">Wenn wir Einblick in die Vorratskammern von hundert spanischen Familien hätten, würden wir in mehr als neunzig davon Konservendosen finden. Wie könnte es auch anders sein? Ein natürliches Produkt, köstlich, einfach zu lagern, mit konkurrenzfähigen Preisen und mit Verfallsdaten, die eine ausreichende Zeitspanne für den Verzehr erlauben. Genügend Garantien um nicht mehr darauf verzichten zu können...<font style=\"color: rgb(156, 156, 148);\"><br/></font></font>"
+msgstr "<font style=\"color: rgb(156, 156, 148);\">Wenn wir Einblick in die Vorratskammern von hundert spanischen Familien hätten, würden wir in mehr als neunzig davon Konservendosen finden. Wie könnte es auch anders sein? Ein natürliches Produkt, köstlich, einfach zu lagern, mit konkurrenzfähigen Preisen und mit Verfallsdaten, die eine ausreichende Zeitspanne für...<font style=\"color: rgb(156, 156, 148);\"><br/></font></font>"
 
 #. module: theme_canilike
 #: model:ir.ui.view,arch_db:theme_canilike.home
@@ -126,7 +126,52 @@ msgid "<span>Close</span>"
 msgstr "<span>Schließen</span>"
 
 #. module: theme_canilike
-#: model:ir.ui.view,arch_db:theme_canilike.website.footer_default
+#: model:ir.ui.view,arch_db:theme_canilike.website_footer_default
+msgid "Igape"
+msgstr "Igape"
+
+#. module: theme_canilike
+#: model:ir.ui.view,arch_db:theme_canilike.igape_modal
+msgid "Igape Logo"
+msgstr "Igape Logo"
+
+#. module: theme_canilike
+#: model:ir.ui.view,name:theme_canilike.igape_modal
+msgid "Igape Modal Canilike"
+msgstr "Igape Modal Canilike"
+
+#. module: theme_canilike
+#: model:ir.ui.view,arch_db:theme_canilike.igape_modal
+msgid "IGAPE GRANTS FOEXGA PLAN PROGRAM 2019-2020"
+msgstr "IGAPE GEWÄHRT FOEXGA PLAN PROGRAMM 2019-2020"
+
+#. module: theme_canilike
+#: model:ir.ui.view,arch_db:theme_canilike.igape_modal
+msgid "This company is participating in an internationalization project through the program of the Foexga Igape Plan 2019-2020. The main objective of these grants is to encourage and stimulate Galician foreign trade and the internationalization of Galician SMEs. The result is intended to increase the base of exporting companies and to consolidate the presence of Galician companies in international markets."
+msgstr "Dieses Unternehmen beteiligt sich an einem Internationalisierungsprojekt im Rahmen des Programms des Foexga Igape-Plans 2019-2020. Das Hauptziel dieser Zuschüsse besteht darin, den galizischen Außenhandel und die Internationalisierung der galizischen KMU zu fördern und zu stimulieren. Das Ergebnis soll die Basis der exportierenden Unternehmen vergrößern und die Präsenz der galizischen Unternehmen auf den internationalen Märkten festigen."
+
+#. module: theme_canilike
+#: model:ir.ui.view,arch_db:theme_canilike.igape_modal
+msgid "CO-FINANCED OPERATION BY THE EUROPEAN UNION"
+msgstr "KOFINANZIERTE MASSNAHMEN DER EUROPÄISCHEN UNION"
+
+#. module: theme_canilike
+#: model:ir.ui.view,arch_db:theme_canilike.igape_modal
+msgid "FEDER GALICIA OPERATING PROGRAM 2014-2020"
+msgstr "FEDER GALICIA-BETRIEBSPROGRAMM 2014-2020"
+
+#. module: theme_canilike
+#: model:ir.ui.view,arch_db:theme_canilike.igape_modal
+msgid "GET A MOST COMPETITIVE BUSINESS TEXT"
+msgstr "ERHALTEN SIE EINEN WETTBEWERBSFÄHIGSTEN GESCHÄFTSTEXT"
+
+#. module: theme_canilike
+#: model:ir.ui.view,arch_db:theme_canilike.igape_modal
+msgid "A WAY TO DO EUROPE"
+msgstr "EIN WEG, EUROPA ZU TUN"
+
+#. module: theme_canilike
+#: model:ir.ui.view,arch_db:theme_canilike.website_footer_default
 msgid "<span>European Union</span>"
 msgstr "<span>Europäische Union</span>"
 
@@ -143,17 +188,12 @@ msgid "A un ingenioso cocinero llamado Nicolas Appert se le ocurrió esterilizar
 msgstr "Ein einfallsreicher Koch namens Nicolas Appert hatte die Idee, ein mit Kork versiegeltes Glas in kochendem Wasser zu sterilisieren. Das Resultat war großartig. Mit seinem Vorschlag gewann er nicht nur die Auszeichnung, sondern eröffnete auch einen neuen Weg. Der Engländer Peter Durand  patentierte 1810 ein Konservierungssystem mit verschweißten Blechdosen und trat so in die Fussstapfen seines Vorgängers. Der Weg zum modernen Verfahren war gezeichnet und dessen Entwicklung nicht mehr aufzuhalten. In der zweiten Hälfte des 19. Jahrhunderts festigte die Fischkonservenindustrie ihre Stellung auf dem europäischen Kontinent."
 
 #. module: theme_canilike
-#: model:ir.ui.view,arch_db:theme_canilike.igape_modal
-msgid "AXUDAS DO IGAPE PROGRAMA PLAN FOEXGA 2019-2020"
-msgstr "AXUDAS DO IGAPE PROGRAMA PLAN FOEXGA 2019-2020"
-
-#. module: theme_canilike
 #: model:website.menu,name:theme_canilike.menu_aboutus
 msgid "About Us"
 msgstr "Über uns"
 
 #. module: theme_canilike
-#: model:ir.ui.view,arch_db:theme_canilike.website.footer_default
+#: model:ir.ui.view,arch_db:theme_canilike.website_footer_default
 #: model:website.page,name:theme_canilike.aboutus_page
 msgid "About us"
 msgstr "Über uns"
@@ -165,7 +205,7 @@ msgid "About us Canilike"
 msgstr "Über uns Canilike"
 
 #. module: theme_canilike
-#: model:ir.ui.view,arch_db:theme_canilike.website.footer_default
+#: model:ir.ui.view,arch_db:theme_canilike.website_footer_default
 msgid "About us link"
 msgstr "Über uns link"
 
@@ -190,11 +230,6 @@ msgid "Available warehouses"
 msgstr "Verfügbare Lager"
 
 #. module: theme_canilike
-#: model:ir.ui.view,arch_db:theme_canilike.igape_modal
-msgid "CONSEGUIR UN TECIDO EMPRESARIAL MÁIS COMPETITIVO"
-msgstr "CONSEGUIR UN TECIDO EMPRESARIAL MÁIS COMPETITIVO"
-
-#. module: theme_canilike
 #: model:ir.ui.view,arch_db:theme_canilike.header_logo
 msgid "Can i like"
 msgstr "Can i like"
@@ -208,11 +243,11 @@ msgstr "Wagen"
 #: model:ir.ui.view,arch_db:theme_canilike.about_us
 #: model:ir.ui.view,arch_db:theme_canilike.aboutus_page_ir_ui_view
 #: model:website.page,arch_db:theme_canilike.aboutus_page
-msgid "Cerrando los ojos para hacer memoria regresan a mi boca un montón de sabores. Las recetas de mi madre y mi abuela, que con un par de latas y diez minutos podían preparar maravillas dignas de cocineros reputados. Las incursiones a hurtadillas en el armario de la cocina, buscando unos mejillones con los que matar el hambre a media tarde. Y por supuesto, las cenas de estudiante, calmando el gusanillo con unas ricas conservas después de tomar unas copas con mis amigos."
+msgid "If I close my eyes to remember, a lot of flavors come back to my mouth. The recipes of both my mother and my grandmother, who with a couple of cans and ten minutes were able to prepare wonders worthy of renowned chefs. Those sneak raids onto the kitchen cupboard, looking for some mussels to deaden mid-afternoon hunger. And of course, those dinners as a student, taking the edge off my hunger with some delicious canned foods after having drinks with my friends."
 msgstr "Wenn ich die Augen schließe und zurückdenke, kehren wieder jede Menge Aromen in meinem Mund zurück. Die Rezepte meiner Mutter und meiner Großmutter, welche mit ein paar Dosen und zehn Minuten Wunder vollbringen konnten, die namhaften Köchen würdig waren. Die heimlichen Ausflüge an den Küchenschrank um ein paar Muscheln zu suchen, welche den kleinen Hunger am Nachmittag stillten. Und natürlich die Abendessen als Studenten, als ich nach dem Trinken mit den Freunden noch mit leckeren Konserven den leeren Magen füllte."
 
 #. module: theme_canilike
-#: model:ir.ui.view,arch_db:theme_canilike.website.footer_default
+#: model:ir.ui.view,arch_db:theme_canilike.website_footer_default
 msgid "Contact"
 msgstr "Kontakt"
 
@@ -222,7 +257,7 @@ msgid "Contact Form Canilike"
 msgstr "Contact Form Canilike"
 
 #. module: theme_canilike
-#: model:ir.ui.view,arch_db:theme_canilike.website.footer_default
+#: model:ir.ui.view,arch_db:theme_canilike.website_footer_default
 msgid "Contact link"
 msgstr "Kontakt link"
 
@@ -237,7 +272,7 @@ msgstr "Aktuelles Lager:"
 #: model:ir.ui.view,arch_db:theme_canilike.about_us
 #: model:ir.ui.view,arch_db:theme_canilike.aboutus_page_ir_ui_view
 #: model:website.page,arch_db:theme_canilike.aboutus_page
-msgid "Dicen que no hay nada más importante que aquello que sólo echamos de menos cuando desaparece por completo. Como el aire, como el agua, como las grandes amistades. Ya adulto, me he encontrado a mí mismo buscando latas de conservas en tiendas y supermercados de multitud de países, en aquellos destinos a los que la vida me ha llevado. Y me ha sorprendido descubrir que, a pesar de la merecida fama de la gastronomía española en el mundo, las conservas continúan siendo inexplicables desconocidas en numerosos puntos del mapa."
+msgid "It is said that the most important thing is what we only miss when it disappears completely. Like air, like water, like great friendships. As an adult, I have found myself looking for canned food in stores and supermarkets in many countries, in those destinations where life has taken me. And I was surprised to find out that, despite the deserved reputation of Spanish cuisine in the world, canned food remains inexplicably unknown in many places on the map."
 msgstr "Man sagt, dass es nichts Wichtigeres gibt als das, was wir vermissen, wenn es vollständig verschwunden ist. So wie die Luft, das Wasser, die guten Freundschaften. Als Erwachsener habe ich mich selber beim Suchen von Konservendosen gefunden. Sowohl in Geschäften und Supermärkten in vielen verschiedenen Ländern wie auch an Orten, an die mich das Leben geführt hat. Es hat mich überrascht zu entdecken, dass trotz des verdienten Ruhmes der spanischen Küche, die Konserven unerklärlicherweise nach wie vor in vielen Teilen der Welt unbekannt sind."
 
 #. module: theme_canilike
@@ -251,21 +286,21 @@ msgstr "Mach dir keine Sorgen! Wir arbeiten daran."
 #: model:ir.ui.view,arch_db:theme_canilike.about_us
 #: model:ir.ui.view,arch_db:theme_canilike.aboutus_page_ir_ui_view
 #: model:website.page,arch_db:theme_canilike.aboutus_page
-msgid "El mar gallego es único en su exuberante riqueza: reúne abundancia y calidad. Es natural que la industria conservera se asentase en Galicia hace casi doscientos años. Más que un negocio, preservar el delicioso producto procedente de las aguas gallegas era una necesidad. Pero para hablar del auténtico origen de este sistema de conservación tenemos que viajar en el espacio y en el tiempo… y hablar de Napoleón Bonaparte. Sí, Napoleón, el célebre emperador francés."
+msgid "The lush wealth of the Galician sea is unique: it combines abundance and quality. It is natural that the canning industry settled in Galicia almost two hundred years ago. Preserving the delicious product from Galician waters was a necessity, rather than just a business. But in order to talk about the authentic origin of this preservation system, we have to travel in space and time... and talk about Napoleon Bonaparte. Napoleon, yes, the famous French emperor. Indeed, Napoleon the famous French emperor."
 msgstr "Mit seinem üppigen Reichtum ist das galizische Meer einzigartig: Es verbindet Menge und Qualität. Es ist selbstverständlich, dass sich die Konservenindustrie vor fast zweihundert Jahren in Galizien niedergelassen hat. Mehr als ein Geschäft war es, das köstliche Produkt aus den galizischen Gewässern zu konservieren. Damit wir aber über den tatsächlichen Ursprung des Konservierungssystem sprechen können, müssen wir durch Raum und Zeit reisen...und über Napoleon Bonaparte sprechen. Ja genau, Napoleon. Der berühmte französische Kaiser."
 
 #. module: theme_canilike
 #: model:ir.ui.view,arch_db:theme_canilike.about_us
 #: model:ir.ui.view,arch_db:theme_canilike.aboutus_page_ir_ui_view
 #: model:website.page,arch_db:theme_canilike.aboutus_page
-msgid "El proceso de conservación: el valor de lo natural"
+msgid "The preservation process: the value of the natural product"
 msgstr "Der Prozess der Konservierung: der Wert des Natürlichen"
 
 #. module: theme_canilike
 #: model:ir.ui.view,arch_db:theme_canilike.about_us
 #: model:ir.ui.view,arch_db:theme_canilike.aboutus_page_ir_ui_view
 #: model:website.page,arch_db:theme_canilike.aboutus_page
-msgid "El proceso es riguroso de principio a fin, bajo estrictos criterios de higiene y seguridad. El pescado fresco llega refrigerado a las plantas conserveras, donde también es resguardado en cámaras de refrigeración. Un equipo de expertos evalúa en profundidad las condiciones del producto recibido, asegurándose de que su estado es óptimo para el consumo."
+msgid "The process is rigorous from beginning to end, under strict hygiene and safety criteria. Fresh fish arrives refrigerated at the canning plants, where it is stored in refrigeration chambers. A team of experts assess in depth the conditions of the product received, ensuring that it is optimal for consumption."
 msgstr "Der Prozess ist von Anfang bis Ende präzise und unterliegt strengen Hygiene- und Sicherheitskriterien. Der frische Fisch kommt gekühlt in den Konservenfabriken an, wo er in Kühlräumen gelagert wird. Ein Expertenteam bewertet die Bedingungen des erhaltenen Produkts sorgfältig und stellt sicher, dass der Zustand für den Verzehr gewährleistet ist.."
 
 #. module: theme_canilike
@@ -279,14 +314,14 @@ msgstr "Die Branche erlebte einen spektakulären Boom, der das Interesse der lok
 #: model:ir.ui.view,arch_db:theme_canilike.about_us
 #: model:ir.ui.view,arch_db:theme_canilike.aboutus_page_ir_ui_view
 #: model:website.page,arch_db:theme_canilike.aboutus_page
-msgid "El seguimiento no termina cuando se cierra el envase. También después del enlatado se llevan a cabo controles de calidad, tanto desde dentro de la propia empresa como desde certificadoras externas. Es difícil encontrar en el mercado un producto sometido a tantos exámenes, sin que ese conjunto de garantías suponga renunciar a propiedades naturales."
+msgid "The monitoring does not end once the container is closed, after the canning process quality controls are carried out by both the company itself and by external certifying companies. It is difficult to find in the market a product that undergoes so many tests without this set of guarantees entailing the renunciation to natural properties."
 msgstr "Die Überwachung endet nicht mit dem Verschliessen der Verpackung. Auch nach dem Einmachen werden Qualitätskontrollen, sowohl innerhalb des Unternehmens, wie auch von externen Experten für Zertifizierungen, durchgeführt. Es ist schwierig, auf dem Markt ein Produkt zu finden, welches so vielen Tests ausgesetzt ist, ohne dass die ganzen Gewährleistungen Auswirkungen auf die natürlichen Eigenschaften des Produkts haben."
 
 #. module: theme_canilike
 #: model:ir.ui.view,arch_db:theme_canilike.about_us
 #: model:ir.ui.view,arch_db:theme_canilike.aboutus_page_ir_ui_view
 #: model:website.page,arch_db:theme_canilike.aboutus_page
-msgid "En España hay una figura clave en el proceso: los fomentadores. Eran empresarios catalanes que se habían instalado en las costas gallegas para explotar la sardina, huyendo de la escasez mediterránea a mediados del XVIII. Sus talleres trabajaban fundamentalmente con técnicas de salazón. Sin embargo, hacia 1880 surgió una magnífica oportunidad de mercado: la sardina desapareció de los mares franceses. El país vecino aseguraba una potente demanda del producto y además brindaba capital y conocimiento técnico. Los sistemas de conserva hermética irrumpieron en Galicia a través de los acuerdos comerciales suscritos con Francia."
+msgid "In Spain there is a key figure in this process: that of the \'91fomentadores'. These were Catalonian businessmen who had settled in the Galician coast to take advantage of the sardine, fleeing the shortage in the Mediterranean Sea during the mid-18th century. In their workshops, they worked primarily with salting techniques. However, around 1880 a magnificent market opportunity arose: the sardine disappeared from the French seas. The neighboring country ensured a powerful demand for the product, in addition to providing both capital and technical knowledge. Hermetic canning systems burst into Galicia through trade agreements signed with France."
 msgstr "In Spanien gibt es eine Schlüsselfigur in diesem Prozess: «los fomentadores». Das waren katalanische Geschäftsleute, die Mitte des 18. Jahrhunderts wegen der Knappheit der Sardinen im Mittelmeer, an die galizische Küste flohen und sich dort niedergelassen hatten um zu fischen. Deren Betriebe beschäftigten sich hauptsächlich mit der Technik des Salzen. Um 1880 ergab sich jedoch eine großartige Marktchance: Die Sardine verschwand aus den französischen Meeren. Das Nachbarland sicherte die potentielle Produktnachfrage und bot Kapital und technisches Wissen. Durch die Handelsabkommen mit Frankreich, drangen die hermetischen Konservensysteme nach Galizien durc"
 
 #. module: theme_canilike
@@ -297,26 +332,17 @@ msgid "Entre finales del siglo XVIII y comienzos del XIX, Napoleón emprendió u
 msgstr "Napoleon unternahm zwischen Ende des 18. Jahrhunderts und dem Beginn des 19. Jahrhunderts endlose Feldzüge. Seine zahlreichen Truppen zogen durch verschiedenste Gebiete, die den unterschiedlichsten Wetterbedingungen ausgesetzt waren. Und natürlich mussten sie sich gut ernähren, um bei Kräften zu bleiben. Deshalb beschloss Bonaparte, wissenschaftliche Talente zu fördern. Er versprach eine Belohnung von 12 000 französischen Franken für denjenigen, der die beste Möglichkeit entwickelt, Lebensmittel in einwandfreiem Zustand zu erhalten."
 
 #. module: theme_canilike
-#: model:ir.ui.view,arch_db:theme_canilike.igape_modal
-msgid "Esta empresa participa nun proxecto de internacionalización a través do programa do Igape Plan Foexga 2019-2020.\n"
-"                            O obxectivo principal destas axudas é incentivar e estimular o comercio exterior galego e a internacionalización das pemes galegas.\n"
-"                            O resultado que se pretende é aumentar a base de empresas exportadoras e consolidar a presenza de empresas galegas nos mercados internacionais."
-msgstr "Esta empresa participa nun proxecto de internacionalización a través do programa do Igape Plan Foexga 2019-2020.\n"
-"                            O obxectivo principal destas axudas é incentivar e estimular o comercio exterior galego e a internacionalización das pemes galegas.\n"
-"                            O resultado que se pretende é aumentar a base de empresas exportadoras e consolidar a presenza de empresas galegas nos mercados internacionais."
-
-#. module: theme_canilike
-#: model:ir.ui.view,arch_db:theme_canilike.website.footer_default
+#: model:ir.ui.view,arch_db:theme_canilike.website_footer_default
 msgid "European Union"
 msgstr "Europäische Union"
 
 #. module: theme_canilike
-#: model:ir.ui.view,arch_db:theme_canilike.website.footer_default
+#: model:ir.ui.view,arch_db:theme_canilike.website_footer_default
 msgid "Facebook"
 msgstr "Facebook"
 
 #. module: theme_canilike
-#: model:ir.ui.view,name:theme_canilike.website.footer_default
+#: model:ir.ui.view,name:theme_canilike.website_footer_default
 msgid "Footer Custom Canilike"
 msgstr "Footer Custom Canilike"
 
@@ -353,22 +379,7 @@ msgid "Header Submenus Canilike"
 msgstr "Header Submenus Canilike"
 
 #. module: theme_canilike
-#: model:ir.ui.view,arch_db:theme_canilike.website.footer_default
-msgid "Igape"
-msgstr "Igape"
-
-#. module: theme_canilike
-#: model:ir.ui.view,arch_db:theme_canilike.igape_modal
-msgid "Igape Logo"
-msgstr "Igape Logo"
-
-#. module: theme_canilike
-#: model:ir.ui.view,name:theme_canilike.igape_modal
-msgid "Igape Modal Canilike"
-msgstr "Igape Modal Canilike"
-
-#. module: theme_canilike
-#: model:ir.ui.view,arch_db:theme_canilike.website.footer_default
+#: model:ir.ui.view,arch_db:theme_canilike.website_footer_default
 msgid "Instagram"
 msgstr "Instagram"
 
@@ -376,16 +387,16 @@ msgstr "Instagram"
 #: model:ir.ui.view,arch_db:theme_canilike.about_us
 #: model:ir.ui.view,arch_db:theme_canilike.aboutus_page_ir_ui_view
 #: model:website.page,arch_db:theme_canilike.aboutus_page
-msgid "Las conservas en Galicia: el valor de la tradición"
+msgid "Canned food in Galicia: the value of tradition"
 msgstr "Die Konserven in Galizien : der Wert der Tradition"
 
 #. module: theme_canilike
-#: model:ir.ui.view,arch_db:theme_canilike.website.footer_default
+#: model:ir.ui.view,arch_db:theme_canilike.website_footer_default
 msgid "Legal"
 msgstr "Legal"
 
 #. module: theme_canilike
-#: model:ir.ui.view,arch_db:theme_canilike.website.footer_default
+#: model:ir.ui.view,arch_db:theme_canilike.website_footer_default
 msgid "Legal Advice"
 msgstr "Rechtsberatung"
 
@@ -408,12 +419,12 @@ msgid "Legal Advice - Privacy Policy Canilike"
 msgstr "Legal Advice - Datenschutzerklärung Canilike"
 
 #. module: theme_canilike
-#: model:ir.ui.view,arch_db:theme_canilike.website.footer_default
+#: model:ir.ui.view,arch_db:theme_canilike.website_footer_default
 msgid "Legal advice link"
 msgstr "Rechtsberatung link"
 
 #. module: theme_canilike
-#: model:ir.ui.view,arch_db:theme_canilike.website.footer_default
+#: model:ir.ui.view,arch_db:theme_canilike.website_footer_default
 msgid "Linkedin"
 msgstr "Linkedin"
 
@@ -465,26 +476,16 @@ msgstr "Mein Konto"
 #: model:ir.ui.view,arch_db:theme_canilike.about_us
 #: model:ir.ui.view,arch_db:theme_canilike.aboutus_page_ir_ui_view
 #: model:website.page,arch_db:theme_canilike.aboutus_page
-msgid "Nuestras conservas son capaces de complacer a los consumidores más exigentes. A diferencia de otros alimentos envasados, en las conservas no hay trucos o artificios para engañar paladares. No son necesarios. Basta con proteger las extraordinarias cualidades del producto extraído de aguas gallegas."
+msgid "Our canned products are able to please the most demanding consumers. Unlike in other packaged foods, no tricks or artifice are used in canned foods to deceive the palate. They are unnecessary. The only necessary thing is the protection of the extraordinary qualities of the product extracted from Galician waters."
 msgstr "Unsere Konserven sind in der Lage, die anspruchsvollsten Verbraucher zufrieden zu stellen. Im Gegensatz zu anderen abgepackten Lebensmitteln gibt es in der Konservierung keine Tricks oder Kniffe, um den Gaumen zu täuschen. Diese sind nicht notwendig. Es reicht, die außergewöhnlichen Eigenschaften des Produkts, welche aus galizischen Gewässern gewonnen werden, zu schützen."
 
 #. module: theme_canilike
-#: model:ir.ui.view,arch_db:theme_canilike.igape_modal
-msgid "OPERACIÓN COFINANCIADA POLA UNIÓN EUROPEA"
-msgstr "OPERACIÓN COFINANCIADA POLA UNIÓN EUROPEA"
-
-#. module: theme_canilike
-#: model:ir.ui.view,arch_db:theme_canilike.igape_modal
-msgid "PROGRAMA OPERATIVO FEDER GALICIA 2014-2020"
-msgstr "PROGRAMA OPERATIVO FEDER GALICIA 2014-2020"
-
-#. module: theme_canilike
-#: model:ir.ui.view,arch_db:theme_canilike.website.footer_default
+#: model:ir.ui.view,arch_db:theme_canilike.website_footer_default
 msgid "Payment and Shipping"
 msgstr "Zahlung und Versand"
 
 #. module: theme_canilike
-#: model:ir.ui.view,arch_db:theme_canilike.website.footer_default
+#: model:ir.ui.view,arch_db:theme_canilike.website_footer_default
 msgid "Payment and Shipping Link"
 msgstr "Zahlung und Versand Link"
 
@@ -517,16 +518,16 @@ msgstr "Zahlungsmethoden"
 #: model:ir.ui.view,arch_db:theme_canilike.about_us
 #: model:ir.ui.view,arch_db:theme_canilike.aboutus_page_ir_ui_view
 #: model:website.page,arch_db:theme_canilike.aboutus_page
-msgid "Por eso estoy aquí. Por aquellos recuerdos de sabores. Porque quiero que otros prueben sabores que son para mí auténticos tesoros. Porque conozco este excelente producto, conozco a los proveedores que aseguran su calidad; y estoy convencido de que quien lo conoce, no puede hacer más que acostumbrarse a vivir con él."
+msgid "Because I know this excellent product, I know the suppliers that ensure its quality; and I am convinced that those who discover it have no choice but to get used to living with it."
 msgstr "Deshalb bin ich hier. Wegen dieser Erinnerungen an die Aromen. Weil ich möchte, dass andere die Geschmäcker probieren, welche für mich wahre Schätze sind. Weil ich dieses ausgezeichnete Produkt kenne. Ich kenne die Lieferanten, die die Qualität sicherstellen und ich bin überzeugt, dass jeder, der es kennt, es nicht mehr aus seinem Leben denken kann."
 
 #. module: theme_canilike
-#: model:ir.ui.view,arch_db:theme_canilike.website.footer_default
+#: model:ir.ui.view,arch_db:theme_canilike.website_footer_default
 msgid "Privacy policy"
 msgstr "Datenschutzerklärung"
 
 #. module: theme_canilike
-#: model:ir.ui.view,arch_db:theme_canilike.website.footer_default
+#: model:ir.ui.view,arch_db:theme_canilike.website_footer_default
 msgid "Privacy policy link"
 msgstr "Datenschutzerklärung link"
 
@@ -554,7 +555,7 @@ msgstr "Rezepte"
 #: model:ir.ui.view,arch_db:theme_canilike.about_us
 #: model:ir.ui.view,arch_db:theme_canilike.aboutus_page_ir_ui_view
 #: model:website.page,arch_db:theme_canilike.aboutus_page
-msgid "Recuerdos de sabores: en Galicia y en el mundo"
+msgid "Memories of flavors: in Galicia and in the world"
 msgstr "Geschmackserinnerungen: in Galizien und auf der ganzen Welt"
 
 #. module: theme_canilike
@@ -578,18 +579,18 @@ msgstr "Versandarten"
 #: model:ir.ui.view,arch_db:theme_canilike.about_us
 #: model:ir.ui.view,arch_db:theme_canilike.aboutus_page_ir_ui_view
 #: model:website.page,arch_db:theme_canilike.aboutus_page
-msgid "Si pudiésemos asomarnos a las despensas de un centenar de familias españolas, en más de noventa encontraríamos latas de conservas. ¿Cómo podría ser de otro modo? Un producto natural, delicioso, fácil de almacenar, de precio competitivo y con fechas de caducidad que conceden un amplio margen para su consumo. Avales de sobra para convertirse en un imprescindible."
+msgid "If we could peek into the pantries of a hundred Spanish families, canned food would be found in more than ninety. How could it be any other way? A delicious natural product easy to store, competitively priced and with expiration dates that allow ample room for consumption. These are enough guarantees to become an essential product."
 msgstr "Wenn wir Einblick in die Vorratskammern von hundert spanischen Familien hätten, würden wir in mehr als neunzig davon Konservendosen finden. Wie könnte es auch anders sein? Ein natürliches Produkt, köstlich, einfach zu lagern, mit konkurrenzfähigen Preisen und mit Verfallsdaten, die eine ausreichende Zeitspanne für..."
 
 #. module: theme_canilike
 #: model:ir.ui.view,arch_db:theme_canilike.about_us
 #: model:ir.ui.view,arch_db:theme_canilike.aboutus_page_ir_ui_view
 #: model:website.page,arch_db:theme_canilike.aboutus_page
-msgid "Sin conservantes. Sin química. Sin nada que te arrebate el sabor 100% natural de los pescados y mariscos. Los métodos utilizados en la industria conservera gallega son una sólida garantía de calidad y fiabilidad."
+msgid "No preservatives. No chemicals. Nothing is added that can take away the 100% natural taste of fish and shellfish. The methods used in the Galician canning industry are a solid guarantee of quality and reliability."
 msgstr "Ohne Konservierungsmittel. Ohne Chemie. Nichts, was den 100% natürlichen Geschmack von Fisch und Meeresfrüchten beeinträchtigt könnte. Die in der galizischen Konservenindustrie angewandten Methoden, sind eine solide Garantie für Qualität und Zuverlässigkeit."
 
 #. module: theme_canilike
-#: model:ir.ui.view,arch_db:theme_canilike.website.footer_default
+#: model:ir.ui.view,arch_db:theme_canilike.website_footer_default
 msgid "Social Media"
 msgstr "Sozialen Medien"
 
@@ -611,16 +612,16 @@ msgstr "Wenn Sie von einem Lager in ein anderes wechseln, wird Ihr aktueller Ein
 #: model:ir.ui.view,arch_db:theme_canilike.about_us
 #: model:ir.ui.view,arch_db:theme_canilike.aboutus_page_ir_ui_view
 #: model:website.page,arch_db:theme_canilike.aboutus_page
-msgid "Sólo los pescados y mariscos de máxima calidad continúan adelante en el proceso. Esterilizando los alimentos a temperaturas superiores a 100ºC garantizamos que los productos se mantengan inalterados en su lata durante largos periodos de tiempo. Cualquier germen potencialmente dañino queda destruido. Y todo esto sin afectar a la calidad nutritiva ni al sabor original del producto que llega a tu mesa."
+msgid "Only the highest quality fish and shellfish remain in the process. Sterilizing food at temperatures above 100\'baC guarantees that the products remain unaltered in the can for long periods of time. Any potentially harmful germ is destroyed in this process without affecting the nutritional quality or the original flavor of the product that reaches your table."
 msgstr "Nur die qualitativ hochwertigsten Fische und Meeresfrüchte werden weiter verarbeitet. Durch die Sterilisation der Lebensmittel bei Temperaturen über 100 ° C garantieren wir, dass die Produkte über lange Zeiträume in der Dose erhalten bleiben. Jeder potentiell schädliche Keim wird vernichtet. Und das alles, ohne die Ernährungsqualität oder den ursprünglichen Geschmack des Produkts, welches auf Ihrem Tisch landet, zu beeinträchtigen."
 
 #. module: theme_canilike
-#: model:ir.ui.view,arch_db:theme_canilike.website.footer_default
+#: model:ir.ui.view,arch_db:theme_canilike.website_footer_default
 msgid "Terms of use"
 msgstr "Nutzungsbedingungen"
 
 #. module: theme_canilike
-#: model:ir.ui.view,arch_db:theme_canilike.website.footer_default
+#: model:ir.ui.view,arch_db:theme_canilike.website_footer_default
 msgid "Terms of use Link"
 msgstr "Nutzungsbedingungen Link"
 
@@ -638,14 +639,9 @@ msgid "Tradition canning updated"
 msgstr "Die aktualisierte Tradition"
 
 #. module: theme_canilike
-#: model:ir.ui.view,arch_db:theme_canilike.website.footer_default
+#: model:ir.ui.view,arch_db:theme_canilike.website_footer_default
 msgid "Twitter"
 msgstr "Twitter"
-
-#. module: theme_canilike
-#: model:ir.ui.view,arch_db:theme_canilike.igape_modal
-msgid "UNHA MANEIRA DE FACER EUROPA"
-msgstr "UNHA MANEIRA DE FACER EUROPA"
 
 #. module: theme_canilike
 #: model:ir.model,name:theme_canilike.model_stock_warehouse
@@ -663,7 +659,7 @@ msgid "You can't ship to this address"
 msgstr "You can't ship to this address"
 
 #. module: theme_canilike
-#: model:ir.ui.view,arch_db:theme_canilike.website.footer_default
+#: model:ir.ui.view,arch_db:theme_canilike.website_footer_default
 msgid "Youtube"
 msgstr "Youtube"
 
@@ -720,13 +716,13 @@ msgstr "prozess"
 #: model:ir.ui.view,arch_db:theme_canilike.about_us
 #: model:ir.ui.view,arch_db:theme_canilike.aboutus_page_ir_ui_view
 #: model:website.page,arch_db:theme_canilike.aboutus_page
-msgid "¿Por qué?"
+msgid "Why?"
 msgstr "Warum?"
 
 #. module: website
 #: model:ir.ui.view,arch_db:website.contactus
 #: model:ir.ui.view,arch_db:website.contactus_page_ir_ui_view
-#: model:ir.ui.view,arch_db:website.footer_default
+#: model:ir.ui.view,arch_db:website_footer_default
 #: model:ir.ui.view,arch_db:website.s_banner
 #: model:ir.ui.view,arch_db:website.s_big_message
 #: model:ir.ui.view,arch_db:website.s_comparisons
@@ -781,3 +777,669 @@ msgstr ""
 #: model:ir.ui.view,arch_db:website_base_multi_can.accept_legal_terms_without_check_snippet
 msgid "I accept the"
 msgstr "Ich akzeptiere das"
+
+
+#. module: portal
+#: model:mail.template,body_html:portal.mail_template_data_portal_welcome
+msgid ""
+"\n"
+"<p>\n"
+"    Dear ${object.user_id.name or ''},\n"
+"</p>\n"
+"<p>\n"
+"    You have been given access to ${user.company_id.name}'s ${object.wizard_id.portal_id.name}.\n"
+"</p>\n"
+"<p>\n"
+"    Your login account data is:\n"
+"</p>\n"
+"<ul>\n"
+"    <li>Username: ${object.user_id.login or ''}</li>\n"
+"    <li>Portal: <a href=\"${'portal_url' in ctx and ctx['portal_url'] or ''}\">${'portal_url' in ctx and ctx['portal_url'] or ''}</a></li>\n"
+"    <li>Database: ${'dbname' in ctx and ctx['dbname'] or ''}</li>\n"
+"</ul>\n"
+"<p>\n"
+"    You can set or change your password via the following url:\n"
+"</p>\n"
+"<ul>\n"
+"    <li><a href=\"${object.user_id.signup_url}\">${object.user_id.signup_url}</a></li>\n"
+"</ul>\n"
+"<p>\n"
+"${object.wizard_id.welcome_message or ''}"
+msgstr ""
+"\n"
+"<p>\n"
+"    Hallo ${object.user_id.name or ''},\n"
+"</p>\n"
+"<p>\n"
+" Ihnen wurde Zugang zu ${object.wizard_id.portal_id.name} von ${user.company_id.name} gewährt.\n"
+"</p>\n"
+"<p>\n"
+"    Ihre Anmeldedaten lauten:\n"
+"</p>\n"
+"<ul>\n"
+"    <li>Benutzername: ${object.user_id.login or ''}</li>\n"
+"    <li>Portal: <a href=\"${'portal_url' in ctx and ctx['portal_url'] or ''}\">${'portal_url' in ctx and ctx['portal_url'] or ''}</a></li>\n"
+"    <li>Datenbank: ${'dbname' in ctx and ctx['dbname'] or ''}</li>\n"
+"</ul>\n"
+"<p>\n"
+"    Mit der folgenden URL können Sie Ihr Passwort festlegen oder ändern:\n"
+"</p>\n"
+"<ul>\n"
+"    <li><a href=\"${object.user_id.signup_url}\">${object.user_id.signup_url}</a></li>\n"
+"</ul>\n"
+"<p>\n"
+"${object.wizard_id.welcome_message or ''}"
+
+#. module: portal
+#: model:ir.ui.view,arch_db:portal.portal_show_sign_in
+msgid "<b>Sign in</b>"
+msgstr "<b>Anmelden</b>"
+
+#. module: portal
+#: model:ir.ui.view,arch_db:portal.frontend_layout
+msgid ""
+"<span class=\"sr-only\">Toggle navigation</span>\n"
+"                                    <span class=\"icon-bar\"/>\n"
+"                                    <span class=\"icon-bar\"/>\n"
+"                                    <span class=\"icon-bar\"/>"
+msgstr ""
+"<span class=\"sr-only\">Navigation ein-/ausklappen</span> <span class"
+"=\"icon-bar\"/> <span class=\"icon-bar\"/> <span class=\"icon-bar\"/> "
+
+#. module: portal
+#: model:ir.ui.view,arch_db:portal.portal_searchbar
+msgid "<span id=\"search_label\">Search</span> <span class=\"caret\"/>"
+msgstr "<span id=\"search_label\">Suchen</span><span class=\"caret\"/>"
+
+#. module: portal
+#: model:ir.ui.view,arch_db:portal.wizard_view
+msgid "Apply"
+msgstr "Anwenden"
+
+#. module: portal
+#: model:ir.ui.view,arch_db:portal.portal_archive_groups
+msgid "Archives"
+msgstr "Archive"
+
+#. module: portal
+#: model:ir.ui.view,arch_db:portal.wizard_view
+msgid "Cancel"
+msgstr "Abbrechen"
+
+#. module: portal
+#: model:ir.ui.view,arch_db:portal.portal_layout
+msgid "Change"
+msgstr "Ändern"
+
+#. module: portal
+#: model:ir.ui.view,arch_db:portal.portal_my_details
+msgid "City"
+msgstr "Stadt"
+
+#. module: portal
+#. openerp-web
+#: code:addons/portal/static/src/xml/portal_signature.xml:12
+#, python-format
+msgid "Clear"
+msgstr "Suche löschen"
+
+#. module: portal
+#. openerp-web
+#: code:addons/portal/static/src/xml/portal_signature.xml:27
+#, python-format
+msgid "Click here to see your document."
+msgstr "Klicken Sie hier, um Ihr Dokument anzuzeigen."
+
+#. module: portal
+#: model:ir.ui.view,arch_db:portal.portal_my_details
+msgid "Company Name"
+msgstr "Unternehmensname"
+
+#. module: portal
+#: model:ir.ui.view,arch_db:portal.portal_my_details
+msgid ""
+"Confirm\n"
+"                                <span class=\"fa fa-long-arrow-right\"/>"
+msgstr ""
+"Bestätigen\n"
+"<span class=\"fa fa-long-arrow-right\"/>"
+
+#. module: portal
+#: model:ir.model.fields,field_description:portal.field_portal_wizard_user_partner_id
+msgid "Contact"
+msgstr "Kontakt"
+
+#. module: portal
+#: model:ir.ui.view,arch_db:portal.wizard_view
+msgid "Contacts"
+msgstr "Kontakte"
+
+#. module: portal
+#: model:ir.ui.view,arch_db:portal.portal_my_details
+msgid "Country"
+msgstr "Land"
+
+#. module: portal
+#: model:ir.ui.view,arch_db:portal.portal_my_details
+msgid "Country..."
+msgstr "Bitte Land auswählen..."
+
+#. module: portal
+#: model:ir.model.fields,field_description:portal.field_portal_wizard_create_uid
+#: model:ir.model.fields,field_description:portal.field_portal_wizard_user_create_uid
+msgid "Created by"
+msgstr "Erstellt von"
+
+#. module: portal
+#: model:ir.model.fields,field_description:portal.field_portal_wizard_create_date
+#: model:ir.model.fields,field_description:portal.field_portal_wizard_user_create_date
+msgid "Created on"
+msgstr "Erstellt am"
+
+#. module: portal
+#: model:ir.model.fields,help:portal.field_account_invoice_portal_url
+#: model:ir.model.fields,help:portal.field_portal_mixin_portal_url
+#: model:ir.model.fields,help:portal.field_project_project_portal_url
+#: model:ir.model.fields,help:portal.field_project_task_portal_url
+#: model:ir.model.fields,help:portal.field_sale_order_portal_url
+msgid "Customer Portal URL"
+msgstr "Kundenportal-URL"
+
+#. module: portal
+#: model:ir.model.fields,field_description:portal.field_portal_mixin_display_name
+#: model:ir.model.fields,field_description:portal.field_portal_wizard_display_name
+#: model:ir.model.fields,field_description:portal.field_portal_wizard_user_display_name
+msgid "Display Name"
+msgstr "Anzeigename"
+
+#. module: portal
+#. openerp-web
+#: code:addons/portal/static/src/xml/portal_signature.xml:14
+#, python-format
+msgid "Draw your signature"
+msgstr "Bestellung unterschreiben"
+
+#. module: portal
+#: model:ir.model.fields,field_description:portal.field_portal_wizard_user_email
+#: model:ir.ui.view,arch_db:portal.portal_my_details
+msgid "Email"
+msgstr "E-Mail"
+
+#. module: portal
+#: model:ir.model,name:portal.model_mail_thread
+msgid "Email Thread"
+msgstr "E-Mail Thread"
+
+#. module: portal
+#: code:addons/portal/wizard/portal_wizard.py:130
+#, python-format
+msgid "Group %s is not a portal"
+msgstr "Gruppe %s ist kein Portal"
+
+#. module: portal
+#: model:ir.model,name:portal.model_ir_http
+msgid "HTTP routing"
+msgstr "HTTP-Routing"
+
+#. module: portal
+#: model:ir.model.fields,field_description:portal.field_portal_mixin_id
+#: model:ir.model.fields,field_description:portal.field_portal_wizard_id
+#: model:ir.model.fields,field_description:portal.field_portal_wizard_user_id
+msgid "ID"
+msgstr "ID"
+
+#. module: portal
+#: model:ir.model.fields,field_description:portal.field_portal_wizard_user_in_portal
+msgid "In Portal"
+msgstr "Im Portal"
+
+#. module: portal
+#: code:addons/portal/controllers/portal.py:200
+#, python-format
+msgid "Invalid Email! Please enter a valid email address."
+msgstr ""
+"E-mail Addresse ungültig. Bitte geben Sie eine gültige E-mail Adresse ein."
+
+#. module: portal
+#: model:ir.model.fields,field_description:portal.field_portal_wizard_welcome_message
+msgid "Invitation Message"
+msgstr "Einladungsnachricht"
+
+#. module: portal
+#: model:ir.model.fields,field_description:portal.field_portal_mixin___last_update
+#: model:ir.model.fields,field_description:portal.field_portal_wizard___last_update
+#: model:ir.model.fields,field_description:portal.field_portal_wizard_user___last_update
+msgid "Last Modified on"
+msgstr "Zuletzt geändert am"
+
+#. module: portal
+#: model:ir.model.fields,field_description:portal.field_portal_wizard_user_write_uid
+#: model:ir.model.fields,field_description:portal.field_portal_wizard_write_uid
+msgid "Last Updated by"
+msgstr "Zuletzt aktualisiert durch"
+
+#. module: portal
+#: model:ir.model.fields,field_description:portal.field_portal_wizard_user_write_date
+#: model:ir.model.fields,field_description:portal.field_portal_wizard_write_date
+msgid "Last Updated on"
+msgstr "Zuletzt aktualisiert am"
+
+#. module: portal
+#. openerp-web
+#: code:addons/portal/static/src/xml/portal_chatter.xml:20
+#, python-format
+msgid "Leave a comment"
+msgstr "Kommentar hinterlassen"
+
+#. module: portal
+#: model:ir.model.fields,field_description:portal.field_portal_wizard_user_user_id
+msgid "Login User"
+msgstr "Nutzerlogin"
+
+#. module: portal
+#: model:ir.ui.view,arch_db:portal.frontend_layout
+msgid "Logout"
+msgstr "Abmelden"
+
+#. module: portal
+#: model:ir.model,name:portal.model_mail_message
+msgid "Message"
+msgstr "Nachricht"
+
+#. module: portal
+#: model:ir.ui.view,arch_db:portal.my_account_link
+msgid "My Account"
+msgstr "Mein Konto"
+
+#. module: portal
+#: model:ir.ui.view,arch_db:portal.pager
+msgid "Next"
+msgstr "Weiter"
+
+#. module: portal
+#. openerp-web
+#: code:addons/portal/static/src/xml/portal_chatter.xml:38
+#, python-format
+msgid "Oops! Something went wrong. Try to reload the page and log in."
+msgstr ""
+"Ups! Es ist ein Fehler aufgetreten. Versuchen Sie, die Seite erneut zu laden"
+" und sich anzumelden."
+
+#. module: portal
+#: model:ir.ui.view,arch_db:portal.portal_my_details
+msgid "Phone"
+msgstr "Telefon"
+
+#. module: portal
+#: model:ir.model.fields,field_description:portal.field_portal_wizard_portal_id
+msgid "Portal"
+msgstr "Portal"
+
+#. module: portal
+#: model:ir.actions.act_window,name:portal.partner_wizard_action
+#: model:ir.model,name:portal.model_portal_wizard
+#: model:ir.ui.view,arch_db:portal.wizard_view
+msgid "Portal Access Management"
+msgstr "Portal-Zugriffsverwaltung"
+
+#. module: portal
+#: model:ir.model.fields,field_description:portal.field_account_invoice_portal_url
+#: model:ir.model.fields,field_description:portal.field_portal_mixin_portal_url
+#: model:ir.model.fields,field_description:portal.field_project_project_portal_url
+#: model:ir.model.fields,field_description:portal.field_project_task_portal_url
+#: model:ir.model.fields,field_description:portal.field_sale_order_portal_url
+msgid "Portal Access URL"
+msgstr "Portalzugriffs-URL"
+
+#. module: portal
+#: model:ir.model,name:portal.model_portal_wizard_user
+msgid "Portal User Config"
+msgstr "Portalbenutzer Konfiguration"
+
+#. module: portal
+#: model:ir.ui.view,arch_db:portal.pager
+msgid "Prev"
+msgstr "Zurück"
+
+#. module: portal
+#. openerp-web
+#: code:addons/portal/static/src/js/portal_chatter.js:102
+#, python-format
+msgid "Published on %s"
+msgstr "Am %s veröffentlicht"
+
+#. module: portal
+#: model:ir.ui.view,arch_db:portal.wizard_view
+msgid ""
+"Select which contacts should belong to the portal in the list below.\n"
+"                        The email address of each selected contact must be valid and unique.\n"
+"                        If necessary, you can fix any contact's email address directly in the list."
+msgstr ""
+"Wählen Sie die Kontakte aus der Liste, die auf das Portal zugreifen können sollen.\n"
+"                       Die E-Mail Adresse jedes ausgewählten Kontakt muss gültig und einmalig sein.\n"
+"                       Wenn nötig, können Sie die E-Mail Adressen der Kontakte direkt in der Liste korrigiert werden."
+
+#. module: portal
+#. openerp-web
+#: code:addons/portal/static/src/xml/portal_chatter.xml:41
+#, python-format
+msgid "Send"
+msgstr "Senden"
+
+#. module: portal
+#: code:addons/portal/wizard/portal_wizard.py:106
+#, python-format
+msgid "Several contacts have the same email: "
+msgstr "Einige Kontakte haben die gleiche E-Mail Adresse: "
+
+#. module: portal
+#: code:addons/portal/wizard/portal_wizard.py:103
+#, python-format
+msgid "Some contacts don't have a valid email: "
+msgstr "Einige Kontakte haben keine gültige E-Mail  Adresse: "
+
+#. module: portal
+#: code:addons/portal/wizard/portal_wizard.py:109
+#, python-format
+msgid "Some contacts have the same email as an existing portal user:"
+msgstr "Einige Kontakte haben die gleiche E-Mail wie Portal Benutzer."
+
+#. module: portal
+#: code:addons/portal/controllers/portal.py:219
+#, python-format
+msgid "Some required fields are empty."
+msgstr "Einige benötigte Felder sind leer."
+
+#. module: portal
+#: model:ir.ui.view,arch_db:portal.portal_my_details
+msgid "State / Province"
+msgstr "Bundesland / Region"
+
+#. module: portal
+#: model:ir.ui.view,arch_db:portal.portal_my_details
+msgid "Street"
+msgstr "Straße"
+
+#. module: portal
+#. openerp-web
+#: code:addons/portal/static/src/xml/portal_signature.xml:25
+#, python-format
+msgid "Thank You !"
+msgstr "Vielen Dank!"
+
+#. module: portal
+#: model:ir.model.fields,help:portal.field_portal_wizard_portal_id
+msgid "The portal that users can be added in or removed from."
+msgstr "Das Portal, dem Benutzer hinzugefügt oder entfernt werden können."
+
+#. module: portal
+#. openerp-web
+#: code:addons/portal/static/src/xml/portal_chatter.xml:11
+#, python-format
+msgid "There are no comments for now."
+msgstr "Momentan sind keine Kommentare vorhanden."
+
+#. module: portal
+#: model:ir.ui.view,arch_db:portal.wizard_view
+msgid "This text is included in the email sent to new portal users."
+msgstr ""
+"Dieser Text wird an die E-Mail angefügt, die dem neuen Portal-Usern "
+"geschickt wird."
+
+#. module: portal
+#: model:ir.model.fields,help:portal.field_portal_wizard_welcome_message
+msgid "This text is included in the email sent to new users of the portal."
+msgstr ""
+"Dieser Text wird an jede E-Mail angehängt, die an neue Benutzer des Portals "
+"geschickt werden."
+
+#. module: portal
+#: code:addons/portal/wizard/portal_wizard.py:112
+#, python-format
+msgid ""
+"To resolve this error, you can: \n"
+"- Correct the emails of the relevant contacts\n"
+"- Grant access only to contacts with unique emails"
+msgstr ""
+"Zur Lösung dieses Problems können Sie folgendes tun:\n"
+"- Korrigieren Sie die E-Mail Adresse für den betreffenden Kontakt\n"
+"- Erlauben Sie einen Zugang lediglich für Benutzer mit eindeutiger E-Mail Adresse"
+
+#. module: portal
+#: model:ir.model.fields,field_description:portal.field_portal_wizard_user_ids
+msgid "Users"
+msgstr "Benutzer"
+
+#. module: portal
+#: model:ir.ui.view,arch_db:portal.portal_my_details
+msgid "VAT Number"
+msgstr "VAT Nummer"
+
+#. module: portal
+#: model:ir.model.fields,field_description:portal.field_account_analytic_account_website_message_ids
+#: model:ir.model.fields,field_description:portal.field_account_asset_asset_website_message_ids
+#: model:ir.model.fields,field_description:portal.field_account_bank_statement_website_message_ids
+#: model:ir.model.fields,field_description:portal.field_account_invoice_website_message_ids
+#: model:ir.model.fields,field_description:portal.field_account_payment_website_message_ids
+#: model:ir.model.fields,field_description:portal.field_account_voucher_website_message_ids
+#: model:ir.model.fields,field_description:portal.field_blog_blog_website_message_ids
+#: model:ir.model.fields,field_description:portal.field_calendar_event_website_message_ids
+#: model:ir.model.fields,field_description:portal.field_crm_lead_website_message_ids
+#: model:ir.model.fields,field_description:portal.field_crm_team_website_message_ids
+#: model:ir.model.fields,field_description:portal.field_crossovered_budget_website_message_ids
+#: model:ir.model.fields,field_description:portal.field_event_event_website_message_ids
+#: model:ir.model.fields,field_description:portal.field_event_registration_website_message_ids
+#: model:ir.model.fields,field_description:portal.field_event_track_website_message_ids
+#: model:ir.model.fields,field_description:portal.field_fleet_vehicle_log_contract_website_message_ids
+#: model:ir.model.fields,field_description:portal.field_fleet_vehicle_website_message_ids
+#: model:ir.model.fields,field_description:portal.field_forum_forum_website_message_ids
+#: model:ir.model.fields,field_description:portal.field_forum_tag_website_message_ids
+#: model:ir.model.fields,field_description:portal.field_gamification_badge_website_message_ids
+#: model:ir.model.fields,field_description:portal.field_gamification_challenge_website_message_ids
+#: model:ir.model.fields,field_description:portal.field_hr_applicant_website_message_ids
+#: model:ir.model.fields,field_description:portal.field_hr_contract_website_message_ids
+#: model:ir.model.fields,field_description:portal.field_hr_department_website_message_ids
+#: model:ir.model.fields,field_description:portal.field_hr_employee_website_message_ids
+#: model:ir.model.fields,field_description:portal.field_hr_expense_sheet_website_message_ids
+#: model:ir.model.fields,field_description:portal.field_hr_expense_website_message_ids
+#: model:ir.model.fields,field_description:portal.field_hr_holidays_website_message_ids
+#: model:ir.model.fields,field_description:portal.field_hr_job_website_message_ids
+#: model:ir.model.fields,field_description:portal.field_mail_channel_website_message_ids
+#: model:ir.model.fields,field_description:portal.field_mail_mass_mailing_contact_website_message_ids
+#: model:ir.model.fields,field_description:portal.field_mail_test_simple_website_message_ids
+#: model:ir.model.fields,field_description:portal.field_mail_test_website_message_ids
+#: model:ir.model.fields,field_description:portal.field_mail_thread_website_message_ids
+#: model:ir.model.fields,field_description:portal.field_maintenance_equipment_category_website_message_ids
+#: model:ir.model.fields,field_description:portal.field_maintenance_equipment_website_message_ids
+#: model:ir.model.fields,field_description:portal.field_maintenance_request_website_message_ids
+#: model:ir.model.fields,field_description:portal.field_mrp_bom_website_message_ids
+#: model:ir.model.fields,field_description:portal.field_mrp_production_website_message_ids
+#: model:ir.model.fields,field_description:portal.field_mrp_repair_website_message_ids
+#: model:ir.model.fields,field_description:portal.field_mrp_unbuild_website_message_ids
+#: model:ir.model.fields,field_description:portal.field_mrp_workorder_website_message_ids
+#: model:ir.model.fields,field_description:portal.field_note_note_website_message_ids
+#: model:ir.model.fields,field_description:portal.field_product_product_website_message_ids
+#: model:ir.model.fields,field_description:portal.field_product_template_website_message_ids
+#: model:ir.model.fields,field_description:portal.field_project_project_website_message_ids
+#: model:ir.model.fields,field_description:portal.field_purchase_order_website_message_ids
+#: model:ir.model.fields,field_description:portal.field_purchase_requisition_website_message_ids
+#: model:ir.model.fields,field_description:portal.field_res_partner_website_message_ids
+#: model:ir.model.fields,field_description:portal.field_res_users_website_message_ids
+#: model:ir.model.fields,field_description:portal.field_sale_order_website_message_ids
+#: model:ir.model.fields,field_description:portal.field_slide_channel_website_message_ids
+#: model:ir.model.fields,field_description:portal.field_slide_slide_website_message_ids
+#: model:ir.model.fields,field_description:portal.field_stock_landed_cost_website_message_ids
+#: model:ir.model.fields,field_description:portal.field_stock_picking_batch_website_message_ids
+#: model:ir.model.fields,field_description:portal.field_stock_picking_website_message_ids
+#: model:ir.model.fields,field_description:portal.field_stock_production_lot_website_message_ids
+#: model:ir.model.fields,field_description:portal.field_survey_survey_website_message_ids
+msgid "Website Messages"
+msgstr "Website-Nachrichten"
+
+#. module: portal
+#: model:ir.model.fields,help:portal.field_account_analytic_account_website_message_ids
+#: model:ir.model.fields,help:portal.field_account_asset_asset_website_message_ids
+#: model:ir.model.fields,help:portal.field_account_bank_statement_website_message_ids
+#: model:ir.model.fields,help:portal.field_account_invoice_website_message_ids
+#: model:ir.model.fields,help:portal.field_account_payment_website_message_ids
+#: model:ir.model.fields,help:portal.field_account_voucher_website_message_ids
+#: model:ir.model.fields,help:portal.field_blog_blog_website_message_ids
+#: model:ir.model.fields,help:portal.field_calendar_event_website_message_ids
+#: model:ir.model.fields,help:portal.field_crm_lead_website_message_ids
+#: model:ir.model.fields,help:portal.field_crm_team_website_message_ids
+#: model:ir.model.fields,help:portal.field_crossovered_budget_website_message_ids
+#: model:ir.model.fields,help:portal.field_event_event_website_message_ids
+#: model:ir.model.fields,help:portal.field_event_registration_website_message_ids
+#: model:ir.model.fields,help:portal.field_event_track_website_message_ids
+#: model:ir.model.fields,help:portal.field_fleet_vehicle_log_contract_website_message_ids
+#: model:ir.model.fields,help:portal.field_fleet_vehicle_website_message_ids
+#: model:ir.model.fields,help:portal.field_forum_forum_website_message_ids
+#: model:ir.model.fields,help:portal.field_forum_tag_website_message_ids
+#: model:ir.model.fields,help:portal.field_gamification_badge_website_message_ids
+#: model:ir.model.fields,help:portal.field_gamification_challenge_website_message_ids
+#: model:ir.model.fields,help:portal.field_hr_applicant_website_message_ids
+#: model:ir.model.fields,help:portal.field_hr_contract_website_message_ids
+#: model:ir.model.fields,help:portal.field_hr_department_website_message_ids
+#: model:ir.model.fields,help:portal.field_hr_employee_website_message_ids
+#: model:ir.model.fields,help:portal.field_hr_expense_sheet_website_message_ids
+#: model:ir.model.fields,help:portal.field_hr_expense_website_message_ids
+#: model:ir.model.fields,help:portal.field_hr_holidays_website_message_ids
+#: model:ir.model.fields,help:portal.field_hr_job_website_message_ids
+#: model:ir.model.fields,help:portal.field_mail_channel_website_message_ids
+#: model:ir.model.fields,help:portal.field_mail_mass_mailing_contact_website_message_ids
+#: model:ir.model.fields,help:portal.field_mail_test_simple_website_message_ids
+#: model:ir.model.fields,help:portal.field_mail_test_website_message_ids
+#: model:ir.model.fields,help:portal.field_mail_thread_website_message_ids
+#: model:ir.model.fields,help:portal.field_maintenance_equipment_category_website_message_ids
+#: model:ir.model.fields,help:portal.field_maintenance_equipment_website_message_ids
+#: model:ir.model.fields,help:portal.field_maintenance_request_website_message_ids
+#: model:ir.model.fields,help:portal.field_mrp_bom_website_message_ids
+#: model:ir.model.fields,help:portal.field_mrp_production_website_message_ids
+#: model:ir.model.fields,help:portal.field_mrp_repair_website_message_ids
+#: model:ir.model.fields,help:portal.field_mrp_unbuild_website_message_ids
+#: model:ir.model.fields,help:portal.field_mrp_workorder_website_message_ids
+#: model:ir.model.fields,help:portal.field_note_note_website_message_ids
+#: model:ir.model.fields,help:portal.field_product_product_website_message_ids
+#: model:ir.model.fields,help:portal.field_product_template_website_message_ids
+#: model:ir.model.fields,help:portal.field_project_project_website_message_ids
+#: model:ir.model.fields,help:portal.field_purchase_order_website_message_ids
+#: model:ir.model.fields,help:portal.field_purchase_requisition_website_message_ids
+#: model:ir.model.fields,help:portal.field_res_partner_website_message_ids
+#: model:ir.model.fields,help:portal.field_res_users_website_message_ids
+#: model:ir.model.fields,help:portal.field_sale_order_website_message_ids
+#: model:ir.model.fields,help:portal.field_slide_channel_website_message_ids
+#: model:ir.model.fields,help:portal.field_slide_slide_website_message_ids
+#: model:ir.model.fields,help:portal.field_stock_landed_cost_website_message_ids
+#: model:ir.model.fields,help:portal.field_stock_picking_batch_website_message_ids
+#: model:ir.model.fields,help:portal.field_stock_picking_website_message_ids
+#: model:ir.model.fields,help:portal.field_stock_production_lot_website_message_ids
+#: model:ir.model.fields,help:portal.field_survey_survey_website_message_ids
+msgid "Website communication history"
+msgstr "Website-Kommunikationshistorie"
+
+#. module: portal
+#: model:ir.model.fields,field_description:portal.field_portal_wizard_user_wizard_id
+msgid "Wizard"
+msgstr "Assistent"
+
+#. module: portal
+#. openerp-web
+#: code:addons/portal/static/src/xml/portal_chatter.xml:32
+#, python-format
+msgid "Write a message..."
+msgstr "Schreiben Sie eine Nachricht..."
+
+#. module: portal
+#. openerp-web
+#: code:addons/portal/static/src/xml/portal_chatter.xml:21
+#, python-format
+msgid "You must be"
+msgstr "Sie müssen"
+
+#. module: portal
+#: code:addons/portal/wizard/portal_wizard.py:182
+#, python-format
+msgid ""
+"You must have an email address in your User Preferences to send emails."
+msgstr ""
+"Sie müssen Ihre  E-Mail Adresse in den Benutzereinstellungen erfassen, um "
+"E-Mails senden zu können."
+
+#. module: portal
+#: model:ir.ui.view,arch_db:portal.portal_my_details
+msgid "Your Contact Details"
+msgstr "Ihre Kontaktdaten"
+
+#. module: portal
+#: model:ir.ui.view,arch_db:portal.portal_layout
+#: model:ir.ui.view,arch_db:portal.portal_my_details
+msgid "Your Details"
+msgstr "Ihre Angaben"
+
+#. module: portal
+#: model:ir.ui.view,arch_db:portal.portal_my_home
+msgid "Your Documents"
+msgstr "Ihre Dokumente"
+
+#. module: portal
+#. openerp-web
+#: code:addons/portal/static/src/xml/portal_signature.xml:6
+#: model:ir.ui.view,arch_db:portal.portal_my_details
+#, python-format
+msgid "Your Name"
+msgstr "Ihr Name"
+
+#. module: portal
+#: model:mail.template,subject:portal.mail_template_data_portal_welcome
+msgid "Your Odoo account at ${user.company_id.name}"
+msgstr "Ihr Odoo-Account bei ${user.company_id.name|safe}"
+
+#. module: portal
+#: model:ir.ui.view,arch_db:portal.portal_my_details
+msgid "Zip / Postal Code"
+msgstr "PLZ"
+
+#. module: portal
+#. openerp-web
+#: code:addons/portal/static/src/xml/portal_chatter.xml:56
+#, python-format
+msgid "avatar"
+msgstr "Avatar"
+
+#. module: portal
+#. openerp-web
+#: code:addons/portal/static/src/xml/portal_chatter.xml:8
+#, python-format
+msgid "comment"
+msgstr "kommentieren"
+
+#. module: portal
+#. openerp-web
+#: code:addons/portal/static/src/xml/portal_chatter.xml:9
+#, python-format
+msgid "comments"
+msgstr "Kommentare"
+
+#. module: portal
+#. openerp-web
+#: code:addons/portal/static/src/xml/portal_chatter.xml:21
+#, python-format
+msgid "logged in"
+msgstr "angemeldet sein,"
+
+#. module: portal
+#: model:ir.model,name:portal.model_portal_mixin
+msgid "portal.mixin"
+msgstr "portal.mixin"
+
+#. module: portal
+#: model:ir.ui.view,arch_db:portal.portal_my_details
+msgid "select..."
+msgstr "... auswählen"
+
+#. module: portal
+#. openerp-web
+#: code:addons/portal/static/src/xml/portal_chatter.xml:21
+#, python-format
+msgid "to post a comment."
+msgstr "um einen Kommentar zu veröffentlichen."

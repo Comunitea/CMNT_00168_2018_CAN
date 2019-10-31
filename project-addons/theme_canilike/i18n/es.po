@@ -100,16 +100,8 @@ msgstr "<i class=\"fa fa-times\"/> No puede enviar a esta dirección"
 #: model:ir.ui.view,arch_db:theme_canilike.aboutus_page_ir_ui_view
 #: model:ir.ui.view,arch_db:theme_canilike.about_us
 #: model:website.page,arch_db:theme_canilike.aboutus_page
-msgid "A un ingenioso cocinero llamado Nicolas Appert se le ocurrió esterilizar en agua hirviendo un frasco de cristal sellado con corcho.\n"
-"                    Los resultados fueron magníficos. Su propuesta no sólo obtuvo el premio, sino que inauguró un nuevo camino.\n"
-"                    Siguiendo sus pasos, el inglés Peter Durand patentó en 1810 un sistema de conservación en cajas de hojalata soldadas.\n"
-"                    La ruta hacia los procedimientos modernos estaba trazada y la evolución era ya imparable.\n"
-"                    Durante la segunda mitad del siglo XIX la industria conservera del pescado consolidó una sólida posición en el continente europeo."
-msgstr "A un ingenioso cocinero llamado Nicolas Appert se le ocurrió esterilizar en agua hirviendo un frasco de cristal sellado con corcho.\n"
-"                    Los resultados fueron magníficos. Su propuesta no sólo obtuvo el premio, sino que inauguró un nuevo camino.\n"
-"                    Siguiendo sus pasos, el inglés Peter Durand patentó en 1810 un sistema de conservación en cajas de hojalata soldadas.\n"
-"                    La ruta hacia los procedimientos modernos estaba trazada y la evolución era ya imparable.\n"
-"                    Durante la segunda mitad del siglo XIX la industria conservera del pescado consolidó una sólida posición en el continente europeo."
+msgid "A witty cook named Nicolas Appert came up with the idea of sterilizing a glass jar sealed with cork in boiling water. The results were excellent. His proposal not only got the reward, but opened a new path. Following in his footsteps, an Englishman, Peter Durand, patented in 1810 a preservation system in welded tin boxes. The route towards modern procedures was outlined, and evolution was unstoppable. During the second half of the 19th century, the canned fish industry consolidated a solid position in the European continent."
+msgstr "A un ingenioso cocinero llamado Nicolas Appert se le ocurrió esterilizar en agua hirviendo un frasco de cristal sellado con corcho. Los resultados fueron magníficos. Su propuesta no sólo obtuvo el premio, sino que inauguró un nuevo camino. Siguiendo sus pasos, el inglés Peter Durand patentó en 1810 un sistema de conservación en cajas de hojalata soldadas. La ruta hacia los procedimientos modernos estaba trazada y la evolución era ya imparable. Durante la segunda mitad del siglo XIX la industria conservera del pescado consolidó una sólida posición en el continente europeo."
 
 #. module: theme_canilike
 #: model:website.menu,name:theme_canilike.menu_aboutus
@@ -172,20 +164,59 @@ msgstr "Carrito"
 #: model:ir.ui.view,arch_db:theme_canilike.aboutus_page_ir_ui_view
 #: model:ir.ui.view,arch_db:theme_canilike.about_us
 #: model:website.page,arch_db:theme_canilike.aboutus_page
-msgid "Cerrando los ojos para hacer memoria regresan a mi boca un montón de sabores.\n"
-"                    Las recetas de mi madre y mi abuela, que con un par de latas y diez minutos podían preparar maravillas dignas de cocineros reputados.\n"
-"                    Las incursiones a hurtadillas en el armario de la cocina, buscando unos mejillones con los que matar el hambre a media tarde.\n"
-"                    Y por supuesto, las cenas de estudiante, calmando el gusanillo con unas ricas conservas después de tomar unas copas con mis amigos."
-msgstr "Cerrando los ojos para hacer memoria regresan a mi boca un montón de sabores.\n"
-"                    Las recetas de mi madre y mi abuela, que con un par de latas y diez minutos podían preparar maravillas dignas de cocineros reputados.\n"
-"                    Las incursiones a hurtadillas en el armario de la cocina, buscando unos mejillones con los que matar el hambre a media tarde.\n"
-"                    Y por supuesto, las cenas de estudiante, calmando el gusanillo con unas ricas conservas después de tomar unas copas con mis amigos."
+msgid "If I close my eyes to remember, a lot of flavors come back to my mouth. The recipes of both my mother and my grandmother, who with a couple of cans and ten minutes were able to prepare wonders worthy of renowned chefs. Those sneak raids onto the kitchen cupboard, looking for some mussels to deaden mid-afternoon hunger. And of course, those dinners as a student, taking the edge off my hunger with some delicious canned foods after having drinks with my friends."
+msgstr "Cerrando los ojos para hacer memoria regresan a mi boca un montón de sabores. Las recetas de mi madre y mi abuela, que con un par de latas y diez minutos podían preparar maravillas dignas de cocineros reputados. Las incursiones a hurtadillas en el armario de la cocina, buscando unos mejillones con los que matar el hambre a media tarde. Y por supuesto, las cenas de estudiante, calmando el gusanillo con unas ricas conservas después de tomar unas copas con mis amigos."
 
 #. module: theme_canilike
 #: model:ir.ui.view,arch_db:theme_canilike.igape_modal
 #: model:ir.ui.view,arch_db:theme_canilike.location_selection_modal
 msgid "<span>Close</span>"
 msgstr "<span>Cerrar</span>"
+
+#. module: theme_canilike
+#: model:ir.ui.view,arch_db:theme_canilike.website_footer_default
+msgid "Igape"
+msgstr "Igape"
+
+#. module: theme_canilike
+#: model:ir.ui.view,arch_db:theme_canilike.igape_modal
+msgid "Igape Logo"
+msgstr "Igape Logo"
+
+#. module: theme_canilike
+#: model:ir.ui.view,name:theme_canilike.igape_modal
+msgid "Igape Modal Canilike"
+msgstr "Igape Modal Canilike"
+
+#. module: theme_canilike
+#: model:ir.ui.view,arch_db:theme_canilike.igape_modal
+msgid "IGAPE GRANTS FOEXGA PLAN PROGRAM 2019-2020"
+msgstr "AYUDAS DEL IGAPE PROGRAMA IGAPE PLAN FOEXGA 2019-2020"
+
+#. module: theme_canilike
+#: model:ir.ui.view,arch_db:theme_canilike.igape_modal
+msgid "This company is participating in an internationalization project through the program of the Foexga Igape Plan 2019-2020. The main objective of these grants is to encourage and stimulate Galician foreign trade and the internationalization of Galician SMEs. The result is intended to increase the base of exporting companies and to consolidate the presence of Galician companies in international markets."
+msgstr "Esta empresa participa EN UN PROYECTO de internacionalización a través del programa del Igape Plan Foexga 2019-2020. El objetivo principal de estas ayudas es incentivar y estimular el comercio exterior gallego y la internacionalización de las  pymes gallegas. El resultado que se pretende es aumentar la base de empresas exportadoras y consolidar la presencia de empresas gallegas en los mercados internacionales."
+
+#. module: theme_canilike
+#: model:ir.ui.view,arch_db:theme_canilike.igape_modal
+msgid "CO-FINANCED OPERATION BY THE EUROPEAN UNION"
+msgstr "OPERACIÓN COFINANCIADA POR LA UNIÓN EUROPEA"
+
+#. module: theme_canilike
+#: model:ir.ui.view,arch_db:theme_canilike.igape_modal
+msgid "FEDER GALICIA OPERATING PROGRAM 2014-2020"
+msgstr "PROGRAMA OPERATIVO FEDER GALICIA 2014-2020"
+
+#. module: theme_canilike
+#: model:ir.ui.view,arch_db:theme_canilike.igape_modal
+msgid "GET A MOST COMPETITIVE BUSINESS TEXT"
+msgstr "CONSEGUIR UN TEJIDO EMPRESARIAL MÁS COMPETITIVO"
+
+#. module: theme_canilike
+#: model:ir.ui.view,arch_db:theme_canilike.igape_modal
+msgid "A WAY TO DO EUROPE"
+msgstr "UNA MANERA DE HACER EUROPA"0"
 
 #. module: theme_canilike
 #: model:ir.ui.view,arch_db:theme_canilike.home
@@ -223,12 +254,8 @@ msgstr "Almacén actual:"
 #: model:ir.ui.view,arch_db:theme_canilike.aboutus_page_ir_ui_view
 #: model:ir.ui.view,arch_db:theme_canilike.about_us
 #: model:website.page,arch_db:theme_canilike.aboutus_page
-msgid "Dicen que no hay nada más importante que aquello que sólo echamos de menos cuando desaparece por completo. Como el aire, como el agua, como las grandes amistades.\n"
-"                    Ya adulto, me he encontrado a mí mismo buscando latas de conservas en tiendas y supermercados de multitud de países, en aquellos destinos a los que la vida me ha llevado.\n"
-"                    Y me ha sorprendido descubrir que, a pesar de la merecida fama de la gastronomía española en el mundo, las conservas continúan siendo inexplicables desconocidas en numerosos puntos del mapa."
-msgstr "Dicen que no hay nada más importante que aquello que sólo echamos de menos cuando desaparece por completo. Como el aire, como el agua, como las grandes amistades.\n"
-"                    Ya adulto, me he encontrado a mí mismo buscando latas de conservas en tiendas y supermercados de multitud de países, en aquellos destinos a los que la vida me ha llevado.\n"
-"                    Y me ha sorprendido descubrir que, a pesar de la merecida fama de la gastronomía española en el mundo, las conservas continúan siendo inexplicables desconocidas en numerosos puntos del mapa."
+msgid "It is said that the most important thing is what we only miss when it disappears completely. Like air, like water, like great friendships. As an adult, I have found myself looking for canned food in stores and supermarkets in many countries, in those destinations where life has taken me. And I was surprised to find out that, despite the deserved reputation of Spanish cuisine in the world, canned food remains inexplicably unknown in many places on the map."
+msgstr "Dicen que no hay nada más importante que aquello que sólo echamos de menos cuando desaparece por completo. Como el aire, como el agua, como las grandes amistades. Ya adulto, me he encontrado a mí mismo buscando latas de conservas en tiendas y supermercados de multitud de países, en aquellos destinos a los que la vida me ha llevado. Y me ha sorprendido descubrir que, a pesar de la merecida fama de la gastronomía española en el mundo, las conservas continúan siendo inexplicables desconocidas en numerosos puntos del mapa."
 
 #. module: theme_canilike
 #: model:ir.ui.view,arch_db:theme_canilike.advise
@@ -241,63 +268,43 @@ msgstr "No se preocupe. Estamos trabajando en ello."
 #: model:ir.ui.view,arch_db:theme_canilike.aboutus_page_ir_ui_view
 #: model:ir.ui.view,arch_db:theme_canilike.about_us
 #: model:website.page,arch_db:theme_canilike.aboutus_page
-msgid "El mar gallego es único en su exuberante riqueza: reúne abundancia y calidad. Es natural que la industria conservera se asentase en Galicia hace casi doscientos años.\n"
-"                    Más que un negocio, preservar el delicioso producto procedente de las aguas gallegas era una necesidad.\n"
-"                    Pero para hablar del auténtico origen de este sistema de conservación tenemos que viajar en el espacio y en el tiempo… y hablar de Napoleón Bonaparte. Sí, Napoleón, el célebre emperador francés."
-msgstr "El mar gallego es único en su exuberante riqueza: reúne abundancia y calidad. Es natural que la industria conservera se asentase en Galicia hace casi doscientos años.\n"
-"                    Más que un negocio, preservar el delicioso producto procedente de las aguas gallegas era una necesidad.\n"
-"                    Pero para hablar del auténtico origen de este sistema de conservación tenemos que viajar en el espacio y en el tiempo… y hablar de Napoleón Bonaparte. Sí, Napoleón, el célebre emperador francés."
+msgid "The lush wealth of the Galician sea is unique: it combines abundance and quality. It is natural that the canning industry settled in Galicia almost two hundred years ago. Preserving the delicious product from Galician waters was a necessity, rather than just a business. But in order to talk about the authentic origin of this preservation system, we have to travel in space and time... and talk about Napoleon Bonaparte. Napoleon, yes, the famous French emperor. Indeed, Napoleon the famous French emperor."
+msgstr "El mar gallego es único en su exuberante riqueza: reúne abundancia y calidad. Es natural que la industria conservera se asentase en Galicia hace casi doscientos años.Más que un negocio, preservar el delicioso producto procedente de las aguas gallegas era una necesidad. Pero para hablar del auténtico origen de este sistema de conservación tenemos que viajar en el espacio y en el tiempo… y hablar de Napoleón Bonaparte. Sí, Napoleón, el célebre emperador francés."
 
 #. module: theme_canilike
 #: model:ir.ui.view,arch_db:theme_canilike.aboutus_page_ir_ui_view
 #: model:ir.ui.view,arch_db:theme_canilike.about_us
 #: model:website.page,arch_db:theme_canilike.aboutus_page
-msgid "El proceso de conservación: el valor de lo natural"
+msgid "The preservation process: the value of the natural product"
 msgstr "El proceso de conservación: el valor de lo natural"
 
 #. module: theme_canilike
 #: model:ir.ui.view,arch_db:theme_canilike.aboutus_page_ir_ui_view
 #: model:ir.ui.view,arch_db:theme_canilike.about_us
 #: model:website.page,arch_db:theme_canilike.aboutus_page
-msgid "El proceso es riguroso de principio a fin, bajo estrictos criterios de higiene y seguridad.\n"
-"                    El pescado fresco llega refrigerado a las plantas conserveras, donde también es resguardado en cámaras de refrigeración. Un equipo de expertos evalúa en profundidad las condiciones del producto recibido, asegurándose de que su estado es óptimo para el consumo."
-msgstr "El proceso es riguroso de principio a fin, bajo estrictos criterios de higiene y seguridad.\n"
-"                    El pescado fresco llega refrigerado a las plantas conserveras, donde también es resguardado en cámaras de refrigeración. Un equipo de expertos evalúa en profundidad las condiciones del producto recibido, asegurándose de que su estado es óptimo para el consumo."
+msgid "The process is rigorous from beginning to end, under strict hygiene and safety criteria. Fresh fish arrives refrigerated at the canning plants, where it is stored in refrigeration chambers. A team of experts assess in depth the conditions of the product received, ensuring that it is optimal for consumption."
+msgstr "El proceso es riguroso de principio a fin, bajo estrictos criterios de higiene y seguridad. El pescado fresco llega refrigerado a las plantas conserveras, donde también es resguardado en cámaras de refrigeración. Un equipo de expertos evalúa en profundidad las condiciones del producto recibido, asegurándose de que su estado es óptimo para el consumo."
 
 #. module: theme_canilike
 #: model:ir.ui.view,arch_db:theme_canilike.aboutus_page_ir_ui_view
 #: model:ir.ui.view,arch_db:theme_canilike.about_us
 #: model:website.page,arch_db:theme_canilike.aboutus_page
-msgid "El sector experimentó un espectacular auge que avivó el interés del empresariado local. Muchas familias gallegas fundaron compañías propias para competir con catalanes y franceses.\n"
-"                    Algunas de ellas continúan activas, con marcas que ofrecen productos de máxima calidad avalados por el prestigio de una tradición centenaria.\n"
-"                    En la actualidad, la industria conservera de Galicia es líder indiscutible en el mercado nacional e internacional. Los tiempos han cambiado: no hay secretos técnicos como antaño.\n"
-"                    Lo que de verdad marca la diferencia es el sabor natural. Y el gallego es único en el mundo."
-msgstr "El sector experimentó un espectacular auge que avivó el interés del empresariado local. Muchas familias gallegas fundaron compañías propias para competir con catalanes y franceses.\n"
-"                    Algunas de ellas continúan activas, con marcas que ofrecen productos de máxima calidad avalados por el prestigio de una tradición centenaria.\n"
-"                    En la actualidad, la industria conservera de Galicia es líder indiscutible en el mercado nacional e internacional. Los tiempos han cambiado: no hay secretos técnicos como antaño.\n"
-"                    Lo que de verdad marca la diferencia es el sabor natural. Y el gallego es único en el mundo."
+msgid "The sector experienced a spectacular peak that intensified the interest of local businessmen. Many Galician families founded their own companies to compete with the Catalonian and the French. Some of them are still working, with brands which offer high quality products supported by the prestige of a centenarian tradition. Nowadays, the Galician canning industry is an undisputed leader in the national and international markets. Times have changed: there are no longer technical secrets as there used to be in the past. The natural flavor is what really makes the difference, and the Galician one is unique in the world."
+msgstr "El sector experimentó un espectacular auge que avivó el interés del empresariado local. Muchas familias gallegas fundaron compañías propias para competir con catalanes y franceses. Algunas de ellas continúan activas, con marcas que ofrecen productos de máxima calidad avalados por el prestigio de una tradición centenaria. En la actualidad, la industria conservera de Galicia es líder indiscutible en el mercado nacional e internacional. Los tiempos han cambiado: no hay secretos técnicos como antaño. Lo que de verdad marca la diferencia es el sabor natural. Y el gallego es único en el mundo."
 
 #. module: theme_canilike
 #: model:ir.ui.view,arch_db:theme_canilike.aboutus_page_ir_ui_view
 #: model:ir.ui.view,arch_db:theme_canilike.about_us
 #: model:website.page,arch_db:theme_canilike.aboutus_page
-msgid "El seguimiento no termina cuando se cierra el envase. También después del enlatado se llevan a cabo controles de calidad, tanto desde dentro de la propia empresa como desde certificadoras externas.\n"
-"                    Es difícil encontrar en el mercado un producto sometido a tantos exámenes, sin que ese conjunto de garantías suponga renunciar a propiedades naturales."
-msgstr "El seguimiento no termina cuando se cierra el envase. También después del enlatado se llevan a cabo controles de calidad, tanto desde dentro de la propia empresa como desde certificadoras externas.\n"
-"                    Es difícil encontrar en el mercado un producto sometido a tantos exámenes, sin que ese conjunto de garantías suponga renunciar a propiedades naturales."
+msgid "The monitoring does not end once the container is closed, after the canning process quality controls are carried out by both the company itself and by external certifying companies. It is difficult to find in the market a product that undergoes so many tests without this set of guarantees entailing the renunciation to natural properties."
+msgstr "El seguimiento no termina cuando se cierra el envase. También después del enlatado se llevan a cabo controles de calidad, tanto desde dentro de la propia empresa como desde certificadoras externas. Es difícil encontrar en el mercado un producto sometido a tantos exámenes, sin que ese conjunto de garantías suponga renunciar a propiedades naturales."
 
 #. module: theme_canilike
 #: model:ir.ui.view,arch_db:theme_canilike.aboutus_page_ir_ui_view
 #: model:ir.ui.view,arch_db:theme_canilike.about_us
 #: model:website.page,arch_db:theme_canilike.aboutus_page
-msgid "En España hay una figura clave en el proceso: los fomentadores.\n"
-"                    Eran empresarios catalanes que se habían instalado en las costas gallegas para explotar la sardina, huyendo de la escasez mediterránea a mediados del XVIII.\n"
-"                    Sus talleres trabajaban fundamentalmente con técnicas de salazón. Sin embargo, hacia 1880 surgió una magnífica oportunidad de mercado: la sardina desapareció de los mares franceses.\n"
-"                    El país vecino aseguraba una potente demanda del producto y además brindaba capital y conocimiento técnico. Los sistemas de conserva hermética irrumpieron en Galicia a través de los acuerdos comerciales suscritos con Francia."
-msgstr "En España hay una figura clave en el proceso: los fomentadores.\n"
-"                    Eran empresarios catalanes que se habían instalado en las costas gallegas para explotar la sardina, huyendo de la escasez mediterránea a mediados del XVIII.\n"
-"                    Sus talleres trabajaban fundamentalmente con técnicas de salazón. Sin embargo, hacia 1880 surgió una magnífica oportunidad de mercado: la sardina desapareció de los mares franceses.\n"
-"                    El país vecino aseguraba una potente demanda del producto y además brindaba capital y conocimiento técnico. Los sistemas de conserva hermética irrumpieron en Galicia a través de los acuerdos comerciales suscritos con Francia."
+msgid "In Spain there is a key figure in this process: that of the fomentadores'. These were Catalonian businessmen who had settled in the Galician coast to take advantage of the sardine, fleeing the shortage in the Mediterranean Sea during the mid-18th century. In their workshops, they worked primarily with salting techniques. However, around 1880 a magnificent market opportunity arose: the sardine disappeared from the French seas. The neighboring country ensured a powerful demand for the product, in addition to providing both capital and technical knowledge. Hermetic canning systems burst into Galicia through trade agreements signed with France."
+msgstr "En España hay una figura clave en el proceso: los fomentadores. Eran empresarios catalanes que se habían instalado en las costas gallegas para explotar la sardina, huyendo de la escasez mediterránea a mediados del XVIII. Sus talleres trabajaban fundamentalmente con técnicas de salazón. Sin embargo, hacia 1880 surgió una magnífica oportunidad de mercado: la sardina desapareció de los mares franceses. El país vecino aseguraba una potente demanda del producto y además brindaba capital y conocimiento técnico. Los sistemas de conserva hermética irrumpieron en Galicia a través de los acuerdos comerciales suscritos con Francia."
 
 #. module: theme_canilike
 #: model:ir.ui.view,arch_db:theme_canilike.website_footer_default
@@ -313,14 +320,8 @@ msgstr "Enlace Sobre Nosotros"
 #: model:ir.ui.view,arch_db:theme_canilike.aboutus_page_ir_ui_view
 #: model:ir.ui.view,arch_db:theme_canilike.about_us
 #: model:website.page,arch_db:theme_canilike.aboutus_page
-msgid "Entre finales del siglo XVIII y comienzos del XIX, Napoleón emprendió un sinfín de campañas militares.\n"
-"                    Sus tropas eran numerosas y se movían por todo tipo de territorios, expuestas a las más diversas condiciones climatológicas.\n"
-"                    Y por supuesto, necesitaban comer bien para mantenerse fuertes. Así que Bonaparte decidió estimular el talento científico.\n"
-"                    Anunció una recompensa de 12.000 francos para quien idease la mejor manera de conservar alimentos en perfecto estado."
-msgstr "Entre finales del siglo XVIII y comienzos del XIX, Napoleón emprendió un sinfín de campañas militares.\n"
-"                    Sus tropas eran numerosas y se movían por todo tipo de territorios, expuestas a las más diversas condiciones climatológicas.\n"
-"                    Y por supuesto, necesitaban comer bien para mantenerse fuertes. Así que Bonaparte decidió estimular el talento científico.\n"
-"                    Anunció una recompensa de 12.000 francos para quien idease la mejor manera de conservar alimentos en perfecto estado."
+msgid "Napoleon undertook endless military campaigns between the end of the 18th century and the beginning of the 19th century. His troops were numerous and they moved through all kinds of territories, being exposed to the most diverse weather conditions. Of course, they needed to eat well in order to stay strong, so Bonaparte decided to stimulate scientific talent. He announced that he would give a reward of 12,000 francs to whoever devised the best way to preserve food in perfect condition."
+msgstr "Entre finales del siglo XVIII y comienzos del XIX, Napoleón emprendió un sinfín de campañas militares.Sus tropas eran numerosas y se movían por todo tipo de territorios, expuestas a las más diversas condiciones climatológicas. Y por supuesto, necesitaban comer bien para mantenerse fuertes. Así que Bonaparte decidió estimular el talento científico. Anunció una recompensa de 12.000 francos para quien idease la mejor manera de conservar alimentos en perfecto estado."
 
 #. module: theme_canilike
 #: model:ir.ui.view,arch_db:theme_canilike.website_footer_default
@@ -383,7 +384,7 @@ msgstr "Instagram"
 #: model:ir.ui.view,arch_db:theme_canilike.aboutus_page_ir_ui_view
 #: model:ir.ui.view,arch_db:theme_canilike.about_us
 #: model:website.page,arch_db:theme_canilike.aboutus_page
-msgid "Las conservas en Galicia: el valor de la tradición"
+msgid "Canned food in Galicia: the value of tradition"
 msgstr "Las conservas en Galicia: el valor de la tradición"
 
 #. module: theme_canilike
@@ -482,10 +483,8 @@ msgstr "Conozca nuestros productos"
 #: model:ir.ui.view,arch_db:theme_canilike.aboutus_page_ir_ui_view
 #: model:ir.ui.view,arch_db:theme_canilike.about_us
 #: model:website.page,arch_db:theme_canilike.aboutus_page
-msgid "Nuestras conservas son capaces de complacer a los consumidores más exigentes. A diferencia de otros alimentos envasados, en las conservas no hay trucos o artificios para engañar paladares.\n"
-"                    No son necesarios. Basta con proteger las extraordinarias cualidades del producto extraído de aguas gallegas."
-msgstr "Nuestras conservas son capaces de complacer a los consumidores más exigentes. A diferencia de otros alimentos envasados, en las conservas no hay trucos o artificios para engañar paladares.\n"
-"                    No son necesarios. Basta con proteger las extraordinarias cualidades del producto extraído de aguas gallegas."
+msgid "Our canned products are able to please the most demanding consumers. Unlike in other packaged foods, no tricks or artifice are used in canned foods to deceive the palate. They are unnecessary. The only necessary thing is the protection of the extraordinary qualities of the product extracted from Galician waters."
+msgstr "Nuestras conservas son capaces de complacer a los consumidores más exigentes. A diferencia de otros alimentos envasados, en las conservas no hay trucos o artificios para engañar paladares. No son necesarios. Basta con proteger las extraordinarias cualidades del producto extraído de aguas gallegas."
 
 #. module: theme_canilike
 #: model:ir.ui.view,arch_db:theme_canilike.website_cookie_notice_message
@@ -540,38 +539,36 @@ msgstr "Enlace Política de Privacidad"
 #: model:ir.ui.view,arch_db:theme_canilike.aboutus_page_ir_ui_view
 #: model:ir.ui.view,arch_db:theme_canilike.about_us
 #: model:website.page,arch_db:theme_canilike.aboutus_page
-msgid "Por eso estoy aquí. Por aquellos recuerdos de sabores. Porque quiero que otros prueben sabores que son para mí auténticos tesoros.\n"
-"                    Porque conozco este excelente producto, conozco a los proveedores que aseguran su calidad; y estoy convencido de que quien lo conoce, no puede hacer más que acostumbrarse a vivir con él."
-msgstr "Por eso estoy aquí. Por aquellos recuerdos de sabores. Porque quiero que otros prueben sabores que son para mí auténticos tesoros.\n"
-"                    Porque conozco este excelente producto, conozco a los proveedores que aseguran su calidad; y estoy convencido de que quien lo conoce, no puede hacer más que acostumbrarse a vivir con él."
+msgid "Because I know this excellent product, I know the suppliers that ensure its quality; and I am convinced that those who discover it have no choice but to get used to living with it."
+msgstr "Por eso estoy aquí. Por aquellos recuerdos de sabores. Porque quiero que otros prueben sabores que son para mí auténticos tesoros. Porque conozco este excelente producto, conozco a los proveedores que aseguran su calidad; y estoy convencido de que quien lo conoce, no puede hacer más que acostumbrarse a vivir con él."
 
 #. module: theme_canilike
 #: model:ir.ui.view,arch_db:theme_canilike.aboutus_page_ir_ui_view
 #: model:ir.ui.view,arch_db:theme_canilike.about_us
 #: model:website.page,arch_db:theme_canilike.aboutus_page
-msgid "Por su mínimo impacto ecológico. Las conservas no necesitan frío, por lo que no requieren energía para preservarlas en óptimas condiciones. Además, nuestros envases son 100% reciclables."
-msgstr "Por su mínimo impacto ecológico. Las conservas no necesitan frío, por lo que no requieren energía para preservarlas en óptimas condiciones. Además, nuestros envases son 100% reciclables."
+msgid "<b>Because of the minimal ecological impact.</b> Canned foods do not need cold storage, so they do not require energy to be preserved in optimal conditions. Besides, our containers are 100% recyclable."
+msgstr "<b>Por su mínimo impacto ecológico.</b> Las conservas no necesitan frío, por lo que no requieren energía para preservarlas en óptimas condiciones. Además, nuestros envases son 100% reciclables."
 
 #. module: theme_canilike
 #: model:ir.ui.view,arch_db:theme_canilike.aboutus_page_ir_ui_view
 #: model:ir.ui.view,arch_db:theme_canilike.about_us
 #: model:website.page,arch_db:theme_canilike.aboutus_page
-msgid "Por su sabor. Nuestras conservas de pescado y mariscos ofrecen una amplia variedad de ideas y sabores para tu despensa y tu cocina."
-msgstr "Por su sabor. Nuestras conservas de pescado y mariscos ofrecen una amplia variedad de ideas y sabores para tu despensa y tu cocina."
+msgid "<b>Because of the taste.</b> Our canned fish and shellfish offer a wide variety of ideas and flavors for your pantry and your cuisine."
+msgstr "<b>Por su sabor.</b> Nuestras conservas de pescado y mariscos ofrecen una amplia variedad de ideas y sabores para tu despensa y tu cocina."
 
 #. module: theme_canilike
 #: model:ir.ui.view,arch_db:theme_canilike.aboutus_page_ir_ui_view
 #: model:ir.ui.view,arch_db:theme_canilike.about_us
 #: model:website.page,arch_db:theme_canilike.aboutus_page
-msgid "Por tu salud. Nuestras conservas aportan todas las cualidades nutritivas de los mejores productos del mar."
-msgstr "Por tu salud. Nuestras conservas aportan todas las cualidades nutritivas de los mejores productos del mar."
+msgid "<b>Because of your health.</b> Our canned foods provide all the nutritional qualities of the best sea products."
+msgstr "<b>Por tu salud.</b> Nuestras conservas aportan todas las cualidades nutritivas de los mejores productos del mar."
 
 #. module: theme_canilike
 #: model:ir.ui.view,arch_db:theme_canilike.aboutus_page_ir_ui_view
 #: model:ir.ui.view,arch_db:theme_canilike.about_us
 #: model:website.page,arch_db:theme_canilike.aboutus_page
-msgid "Porque son naturales. Nuestros productos no tienen conservantes."
-msgstr "Porque son naturales. Nuestros productos no tienen conservantes."
+msgid "<b>Because they are natural.</b> Our products do not contain preservatives."
+msgstr "<b>Porque son naturales.</b> Nuestros productos no tienen conservantes."
 
 #. module: theme_canilike
 #: model:ir.ui.view,name:theme_canilike.website_sale_product
@@ -602,7 +599,7 @@ msgstr "Recetas"
 #: model:ir.ui.view,arch_db:theme_canilike.aboutus_page_ir_ui_view
 #: model:ir.ui.view,arch_db:theme_canilike.about_us
 #: model:website.page,arch_db:theme_canilike.aboutus_page
-msgid "Recuerdos de sabores: en Galicia y en el mundo"
+msgid "Memories of flavors: in Galicia and in the world"
 msgstr "Recuerdos de sabores: en Galicia y en el mundo"
 
 #. module: theme_canilike
@@ -626,21 +623,15 @@ msgstr "Métodos de envío"
 #: model:ir.ui.view,arch_db:theme_canilike.aboutus_page_ir_ui_view
 #: model:ir.ui.view,arch_db:theme_canilike.about_us
 #: model:website.page,arch_db:theme_canilike.aboutus_page
-msgid "Si pudiésemos asomarnos a las despensas de un centenar de familias españolas, en más de noventa encontraríamos latas de conservas.\n"
-"                    ¿Cómo podría ser de otro modo? Un producto natural, delicioso, fácil de almacenar, de precio competitivo y con fechas de caducidad que conceden un amplio margen para su consumo.\n"
-"                    Avales de sobra para convertirse en un imprescindible."
-msgstr "Si pudiésemos asomarnos a las despensas de un centenar de familias españolas, en más de noventa encontraríamos latas de conservas.\n"
-"                    ¿Cómo podría ser de otro modo? Un producto natural, delicioso, fácil de almacenar, de precio competitivo y con fechas de caducidad que conceden un amplio margen para su consumo.\n"
-"                    Avales de sobra para convertirse en un imprescindible."
+msgid "If we could peek into the pantries of a hundred Spanish families, canned food would be found in more than ninety. How could it be any other way? A delicious natural product easy to store, competitively priced and with expiration dates that allow ample room for consumption. These are enough guarantees to become an essential product."
+msgstr "Si pudiésemos asomarnos a las despensas de un centenar de familias españolas, en más de noventa encontraríamos latas de conservas. ¿Cómo podría ser de otro modo? Un producto natural, delicioso, fácil de almacenar, de precio competitivo y con fechas de caducidad que conceden un amplio margen para su consumo. Avales de sobra para convertirse en un imprescindible."
 
 #. module: theme_canilike
 #: model:ir.ui.view,arch_db:theme_canilike.aboutus_page_ir_ui_view
 #: model:ir.ui.view,arch_db:theme_canilike.about_us
 #: model:website.page,arch_db:theme_canilike.aboutus_page
-msgid "Sin conservantes. Sin química. Sin nada que te arrebate el sabor 100% natural de los pescados y mariscos.\n"
-"                    Los métodos utilizados en la industria conservera gallega son una sólida garantía de calidad y fiabilidad."
-msgstr "Sin conservantes. Sin química. Sin nada que te arrebate el sabor 100% natural de los pescados y mariscos.\n"
-"                    Los métodos utilizados en la industria conservera gallega son una sólida garantía de calidad y fiabilidad."
+msgid "No preservatives. No chemicals. Nothing is added that can take away the 100% natural taste of fish and shellfish. The methods used in the Galician canning industry are a solid guarantee of quality and reliability."
+msgstr "Sin conservantes. Sin química. Sin nada que te arrebate el sabor 100% natural de los pescados y mariscos. Los métodos utilizados en la industria conservera gallega son una sólida garantía de calidad y fiabilidad."
 
 #. module: theme_canilike
 #: model:ir.ui.view,arch_db:theme_canilike.location_selection_modal
@@ -654,12 +645,8 @@ msgstr "Al cambiar de almacén se vaciará su carrito de la compra porque pueden
 #: model:ir.ui.view,arch_db:theme_canilike.aboutus_page_ir_ui_view
 #: model:ir.ui.view,arch_db:theme_canilike.about_us
 #: model:website.page,arch_db:theme_canilike.aboutus_page
-msgid "Sólo los pescados y mariscos de máxima calidad continúan adelante en el proceso.\n"
-"                    Esterilizando los alimentos a temperaturas superiores a 100ºC garantizamos que los productos se mantengan inalterados en su lata durante largos periodos de tiempo.\n"
-"                    Cualquier germen potencialmente dañino queda destruido. Y todo esto sin afectar a la calidad nutritiva ni al sabor original del producto que llega a tu mesa."
-msgstr "Sólo los pescados y mariscos de máxima calidad continúan adelante en el proceso.\n"
-"                    Esterilizando los alimentos a temperaturas superiores a 100ºC garantizamos que los productos se mantengan inalterados en su lata durante largos periodos de tiempo.\n"
-"                    Cualquier germen potencialmente dañino queda destruido. Y todo esto sin afectar a la calidad nutritiva ni al sabor original del producto que llega a tu mesa."
+msgid "Only the highest quality fish and shellfish remain in the process. Sterilizing food at temperatures above 100\'baC guarantees that the products remain unaltered in the can for long periods of time. Any potentially harmful germ is destroyed in this process without affecting the nutritional quality or the original flavor of the product that reaches your table."
+msgstr "Sólo los pescados y mariscos de máxima calidad continúan adelante en el proceso. Esterilizando los alimentos a temperaturas superiores a 100ºC garantizamos que los productos se mantengan inalterados en su lata durante largos periodos de tiempo. Cualquier germen potencialmente dañino queda destruido. Y todo esto sin afectar a la calidad nutritiva ni al sabor original del producto que llega a tu mesa."
 
 #. module: theme_canilike
 #: model:ir.ui.view,arch_db:theme_canilike.location_selection_modal
@@ -723,7 +710,7 @@ msgstr "política de privacidad"
 #: model:ir.ui.view,arch_db:theme_canilike.aboutus_page_ir_ui_view
 #: model:ir.ui.view,arch_db:theme_canilike.about_us
 #: model:website.page,arch_db:theme_canilike.aboutus_page
-msgid "¿Por qué?"
+msgid "Why?"
 msgstr "¿Por qué?"
 
 #. module: theme_canilike

@@ -54,14 +54,10 @@
                     <button class="close" data-dismiss="modal"><span>Close</span></button>
                     <div class="modal-header">
                         <img t-att-src="'/theme_canilike/static/img/canilike/igape.jpg'" alt="Igape Logo"/>
-                        <h4 class="modal-title" id="modalLabel">AXUDAS DO IGAPE PROGRAMA PLAN FOEXGA 2019-2020</h4>
+                        <h4 class="modal-title" id="modalLabel">AYUDAS DEL IGAPE PROGRAMA IGAPE PLAN FOEXGA 2019-2020</h4>
                     </div>
                     <div class="modal-body">
-                        <p>
-                            Esta empresa participa nun proxecto de internacionalización a través do programa do Igape Plan Foexga 2019-2020.
-                            O obxectivo principal destas axudas é incentivar e estimular o comercio exterior galego e a internacionalización das pemes galegas.
-                            O resultado que se pretende é aumentar a base de empresas exportadoras e consolidar a presenza de empresas galegas nos mercados internacionais.
-                        </p>
+                        <p>Esta empresa participa EN UN PROYECTO de internacionalización a través del programa del Igape Plan Foexga 2019-2020. El objetivo principal de estas ayudas es incentivar y estimular el comercio exterior gallego y la internacionalización de las  pymes gallegas. El resultado que se pretende es aumentar la base de empresas exportadoras y consolidar la presencia de empresas gallegas en los mercados internacionales.</p>
                         <ul>
                             <li>OPERACIÓN COFINANCIADA POLA UNIÓN EUROPEA</li>
                             <li>PROGRAMA OPERATIVO FEDER GALICIA 2014-2020</li>
