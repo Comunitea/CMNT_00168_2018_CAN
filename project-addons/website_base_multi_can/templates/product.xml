@@ -1,104 +1,10 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <odoo>
 
-<!--    <template id="website_sale_product" name="Product Base" active="False" customize_show="True" inherit_id="website_sale.product">-->
-
-<!--        &lt;!&ndash; Remove the product breadcrumb's bar &ndash;&gt;-->
-<!--        <xpath expr="//ol[hasclass('breadcrumb')]" position="attributes">-->
-<!--            <attribute name="t-if">True == False</attribute>-->
-<!--        </xpath>-->
-
-<!--        <xpath expr="//a[@id='add_to_cart']" position="attributes">-->
-<!--            <attribute name="class">btn btn-default btn-lg mt8 js_check_product</attribute>-->
-<!--        </xpath>-->
-
-<!--        &lt;!&ndash; Image URL and attributes &ndash;&gt;-->
-<!--        <xpath expr="//div[hasclass('carousel-inner')]/div[2]" position="replace">-->
-<!--            <div t-attf-class="item#{'' if variant_img else ' active'}">-->
-<!--                <img t-att-alt="product.name" t-att-title="product.name" class="product_detail_img js_variant_img"-->
-<!--                     t-attf-src="/website/image/product.template/{{product.id}}/image/"/>-->
-<!--            </div>-->
-<!--        </xpath>-->
-<!--        <xpath expr="//div[hasclass('carousel-inner')]/t/div[hasclass('item')]" position="replace">-->
-<!--            <div class="item">-->
-<!--                <img t-att-alt="pimg.name" t-att-title="pimg.name" class="product_detail_img"-->
-<!--                     t-attf-src="/web/image/product.image/{{pimg.id}}/image/"/>-->
-<!--            </div>-->
-<!--        </xpath>-->
-
-<!--        &lt;!&ndash; Hide guarantee &ndash;&gt;-->
-<!--        <xpath expr="//div[@id='product_details']//hr[last()]" position="attributes">-->
-<!--            <attribute name="t-if">True == False</attribute>-->
-<!--        </xpath>-->
-<!--        <xpath expr="//div[@id='product_details']/p[last()]" position="attributes">-->
-<!--            <attribute name="t-if">True == False</attribute>-->
-<!--        </xpath>-->
-
-<!--        &lt;!&ndash; Hide description_sale &ndash;&gt;-->
-<!--        <xpath expr="//div[@id='product_details']//hr[@t-if='product.description_sale']" position="attributes">-->
-<!--            <attribute name="t-if">True == False</attribute>-->
-<!--        </xpath>-->
-<!--        <xpath expr="//div[@id='product_details']//div[hasclass('o_not_editable')]/p" position="attributes">-->
-<!--            <attribute name="t-if">True == False</attribute>-->
-<!--        </xpath>-->
-
-<!--        &lt;!&ndash; Hide search bar &ndash;&gt;-->
-<!--        <xpath expr="//t[@t-call='website_sale.search']" position="attributes">-->
-<!--            <attribute name="t-if">True == False</attribute>-->
-<!--        </xpath>-->
-
-<!--        &lt;!&ndash; Add breadcrumbs &ndash;&gt;-->
-<!--        <xpath expr="//div[@id='wrap']//section[@id='product_detail']" position="before">-->
-<!--            <t t-call="website_base_multi_can.breadcrumbs_bar" t-if="'website_sale.products' in xmlid or 'recipe' in xmlid  or 'portal' in xmlid"/>-->
-<!--        </xpath>-->
-
-<!--        &lt;!&ndash; Reposition the full description &ndash;&gt;-->
-<!--        <xpath expr="//div[@id='product_full_description']" position="attributes">-->
-<!--            <attribute name="t-if">True == False</attribute>-->
-<!--        </xpath>-->
-
-<!--        &lt;!&ndash; Add to wishlist button &ndash;&gt;-->
-<!--        <xpath expr="//a[@id='add_to_cart']" position="after">-->
-<!--            <t t-if="product.env.ref('website_multi_theme.auto_view_can_website_sale_wishlist_add_to_wishlist').active">-->
-<!--                <t t-set="in_wish" t-value="product.product_variant_ids &amp; request.env['product.wishlist'].current().mapped('product_id')"/>-->
-<!--                <br/>-->
-<!--                <a class="btn mt8 o_add_wishlist_dyn" t-att-disabled='in_wish or None' title="Add to Wishlist" t-att-data-product-product-id="product.product_variant_ids[0].id" data-action="o_wishlist">-->
-<!--                    <i class="fa fa-heart"/> Add to Wishlist-->
-<!--                </a>-->
-<!--            </t>-->
-<!--        </xpath>-->
-
-<!--        &lt;!&ndash; Add Recipes &ndash;&gt;-->
-<!--        <xpath expr="//div[@id='product_full_description']" position="after">-->
-<!--            <div class="container mt32" t-if="product.recipe_ids">-->
-<!--                <h3>Recipes with <t t-esc="product.name"/></h3>-->
-<!--                <div class="row mt16" style="">-->
-<!--                    <t t-foreach="product.recipe_ids" t-as="recipe">-->
-<!--                        <div class="col-md-2 thumbnail" style="width: 170px; height:130px; float:left; display:inline; margin-right: 10px; overflow:hidden;">-->
-<!--                            <div class="mt16 text-center" style="height: 100%;">-->
-<!--                                <div t-field="recipe.image_small" t-options="{'widget': 'image', 'class': 'img-rounded shadow o_alternative_product' }"/>-->
-<!--                                <h5>-->
-<!--                                    <a t-attf-href="/recipe/#{ recipe.slug }" style="display: block">-->
-<!--                                        <span t-att-title="recipe.title" t-field="recipe.title" class="o_text_overflow" style="display: block;"/>-->
-<!--                                    </a>-->
-<!--                                </h5>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                    </t>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--        </xpath>-->
-
-<!--    </template>-->
-
     <template id="website_sale_product_price" name="Product Price Base" inherit_id="website_sale.product_price">
         <xpath expr="//div[@itemprop='offers']" position="after">
             <div class="oe_structure mt48 mb48" id="product_full_description_relocated" t-if="product.description">
-                <div class="container" t-if="len(product.description) > 15" itemprop="description">
-                    <div class="row">
-                        <div class="col-md-12" t-field="product.description"/>
-                    </div>
-                </div>
+                <div t-field="product.description" t-if="len(product.description) > 15" itemprop="description"/>
             </div>
         </xpath>
     </template>
@@ -122,11 +28,9 @@
                             <t t-if="td_product">
                                 <t t-set="product" t-value="td_product['product']" />
                                 <div class="oe_product_cart shop-element" t-att-data-publish="product.website_published and 'on' or 'off'">
-                                    <t t-set="product_image_big" t-value="no" />
-                                    <t t-call="website_sale.products_item" />
+                                    <t t-call="website_base_multi_can.wbm_website_sale_products_item" />
                                 </div>
                             </t>
-                            <td t-if="not td_product" class="oe-height-2" />
                         </t>
                     </div>
                     <t t-if="not bins">
@@ -142,7 +46,7 @@
 
     <template id="website_sale_products_infinite_scroll" name="SGEEDE Infinite Scroll Base" active="True" customize_show="True" inherit_id="website_base_multi_can.website_sale_products">
         <xpath expr="//div[@id='products_grid']" position="attributes">
-			<attribute name="t-attf-class">sgeede-infinite-scroll</attribute>
+			<attribute name="t-attf-class">sgeede-infinite-scroll shop-categories</attribute>
 		</xpath>
 
 		<xpath expr="//div[@id='products_grid']//div[@t-foreach='bins']" position="attributes">

@@ -4,11 +4,27 @@
     <!-- Product item used by /shop and /shop/cart -->
     <template id="wbm_website_sale_products_item" name="Products Item Base" inherit_id="website_sale.products_item">
 
+        <!-- To receive values to promotions ribbon -->
+        <xpath expr="//div[hasclass('ribbon-wrapper')]" position="replace">
+            <div t-attf-class="oe_product #{ td_product['class'] }">
+                <div class="ribbon-wrapper">
+                    <div class="ribbon btn btn-danger">Sale</div>
+                </div>
+            </div>
+        </xpath>
+
         <!-- Include default code in product item -->
         <xpath expr="//section/h5" position="before">
             <div class="product_default_code">
                 <p t-esc="product.default_code" t-if="product.default_code"/>
             </div>
+        </xpath>
+
+        <!-- Replace strong product name -->
+        <xpath expr="//section/h5" position="replace">
+            <h5>
+                <a itemprop="name" t-att-href="keep('/shop/product/%s' % slug(product), page=(pager['page']['num'] if pager['page']['num']&gt;1 else None))" t-att-content="product.name" t-field="product.name"/>
+            </h5>
         </xpath>
 
     </template>

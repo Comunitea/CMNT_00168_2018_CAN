@@ -33,9 +33,9 @@
     <!-- SGEEDE Infinite Scroll  -->
     <!-- Only available with sgeede_infinite_scroll module. We provided in -->
     <!-- Provided in external_ecommerce_modules comunitea repo -->
-<!--    <record id="website_multi_theme.auto_view_can_sgeede_infinite_scroll_products_infinite_scroll" model="ir.ui.view">-->
-<!--        <field name="active">True</field>-->
-<!--    </record>-->
+    <record id="website_multi_theme.auto_view_can_website_base_multi_can_website_sale_products_infinite_scroll" model="ir.ui.view">
+        <field name="active">True</field>
+    </record>
     <record id="sgeede_infinite_scroll.products_infinite_scroll" model="ir.ui.view">
         <field name="active">False</field>
         <field name="customize_show">False</field>
@@ -112,9 +112,9 @@
     <!-- ======================================== Checkout ================================================ -->
 
     <!-- Checkout - Extra Step Option -->
-<!--    <record id="website_multi_theme.auto_view_can_website_sale_extra_info_option" model="ir.ui.view">-->
-<!--        <field name="active">True</field>-->
-<!--    </record>-->
+    <record id="website_multi_theme.auto_view_can_website_sale_extra_info_option" model="ir.ui.view">
+        <field name="active">True</field>
+    </record>
 
     <!-- Checkout - Continue Shopping Button -->
     <record id="website_multi_theme.auto_view_can_website_sale_continue_shopping" model="ir.ui.view">

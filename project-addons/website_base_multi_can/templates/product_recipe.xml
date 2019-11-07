@@ -91,7 +91,7 @@
                         <t t-foreach="recipe.product_ids" t-as="product">
                             <div class="recipes-detail-related-item">
                                 <a t-attf-href="/product/{{product.slug}}">
-                                        <img t-att-alt="product.name" t-att-title="product.name" class="img-responsive shadow o_alternative_product" t-attf-src="/website/image/product.template/{{product.id}}/image_medium/"/>
+                                        <img t-att-alt="product.name" t-att-title="product.name" class="img-responsive shadow o_alternative_product" t-attf-src="/website/image/product.template/{{product.id}}/image/"/>
                                         <h4 t-field="product.name" class="o_text_overflow"/>
                                 </a>
                             </div>

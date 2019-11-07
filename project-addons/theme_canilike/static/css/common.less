@@ -89,23 +89,34 @@ h4, h5, h6 {
 .recipes-detail-content >div {
    //&:extend(.wrapper);
    padding-top: 2em;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
+
+    @media (min-width: @screen-m) {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+    }
 }
 .shop-detail-content-media,
 .recipes-detail-content-media {
     position: relative;
-    width: 40%;
+    width: 100%;
+    padding-bottom: 2em;
+    @media (min-width: @screen-m) {
+        width: 40%;
+    }
 }
 
 .shop-detail-content-info,
 .recipes-detail-content-info {
-    width: 55%;
+    width: 100%;
+    @media (min-width: @screen-m) {
+        width: 55%;
+    }
     padding-bottom: 2em;
+    h1,
     h2 {
         text-transform: uppercase;
-        font-weight: 400;
+        font-weight: 300;
         }
     h2, h3 {
         margin: 0 0 .5em 0;
@@ -129,16 +140,22 @@ h4, h5, h6 {
         font-weight: 300;
         .font-size(16);
         color: @color-secondary;
+
         }
 }
 .shop-detail-related,
 .recipes-detail-related {
 
     &:extend(.wrapper);
-    background-color: @color-main-xtralight;
+    background-color: @color-main-light;
     padding-top: 2em;
     padding-bottom: 2em;
+    a {
+        &:hover {
+            text-decoration: none;
+        }
     }
+}
 
 .shop-detail-related-list,
 .recipes-detail-related-list{
@@ -187,6 +204,104 @@ h4, h5, h6 {
         padding-left: 1em;
         }
     }
+
+
+
+/* product list */
+
+.shop-list {
+    /* hack to delte the top line on pruduct list*/
+    .oe_product {
+        border: none !important;
+        }
+   .sgeede-infinite-scroll {
+      @media (min-width: @screen-m) {
+          width: 70%;
+      }
+    }
+    @media (min-width: @screen-m) {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: flex-start;
+    }
+
+    .sgeede-infinite-get {
+       display: grid;
+       grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+       grid-column-gap: 2em;
+       grid-row-gap: 3em;
+    }
+}
+.shop-categories {
+    margin-bottom: 2em;
+    @media (min-width: @screen-m) {
+        width: 20%;
+        margin-right: 10%;
+    }
+
+    .nav-pills {
+            ul {
+                li{
+                width: 100%;
+
+                   a {
+                       width: 100% !important;
+                   }
+                   margin-bottom: .5em;
+                   border-bottom: 1px solid @color-main-light;
+                }
+            }
+
+            i {
+                color: @color-corp;
+                & + a {
+                    width: ~"calc(100% - 20px)" !important;
+                    }
+            }
+            a {
+                width: 100% !important;
+                color: @color-corp;
+                margin-bottom: .5em;
+                &:hover {
+                    color:@color-secondary;
+                }
+            }
+            .active {
+
+
+            i {
+                & + a {
+                    width: ~"calc(100% - 20px)" !important;
+                    }
+                }
+            }
+
+        .active > a{
+            background-color: @color-corp;
+            color :white;
+            padding: .5em;
+            &:hover {
+                color: white;
+                background-color: @color-secondary;}
+            i {
+                color: white;
+                }
+         }
+    }
+}
+.shop-element {
+    margin-bottom: 2em;
+    h5 {
+        font-weight: 400;
+        text-transform: uppercase;
+        a {
+            color: @color-corp;
+            }
+        }
+    img {
+        width: 100%;}
+    }
+
 
 /* reset styles*/
 .carousel-outer {

@@ -3,16 +3,30 @@
 
     <template id="website_sale_product" name="Product Canilike" inherit_id="website_multi_theme.auto_view_can_website_sale_product">
 
-        <!-- Add to wishlist button -->
-<!--        <xpath expr="//a[@id='add_to_cart']" position="after">-->
-<!--            <t t-if="product.env.ref('website_multi_theme.auto_view_can_website_sale_wishlist_add_to_wishlist').active">-->
-<!--                <t t-set="in_wish" t-value="product.product_variant_ids &amp; request.env['product.wishlist'].current().mapped('product_id')"/>-->
-<!--                <br/>-->
-<!--                <a class="btn mt8 o_add_wishlist_dyn" t-att-disabled='in_wish or None' title="Add to Wishlist" t-att-data-product-product-id="product.product_variant_ids[0].id" data-action="o_wishlist">-->
-<!--                    <i class="fa fa-heart"/> Add to Wishlist-->
-<!--                </a>-->
-<!--            </t>-->
-<!--        </xpath>-->
+        <!-- Delete container class -->
+        <xpath expr="//section[@id='product_detail']" position="attributes">
+            <attribute name="t-attf-class">shop-detail-content  mt8 oe_website_sale #{(compute_currency(product.lst_price) - product.website_price) &gt; 0.01 and website.get_current_pricelist().discount_policy == 'without_discount'  and 'discount'}</attribute>
+        </xpath>
+
+        <!-- Change row to wrapper -->
+        <xpath expr="//section[@id='product_detail']/div[hasclass('row')][2]" position="attributes">
+            <attribute name="class">wrapper</attribute>
+        </xpath>
+
+        <!-- Change cols by custom css -->
+        <xpath expr="//section[@id='product_detail']//div[hasclass('wrapper')]/div" position="attributes">
+            <attribute name="class">shop-detail-content-media</attribute>
+        </xpath>
+
+        <!-- Change cols by custom css -->
+        <xpath expr="//div[@id='product_details']" position="attributes">
+            <attribute name="class">shop-detail-content-info</attribute>
+        </xpath>
+
+        <!-- Replace header -->
+        <xpath expr="//div[@id='product_details']/h1" position="replace">
+            <h2 itemprop="name" t-field="product.name">Product Name</h2>
+        </xpath>
 
         <!-- Remove the product breadcrumb's bar -->
         <xpath expr="//ol[hasclass('breadcrumb')]" position="attributes">
@@ -20,20 +34,18 @@
         </xpath>
 
         <xpath expr="//a[@id='add_to_cart']" position="attributes">
-            <attribute name="class">btn btn-default btn-lg mt8 js_check_product</attribute>
+            <attribute name="class">button button-corp mt8 js_check_product</attribute>
         </xpath>
 
         <!-- Image URL and attributes -->
         <xpath expr="//div[hasclass('carousel-inner')]/div[2]" position="replace">
             <div t-attf-class="item#{'' if variant_img else ' active'}">
-                <img t-att-alt="product.name" t-att-title="product.name" class="product_detail_img js_variant_img"
-                     t-attf-src="/website/image/product.template/{{product.id}}/image/"/>
+                <img t-att-alt="product.name" t-att-title="product.name" class="product_detail_img js_variant_img" t-attf-src="/website/image/product.template/{{product.id}}/image/"/>
             </div>
         </xpath>
         <xpath expr="//div[hasclass('carousel-inner')]/t/div[hasclass('item')]" position="replace">
             <div class="item">
-                <img t-att-alt="pimg.name" t-att-title="pimg.name" class="product_detail_img"
-                     t-attf-src="/web/image/product.image/{{pimg.id}}/image/"/>
+                <img t-att-alt="pimg.name" t-att-title="pimg.name" class="product_detail_img" t-attf-src="/web/image/product.image/{{pimg.id}}/image/"/>
             </div>
         </xpath>
 
@@ -72,7 +84,7 @@
         <xpath expr="//a[@id='add_to_cart']" position="after">
             <t t-if="product.env.ref('website_multi_theme.auto_view_can_website_sale_wishlist_add_to_wishlist').active">
                 <t t-set="in_wish" t-value="product.product_variant_ids &amp; request.env['product.wishlist'].current().mapped('product_id')"/>
-                <a class="btn btn-default btn-lg mt8 o_add_wishlist_dyn" t-att-disabled='in_wish or None' title="Add to Wishlist" t-att-data-product-product-id="product.product_variant_ids[0].id" data-action="o_wishlist">
+                <a class="button button-action mt8 o_add_wishlist_dyn" t-att-disabled="in_wish or None" title="Add to Wishlist" t-att-data-product-product-id="product.product_variant_ids[0].id" data-action="o_wishlist">
                     <i class="fa fa-heart"/>
                 </a>
             </t>
@@ -80,37 +92,42 @@
 
         <!-- Add Recipes -->
         <xpath expr="//div[@id='product_full_description']" position="after">
-            <div class="container mt32" t-if="product.recipe_ids">
-                <h3>Recipes with <t t-esc="product.name"/></h3>
-                <div class="row mt16" style="">
+            <div class="shop-detail-related" t-if="product.recipe_ids">
+                <h4>Recipes with <t t-esc="product.name"/></h4>
+                <div class="shop-detail-related-list">
                     <t t-foreach="product.recipe_ids" t-as="recipe">
-                        <div class="col-md-2 thumbnail" style="width: 170px; height:130px; float:left; display:inline; margin-right: 10px; overflow:hidden;">
-                            <div class="mt16 text-center" style="height: 100%;">
-                                <div t-field="recipe.image_small" t-options="{'widget': 'image', 'class': 'img-rounded shadow o_alternative_product' }"/>
-                                <h5>
-                                    <a t-attf-href="/recipe/#{ recipe.slug }" style="display: block">
-                                        <span t-att-title="recipe.title" t-field="recipe.title" class="o_text_overflow" style="display: block;"/>
-                                    </a>
-                                </h5>
-                            </div>
+                        <div class="shop-detail-related-item">
+                            <a t-attf-href="/recipe/#{ recipe.slug }">
+                                <div t-field="recipe.image" t-options="{'widget': 'image', 'class': 'img-rounded shadow o_alternative_product' }"/>
+                                <h4 t-att-title="recipe.title" t-field="recipe.title" class="o_text_overflow"/>
+                            </a>
                         </div>
                     </t>
                 </div>
             </div>
         </xpath>
-
     </template>
 
-<!--    <template id="website_sale_product_price" name="Product Price Canilike" inherit_id="website_sale.product_price">-->
-<!--        <xpath expr="//div[@itemprop='offers']" position="after">-->
-<!--            <div class="oe_structure mt48 mb48" id="product_full_description_relocated" t-if="product.description">-->
-<!--                <div class="container" t-if="len(product.description) > 15" itemprop="description">-->
-<!--                    <div class="row">-->
-<!--                        <div class="col-md-12" t-field="product.description"/>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--        </xpath>-->
-<!--    </template>-->
+    <template id="website_sale_products_categories" name="eCommerce Categories Canilike" inherit_id="website_multi_theme.auto_view_can_website_sale_products_categories">
+        <!-- Replace margin -->
+        <xpath expr="//div[@id='products_grid_before']//ul" position="attributes">
+            <attribute name="class">nav nav-pills nav-stacked</attribute>
+        </xpath>
+        <!-- Change cols by custom css -->
+        <xpath expr="//div[@id='products_grid_before']" position="attributes">
+            <attribute name="class">shop-categories</attribute>
+        </xpath>
+    </template>
+
+    <template id="website_sale_option_collapse_products_categories" name="Collapsible Category List Canilike" inherit_id="website_multi_theme.auto_view_can_website_sale_option_collapse_products_categories">
+        <!-- Replace margin -->
+        <xpath expr="//ul[@id='o_shop_collapse_category']" position="attributes">
+            <attribute name="class">nav nav-pills nav-stacked</attribute>
+        </xpath>
+        <!-- Change cols by custom css -->
+        <xpath expr="//div[@id='products_grid_before']" position="attributes">
+            <attribute name="class">shop-categories</attribute>
+        </xpath>
+    </template>
 
 </odoo>

@@ -266,6 +266,11 @@ msgid "Product Item Template"
 msgstr "Product Item Template"
 
 #. module: website_base_multi_can
+#: model:ir.ui.view,arch_db:website_base_multi_can.wbm_website_sale_products_item
+msgid "Sale"
+msgstr "Oferta"
+
+#. module: website_base_multi_can
 #: model:ir.model.fields,field_description:website_base_multi_can.field_product_product_recipe_ids
 #: model:ir.model.fields,field_description:website_base_multi_can.field_product_template_recipe_ids
 msgid "Product Recipe"

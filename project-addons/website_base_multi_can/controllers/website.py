@@ -107,3 +107,12 @@ class WebsiteSaleExtended(WebsiteSale):
         }
 
         return request.render("website_sale.extra_info", values)
+
+    # PPG = 20  # Products Per Page
+    # PPR = 4   # Products Per Row
+    # @http.route(['/shop', '/shop/page/<int:page>', '/shop/category/<model("product.public.category"):category>',
+    #             '/shop/category/<model("product.public.category"):category>/page/<int:page>'
+    #              ], type='http', auth="public", website=True)
+    # def shop(self, page=0, category=None, search='', ppg=False, **post):
+    #     return super(WebsiteSaleExtended, self).shop(page=page, category=category, search=search,
+    #     ppg=Products Per Page, **post)

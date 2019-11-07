@@ -4,7 +4,7 @@
 
 footer{
     .font-size(13);
-    background-color: #73bcf9;
+    background-color: #f0f0f0;
     color: @color-corp;
 
     #footer {
@@ -16,7 +16,7 @@ footer{
         color: @color-corp;
         text-decoration: none;
         &:hover {
-            color: white;
+            color: @color-secondary;
         }
     }
 
@@ -57,6 +57,18 @@ footer{
         //     background-repeat: no-repeat;
         // }
     }
+}
+
+.footer-igape {
+    flex-grow: 1;
+    text-align: right;
+    img {
+        width: 85px;
+        margin-bottom: .25em;
+    }
+        span {
+            display: block;
+        }
 }
 
 .footer-content {

@@ -368,6 +368,11 @@ msgid "Products Item Base"
 msgstr "Products Item Base"
 
 #. module: website_base_multi_can
+#: model:ir.ui.view,arch_db:website_base_multi_can.wbm_website_sale_products_item
+msgid "Sale"
+msgstr "Verkauf"
+
+#. module: website_base_multi_can
 #: code:addons/website_base_multi_can/models/product.py:49
 #: model:ir.model.fields,help:website_base_multi_can.field_product_recipe_product_ids
 #, python-format
