@@ -117,6 +117,10 @@
         <xpath expr="//div[@id='products_grid_before']" position="attributes">
             <attribute name="class">shop-categories</attribute>
         </xpath>
+        <!-- Use shop-content to work less without scroll view -->
+<!--        <xpath expr="//div[@id='products_grid']" position="attributes">-->
+<!--            <attribute name="class">shop-content</attribute>-->
+<!--        </xpath>-->
     </template>
 
     <template id="website_sale_option_collapse_products_categories" name="Collapsible Category List Canilike" inherit_id="website_multi_theme.auto_view_can_website_sale_option_collapse_products_categories">

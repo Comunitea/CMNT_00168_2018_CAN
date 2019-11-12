@@ -46,7 +46,9 @@
 
     <template id="website_sale_products_infinite_scroll" name="SGEEDE Infinite Scroll Base" active="True" customize_show="True" inherit_id="website_base_multi_can.website_sale_products">
         <xpath expr="//div[@id='products_grid']" position="attributes">
-			<attribute name="t-attf-class">sgeede-infinite-scroll shop-categories</attribute>
+            <!-- Use shop-content to work less without scroll view -->
+<!--			<attribute name="t-attf-class">shop-content sgeede-infinite-scroll</attribute>-->
+			<attribute name="t-attf-class">sgeede-infinite-scroll</attribute>
 		</xpath>
 
 		<xpath expr="//div[@id='products_grid']//div[@t-foreach='bins']" position="attributes">
