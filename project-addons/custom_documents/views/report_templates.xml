@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="external_layout_boxed" inherit_id="web.external_layout_boxed">
+        <xpath expr="//li[@t-if='company.vat']" position="replace">
+            <t t-if="o and 'fiscal_position_id' in o and o.fiscal_position_id.custom_vat">
+                <li><t t-esc="company.country_id.vat_label or 'TIN'"/>: <span t-field="o.fiscal_position_id.custom_vat"/></li>
+            </t>
+            <t t-if="not o or 'fiscal_position_id' not in o or not o.fiscal_position_id.custom_vat">
+                <li t-if="company.vat"><t t-esc="company.country_id.vat_label or 'TIN'"/>: <span t-field="company.vat"/></li>
+            </t>
+        </xpath>
+        <xpath expr="//div[@t-field='company.report_footer']" position="replace">
+            <t t-if="o and 'fiscal_position_id' in o and o.fiscal_position_id.custom_text">
+                    <div t-field="o.fiscal_position_id.custom_text"/>
+            </t>
+            <t t-if="not o or 'fiscal_position_id' not in o or not o.fiscal_position_id.custom_text">
+                <div t-field="company.report_footer"/>
+            </t>
+        </xpath>
+    </template>
+
+</odoo>
