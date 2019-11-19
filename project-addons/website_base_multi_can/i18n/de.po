@@ -616,3 +616,75 @@ msgstr "Nutzungsbedingungen"
 #: model:ir.ui.view,name:website_base_multi_can.view_website_form_instagram
 msgid "view.website.form.instagramm"
 msgstr "view.website.form.instagramm"
+
+#. module: website_base_multi_can
+#: model:ir.ui.view,arch_db:website_base_multi_can.accept_legal_terms_with_check_snippet
+#: model:ir.ui.view,arch_db:website_base_multi_can.accept_legal_terms_without_check_snippet
+msgid "I accept the"
+msgstr "Ich akzeptiere das"
+
+#. module: website_base_multi_can
+#: model:ir.ui.view,arch_db:website_base_multi_can.accept_legal_terms_with_check_snippet
+#: model:ir.ui.view,arch_db:website_base_multi_can.accept_legal_terms_without_check_snippet
+msgid "Legal Advice"
+msgstr "Rechtsberatung"
+
+#. module: website_base_multi_can
+#: model:ir.ui.view,arch_db:website_base_multi_can.accept_legal_terms_with_check_snippet
+#: model:ir.ui.view,arch_db:website_base_multi_can.accept_legal_terms_without_check_snippet
+msgid "Legal Advice Link"
+msgstr "Rechtsberatung Link"
+
+#. module: website_base_multi_can
+#: model:ir.ui.view,arch_db:website_base_multi_can.accept_legal_terms_with_check_snippet
+#: model:ir.ui.view,arch_db:website_base_multi_can.accept_legal_terms_without_check_snippet
+msgid "Privacy Police"
+msgstr "Datenschutzpolizei"
+
+#. module: website_base_multi_can
+#: model:ir.ui.view,arch_db:website_base_multi_can.accept_legal_terms_with_check_snippet
+#: model:ir.ui.view,arch_db:website_base_multi_can.accept_legal_terms_without_check_snippet
+msgid "Privacy Police Link"
+msgstr "PDatenschutzpolizei Link"
+
+#. module: website_base_multi_can
+#: model:ir.ui.view,arch_db:website_base_multi_can.accept_legal_terms_with_check_snippet
+#: model:ir.ui.view,arch_db:website_base_multi_can.accept_legal_terms_without_check_snippet
+msgid "Terms of Use"
+msgstr "Nutzungsbedingungen"
+
+#. module: website_base_multi_can
+#: model:ir.ui.view,arch_db:website_base_multi_can.accept_legal_terms_with_check_snippet
+#: model:ir.ui.view,arch_db:website_base_multi_can.accept_legal_terms_without_check_snippet
+msgid "Terms of Use Link"
+msgstr "Nutzungsbedingungen Link"
+
+#. module: website_base_multi_can
+#: model:ir.ui.view,arch_db:website_base_multi_can.accept_legal_terms_with_check_snippet
+#: model:ir.ui.view,arch_db:website_base_multi_can.accept_legal_terms_without_check_snippet
+msgid "legal advice"
+msgstr "rechtsberatung"
+
+#. module: website_base_multi_can
+#: model:ir.ui.view,arch_db:website_base_multi_can.accept_legal_terms_with_check_snippet
+#: model:ir.ui.view,arch_db:website_base_multi_can.accept_legal_terms_without_check_snippet
+msgid "of this website."
+msgstr "dieser Website."
+
+#. module: website_base_multi_can
+#: model:ir.ui.view,arch_db:website_base_multi_can.accept_legal_terms_with_check_snippet
+#: model:ir.ui.view,arch_db:website_base_multi_can.accept_legal_terms_without_check_snippet
+msgid "terms of use"
+msgstr "Nutzungsbedingungen"
+
+#. module: website_base_multi_can
+#: model:ir.ui.view,arch_db:website_base_multi_can.accept_legal_terms_with_check_snippet
+#: model:ir.ui.view,arch_db:website_base_multi_can.accept_legal_terms_without_check_snippet
+msgid ", and the"
+msgstr ", und das"
+
+#. module: website_base_multi_can
+#: model:ir.ui.view,arch_db:website_base_multi_can.accept_legal_terms_with_check_snippet
+#: model:ir.ui.view,arch_db:website_base_multi_can.accept_legal_terms_without_check_snippet
+msgid ", the"
+msgstr "

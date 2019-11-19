@@ -569,3 +569,74 @@ msgstr "Recetas con"
 #: model:ir.ui.view,arch_db:website_base_multi_can.wbm_website_sale_extra_info
 msgid "Extra Info"
 msgstr "Información adicional"
+
+#. module: website_base_multi_can
+#: model:ir.ui.view,arch_db:website_base_multi_can.accept_legal_terms_with_check_snippet
+#: model:ir.ui.view,arch_db:website_base_multi_can.accept_legal_terms_without_check_snippet
+msgid "I accept the"
+msgstr "Acepto los"
+
+#. module: website_base_multi_can
+#: model:ir.ui.view,arch_db:website_base_multi_can.accept_legal_terms_with_check_snippet
+#: model:ir.ui.view,arch_db:website_base_multi_can.accept_legal_terms_without_check_snippet
+msgid "of this website."
+msgstr "de este sitio web."
+
+#. module: website_base_multi_can
+#: model:ir.ui.view,arch_db:website_base_multi_can.accept_legal_terms_with_check_snippet
+msgid "Legal Advice"
+msgstr "Avisos Legales"
+
+#. module: website_base_multi_can
+#: model:ir.ui.view,arch_db:website_base_multi_can.accept_legal_terms_with_check_snippet
+msgid "Legal Advice Link"
+msgstr "Enlace Avisos Legales"
+
+#. module: website_base_multi_can
+#: model:ir.ui.view,arch_db:website_base_multi_can.accept_legal_terms_with_check_snippet
+msgid "Privacy Police"
+msgstr "Política de privacidad"
+
+#. module: website_base_multi_can
+#: model:ir.ui.view,arch_db:website_base_multi_can.accept_legal_terms_with_check_snippet
+msgid "Privacy Police Link"
+msgstr "Enlace Política de Privacidad"
+
+#. module: website_base_multi_can
+#: model:ir.ui.view,arch_db:website_base_multi_can.accept_legal_terms_with_check_snippet
+msgid "Terms of Use"
+msgstr "Términos de Uso"
+
+#. module: website_base_multi_can
+#: model:ir.ui.view,arch_db:website_base_multi_can.accept_legal_terms_with_check_snippet
+msgid "Terms of Use Link"
+msgstr "Enlace Términos de Uso"
+
+#. module: website_base_multi_can
+#: model:ir.ui.view,arch_db:website_base_multi_can.accept_legal_terms_with_check_snippet
+#: model:ir.ui.view,arch_db:website_base_multi_can.accept_legal_terms_without_check_snippet
+msgid "legal advice"
+msgstr "aviso legal"
+
+#. module: website_base_multi_can
+#: model:ir.ui.view,arch_db:website_base_multi_can.accept_legal_terms_with_check_snippet
+#: model:ir.ui.view,arch_db:website_base_multi_can.accept_legal_terms_without_check_snippet
+msgid "privacy policy"
+msgstr "política de privacidad"
+
+#. module: website_base_multi_can
+#: model:ir.ui.view,arch_db:website_base_multi_can.accept_legal_terms_with_check_snippet
+#: model:ir.ui.view,arch_db:website_base_multi_can.accept_legal_terms_without_check_snippet
+msgid "terms of use"
+msgstr "términos de Uso"
+
+#. module: website_base_multi_can
+#: model:ir.ui.view,arch_db:website_base_multi_can.accept_legal_terms_with_check_snippet
+#: model:ir.ui.view,arch_db:website_base_multi_can.accept_legal_terms_without_check_snippet
+msgid ", and the"
+msgstr ", y los"
+
+#. module: website_base_multi_can
+#: model:ir.ui.view,arch_db:website_base_multi_can.accept_legal_terms_without_check_snippet
+msgid ", the"
+msgstr ", la"

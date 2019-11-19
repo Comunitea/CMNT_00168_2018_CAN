@@ -4,7 +4,7 @@
     <template id="web_login_template" name="Login Base" inherit_id="web.login">
         <xpath expr="//div[hasclass('oe_login_buttons')]" position="before">
             <div class="on_login_advise mt4 mb8 small">
-                With entering: <t t-call="website_base_multi_can.accept_legal_terms_without_check_snippet"/>
+                <t t-call="website_base_multi_can.accept_legal_terms_without_check_snippet"/>
             </div>
         </xpath>
     </template>
