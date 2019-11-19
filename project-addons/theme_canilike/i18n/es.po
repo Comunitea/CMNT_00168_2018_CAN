@@ -56,6 +56,17 @@ msgstr "<font style=\"color: rgb(156, 156, 148);\">El mar gallego es único en s
 
 #. module: theme_canilike
 #: model:ir.ui.view,arch_db:theme_canilike.home
+msgid "<font style=\"color: rgb(156, 156, 148); font-size: 24px;\">The lush wealth of the Galician sea is unique: it combines abundance and quality</font>\n"
+"                                    <font style=\"color: rgb(156, 156, 148); font-size: 24px;\">\n"
+"                                        <br/>\n"
+"                                    </font>"
+msgstr "<font style=\"color: rgb(156, 156, 148); font-size: 24px;\">El mar gallego es único en su exuberante riqueza: reúne abundancia y calidad</font>\n"
+"                                    <font style=\"color: rgb(156, 156, 148); font-size: 24px;\">\n"
+"                                        <br/>\n"
+"                                    </font>"
+
+#. module: theme_canilike
+#: model:ir.ui.view,arch_db:theme_canilike.home
 msgid "<font style=\"color: rgb(156, 156, 148);\">If we could peek into the pantries of a hundred Spanish families, canned food would be found in more than ninety. How could it be any other way? A delicious natural product easy to store, competitively priced and with expiration dates that allow ample room for consumption. These are enough guarantees to become an essential product.<font style=\"color: rgb(156, 156, 148);\"><br/></font></font>"
 msgstr "<font style=\"color: rgb(156, 156, 148);\">Si pudiésemos asomarnos a las despensas de un centenar de familias españolas, en más de noventa encontraríamos latas de conservas. ¿Cómo podría ser de otro modo? Un producto natural, delicioso, fácil de almacenar, de precio competitivo y con fechas de caducidad que conceden un amplio margen para su consumo. Avales de sobra para convertirse en un imprescindible...<font style=\"color: rgb(156, 156, 148);\"><br/></font></font>"
 
@@ -68,13 +79,28 @@ msgstr "<font style=\"color: rgb(156, 156, 148);\">Sin conservantes. Sin químic
 
 #. module: theme_canilike
 #: model:ir.ui.view,arch_db:theme_canilike.home
+msgid "<font style=\"color: rgb(156, 156, 148); font-size: 24px;\"><font style=\"color: rgb(156, 156, 148);\">No preservatives.</font> No chemicals. Nothing is added that can take away the 100% natural taste of fish and shellfish</font>"
+msgstr "<font style=\"color: rgb(156, 156, 148); font-size: 24px;\"><font style=\"color: rgb(156, 156, 148);\">Sin conservantes.</font> Sin química. Sin nada que te arrebate el sabor 100% natural de los pescados y mariscos</font>"
+
+#. module: theme_canilike
+#: model:ir.ui.view,arch_db:theme_canilike.home
 msgid "<font style=\"font-size: 24px;\" class=\"text-epsilon\">The preservation process:<br/>the value of the natural product</font>"
 msgstr "<font style=\"font-size: 24px;\" class=\"text-epsilon\">El proceso de conservación:<br/>el valor de lo natural</font>"
 
 #. module: theme_canilike
 #: model:ir.ui.view,arch_db:theme_canilike.home
+msgid "<font style=\"font-size: 24px;\" class=\"text-epsilon\">The preservation process</font>"
+msgstr "<font style=\"font-size: 24px;\" class=\"text-epsilon\">El proceso de conservación</font>
+
+#. module: theme_canilike
+#: model:ir.ui.view,arch_db:theme_canilike.home
 msgid "<font style=\"font-size: 24px;\" class=\"text-epsilon\">Canned food in Galicia:<br/>the value of tradition</font>"
 msgstr "<font style=\"font-size: 24px;\" class=\"text-epsilon\">Las conservas en Galicia:<br/>el valor de la tradición</font>"
+
+#. module: theme_canilike
+#: model:ir.ui.view,arch_db:theme_canilike.home
+msgid "<font style=\"font-size: 24px;\" class=\"text-epsilon\">Canned food in Galicia</font>"
+msgstr "<font style=\"font-size: 24px;\" class=\"text-epsilon\">Las conservas en Galicia</font>"
 
 #. module: theme_canilike
 #: model:ir.ui.view,arch_db:theme_canilike.home
@@ -192,6 +218,11 @@ msgstr "Igape Modal Canilike"
 #: model:ir.ui.view,arch_db:theme_canilike.igape_modal
 msgid "IGAPE GRANTS FOEXGA PLAN PROGRAM 2019-2020"
 msgstr "AYUDAS DEL IGAPE PROGRAMA IGAPE PLAN FOEXGA 2019-2020"
+
+#. module: theme_canilike
+#: model:ir.ui.view,arch_db:theme_canilike.igape_modal
+msgid "Aid from Igape to digitalization Industry 4.0"
+msgstr "Ayudas del Igape a la digitalización Industria 4.0"
 
 #. module: theme_canilike
 #: model:ir.ui.view,arch_db:theme_canilike.igape_modal

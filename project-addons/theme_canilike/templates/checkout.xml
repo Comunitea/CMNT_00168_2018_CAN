@@ -41,7 +41,7 @@
             <div class='panel-footer' t-if='not readonly and allowed_current_address'>
                 <span class='btn-ship' t-att-style="'' if selected else 'display:none;'">
                     <a class="btn btn-block btn-primary">
-                        <i class='fa fa-check'></i> Ship to this address
+                        <i class='fa fa-check'/> Ship to this address
                     </a>
                 </span>
                 <span class='btn-ship' t-att-style="'' if not selected else 'display:none;'">
@@ -53,7 +53,7 @@
             <div class='panel-footer' t-if="not allowed_current_address">
                 <span class='btn-ship' t-att-style="'' if selected else 'display:none;'">
                     <a class="btn btn-block btn-danger disabled">
-                        <i class='fa fa-times'></i> You can't ship to this address
+                        <i class='fa fa-times'/> You can't ship to this address
                     </a>
                 </span>
                 <span class='btn-ship' t-att-style="'' if not selected else 'display:none;'">

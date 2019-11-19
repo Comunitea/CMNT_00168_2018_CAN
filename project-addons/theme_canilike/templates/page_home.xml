@@ -32,7 +32,7 @@
                                     <p>
                                         <font style="color: rgb(156, 156, 148);">The lush wealth of the Galician sea is unique: it combines abundance and quality. It is natural that the canning industry settled in Galicia almost two hundred years ago. Preserving the delicious product from Galician waters was a necessity, rather than just a business. But in order to talk about the authentic origin of this preservation system, we have to travel in space and time...</font>
                                     </p>
-                                    <p><font style="color: rgb(156, 156, 148);">&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;</font>&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; </p>
+                                    <br/>
                                     <p>&amp;nbsp;<a href="/aboutus" class="btn btn-danger" data-original-title="" title="">More information...</a><br/></p>
                                 </div>
                                 <div class="col-md-4 mt32 mb48">
@@ -41,13 +41,9 @@
                                     </h4>
                                     <p>
                                         <font style="color: rgb(156, 156, 148);">No preservatives. No chemicals. Nothing is added that can take away the 100% natural taste of fish and shellfish. The methods used in the Galician canning industry are a solid guarantee of quality and reliability.</font>
-                                        <font style="color: rgb(156, 156, 148);">Our canned products are able to please the most demanding consumers. Unlike in other packaged foods, no tricks or artifice are used in canned foods to ...<font style="color: rgb(156, 156, 148);">&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;</font></font>
+                                        <font style="color: rgb(156, 156, 148);">Our canned products are able to please the most demanding consumers. Unlike in other packaged foods, no tricks or artifice are used in canned foods to ...</font>
                                     </p>
-                                    <p>
-                                        <font style="color: rgb(156, 156, 148);">
-                                            <br/>
-                                        </font>
-                                    </p>
+                                    <br/>
                                     <p>&amp;nbsp;<a href="http://canilike.livingodoo.com/aboutus" class="btn btn-danger" data-original-title="" title="">More information...</a></p>
                                 </div>
                                 <div class="col-md-4 mt32 mb48">
@@ -55,12 +51,45 @@
                                         <font style="font-size: 24px;" class="text-epsilon">Memories of flavors: <br/>in Galicia and in the world</font>
                                     </h4>
                                     <p>
-                                        <font style="color: rgb(156, 156, 148);">If we could peek into the pantries of a hundred Spanish families, canned food would be found in more than ninety. How could it be any other way? A delicious natural product easy to store, competitively priced and with expiration dates that allow ample room for consumption. These are enough guarantees to become an essential product.<font style="color: rgb(156, 156, 148);"><br/></font></font>
+                                        <font style="color: rgb(156, 156, 148);">If we could peek into the pantries of a hundred Spanish families, canned food would be found in more than ninety. How could it be any other way? A delicious natural product easy to store, competitively priced and with expiration dates that allow ample room for consumption. These are enough guarantees to become an essential product.</font>
                                     </p>
-                                    <p>
-                                        <font style="color: rgb(156, 156, 148);"><font style="color: rgb(156, 156, 148);">&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;</font>&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; <br/></font>
-                                    </p>
+                                    <br/>
                                     <p>&amp;nbsp;<a href="http://canilike.livingodoo.com/aboutus" class="btn btn-danger" data-original-title="" title="">More information...</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="s_image_text">
+                        <div class="container">
+                            <div class="row">
+                                <div class="mt32 mb32 col-md-4">
+                                    <img class="img img-responsive center-block mb16" src="/theme_canilike/static/img/canilike/mar.jpg" alt="Sea" data-original-title="" title="Sea"/>
+                                </div>
+                                <div class="col-md-6 mt128 mb128">
+                                    <h4>
+                                        <font style="font-size: 24px;" class="text-epsilon">Canned food in Galicia</font>
+                                    </h4>
+                                    <font style="color: rgb(156, 156, 148); font-size: 24px;">The lush wealth of the Galician sea is unique: it combines abundance and quality</font>
+                                    <font style="color: rgb(156, 156, 148); font-size: 24px;">
+                                        <br/>
+                                    </font>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="s_text_image">
+                        <div class="container">
+                            <div class="row">
+                                <div class="mt64 mb64 col-md-6 col-md-offset-2">
+                                    <h4 style="text-align: right;">
+                                        <font style="font-size: 24px;" class="text-epsilon">The preservation process</font>
+                                    </h4>
+                                    <p style="text-align: right;">
+                                        <font style="color: rgb(156, 156, 148); font-size: 24px;"><font style="color: rgb(156, 156, 148);">No preservatives.</font> No chemicals. Nothing is added that can take away the 100% natural taste of fish and shellfish</font>
+                                    </p>
+                                </div>
+                                <div class="mt0 mb0 col-md-4">
+                                    <img class="img img-responsive pull-left mb16" src="/theme_canilike/static/img/canilike/pesca.jpg" alt="Fishing" data-original-title="" title="Fishing"/>
                                 </div>
                             </div>
                         </div>

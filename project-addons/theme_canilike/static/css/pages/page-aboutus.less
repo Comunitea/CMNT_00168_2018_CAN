@@ -19,9 +19,9 @@
         }
 }
 .block-large {
-    background-color: #7df2ac;
+    background-color: @color-main-light;
     h2 {
-        color :white;
+        //color :white;
         }
     p {
         .font-fluid(@screen-s, @screen-xl, 14px, 18px);
@@ -52,6 +52,28 @@
 
 }
 
+.call-to-action {
+    background-color: #3C3C6A;
+    padding: 4em 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    a {
+        display: inline-block;
+        padding: 1em 2em;
+        .font-size(18);
+        border:1px solid white;
+        color: white;
+        border-radius: 4px;
+        text-transform: uppercase;
+        &:hover {
+
+            background-color: @color-corp;
+            color: white;
+            text-decoration: none;
+            }
+        }
+    }
 
 .back-color {
     background-image:url('/theme_canilike/static/img/canilike/back-canilike.png');

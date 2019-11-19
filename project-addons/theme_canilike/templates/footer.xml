@@ -54,15 +54,16 @@
                     <button class="close" data-dismiss="modal"><span>Close</span></button>
                     <div class="modal-header">
                         <img t-att-src="'/theme_canilike/static/img/canilike/igape.jpg'" alt="Igape Logo"/>
-                        <h4 class="modal-title" id="modalLabel">AYUDAS DEL IGAPE PROGRAMA IGAPE PLAN FOEXGA 2019-2020</h4>
+                        <h4 class="modal-title" id="modalLabel">IGAPE GRANTS FOEXGA PLAN PROGRAM 2019-2020</h4>
                     </div>
                     <div class="modal-body">
-                        <p>Esta empresa participa EN UN PROYECTO de internacionalización a través del programa del Igape Plan Foexga 2019-2020. El objetivo principal de estas ayudas es incentivar y estimular el comercio exterior gallego y la internacionalización de las  pymes gallegas. El resultado que se pretende es aumentar la base de empresas exportadoras y consolidar la presencia de empresas gallegas en los mercados internacionales.</p>
+                        <p>Aid from Igape to digitalization Industry 4.0</p>
+                        <p>This company is participating in an internationalization project through the program of the Foexga Igape Plan 2019-2020. The main objective of these grants is to encourage and stimulate Galician foreign trade and the internationalization of Galician SMEs. The result is intended to increase the base of exporting companies and to consolidate the presence of Galician companies in international markets.</p>
                         <ul>
-                            <li>OPERACIÓN COFINANCIADA POLA UNIÓN EUROPEA</li>
-                            <li>PROGRAMA OPERATIVO FEDER GALICIA 2014-2020</li>
-                            <li>CONSEGUIR UN TECIDO EMPRESARIAL MÁIS COMPETITIVO</li>
-                            <li>UNHA MANEIRA DE FACER EUROPA</li>
+                            <li>CO-FINANCED OPERATION BY THE EUROPEAN UNION</li>
+                            <li>FEDER GALICIA OPERATING PROGRAM 2014-2020</li>
+                            <li>CGET A MOST COMPETITIVE BUSINESS TEXT</li>
+                            <li> WAY TO DO EUROPE</li>
                         </ul>
                     </div>
                 </div>
