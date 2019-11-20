@@ -51,8 +51,8 @@
         <div class="modal fade" id="igapeModal" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
             <div class="modal-dialog igape" role="document">
                 <div class="modal-content">
-                    <button class="close" data-dismiss="modal"><span>Close</span></button>
                     <div class="modal-header">
+                    <button class="close" data-dismiss="modal"><span>Close</span></button>
                         <h4 class="modal-title" id="modalLabel">IGAPE GRANTS FOEXGA PLAN PROGRAM 2019-2020</h4>
                     </div>
                     <div class="modal-body">
