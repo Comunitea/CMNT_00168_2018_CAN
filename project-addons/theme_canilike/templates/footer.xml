@@ -53,11 +53,11 @@
                 <div class="modal-content">
                     <button class="close" data-dismiss="modal"><span>Close</span></button>
                     <div class="modal-header">
-                        <img t-att-src="'/theme_canilike/static/img/canilike/igape.jpg'" alt="Igape Logo"/>
                         <h4 class="modal-title" id="modalLabel">IGAPE GRANTS FOEXGA PLAN PROGRAM 2019-2020</h4>
                     </div>
                     <div class="modal-body">
-                        <p>Aid from Igape to digitalization Industry 4.0</p>
+                        <img t-att-src="'/theme_canilike/static/img/canilike/igape.jpg'" alt="Igape Logo"/>
+                        <h5>Aid from Igape to digitalization Industry 4.0</h5>
                         <p>This company is participating in an internationalization project through the program of the Foexga Igape Plan 2019-2020. The main objective of these grants is to encourage and stimulate Galician foreign trade and the internationalization of Galician SMEs. The result is intended to increase the base of exporting companies and to consolidate the presence of Galician companies in international markets.</p>
                         <ul>
                             <li>CO-FINANCED OPERATION BY THE EUROPEAN UNION</li>

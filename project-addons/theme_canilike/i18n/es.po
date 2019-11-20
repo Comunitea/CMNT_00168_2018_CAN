@@ -41,29 +41,13 @@ msgstr "<font style=\"\" class=\"text-epsilon\">Payment and shipping<br/></font>
 
 #. module: theme_canilike
 #: model:ir.ui.view,arch_db:theme_canilike.home
-msgid "<font style=\"color: rgb(156, 156, 148);\">&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;</font>&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;"
-msgstr "<font style=\"color: rgb(156, 156, 148);\">&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;</font>&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;"
-
-#. module: theme_canilike
-#: model:ir.ui.view,arch_db:theme_canilike.home
-msgid "<font style=\"color: rgb(156, 156, 148);\"><font style=\"color: rgb(156, 156, 148);\">&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;</font>&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; <br/></font>"
-msgstr "<font style=\"color: rgb(156, 156, 148);\"><font style=\"color: rgb(156, 156, 148);\">&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;</font>&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; <br/></font>"
-
-#. module: theme_canilike
-#: model:ir.ui.view,arch_db:theme_canilike.home
 msgid "<font style=\"color: rgb(156, 156, 148);\">The lush wealth of the Galician sea is unique: it combines abundance and quality. It is natural that the canning industry settled in Galicia almost two hundred years ago. Preserving the delicious product from Galician waters was a necessity, rather than just a business. But in order to talk about the authentic origin of this preservation system, we have to travel in space and time...</font>"
 msgstr "<font style=\"color: rgb(156, 156, 148);\">El mar gallego es único en su exuberante riqueza: reúne abundancia y calidad. Es natural que la industria conservera se asentase en Galicia hace casi doscientos años. Más que un negocio, preservar el delicioso producto procedente de las aguas gallegas era una necesidad. Pero para hablar del auténtico origen de este sistema de conservación tenemos que viajar en el espacio y en el tiempo...</font>"
 
 #. module: theme_canilike
 #: model:ir.ui.view,arch_db:theme_canilike.home
-msgid "<font style=\"color: rgb(156, 156, 148); font-size: 24px;\">The lush wealth of the Galician sea is unique: it combines abundance and quality</font>\n"
-"                                    <font style=\"color: rgb(156, 156, 148); font-size: 24px;\">\n"
-"                                        <br/>\n"
-"                                    </font>"
-msgstr "<font style=\"color: rgb(156, 156, 148); font-size: 24px;\">El mar gallego es único en su exuberante riqueza: reúne abundancia y calidad</font>\n"
-"                                    <font style=\"color: rgb(156, 156, 148); font-size: 24px;\">\n"
-"                                        <br/>\n"
-"                                    </font>"
+msgid "<font style=\"color: rgb(156, 156, 148); font-size: 24px;\">The lush wealth of the Galician sea is unique: it combines abundance and quality</font>"
+msgstr "<font style=\"color: rgb(156, 156, 148); font-size: 24px;\">El mar gallego es único en su exuberante riqueza: reúne abundancia y calidad</font>"
 
 #. module: theme_canilike
 #: model:ir.ui.view,arch_db:theme_canilike.home
@@ -101,6 +85,16 @@ msgstr "<font style=\"font-size: 24px;\" class=\"text-epsilon\">Las conservas en
 #: model:ir.ui.view,arch_db:theme_canilike.home
 msgid "<font style=\"font-size: 24px;\" class=\"text-epsilon\">Canned food in Galicia</font>"
 msgstr "<font style=\"font-size: 24px;\" class=\"text-epsilon\">Las conservas en Galicia</font>"
+
+#. module: theme_canilike
+#: model:ir.ui.view,arch_db:theme_canilike.home
+msgid "<font style=\"font-size: 24px;\" class=\"text-epsilon\">Memories of flavors</font>"
+msgstr "<font style=\"font-size: 24px;\" class=\"text-epsilon\">Recuerdos de sabores</font>"
+
+#. module: theme_canilike
+#: model:ir.ui.view,arch_db:theme_canilike.home
+msgid "<font style=\"color: rgb(156, 156, 148); font-size: 24px;\">If we could peek into the pantries of a hundred Spanish families, canned food would be found in more than ninety</font>"
+msgstr "<font style=\"color: rgb(156, 156, 148); font-size: 24px;\">Si pudiésemos asomarnos a las despensas de un centenar de familias españolas, en más de noventa encontraríamos latas de conservas</font>"
 
 #. module: theme_canilike
 #: model:ir.ui.view,arch_db:theme_canilike.home
@@ -509,6 +503,21 @@ msgstr "Más información..."
 #: model:ir.ui.view,arch_db:theme_canilike.home
 msgid "Meet our products"
 msgstr "Conozca nuestros productos"
+
+#. module: theme_canilike
+#: model:ir.ui.view,arch_db:theme_canilike.home
+msgid "Sea"
+msgstr "Mar"
+
+#. module: theme_canilike
+#: model:ir.ui.view,arch_db:theme_canilike.home
+msgid "Fishing"
+msgstr "Pesca"
+
+#. module: theme_canilike
+#: model:ir.ui.view,arch_db:theme_canilike.home
+msgid "Memories of flavors"
+msgstr "Recuerdos de sabores"
 
 #. module: theme_canilike
 #: model:ir.ui.view,arch_db:theme_canilike.aboutus_page_ir_ui_view

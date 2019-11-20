@@ -36,6 +36,72 @@ h4, h5, h6 {
     font-weight: @fw-regular;
 }
 
+/* location modal */
+
+.modal-content {
+    .close {
+        .font-size(16);
+        position: relative;
+        top: 1.25em;
+        margin-right: .75em;
+        text-transform: uppercase;
+        &::before {
+//             content: "X";
+            margin-right: .5em;
+        }
+        span {
+        }
+    }
+}
+
+.modal-header {
+    h4 {
+        font-weight: 300;
+    }
+}
+
+.modal-lang {
+    border-right: 1px solid #d5d5d5;
+
+    .language_menu {
+        >a {
+            .btn;
+            .btn-default;
+            text-transform: uppercase;
+        }
+    }
+
+}
+
+#languageModal{
+    h4 {
+        font-weight: 300;
+        color: @color-corp;
+        }
+    ul, li {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+    .modal-body {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        >div {
+            width: 48%;
+            }
+    }
+}
+
+.modal-location {
+    .alert {
+        .font-size(14);
+        }
+    >li {
+        margin-bottom: 1em !important;
+        }
+    }
+
 
 
 /* move this to another .less file */
@@ -239,6 +305,10 @@ h4, h5, h6 {
         margin-right: 10%;
     }
 
+    .nav {
+        position: sticky;
+        top:2em;
+        }
     .nav-pills {
             ul {
                 li{
