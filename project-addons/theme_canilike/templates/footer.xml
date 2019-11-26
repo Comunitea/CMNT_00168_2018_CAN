@@ -53,17 +53,17 @@
                 <div class="modal-content">
                     <div class="modal-header">
                     <button class="close" data-dismiss="modal"><span>Close</span></button>
-                        <h4 class="modal-title" id="modalLabel">IGAPE GRANTS FOEXGA PLAN PROGRAM 2019-2020</h4>
+                        <h4 class="modal-title text-uppercase" id="modalLabel">Axudas do Igape á dixitalización Industria 4.0</h4>
                     </div>
-                    <div class="modal-body">
+                    <div class="modal-body mt8">
                         <img t-att-src="'/theme_canilike/static/img/canilike/igape.jpg'" alt="Igape Logo"/>
-                        <h5>Aid from Igape to digitalization Industry 4.0</h5>
-                        <p>This company is participating in an internationalization project through the program of the Foexga Igape Plan 2019-2020. The main objective of these grants is to encourage and stimulate Galician foreign trade and the internationalization of Galician SMEs. The result is intended to increase the base of exporting companies and to consolidate the presence of Galician companies in international markets.</p>
-                        <ul>
-                            <li>CO-FINANCED OPERATION BY THE EUROPEAN UNION</li>
-                            <li>FEDER GALICIA OPERATING PROGRAM 2014-2020</li>
-                            <li>CGET A MOST COMPETITIVE BUSINESS TEXT</li>
-                            <li> WAY TO DO EUROPE</li>
+                        <h4 class="text-center mt32 mb24">Axudas do Igape Galicia Exporta Empresas</h4>
+                        <p>Esta empresa foi beneficiaria dunha axuda do programa do Igape Galicia Exporta Empresas. O obxectivo principal destas axudas é incentivar e estimular o comercio exterior galego e a internacionalización das pemes galegas. O resultado que se pretende é aumentar a base de empresas exportadoras e consolidar a presenza de empresas galegas nos mercados internacionais.</p>
+                        <ul class="list-unstyled mt24 mb24">
+                            <li class="text-center">Operación cofinanciada pola Unión Europea</li>
+                            <li class="text-center mt4">Programa operativo FEDER Galicia 2014-2020</li>
+                            <li class="text-center mt4">Conseguir un tecido empresarial máis competitivo</li>
+                            <li class="text-center mt4">Unha maneira de facer Europa</li>
                         </ul>
                     </div>
                 </div>
