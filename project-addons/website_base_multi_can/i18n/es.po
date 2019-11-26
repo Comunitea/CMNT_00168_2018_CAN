@@ -74,7 +74,7 @@ msgid "Descriptions"
 msgstr "Descripciones"
 
 #. module: website_base_multi_can
-#: code:addons/website_base_multi_can/models/product.py:45
+#: code:addons/website_base_multi_can/models/product.py:47
 #: model:ir.model.fields,help:website_base_multi_can.field_product_recipe_website_sequence
 #, python-format
 msgid "Determine the display order in the Website"
@@ -93,7 +93,7 @@ msgid "Find Website Categories in Search Box by Related Tags"
 msgstr "Encuentra las Categorías ecommerce en el cuadro de búsqueda por sus etiquetas relacionadas"
 
 #. module: website_base_multi_can
-#: code:addons/website_base_multi_can/models/product.py:65
+#: code:addons/website_base_multi_can/models/product.py:67
 #: model:ir.model.fields,field_description:website_base_multi_can.field_product_recipe_slug
 #, python-format
 msgid "Friendly URL"
@@ -105,7 +105,7 @@ msgid "Frontend Layout Template"
 msgstr "Frontend Layout Template"
 
 #. module: website_base_multi_can
-#: code:addons/website_base_multi_can/models/product.py:47
+#: code:addons/website_base_multi_can/models/product.py:49
 #: model:ir.model.fields,field_description:website_base_multi_can.field_product_recipe_description
 #, python-format
 msgid "Description"
@@ -127,7 +127,7 @@ msgid "Full Legal Acceptance Without Check Snippet"
 msgstr "Full Legal Acceptance Without Check Snippet"
 
 #. module: website_base_multi_can
-#: code:addons/website_base_multi_can/models/product.py:43
+#: code:addons/website_base_multi_can/models/product.py:45
 #: model:ir.model.fields,help:website_base_multi_can.field_product_recipe_sequence
 #, python-format
 msgid "Gives the sequence order when displaying a recipe list"
@@ -151,8 +151,8 @@ msgid "ID"
 msgstr "ID (Identificación)"
 
 #. module: website_base_multi_can
-#: code:addons/website_base_multi_can/models/product.py:53
-#: code:addons/website_base_multi_can/models/product.py:110
+#: code:addons/website_base_multi_can/models/product.py:55
+#: code:addons/website_base_multi_can/models/product.py:112
 #: model:ir.model.fields,field_description:website_base_multi_can.field_product_recipe_image
 #: model:ir.model.fields,field_description:website_base_multi_can.field_recipe_image_image
 #, python-format
@@ -179,7 +179,7 @@ msgid "Instagram Account"
 msgstr "Cuenta de Instagram"
 
 #. module: website_base_multi_can
-#: code:addons/website_base_multi_can/models/product.py:42
+#: code:addons/website_base_multi_can/models/product.py:44
 #: model:ir.model.fields,field_description:website_base_multi_can.field_product_recipe_sequence
 #, python-format
 msgid "Internal Sequence"
@@ -222,21 +222,21 @@ msgid "Legal Login Canilike Theme Template"
 msgstr "Legal Login Canilike Theme Template"
 
 #. module: website_base_multi_can
-#: code:addons/website_base_multi_can/models/product.py:55
+#: code:addons/website_base_multi_can/models/product.py:57
 #: model:ir.model.fields,field_description:website_base_multi_can.field_product_recipe_image_medium
 #, python-format
 msgid "Medium-sized image"
 msgstr "Imagen de tamaño mediano"
 
 #. module: website_base_multi_can
-#: code:addons/website_base_multi_can/models/product.py:56
+#: code:addons/website_base_multi_can/models/product.py:58
 #: model:ir.model.fields,help:website_base_multi_can.field_product_recipe_image_medium
 #, python-format
 msgid "Medium-sized image of the recipe. It is automatically resized as a 128x128px image, with aspect ratio preserved, only when the image exceeds one of those sizes. Use this field in form views or some kanban views."
 msgstr "Imagen de tamaño mediano de la receta. La imagen es redimensionada automaticamente a 128x128px, preservando el ratio de aspecto, cuando la imagen exdece ese tamaño. Use este campo para formularios o vistas kanban."
 
 #. module: website_base_multi_can
-#: code:addons/website_base_multi_can/models/product.py:109
+#: code:addons/website_base_multi_can/models/product.py:111
 #: model:ir.model.fields,field_description:website_base_multi_can.field_product_public_category_tag_name
 #: model:ir.model.fields,field_description:website_base_multi_can.field_recipe_image_name
 #, python-format
@@ -244,7 +244,7 @@ msgid "Name"
 msgstr "Nombre"
 
 #. module: website_base_multi_can
-#: code:addons/website_base_multi_can/models/product.py:64
+#: code:addons/website_base_multi_can/models/product.py:66
 #: model:ir.model.fields,help:website_base_multi_can.field_product_recipe_website_published
 #, python-format
 msgid "Only published recipes are visible on the website"
@@ -300,14 +300,14 @@ msgid "Products"
 msgstr "Productos"
 
 #. module: website_base_multi_can
-#: code:addons/website_base_multi_can/models/product.py:50
+#: code:addons/website_base_multi_can/models/product.py:52
 #: model:ir.model.fields,help:website_base_multi_can.field_product_recipe_product_ids
 #, python-format
 msgid "Products that contains the recipe"
 msgstr "Productos que se usan en la receta"
 
 #. module: website_base_multi_can
-#: code:addons/website_base_multi_can/models/product.py:63
+#: code:addons/website_base_multi_can/models/product.py:65
 #: model:ir.model.fields,field_description:website_base_multi_can.field_product_recipe_website_published
 #, python-format
 msgid "Published"
@@ -319,7 +319,7 @@ msgid "Recaptcha Snippet"
 msgstr "Recaptcha Snippet"
 
 #. module: website_base_multi_can
-#: code:addons/website_base_multi_can/models/product.py:36
+#: code:addons/website_base_multi_can/models/product.py:38
 #: model:ir.model,name:website_base_multi_can.model_product_recipe
 #: model:ir.ui.view,name:website_base_multi_can.recipe_template
 #, python-format
@@ -345,7 +345,7 @@ msgid "Recipes list"
 msgstr "Lista de recetas"
 
 #. module: website_base_multi_can
-#: code:addons/website_base_multi_can/models/product.py:31
+#: code:addons/website_base_multi_can/models/product.py:35
 #: model:ir.model.fields,help:website_base_multi_can.field_product_product_recipe_ids
 #: model:ir.model.fields,help:website_base_multi_can.field_product_template_recipe_ids
 #, python-format
@@ -368,56 +368,56 @@ msgid "Remove Portal Account BreadCrumbs"
 msgstr "Remove Portal Account BreadCrumbs"
 
 #. module: website_base_multi_can
-#: code:addons/website_base_multi_can/models/product.py:46
+#: code:addons/website_base_multi_can/models/product.py:48
 #: model:ir.model.fields,field_description:website_base_multi_can.field_product_recipe_description_short
 #, python-format
 msgid "Ingredients list"
 msgstr "Lista de ingredientes"
 
 #. module: website_base_multi_can
-#: code:addons/website_base_multi_can/models/product.py:46
+#: code:addons/website_base_multi_can/models/product.py:48
 #: model:ir.model.fields,help:website_base_multi_can.field_product_recipe_description_short
 #, python-format
 msgid "Ingredients list (Optional)"
 msgstr "Lista de ingredientes (Opcional)"
 
 #. module: website_base_multi_can
-#: code:addons/website_base_multi_can/models/product.py:59
+#: code:addons/website_base_multi_can/models/product.py:61
 #: model:ir.model.fields,field_description:website_base_multi_can.field_product_recipe_image_small
 #, python-format
 msgid "Small-sized image"
 msgstr "Imagen de tamaño pequeño"
 
 #. module: website_base_multi_can
-#: code:addons/website_base_multi_can/models/product.py:60
+#: code:addons/website_base_multi_can/models/product.py:62
 #: model:ir.model.fields,help:website_base_multi_can.field_product_recipe_image_small
 #, python-format
 msgid "Small-sized image of the recipe. It is automatically resized as a 64x64px image, with aspect ratio preserved. Use this field anywhere a small image is required."
 msgstr "Imagen pequeña de la categoría. Se redimensiona automáticamente a 64x64px, con el ratio de aspecto preservado. Use este campo donde se requiera una imagen pequeña."
 
 #. module: website_base_multi_can
-#: code:addons/website_base_multi_can/models/product.py:41
+#: code:addons/website_base_multi_can/models/product.py:43
 #: model:ir.model.fields,field_description:website_base_multi_can.field_product_recipe_subtitle
 #, python-format
 msgid "Subtitle"
 msgstr "Subtitulo"
 
 #. module: website_base_multi_can
-#: code:addons/website_base_multi_can/models/product.py:41
+#: code:addons/website_base_multi_can/models/product.py:43
 #: model:ir.model.fields,field_description:website_base_multi_can.field_product_recipe_subtitle
 #, python-format
 msgid "Ingredients"
 msgstr "Ingredientes"
 
 #. module: website_base_multi_can
-#: code:addons/website_base_multi_can/models/product.py:53
+#: code:addons/website_base_multi_can/models/product.py:55
 #: model:ir.model.fields,help:website_base_multi_can.field_product_recipe_image
 #, python-format
 msgid "This field holds the image used as image for the recipe, limited to 1024x1024px."
 msgstr "Este campo contiene la imagen utilizada como avatar para este contacto, limitada a 1024x1024px."
 
 #. module: website_base_multi_can
-#: code:addons/website_base_multi_can/models/product.py:40
+#: code:addons/website_base_multi_can/models/product.py:42
 #: model:ir.model.fields,field_description:website_base_multi_can.field_product_recipe_title
 #, python-format
 msgid "Title"
@@ -472,7 +472,7 @@ msgid "Website Product Category Related Tag"
 msgstr "Website Product Category Related Tag"
 
 #. module: website_base_multi_can
-#: code:addons/website_base_multi_can/models/product.py:44
+#: code:addons/website_base_multi_can/models/product.py:46
 #: model:ir.model.fields,field_description:website_base_multi_can.field_product_recipe_website_sequence
 #, python-format
 msgid "Website Sequence"
@@ -499,7 +499,7 @@ msgid "With entering:"
 msgstr "Al entrar:"
 
 #. module: website_base_multi_can
-#: code:addons/website_base_multi_can/models/product.py:66
+#: code:addons/website_base_multi_can/models/product.py:68
 #: model:ir.model.fields,field_description:website_base_multi_can.field_product_recipe_video
 #, python-format
 msgid "YouTube video URL"
@@ -640,3 +640,17 @@ msgstr ", y los"
 #: model:ir.ui.view,arch_db:website_base_multi_can.accept_legal_terms_without_check_snippet
 msgid ", the"
 msgstr ", la"
+
+#. module: website_base_multi_can
+#: code:addons/website_base_multi_can/models/product.py:19
+#: model:ir.model.fields,field_description:website_base_multi_can.field_product_public_category_website_published
+#, python-format
+msgid "Published on the Website'"
+msgstr "Publicada en el sitio web"
+
+#. module: website_base_multi_can
+#: code:addons/website_base_multi_can/models/product.py:20
+#: model:ir.model.fields,help:website_base_multi_can.field_product_public_category_website_published
+#, python-format
+msgid "Only published categories are visible on the website"'"
+msgstr "Solo las categorías publicadas serán visibles en el sitio web"

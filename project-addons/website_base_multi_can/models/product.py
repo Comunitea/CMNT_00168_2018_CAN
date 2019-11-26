@@ -16,6 +16,8 @@ class ProductPublicCategoryTag(models.Model):
 class ProductPublicCategory(models.Model):
     _inherit = "product.public.category"
 
+    website_published = fields.Boolean(string=_('Published on the Website'), default=True,
+                                       help=_("Only published categories are visible on the website"))
     public_categ_tag_ids = fields.Many2many('product.public.category.tag',
                                             'public_categ_tag_rel',
                                             'category_id',

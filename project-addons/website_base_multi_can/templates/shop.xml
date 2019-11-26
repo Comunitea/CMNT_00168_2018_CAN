@@ -22,4 +22,20 @@
 
     </template>
 
+    <!-- Ecommerce Category List -->
+    <template id="website_sale_categories_recursive" name="Category list Base" inherit_id="website_sale.categories_recursive">
+        <!-- Only show published categories -->
+        <xpath expr="//li" position="attributes">
+            <attribute name="t-if">c.website_published</attribute>
+        </xpath>
+    </template>
+
+    <!-- Ecommerce Collapsible Category List -->
+    <template id="website_sale_option_collapse_categories_recursive" name="Collapse Category Recursive Base" inherit_id="website_sale.option_collapse_categories_recursive">
+        <!-- Only show published categories -->
+        <xpath expr="//li" position="attributes">
+            <attribute name="t-if">categ.website_published</attribute>
+        </xpath>
+    </template>
+
 </odoo>
