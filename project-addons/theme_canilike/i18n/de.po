@@ -716,18 +716,6 @@ msgstr "Ohne Konservierungsmittel. Ohne Chemie. Nichts, was den 100% natürliche
 msgid "Social Media"
 msgstr "Sozialen Medien"
 
-#. module: website_sale
-#: model:ir.ui.view,arch_db:website_sale.products
-#: model:website.menu,name:website_sale.menu_shop
-msgid "Shop"
-msgstr "Geschäft"
-
-#. module: theme_canilike
-#: model:ir.ui.view,arch_db:website_sale.products
-#: model:website.menu,name:website_sale.menu_shop
-msgid "Shop"
-msgstr "Geschäft"
-
 #. module: theme_canilike
 #: model:ir.ui.view,arch_db:theme_canilike.location_selection_modal
 #: model:ir.ui.view,arch_db:theme_canilike.payment_and_shipping
