@@ -3,10 +3,10 @@
 
         <!-- Website Region Xpath -->
         <xpath expr="//header//ul[@id='top_menu']/li" position="before">
-            <t t-call="website_custom_geoip.country_widget"></t>
+            <t t-call="website_custom_geoip.country_widget"/>
         </xpath>
     </template>
-    <template id="country_widget">
+    <template id="country_widget" name="Country Widget Custom Geoip">
         <li>
             <t t-set="website_countries" t-value="website.get_website_available(not_current=True)" />
             <t t-set="current_country" t-value="website.get_current_country()" />
@@ -15,6 +15,7 @@
                     <a href="#" class="dropdown-toggle btn btn-default" data-toggle="dropdown">
                         <img style="max-width: 50px; height: auto" t-att-src="'data:image/png;base64,%s' % to_text(current_country.get_flag())"/>
                         <span t-field="current_country.name"/>
+                        <span class="caret" t-ignore="true"/>
                     </a>
                 </t>
                 <t t-if="not current_country">
