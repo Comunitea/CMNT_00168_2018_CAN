@@ -92,6 +92,36 @@ msgstr "<font style=\"color: rgb(156, 156, 148); font-size: 24px;\">Mit seinem �
 
 #. module: theme_canilike
 #: model:ir.ui.view,arch_db:theme_canilike.home
+msgid "<font style=\"font-size: 24px;\" class=\"text-epsilon text-uppercase\">From the sea to your house</font>"
+msgstr "<font style=\"font-size: 24px;\" class=\"text-epsilon text-uppercase\">Vom Meer zu Ihrem Haus</font>"
+
+#. module: theme_canilike
+#: model:ir.ui.view,arch_db:theme_canilike.home
+msgid "<font style=\"color: rgb(156, 156, 148); font-size: 18px;\">An inimitable flavor coming from a unique place: <br/> the Galician coasts.</font>"
+msgstr "<font style=\"color: rgb(156, 156, 148); font-size: 18px;\">Ein einzigartiges Aroma von einem einzigartigen Ort: <br/> den galizischen Küsten.</font>"
+
+#. module: theme_canilike
+#: model:ir.ui.view,arch_db:theme_canilike.home
+msgid "<font style=\"font-size: 24px;\" class=\"text-epsilon text-uppercase\">The value of tradition</font>"
+msgstr "<font style=\"font-size: 24px;\" class=\"text-epsilon text-uppercase\">Der wert der tradition</font>"
+
+#. module: theme_canilike
+#: model:ir.ui.view,arch_db:theme_canilike.home
+msgid "<font style=\"color: rgb(156, 156, 148); font-size: 18px;\">It all starts in the hands and work of Galician fishermen.</font>"
+msgstr "<font style=\"color: rgb(156, 156, 148); font-size: 18px;\">Alles beginnt in den Händen und in der Arbeit der galizischen Fischer.</font>
+
+#. module: theme_canilike
+#: model:ir.ui.view,arch_db:theme_canilike.home
+msgid "<font style=\"font-size: 24px;\" class=\"text-epsilon text-uppercase\">Share excellence</font>"
+msgstr "<font style=\"font-size: 24px;\" class=\"text-epsilon text-uppercase\">Exzellenze teilen</font>"
+
+#. module: theme_canilike
+#: model:ir.ui.view,arch_db:theme_canilike.home
+msgid "<font style=\"color: rgb(156, 156, 148); font-size: 18px;\">We want to value our products worldwide. Because quality should not understand borders.</font>"
+msgstr "<font style=\"color: rgb(156, 156, 148); font-size: 18px;\">Wir wollen unsere Produkte weltweit schätzen. Denn Qualität soll Grenzen nicht verstehen.</font>
+
+#. module: theme_canilike
+#: model:ir.ui.view,arch_db:theme_canilike.home
 msgid "<font style=\"color: rgb(156, 156, 148);\">If we could peek into the pantries of a hundred Spanish families, canned food would be found in more than ninety. How could it be any other way? A delicious natural product easy to store, competitively priced and with expiration dates that allow ample room for consumption. These are enough guarantees to become an essential product.<font style=\"color: rgb(156, 156, 148);\"><br/></font></font>"
 msgstr "<font style=\"color: rgb(156, 156, 148);\">Wenn wir Einblick in die Vorratskammern von hundert spanischen Familien hätten, würden wir in mehr als neunzig davon Konservendosen finden. Wie könnte es auch anders sein? Ein natürliches Produkt, köstlich, einfach zu lagern, mit konkurrenzfähigen Preisen und mit Verfallsdaten, die eine ausreichende Zeitspanne für...<font style=\"color: rgb(156, 156, 148);\"><br/></font></font>"
 
@@ -439,6 +469,48 @@ msgstr "Instagram"
 #: model:website.page,arch_db:theme_canilike.aboutus_page
 msgid "Canned food in Galicia: the value of tradition"
 msgstr "Die Konserven in Galizien : der Wert der Tradition"
+
+#. module: theme_canilike
+#: model:ir.ui.view,arch_db:theme_canilike.about_us
+#: model:ir.ui.view,arch_db:theme_canilike.aboutus_page_ir_ui_view
+#: model:website.page,arch_db:theme_canilike.aboutus_page
+msgid "From the sea to your house"
+msgstr "Vom Meer zu Ihrem Haus"
+
+#. module: theme_canilike
+#: model:ir.ui.view,arch_db:theme_canilike.about_us
+#: model:ir.ui.view,arch_db:theme_canilike.aboutus_page_ir_ui_view
+#: model:website.page,arch_db:theme_canilike.aboutus_page
+msgid "An inimitable flavor coming from a unique place: the Galician coasts"
+msgstr "Ein einzigartiges Aroma von einem einzigartigen Ort: den galizischen Küsten."
+
+#. module: theme_canilike
+#: model:ir.ui.view,arch_db:theme_canilike.about_us
+#: model:ir.ui.view,arch_db:theme_canilike.aboutus_page_ir_ui_view
+#: model:website.page,arch_db:theme_canilike.aboutus_page
+msgid "The value of tradition"
+msgstr "Der Wert der Tradition"
+
+#. module: theme_canilike
+#: model:ir.ui.view,arch_db:theme_canilike.about_us
+#: model:ir.ui.view,arch_db:theme_canilike.aboutus_page_ir_ui_view
+#: model:website.page,arch_db:theme_canilike.aboutus_page
+msgid "It all starts in the hands and work of Galician fishermen."
+msgstr "Alles beginnt in den Händen und in der Arbeit der galizischen Fischer."
+
+#. module: theme_canilike
+#: model:ir.ui.view,arch_db:theme_canilike.about_us
+#: model:ir.ui.view,arch_db:theme_canilike.aboutus_page_ir_ui_view
+#: model:website.page,arch_db:theme_canilike.aboutus_page
+msgid "Share excellence"
+msgstr "Exzellenze teilen"
+
+#. module: theme_canilike
+#: model:ir.ui.view,arch_db:theme_canilike.about_us
+#: model:ir.ui.view,arch_db:theme_canilike.aboutus_page_ir_ui_view
+#: model:website.page,arch_db:theme_canilike.aboutus_page
+msgid "We want to value our products worldwide. Because quality should not understand borders."
+msgstr "Wir wollen unsere Produkte weltweit schätzen. Denn Qualität soll Grenzen nicht verstehen."
 
 #. module: theme_canilike
 #: model:ir.ui.view,arch_db:theme_canilike.website_footer_default

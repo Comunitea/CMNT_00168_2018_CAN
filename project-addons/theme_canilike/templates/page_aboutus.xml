@@ -4,6 +4,29 @@
     <template id="about_us" name="About us Canilike">
         <t t-call="website.layout">
             <div class="page-aboutus">
+                <div class="page-aboutus-intro">
+                    <div>
+                        <img t-att-src="'/theme_canilike/static/img/canilike/mar.jpg'" alt="mar"/>
+                        <div class="page-aboutus-txt">
+                            <h3 class="text-uppercase">From the sea to your house</h3>
+                            <p>An inimitable flavor coming from a unique place: the Galician coasts.</p>
+                        </div>
+                    </div>
+                    <div>
+                        <img t-att-src="'/theme_canilike/static/img/canilike/pesca.jpg'" alt="conservation"/>
+                        <div class="page-aboutus-txt">
+                            <h3 class="text-uppercase">The value of tradition</h3>
+                            <p>It all starts in the hands and work of Galician fishermen.</p>
+                        </div>
+                    </div>
+                    <div>
+                        <img t-att-src="'/theme_canilike/static/img/canilike/conservas_home.jpg'" alt="conservation"/>
+                        <div class="page-aboutus-txt">
+                            <h3 class="text-uppercase">Share excellence</h3>
+                            <p>We want to value our products worldwide. Because quality should not understand borders.</p>
+                        </div>
+                    </div>
+                </div>
                 <div class="back-color">
                     <div class="wrapper-m">
                         <h2>Canned food in Galicia: the value of tradition</h2>
