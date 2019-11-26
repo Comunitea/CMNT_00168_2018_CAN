@@ -187,8 +187,13 @@ msgstr "Idiomas disponibles"
 
 #. module: theme_canilike
 #: model:ir.ui.view,arch_db:theme_canilike.location_selection_modal
-msgid "Available warehouses"
-msgstr "Almacenes disponibles"
+msgid "Available countries"
+msgstr "Países disponibles"
+
+#. module: theme_canilike
+#: model:ir.ui.view,arch_db:theme_canilike.location_selection_modal
+msgid "Shipping Country"
+msgstr "País entrega"
 
 #. module: theme_canilike
 #: model:ir.ui.view,arch_db:theme_canilike.website_footer_default
