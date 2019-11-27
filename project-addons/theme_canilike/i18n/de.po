@@ -92,13 +92,13 @@ msgstr "<font style=\"color: rgb(156, 156, 148); font-size: 24px;\">Mit seinem �
 
 #. module: theme_canilike
 #: model:ir.ui.view,arch_db:theme_canilike.home
-msgid "<font style=\"font-size: 24px;\" class=\"text-epsilon text-uppercase\">From the sea to your house</font>"
-msgstr "<font style=\"font-size: 24px;\" class=\"text-epsilon text-uppercase\">Vom Meer zu Ihrem Haus</font>"
+msgid "<font style=\"font-size: 24px;\" class=\"text-epsilon text-uppercase\">From the sea straight to your home</font>"
+msgstr "<font style=\"font-size: 24px;\" class=\"text-epsilon text-uppercase\">Aus dem meer zu dir nach hause</font>"
 
 #. module: theme_canilike
 #: model:ir.ui.view,arch_db:theme_canilike.home
 msgid "<font style=\"color: rgb(156, 156, 148); font-size: 18px;\">An inimitable flavor coming from a unique place: <br/> the Galician coasts.</font>"
-msgstr "<font style=\"color: rgb(156, 156, 148); font-size: 18px;\">Ein einzigartiges Aroma von einem einzigartigen Ort: <br/> den galizischen Küsten.</font>"
+msgstr "<font style=\"color: rgb(156, 156, 148); font-size: 18px;\">Ein unnachahmlicher Geschmack der aus einem einzigartigen Ort stammt: <br/> die galizischen Küsten.</font>"
 
 #. module: theme_canilike
 #: model:ir.ui.view,arch_db:theme_canilike.home
@@ -107,18 +107,18 @@ msgstr "<font style=\"font-size: 24px;\" class=\"text-epsilon text-uppercase\">D
 
 #. module: theme_canilike
 #: model:ir.ui.view,arch_db:theme_canilike.home
-msgid "<font style=\"color: rgb(156, 156, 148); font-size: 18px;\">It all starts in the hands and work of Galician fishermen.</font>"
-msgstr "<font style=\"color: rgb(156, 156, 148); font-size: 18px;\">Alles beginnt in den Händen und in der Arbeit der galizischen Fischer.</font>
+msgid "<font style=\"color: rgb(156, 156, 148); font-size: 18px;\">It all begins in the hands and work of Galician fishermen.</font>"
+msgstr "<font style=\"color: rgb(156, 156, 148); font-size: 18px;\">Alles beginnt mit den händen und der arbeit der galizischen fischer.</font>
 
 #. module: theme_canilike
 #: model:ir.ui.view,arch_db:theme_canilike.home
-msgid "<font style=\"font-size: 24px;\" class=\"text-epsilon text-uppercase\">Share excellence</font>"
-msgstr "<font style=\"font-size: 24px;\" class=\"text-epsilon text-uppercase\">Exzellenze teilen</font>"
+msgid "<font style=\"font-size: 24px;\" class=\"text-epsilon text-uppercase\">Sharing excellence</font>"
+msgstr "<font style=\"font-size: 24px;\" class=\"text-epsilon text-uppercase\">Teilen der großartigkeit</font>"
 
 #. module: theme_canilike
 #: model:ir.ui.view,arch_db:theme_canilike.home
-msgid "<font style=\"color: rgb(156, 156, 148); font-size: 18px;\">We want to value our products worldwide. Because quality should not understand borders.</font>"
-msgstr "<font style=\"color: rgb(156, 156, 148); font-size: 18px;\">Wir wollen unsere Produkte weltweit schätzen. Denn Qualität soll Grenzen nicht verstehen.</font>"
+msgid "<font style=\"color: rgb(156, 156, 148); font-size: 18px;\">We want to highlight the value of our products all over the world. Because quality should prevail over borders.</font>"
+msgstr "<font style=\"color: rgb(156, 156, 148); font-size: 18px;\">Wir wollen den Wert unserer Produkte weltweit weitergeben. Weil die Qualität keine Grenzen kennen sollte.</font>"
 
 #. module: theme_canilike
 #: model:ir.ui.view,arch_db:theme_canilike.home
