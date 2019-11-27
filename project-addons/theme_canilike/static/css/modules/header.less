@@ -128,6 +128,25 @@
         }
 }
 
+.lang-line-divider {
+    position: relative;
+    margin-left: 1.5em !important;
+    a {
+        //position: relative !important;
+      //  top: -4px !important;
+    }
+    &::before {
+        position: absolute;
+        display: inline-block;
+        content:"";
+        width: 1px;
+        height: 100%;
+        background-color: #d5d5d5;
+        margin: 0 .25em;
+        left: -1em;
+        }
+}
+
 // location selected modal template @TODO --> Editar
 
 // Options header
