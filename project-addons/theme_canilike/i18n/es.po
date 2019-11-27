@@ -37,7 +37,7 @@ msgstr "<font style=\"\" class=\"text-epsilon\">LA CALIDAD ESTÁ EN LO NATURAL.<
 #: model:ir.ui.view,arch_db:theme_canilike.payment_and_shipping_page_ir_ui_view
 #: model:website.page,arch_db:theme_canilike.payment_and_shipping_page
 msgid "<font style=\"\" class=\"text-epsilon\">Payment and shipping<br/></font>"
-msgstr "<font style=\"\" class=\"text-epsilon\">Paygo y envío<br/></font>"
+msgstr "<font style=\"\" class=\"text-epsilon\">Pago y envío<br/></font>"
 
 #. module: theme_canilike
 #: model:ir.ui.view,arch_db:theme_canilike.home
