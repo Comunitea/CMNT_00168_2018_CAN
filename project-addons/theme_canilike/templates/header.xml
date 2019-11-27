@@ -146,12 +146,14 @@
                         <!-- Shipping Country Modal -->
                         <li t-attf-class="dropdown list-unstyled">
                             <a href="#" data-toggle="modal" data-target="#languageModal" rel="nofollow">
-                                <i class="fa fa-truck" aria-hidden="true"/> <span>Shipping Country</span>
+                                <i class="fa fa-truck" aria-hidden="true"/>
+                                <span>Shipping Country</span>
                             </a>
                         </li>
                         <!-- Language -->
                         <li t-if="(request and request.is_frontend_multilang and len(languages) &gt; 1)" t-attf-class="dropdown list-unstyled">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                <i class="fa fa-globe" aria-hidden="true"/>
                                 <span t-esc="lang.split('_')[0]" class="text-uppercase"/>
                                 <span class="caret" t-ignore="true"/>
                             </a>
