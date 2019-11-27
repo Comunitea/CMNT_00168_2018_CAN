@@ -651,13 +651,13 @@ msgstr "Métodos de pago"
 
 #. module: theme_canilike
 #: model:ir.ui.view,arch_db:theme_canilike.website_footer_default
-msgid "Privacy policy"
-msgstr "Política de Privacidad"
+msgid "Privacy policy and Cookie Notice"
+msgstr "Política de Privacidad y Cookies"
 
 #. module: theme_canilike
 #: model:ir.ui.view,arch_db:theme_canilike.website_footer_default
-msgid "Privacy policy link"
-msgstr "Enlace Política de Privacidad"
+msgid "Privacy policy and Cookie Notice link"
+msgstr "Enlace Política de Privacidad y Cookies"
 
 #. module: theme_canilike
 #: model:ir.ui.view,arch_db:theme_canilike.aboutus_page_ir_ui_view

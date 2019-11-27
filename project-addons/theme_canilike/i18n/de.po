@@ -657,13 +657,13 @@ msgstr "Deshalb bin ich hier. Wegen dieser Erinnerungen an die Aromen. Weil ich 
 
 #. module: theme_canilike
 #: model:ir.ui.view,arch_db:theme_canilike.website_footer_default
-msgid "Privacy policy"
-msgstr "Datenschutzerklärung"
+msgid "Privacy policy and Cookie Notice"
+msgstr "Datenschutzerklärung und Cookie-Hinweis"
 
 #. module: theme_canilike
 #: model:ir.ui.view,arch_db:theme_canilike.website_footer_default
-msgid "Privacy policy link"
-msgstr "Datenschutzerklärung link"
+msgid "Privacy policy and Cookie Notice link"
+msgstr "Datenschutzerklärung und Cookie-Hinweis link"
 
 #. module: theme_canilike
 #: model:ir.ui.view,name:theme_canilike.website_sale_product
