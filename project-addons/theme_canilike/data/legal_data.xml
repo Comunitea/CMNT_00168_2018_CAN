@@ -3,18 +3,59 @@
 
     <template id="advise" name="Legal Advice - Advice Canilike">
         <t t-call="website.layout">
-            <div class="page-advise">
-                <h1 class="text-center">Legal Advice - Advice Canilike</h1>
-                <p class="text-center mt32">Don't worry! We are working on it.</p>
+            <div id="wrap" class="o_editable">
+                <div class="container">
+                    <section class="oe_structure oe_empty"/>
+                    <div class="page-advise">
+                        <h1 class="text-center">Legal Advice - Advice Canilike</h1>
+                        <section class="oe_structure oe_empty"/>
+                        <p class="text-center mt32">Don't worry! We are working on it.</p>
+                    </div>
+                    <section class="oe_structure oe_empty"/>
+                </div>
             </div>
         </t>
     </template>
 
-    <template id="privacy" name="Legal Advice - Privacy Policy Canilike">
+    <template id="privacy" name="Legal Advice - Privacy Policy and Cookie Notice Canilike">
         <t t-call="website.layout">
-            <div class="page-privacy">
-                <h1 class="text-center">Legal Advice - Privacy Policy Canilike</h1>
-                <p class="text-center mt32">Don't worry! We are working on it.</p>
+            <div id="wrap" class="o_editable">
+                <div class="container mt16 mb48">
+                    <section class="oe_structure oe_empty"/>
+                    <div class="page-privacy">
+                        <h1 class="text-center">Legal Advice - Privacy Policy and Cookie Notice</h1>
+                        <section class="oe_structure oe_empty"/>
+                        <h2 class="mt48">Uso de cookies</h2>
+                        <div class="text-left">
+                            <p class="mt16">En la web <b>www.sond3.com</b> utilizamos cookies para facilitar la relación de los visitantes con nuestro contenido y para permitir elaborar estadisticas sobre las visitas que recibimos. En cumplimiento del art. 22 de la Ley 34/2002, de servicios de la Sociedad de la Información, modificada por Real Decreto-ley 13/2012 por el que se transpone, entre otras, la Directiva 2009/136/CE, procedemos a informarle detalladamente del uso que se realiza en nuestra web.</p>
+                            <p class="mt16">Se denominan cookies a unos pequeños archivos que se graban en el navegador utilizado por cada visitante de nuestra web para que el servidor pueda recordar la visita de ese usuario con posterioridad cuando vuelva a acceder a nuestros contenidos. Esta información no revela su identidad, ni dato personal alguno, ni accede al contenido almacenado en su PC, pero sí que permite a nuestro sistema identificarle a usted como un usuario determinado que ya visitó la web con anterioridad, visualizó determinadas páginas, etc. y además permite guardar sus preferencias personales e información técnica como por ejemplo las visitas realizadas o páginas concretas que visite.</p>
+                            <p class="mt16">Si usted no desea que se guarden cookies en su navegador o prefiere recibir una información cada vez que una cookie solicite instalarse, puede configurar sus opciones de navegación para que se haga de esa forma. La mayor parte de los  navegadores permiten la gestión de las cookies de 3 formas diferentes:</p>
+                            <ul class="list-unstyled text-center mt16">
+                                <li class="mt4">Las cookies son siempre rechazadas</li>
+                                <li class="mt4">El navegador pregunta si el usuario desea instalar cada cookie</li>
+                                <li class="mt4">Las cookies son siempre aceptadas</li>
+                            </ul>
+                        </div>
+                        <div class="text-left">
+                            <p class="mt16">Su navegador también puede incluir la posibilidad de seleccionar con detalle las cookies que desea que se instalen en su ordenador. En concreto, el usuario puede normalmente aceptar alguna de las siguientes opciones:</p>
+                            <ul class="list-unstyled text-center mt16">
+                                <li class="mt4">Rechazar las cookies de determinados dominios</li>
+                                <li class="mt4">Rechazar las cookies de terceros</li>
+                                <li class="mt4">Aceptar cookies como no persistentes (se eliminan cuando el navegador se cierra)</li>
+                                <li class="mt4">Permitir al servidor crear cookies para un dominio diferente.</li>
+                            </ul>
+                            <p class="mt16">Puede encontrar información sobre cómo configurar los navegadores más usados en las siguientes ubicaciones:</p>
+                            <ul class="list-unstyled text-center mt16">
+                                <li class="chrome mt4"><a href="http://support.google.com/chrome/bin/answer.py?hl=es&amp;answer=95647"><span>Google Chrome</span></a></li>
+                                <li class="ie mt4"><a href="http://windows.microsoft.com/es-es/windows7/how-to-manage-cookies-ininternet-explorer-9"><span>Internet Explorer</span></a></li>
+                                <li class="firefox mt4"><a href="http://support.mozilla.org/es/kb/habilitar-y-deshabilitar-cookies-que-los-sitios-we"><span>Mozilla Firefox</span></a></li>
+                                <li class="safari mt4"><a href="http://support.apple.com/kb/ph5042"><span>Safari</span></a></li>
+                            </ul>
+                            <p class="mt16">Respecto de las cookies de terceros, es decir aquellas que son ajenas a nuestro sitio web, no podemos hacernos responsables del contenido y veracidad de las políticas de privacidad que ellos incluyen por lo que la información que le ofrecemos es siempre con referencia a la fuente. Tenemos sólo 1 tipo de cookie de terceros, correspondiente a Google analytics. Esta es utilizada para reportar estadísticas a dichos terceros.</p>
+                        </div>
+                    </div>
+                    <section class="oe_structure oe_empty"/>
+                </div>
             </div>
         </t>
     </template>

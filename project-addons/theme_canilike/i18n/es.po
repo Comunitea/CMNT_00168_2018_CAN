@@ -509,8 +509,8 @@ msgstr "Legal Advice - Legal Terms Canilike"
 #. module: theme_canilike
 #: model:ir.ui.view,arch_db:theme_canilike.privacy
 #: model:ir.ui.view,name:theme_canilike.privacy
-msgid "Legal Advice - Privacy Policy Canilike"
-msgstr "Legal Advice - Privacy Policy Canilike"
+msgid "Legal Advice - Privacy Policy and Cookie Notice"
+msgstr "Aviso Legal - Política de Privacidad y Cookies"
 
 #. module: theme_canilike
 #: model:ir.ui.view,arch_db:theme_canilike.payment_and_shipping
