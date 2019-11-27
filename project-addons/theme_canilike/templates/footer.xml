@@ -57,13 +57,14 @@
                     </div>
                     <div class="modal-body mt8">
                         <img t-att-src="'/theme_canilike/static/img/canilike/igape.jpg'" alt="Igape Logo"/>
-                        <h4 class="text-center mt32 mb24">Axudas do Igape Galicia Exporta Empresas</h4>
+                        <h4 class="text-center mt32 mb24">Axudas do Igape á dixitalización Industria 4.0</h4>
+                        <h4 class="text-center mb24">Axudas do Igape Galicia Exporta Empresas</h4>
                         <p>Esta empresa foi beneficiaria dunha axuda do programa do Igape Galicia Exporta Empresas. O obxectivo principal destas axudas é incentivar e estimular o comercio exterior galego e a internacionalización das pemes galegas. O resultado que se pretende é aumentar a base de empresas exportadoras e consolidar a presenza de empresas galegas nos mercados internacionais.</p>
                         <ul class="list-unstyled mt24 mb24">
                             <li class="text-center">Operación cofinanciada pola Unión Europea</li>
                             <li class="text-center mt4">Programa operativo FEDER Galicia 2014-2020</li>
                             <li class="text-center mt4">Conseguir un tecido empresarial máis competitivo</li>
-                            <li class="text-center mt4">Unha maneira de facer Europa</li>
+                            <li class="text-center mt4"><i>Unha maneira de facer Europa<</i></li>
                         </ul>
                     </div>
                 </div>
