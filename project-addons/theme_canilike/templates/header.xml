@@ -42,6 +42,31 @@
                         <t t-foreach="website.menu_id.child_id" t-as="submenu">
                             <t t-call="website.submenu"/>
                         </t>
+                        <!-- Language -->
+                        <li t-if="(request and request.is_frontend_multilang and len(languages) &gt; 1)" t-attf-class="dropdown list-unstyled">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                <i class="fa fa-globe" aria-hidden="true"/>
+                                <span t-esc="lang.split('_')[0]" class="text-uppercase"/>
+                                <span class="caret" t-ignore="true"/>
+                            </a>
+                            <ul class="dropdown-menu" role="menu">
+                                <t t-foreach="languages" t-as="lg">
+                                    <li t-if="lg[0] != lang">
+                                        <a t-att-href="url_for(request.httprequest.path + '?' + keep_query(), lang=lg[0])"
+                                           t-att-data-default-lang="(editable or translatable) and 'true' if website and lg[0] == website.default_lang_code else None"
+                                           t-att-data-lang="lg[0]"
+                                           class="js_change_lang"
+                                           rel="nofollow">
+                                            <img t-att-src="'/theme_canilike/static/img/flags/flag_%s.png' % lg[0].split('_')[0]"
+                                                 t-att-title="lg[1].split('/').pop()"
+                                                 t-att-alt="lg[1].split('/').pop()"
+                                                 t-att-href="url_for(request.httprequest.path + '?' + keep_query(), lang=lg[0])"/>
+                                            <span t-esc="lg[0].split('_')[0]" class="text-uppercase"/>
+                                        </a>
+                                    </li>
+                                </t>
+                            </ul>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -149,31 +174,6 @@
                                 <i class="fa fa-truck" aria-hidden="true"/>
                                 <span>Shipping Country</span>
                             </a>
-                        </li>
-                        <!-- Language -->
-                        <li t-if="(request and request.is_frontend_multilang and len(languages) &gt; 1)" t-attf-class="dropdown list-unstyled">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                <i class="fa fa-globe" aria-hidden="true"/>
-                                <span t-esc="lang.split('_')[0]" class="text-uppercase"/>
-                                <span class="caret" t-ignore="true"/>
-                            </a>
-                            <ul class="dropdown-menu" role="menu">
-                                <t t-foreach="languages" t-as="lg">
-                                    <li t-if="lg[0] != lang">
-                                        <a t-att-href="url_for(request.httprequest.path + '?' + keep_query(), lang=lg[0])"
-                                           t-att-data-default-lang="(editable or translatable) and 'true' if website and lg[0] == website.default_lang_code else None"
-                                           t-att-data-lang="lg[0]"
-                                           class="js_change_lang"
-                                           rel="nofollow">
-                                            <img t-att-src="'/theme_canilike/static/img/flags/flag_%s.png' % lg[0].split('_')[0]"
-                                                 t-att-title="lg[1].split('/').pop()"
-                                                 t-att-alt="lg[1].split('/').pop()"
-                                                 t-att-href="url_for(request.httprequest.path + '?' + keep_query(), lang=lg[0])"/>
-                                            <span t-esc="lg[0].split('_')[0]" class="text-uppercase"/>
-                                        </a>
-                                    </li>
-                                </t>
-                            </ul>
                         </li>
                     </div>
                     <div class="header-search">
