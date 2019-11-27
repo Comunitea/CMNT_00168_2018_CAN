@@ -5,9 +5,9 @@
         <t t-call="website.layout">
             <div class="page-payment">
                 <section class="oe_structure oe_empty"/>
-                <section class="oe_structure">
-                    <section class="s_text_block_image_fw mb32 mt0 bg-gray-lighter">
-                        <div class="col-md-12 mt0 mb8">
+                <section class="s_text_block_image_fw mb32 mt16">
+                    <div class="container">
+                        <div class="row">
                             <h2 class="text-center">
                                 <font style="" class="text-epsilon">Payment and shipping<br/></font>
                             </h2>
@@ -16,8 +16,9 @@
                                 <p>For Switzerland, the delivery will be the following day (Monday through Friday), having received the order the day before the deadline for shipments that the warehouse manager has.</p>
                             </div>
                         </div>
-                    </section>
+                    </div>
                 </section>
+                <section class="oe_structure oe_empty"/>
                 <section class="oe_structure mt32">
                     <section class="s_three_columns mb64">
                         <div class="container">
