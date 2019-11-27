@@ -638,6 +638,13 @@ msgstr "Zahlung und Versand information"
 #: model:ir.ui.view,arch_db:theme_canilike.payment_and_shipping
 #: model:ir.ui.view,arch_db:theme_canilike.payment_and_shipping_page_ir_ui_view
 #: model:website.page,arch_db:theme_canilike.payment_and_shipping_page
+msgid "For Switzerland, the delivery will be the following day (Monday through Friday), having received the order the day before the deadline for shipments that the warehouse manager has."
+msgstr "In der Schweiz erfolgt die Lieferung am folgenden Tag (Montag bis Freitag), nachdem die Bestellung am Tag vor dem Versandtermin beim Lagerverwalter eingegangen ist."
+
+#. module: theme_canilike
+#: model:ir.ui.view,arch_db:theme_canilike.payment_and_shipping
+#: model:ir.ui.view,arch_db:theme_canilike.payment_and_shipping_page_ir_ui_view
+#: model:website.page,arch_db:theme_canilike.payment_and_shipping_page
 msgid "Payment methods"
 msgstr "Zahlungsmethoden"
 

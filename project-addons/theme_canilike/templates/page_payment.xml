@@ -12,7 +12,8 @@
                                 <font style="" class="text-epsilon">Payment and shipping<br/></font>
                             </h2>
                             <div class="text-center">
-                                Payment and shipping info
+                                <h4><stong>Payment and shipping info</stong></h4>
+                                <p>For Switzerland, the delivery will be the following day (Monday through Friday), having received the order the day before the deadline for shipments that the warehouse manager has.</p>
                             </div>
                         </div>
                     </section>
@@ -22,29 +23,18 @@
                         <div class="container">
                             <div class="row">
                                 <div class="col-md-4 mt32 mb48">
-                                    <h4>
-                                        Shipping methods
-                                    </h4>
-                                    <p>
-                                        List of available shipping methods.
-                                    </p>
+                                    <h4><strong>Shipping methods</strong></h4>
+                                    <p>List of available shipping methods.</p>
                                 </div>
                                 <div class="col-md-4 mt32 mb48">
-                                    <h4>
-                                        Payment methods
-                                    </h4>
-                                    <p>
-                                        List of available payment methods.
-                                    </p>
+                                    <h4><strong>Payment methods</strong></h4>
+                                    <p>List of available payment methods.</p>
                                 </div>
                                 <div class="col-md-4 mt32 mb48">
                                     <t t-set="current_country" t-value="website.get_current_country()" />
-                                    <h4>
-                                        Current country: <t t-esc="current_country.name"/>
-                                    </h4>
+                                    <h4><strong>Current country: <t t-esc="current_country.name"/></strong></h4>
                                     <p>From this country you can ship your order to:</p>
-                                    <br/>
-                                    <ul>
+                                    <ul class="list-unstyled mt8">
                                         <t t-set="available_countries" t-value="website.get_available_countries()" />
                                         <t t-foreach="available_countries.sorted(key=lambda r: r.name)" t-as="country">
                                             <li><t t-esc="country.name"/></li>

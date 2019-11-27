@@ -9,6 +9,6 @@ class Website(models.Model):
     def get_available_countries(self):
         country_code = request.session['geoip'].get('country_code')
         
-        warehouse_countries = self.env['stock.warehouse'].get_warehouse_id(country_code)\
+        warehouse_countries = self.env['stock.warehouse'].sudo().get_warehouse_id(country_code)\
             .country_group_id.mapped('country_ids')
         return warehouse_countries
