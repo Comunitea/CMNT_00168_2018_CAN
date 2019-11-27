@@ -118,7 +118,7 @@ msgstr "<font style=\"font-size: 24px;\" class=\"text-epsilon text-uppercase\">E
 #. module: theme_canilike
 #: model:ir.ui.view,arch_db:theme_canilike.home
 msgid "<font style=\"color: rgb(156, 156, 148); font-size: 18px;\">We want to value our products worldwide. Because quality should not understand borders.</font>"
-msgstr "<font style=\"color: rgb(156, 156, 148); font-size: 18px;\">Wir wollen unsere Produkte weltweit schätzen. Denn Qualität soll Grenzen nicht verstehen.</font>
+msgstr "<font style=\"color: rgb(156, 156, 148); font-size: 18px;\">Wir wollen unsere Produkte weltweit schätzen. Denn Qualität soll Grenzen nicht verstehen.</font>"
 
 #. module: theme_canilike
 #: model:ir.ui.view,arch_db:theme_canilike.home
