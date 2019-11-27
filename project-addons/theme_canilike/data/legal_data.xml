@@ -63,9 +63,16 @@
 
     <template id="terms" name="Legal Advice - Legal Terms Canilike">
         <t t-call="website.layout">
-            <div class="page-terms">
-                <h1 class="text-center">Legal Advice - Legal Terms Canilike</h1>
-                <p class="text-center mt32">Don't worry! We are working on it.</p>
+            <div id="wrap">
+                <div class="container">
+                    <section class="oe_structure oe_empty"/>
+                     <div class="page-terms">
+                        <h1 class="text-center">Legal Advice - Legal Terms Canilike</h1>
+                        <section class="oe_structure oe_empty"/>
+                        <p class="text-center mt32">Don't worry! We are working on it.</p>
+                    </div>
+                    <section class="oe_structure oe_empty"/>
+                </div>
             </div>
         </t>
     </template>
