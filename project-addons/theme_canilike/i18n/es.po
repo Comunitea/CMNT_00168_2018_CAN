@@ -37,7 +37,7 @@ msgstr "<font style=\"\" class=\"text-epsilon\">LA CALIDAD ESTÁ EN LO NATURAL.<
 #: model:ir.ui.view,arch_db:theme_canilike.payment_and_shipping_page_ir_ui_view
 #: model:website.page,arch_db:theme_canilike.payment_and_shipping_page
 msgid "<font style=\"\" class=\"text-epsilon\">Payment and shipping<br/></font>"
-msgstr "<font style=\"\" class=\"text-epsilon\">Payment and shipping<br/></font>"
+msgstr "<font style=\"\" class=\"text-epsilon\">Paygo y envío<br/></font>"
 
 #. module: theme_canilike
 #: model:ir.ui.view,arch_db:theme_canilike.home
@@ -307,8 +307,8 @@ msgstr "Copyright &amp;copy;"
 #: model:ir.ui.view,arch_db:theme_canilike.payment_and_shipping
 #: model:ir.ui.view,arch_db:theme_canilike.payment_and_shipping_page_ir_ui_view
 #: model:website.page,arch_db:theme_canilike.payment_and_shipping_page
-msgid "Current warehouse:"
-msgstr "Almacén actual:"
+msgid "Current country:"
+msgstr "País actual:"
 
 #. module: theme_canilike
 #: model:ir.ui.view,arch_db:theme_canilike.aboutus_page_ir_ui_view
@@ -402,8 +402,8 @@ msgstr "Footer Custom Canilike Template"
 #: model:ir.ui.view,arch_db:theme_canilike.payment_and_shipping
 #: model:ir.ui.view,arch_db:theme_canilike.payment_and_shipping_page_ir_ui_view
 #: model:website.page,arch_db:theme_canilike.payment_and_shipping_page
-msgid "From this warehouse you can ship your order to:"
-msgstr "Desde este almacén puede enviar su pedido a:"
+msgid "From this country you can ship your order to:"
+msgstr "Desde este país puede enviar su pedido a:"
 
 #. module: theme_canilike
 #: model:ir.ui.view,name:theme_canilike.website_sale_address_kanban
@@ -621,7 +621,7 @@ msgstr "Enlace Pago y envío"
 #. module: theme_canilike
 #: model:website.page,name:theme_canilike.payment_and_shipping_page
 msgid "Payment and shipping"
-msgstr "Payment and shipping"
+msgstr "Pago y Envío"
 
 #. module: theme_canilike
 #: model:ir.ui.view,name:theme_canilike.payment_and_shipping

@@ -40,9 +40,9 @@
                                 <div class="col-md-4 mt32 mb48">
                                     <t t-set="current_country" t-value="website.get_current_country()" />
                                     <h4>
-                                        Current warehouse: <t t-esc="current_country.name"/>
+                                        Current country: <t t-esc="current_country.name"/>
                                     </h4>
-                                    <p>From this warehouse you can ship your order to:</p>
+                                    <p>From this country you can ship your order to:</p>
                                     <br/>
                                     <ul>
                                         <t t-set="available_countries" t-value="website.get_available_countries()" />

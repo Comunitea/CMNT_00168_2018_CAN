@@ -350,8 +350,8 @@ msgstr "Kontakt link"
 #: model:ir.ui.view,arch_db:theme_canilike.payment_and_shipping
 #: model:ir.ui.view,arch_db:theme_canilike.payment_and_shipping_page_ir_ui_view
 #: model:website.page,arch_db:theme_canilike.payment_and_shipping_page
-msgid "Current warehouse:"
-msgstr "Aktuelles Lager:"
+msgid "Current country:"
+msgstr "Aktuelles land:"
 
 #. module: theme_canilike
 #: model:ir.ui.view,arch_db:theme_canilike.about_us
