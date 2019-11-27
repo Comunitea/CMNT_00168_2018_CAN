@@ -8,7 +8,7 @@
                     <div>
                         <img t-att-src="'/theme_canilike/static/img/canilike/mar.jpg'" alt="mar"/>
                         <div class="page-aboutus-txt">
-                            <h3 class="text-uppercase">From the sea to your house</h3>
+                            <h3 class="text-uppercase">From the sea to your home</h3>
                             <p>An inimitable flavor coming from a unique place: the Galician coasts.</p>
                         </div>
                     </div>
@@ -16,14 +16,14 @@
                         <img t-att-src="'/theme_canilike/static/img/canilike/pesca.jpg'" alt="conservation"/>
                         <div class="page-aboutus-txt">
                             <h3 class="text-uppercase">The value of tradition</h3>
-                            <p>It all starts in the hands and work of Galician fishermen.</p>
+                            <p>It all begins in the hands and work of Galician fishermen.</p>
                         </div>
                     </div>
                     <div>
                         <img t-att-src="'/theme_canilike/static/img/canilike/conservas_home.jpg'" alt="conservation"/>
                         <div class="page-aboutus-txt">
-                            <h3 class="text-uppercase">Share excellence</h3>
-                            <p>We want to value our products worldwide. Because quality should not understand borders.</p>
+                            <h3 class="text-uppercase">Sharing excellence</h3>
+                            <p>We want to highlight the value of our products all over the world. Because quality should prevail over borders.</p>
                         </div>
                     </div>
                 </div>

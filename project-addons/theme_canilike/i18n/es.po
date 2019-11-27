@@ -444,7 +444,7 @@ msgstr "Instagram"
 #: model:ir.ui.view,arch_db:theme_canilike.aboutus_page_ir_ui_view
 #: model:ir.ui.view,arch_db:theme_canilike.about_us
 #: model:website.page,arch_db:theme_canilike.aboutus_page
-msgid "From the sea to your house"
+msgid "From the sea to your home"
 msgstr "Del mar a tu casa"
 
 #. module: theme_canilike
@@ -465,21 +465,21 @@ msgstr "El valor de la tradición"
 #: model:ir.ui.view,arch_db:theme_canilike.aboutus_page_ir_ui_view
 #: model:ir.ui.view,arch_db:theme_canilike.about_us
 #: model:website.page,arch_db:theme_canilike.aboutus_page
-msgid "It all starts in the hands and work of Galician fishermen."
+msgid "It all begins in the hands and work of Galician fishermen."
 msgstr "Todo empieza en las manos y el trabajo de los pescadores gallegos."
 
 #. module: theme_canilike
 #: model:ir.ui.view,arch_db:theme_canilike.aboutus_page_ir_ui_view
 #: model:ir.ui.view,arch_db:theme_canilike.about_us
 #: model:website.page,arch_db:theme_canilike.aboutus_page
-msgid "Share excellence"
+msgid "Sharing excellence"
 msgstr "Compartir la excelencia"
 
 #. module: theme_canilike
 #: model:ir.ui.view,arch_db:theme_canilike.aboutus_page_ir_ui_view
 #: model:ir.ui.view,arch_db:theme_canilike.about_us
 #: model:website.page,arch_db:theme_canilike.aboutus_page
-msgid "We want to value our products worldwide. Because quality should not understand borders."
+msgid "We want to highlight the value of our products all over the world. Because quality should prevail over borders."
 msgstr "Queremos poner en valor en todo el mundo nuestros productos. Porque la calidad no debería entender de fronteras."
 
 #. module: theme_canilike
