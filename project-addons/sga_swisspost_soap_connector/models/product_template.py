@@ -85,7 +85,7 @@ class ProductTemplate(models.Model):
         
         etree.SubElement(art_article, ART + "DepositorNo", nsmap=NSMAP).text = self.env['ir.config_parameter'].get_param('sga_swisspost_soap_connector.depositor_no', False)
         etree.SubElement(art_article, ART + "PlantID", nsmap=NSMAP).text = self.env['ir.config_parameter'].get_param('sga_swisspost_soap_connector.warehouse_id', False)
-        etree.SubElement(art_article, ART + "ArticleNo", nsmap=NSMAP).text = "%s" % self.default_code or self.id
+        etree.SubElement(art_article, ART + "ArticleNo", nsmap=NSMAP).text = "%s" % self.id
         etree.SubElement(art_article, ART + "BaseUOM", nsmap=NSMAP).text = "PCE"
         etree.SubElement(art_article, ART + "NetWeight", nsmap=NSMAP, ISO="KGM").text = "%s" % self.weight
 
