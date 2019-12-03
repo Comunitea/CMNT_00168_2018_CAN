@@ -15,12 +15,15 @@
                             <field name="partner_no"/>
                             <field name="warehouse_id"/>
                             <field name="supplier_no"/>
+                            <field name="certificate_password"/>
                         </group>
                         <group>
                             <field name="email_alarm"/>
                             <field name="sprach_code"/>
                             <field name="operating_mode"/>
                             <field name="soap_url"/>
+                            <field name="certificate_file"/>
+                            <field name="certificate_key_file"/>
                         </group>
                     </group>
                 </div>

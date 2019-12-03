@@ -19,10 +19,12 @@
 #
 ##############################################################################
 from odoo import fields, models, api, _
-from suds.client import Client
+from zeep import Client
+from zeep.wsse.signature import Signature
 from odoo.exceptions import UserError
 from lxml import etree
 import urllib.request
+import ssl
 
 FILE_NAMES = {
     'wab' : 'YellowCube_WAB_REQUEST_Warenausgangsbestellung.xsd',
@@ -51,6 +53,7 @@ class SoapConnect(models.Model):
     def send(self):
         
         validation = self.validate_xml(FILE_NAMES[self.data_type], self.xml_data)
+        print(validation)
         if validation != None:
             self.response = validation
             return False            
@@ -58,6 +61,10 @@ class SoapConnect(models.Model):
         if self.data_type and self.xml_data:
             url = self.env['ir.config_parameter'].get_param('sga_swisspost_soap_connector.soap_url')
             client = Client(url)
+            #key = "../../project-addons/sga_swisspost_soap_connector/static/cert/{}".format(self.env['ir.config_parameter'].get_param('sga_swisspost_soap_connector.certificate_file'))
+            #pem = "../../project-addons/sga_swisspost_soap_connector/static/cert/{}".format(self.env['ir.config_parameter'].get_param('sga_swisspost_soap_connector.certificate_key_file'))
+            #certificate_password = self.env['ir.config_parameter'].get_param('sga_swisspost_soap_connector.certificate_password')
+            #client = Client(url, wsse=Signature(key, pem, certificate_password))
 
             try:
                 if self.data_type == 'art':
@@ -71,6 +78,7 @@ class SoapConnect(models.Model):
                 self.response = res
                 return True
             except Exception as e:
+                print(e)
                 self.response = e
                 return False
         else:

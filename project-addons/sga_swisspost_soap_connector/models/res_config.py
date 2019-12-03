@@ -20,7 +20,8 @@
 ##############################################################################
 from odoo import fields, models, api, _
 
-SOAP_PARAMS = ['sender_id', 'depositor_no', 'partner_no', 'warehouse_id', 'supplier_no', 'email_alarm', 'sprach_code', 'operating_mode', 'soap_url']
+SOAP_PARAMS = ['sender_id', 'depositor_no', 'partner_no', 'warehouse_id', 'supplier_no', 'email_alarm', \
+    'sprach_code', 'operating_mode', 'soap_url', 'certificate_file', 'certificate_key_file', 'certificate_password']
 
 class ConfigSoapData(models.TransientModel):
 
@@ -38,6 +39,9 @@ class ConfigSoapData(models.TransientModel):
     soap_url = fields.Selection([('https://service-test.swisspost.ch/apache/yellowcube-test/?wsdl', 'Trial'),\
         ('https://service-test.swisspost.ch/apache/yellowcube-int/?wsdl', 'Integration and aceptance'),\
         ('https://service.swisspost.ch/apache/yellowcube/?wsdl', 'Production')], default="Trial", string='Webservice', help='Selected Webservice')
+    certificate_file = fields.Char('Certificate file', help='Certificate file supplied by Yellowcube')
+    certificate_key_file = fields.Char('Certificate key file', help='Certificate key file supplied b y Yellowcube')
+    certificate_password = fields.Char('Certificate password')
 
     @api.model
     def get_values(self):

@@ -85,13 +85,13 @@ class ProductTemplate(models.Model):
         
         etree.SubElement(art_article, ART + "DepositorNo", nsmap=NSMAP).text = self.env['ir.config_parameter'].get_param('sga_swisspost_soap_connector.depositor_no', False)
         etree.SubElement(art_article, ART + "PlantID", nsmap=NSMAP).text = self.env['ir.config_parameter'].get_param('sga_swisspost_soap_connector.warehouse_id', False)
-        etree.SubElement(art_article, ART + "ArticleNo", nsmap=NSMAP).text = "%s" % self.default_code # O el self.id
-        etree.SubElement(art_article, ART + "BaseUOM", nsmap=NSMAP).text = "PCE" if self.uom_id.name == 'Unit(s)' else "{%s}" % False
+        etree.SubElement(art_article, ART + "ArticleNo", nsmap=NSMAP).text = "%s" % self.default_code or self.id
+        etree.SubElement(art_article, ART + "BaseUOM", nsmap=NSMAP).text = "PCE"
         etree.SubElement(art_article, ART + "NetWeight", nsmap=NSMAP, ISO="KGM").text = "%s" % self.weight
 
         # Art Units of Measure
         art_units = etree.SubElement(art_article, ART + "UnitsOfMeasure", nsmap=NSMAP)
-        etree.SubElement(art_units, ART + "EAN", nsmap=NSMAP, EANType="HE").text = "%s" % self.barcode
+        etree.SubElement(art_units, ART + "EAN", nsmap=NSMAP, EANType="HE").text = "%s" % self.barcode or ''
         etree.SubElement(art_units, ART + "AlternativeUnitISO", nsmap=NSMAP).text = "PCE"
         etree.SubElement(art_units, ART + "AltNumeratorUOM", nsmap=NSMAP).text = "%s" % 1
         etree.SubElement(art_units, ART + "AltDenominatorUOM", nsmap=NSMAP).text = "%s" % 1
@@ -102,10 +102,13 @@ class ProductTemplate(models.Model):
         etree.SubElement(art_units, ART + "Volume", nsmap=NSMAP, ISO="CMQ").text = "%s" % self.volume or "%s" % 0
 
         # Art Descriptions
-        art_descriptions = etree.SubElement(art_article, ART + "ArticleDescriptions", nsmap=NSMAP)   
-        etree.SubElement(art_descriptions, ART + "ArticleDescription", nsmap=NSMAP, ArticleDescriptionLC="de").text = self.description_short
-        etree.SubElement(art_descriptions, ART + "ArticleDescription", nsmap=NSMAP, ArticleDescriptionLC="es").text = self.description_short
-        etree.SubElement(art_descriptions, ART + "ArticleDescription", nsmap=NSMAP, ArticleDescriptionLC="en").text = self.description_short
+        art_descriptions = etree.SubElement(art_article, ART + "ArticleDescriptions", nsmap=NSMAP)
+        ctx = self._context.copy()
+        ctx.update(lang='de_DE')
+        etree.SubElement(art_descriptions, ART + "ArticleDescription", nsmap=NSMAP, ArticleDescriptionLC="de").text = self.with_context(ctx).name
+        etree.SubElement(art_descriptions, ART + "ArticleDescription", nsmap=NSMAP, ArticleDescriptionLC="es").text = self.name
+        ctx.update(lang='en_EN')
+        etree.SubElement(art_descriptions, ART + "ArticleDescription", nsmap=NSMAP, ArticleDescriptionLC="en").text = self.with_context(ctx).name
     
     def create_soap(self, data_type, operation_type, xml_data):
         soap_connection = self.env['sga_swiss_post_soap'].create({

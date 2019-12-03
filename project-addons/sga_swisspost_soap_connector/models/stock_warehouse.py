@@ -26,7 +26,7 @@ from odoo.exceptions import ValidationError
 SOAPENV_NAMESPACE = "http://schemas.xmlsoap.org/soap/envelope/"
 SOAPENV = "{%s}" % SOAPENV_NAMESPACE
 
-BAR_R_NAMESPACE = "https://service.swisspost.ch/apache/yellowcube/YellowCube_BAR_REQUEST_ArticleList.xsd"
+BAR_R_NAMESPACE = "https://service-test.swisspost.ch/apache/yellowcube/YellowCube_BAR_REQUEST_ArticleList.xsd"
 BAR_R = "{%s}" % BAR_R_NAMESPACE
 
 NSMAP = {'soapenv' : SOAPENV_NAMESPACE, 'bar_r' : BAR_R_NAMESPACE}
