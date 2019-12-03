@@ -170,10 +170,11 @@
                     <div class="header-location">
                         <!-- Shipping Country Modal -->
                         <li t-attf-class="dropdown list-unstyled">
-                            <a href="#" data-toggle="modal" data-target="#languageModal" rel="nofollow">
+                            a href="#" data-toggle="modal" data-target="#languageModal" rel="nofollow">
                                 <i class="fa fa-truck" aria-hidden="true"/>
-                                <span>Shipping Country</span>
+                                <span>Shipping Country</span>:
                             </a>
+                            <span t-esc="website.get_current_country().country_code" class="text-uppercase"/>
                         </li>
                     </div>
                     <div class="header-search">

@@ -312,7 +312,12 @@ msgstr "Verfügbare Länder"
 #. module: theme_canilike
 #: model:ir.ui.view,arch_db:theme_canilike.location_selection_modal
 msgid "Shipping Country"
-msgstr "Lieferungsland"
+msgstr "Lieferung nach"
+
+#. module: theme_canilike
+#: model:ir.ui.view,arch_db:theme_canilike.website_layout
+msgid "Shipping Country"
+msgstr "Lieferung nach"
 
 #. module: theme_canilike
 #: model:ir.ui.view,arch_db:theme_canilike.header_logo
@@ -659,6 +664,11 @@ msgstr "Deshalb bin ich hier. Wegen dieser Erinnerungen an die Aromen. Weil ich 
 #: model:ir.ui.view,arch_db:theme_canilike.website_footer_default
 msgid "Privacy policy and Cookie Notice"
 msgstr "Datenschutzerklärung und Cookie-Hinweis"
+
+#. module: website_sale
+#: model:ir.ui.view,arch_db:website_sale.products_item
+msgid "Sale"
+msgstr "Aktion"
 
 #. module: theme_canilike
 #: model:ir.ui.view,arch_db:theme_canilike.website_footer_default

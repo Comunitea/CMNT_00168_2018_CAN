@@ -196,6 +196,11 @@ msgid "Shipping Country"
 msgstr "País entrega"
 
 #. module: theme_canilike
+#: model:ir.ui.view,arch_db:theme_canilike.website_layout
+msgid "Shipping Country"
+msgstr "Lieferung nach"
+
+#. module: theme_canilike
 #: model:ir.ui.view,arch_db:theme_canilike.website_footer_default
 msgid "Legal Advice"
 msgstr "Aviso Legal"
