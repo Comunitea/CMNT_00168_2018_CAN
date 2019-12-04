@@ -13,7 +13,7 @@
                             </h2>
                             <div class="text-center">
                                 <h4><stong>Payment and shipping info</stong></h4>
-                                <p>For Switzerland, the delivery will be the following day (Monday through Friday), having received the order the day before the deadline for shipments that the warehouse manager has.</p>
+                                <p>When paying by card or Paypal in Switzerland, the delivery will be the following day (Monday through Friday), having received the order the day before the deadline for shipments that the warehouse manager has.</p>
                             </div>
                         </div>
                     </div>
@@ -25,24 +25,29 @@
                             <div class="row">
                                 <div class="col-md-4 mt32 mb48">
                                     <h4><strong>Shipping methods</strong></h4>
-                                    <p>List of available shipping methods.</p>
+                                    <h5>List of available shipping methods.</h5>
+                                    <p>Paypal</p>
+                                    <p class="mt4">Tranfer</p>
+                                    <p class="mt4">Credit Card</p>
                                 </div>
                                 <div class="col-md-4 mt32 mb48">
                                     <h4><strong>Payment methods</strong></h4>
-                                    <p>List of available payment methods.</p>
+                                    <h5>List of available payment methods.</h5>
+                                    <p>Swiss Post</p>
                                 </div>
                                 <div class="col-md-4 mt32 mb48">
                                     <t t-set="current_country" t-value="website.get_current_country()" />
                                     <h4><strong>Current country: <t t-esc="current_country.name"/></strong></h4>
-                                    <p>From this country you can ship your order to:</p>
+                                    <h5>From this country you can ship your order to:</h5>
                                     <ul class="list-unstyled mt8">
                                         <t t-set="available_countries" t-value="website.get_available_countries()" />
                                         <t t-foreach="available_countries.sorted(key=lambda r: r.name)" t-as="country">
                                             <li><t t-esc="country.name"/></li>
                                         </t>
                                     </ul>
-                                    <p>The prices and availability of the products may change depending on the selected warehouse.</p>
-                                    <p>Switching from one warehouse to another will empty your current cart because each warehouse has different products.</p>
+<!--                                    <p><strong>Note: </strong></p>-->
+<!--                                    <p class="mt4">The prices and availability of the products may change depending on the selected warehouse.</p>-->
+<!--                                    <p class="mt4">Switching from one warehouse to another will empty your current cart because each warehouse has different products.</p>-->
                                 </div>
                             </div>
                         </div>

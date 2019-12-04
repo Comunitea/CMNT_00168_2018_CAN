@@ -58,8 +58,8 @@
             <field name="sequence" type="int">30</field>
             <field name="parent_id" ref="website.main_menu"/>
             <field name="website_id" ref="website.default_website"/>
-            <field name="user_logged">True</field>
-            <field name="user_not_logged">True</field>
+            <field name="user_logged">False</field>
+            <field name="user_not_logged">False</field>
         </record>
 
         <record id="menu_aboutus" model="website.menu">

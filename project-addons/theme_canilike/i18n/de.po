@@ -571,8 +571,22 @@ msgstr "Liste der verfügbaren Zahlungsmethoden"
 #: model:ir.ui.view,arch_db:theme_canilike.payment_and_shipping
 #: model:ir.ui.view,arch_db:theme_canilike.payment_and_shipping_page_ir_ui_view
 #: model:website.page,arch_db:theme_canilike.payment_and_shipping_page
-msgid "List of available shipping methods."
-msgstr "Liste der verfügbaren Versandarten."
+msgid "Tranfer"
+msgstr "Banküberweisungen"
+
+#. module: theme_canilike
+#: model:ir.ui.view,arch_db:theme_canilike.payment_and_shipping
+#: model:ir.ui.view,arch_db:theme_canilike.payment_and_shipping_page_ir_ui_view
+#: model:website.page,arch_db:theme_canilike.payment_and_shipping_page
+msgid "Credit Card"
+msgstr "Kartenzahlung"
+
+#. module: theme_canilike
+#: model:ir.ui.view,arch_db:theme_canilike.payment_and_shipping
+#: model:ir.ui.view,arch_db:theme_canilike.payment_and_shipping_page_ir_ui_view
+#: model:website.page,arch_db:theme_canilike.payment_and_shipping_page
+msgid "Swiss Post"
+msgstr "Post Schweiz"
 
 #. module: theme_canilike
 #: model:ir.ui.view,arch_db:theme_canilike.website_layout
@@ -643,8 +657,8 @@ msgstr "Zahlung und Versand information"
 #: model:ir.ui.view,arch_db:theme_canilike.payment_and_shipping
 #: model:ir.ui.view,arch_db:theme_canilike.payment_and_shipping_page_ir_ui_view
 #: model:website.page,arch_db:theme_canilike.payment_and_shipping_page
-msgid "For Switzerland, the delivery will be the following day (Monday through Friday), having received the order the day before the deadline for shipments that the warehouse manager has."
-msgstr "In der Schweiz erfolgt die Lieferung am folgenden Tag (Montag bis Freitag), nachdem die Bestellung am Tag vor dem Versandtermin beim Lagerverwalter eingegangen ist."
+msgid "When paying by card or Paypal in Switzerland, the delivery will be the following day (Monday through Friday), having received the order the day before the deadline for shipments that the warehouse manager has."
+msgstr "Bei Zahlung mit Karte oder Paypal erfolgt in der Schweiz  die Lieferung am folgenden Tag (Montag bis Freitag), nachdem die Bestellung am Tag vor dem Versandtermin bis 11.00 Uhr beim Lagerverwalter eingegangen ist."
 
 #. module: theme_canilike
 #: model:ir.ui.view,arch_db:theme_canilike.payment_and_shipping
@@ -770,6 +784,14 @@ msgstr "Nutzungsbedingungen Link"
 #: model:website.page,arch_db:theme_canilike.payment_and_shipping_page
 msgid "The prices and availability of the products may change depending on the selected warehouse."
 msgstr "Die Preise und die Verfügbarkeit der Produkte können sich je nach ausgewähltem Lager ändern"
+
+#. module: theme_canilike
+#: model:ir.ui.view,arch_db:theme_canilike.location_selection_modal
+#: model:ir.ui.view,arch_db:theme_canilike.payment_and_shipping
+#: model:ir.ui.view,arch_db:theme_canilike.payment_and_shipping_page_ir_ui_view
+#: model:website.page,arch_db:theme_canilike.payment_and_shipping_page
+msgid "<strong>Note: </strong>"
+msgstr "<strong>Hinweis: </strong>"
 
 #. module: theme_canilike
 #: model:ir.ui.view,arch_db:theme_canilike.header_logo

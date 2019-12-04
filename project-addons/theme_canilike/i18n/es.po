@@ -532,6 +532,20 @@ msgid "List of available shipping methods."
 msgstr "Lista de los métodos de envío disponibles."
 
 #. module: theme_canilike
+#: model:ir.ui.view,arch_db:theme_canilike.payment_and_shipping
+#: model:ir.ui.view,arch_db:theme_canilike.payment_and_shipping_page_ir_ui_view
+#: model:website.page,arch_db:theme_canilike.payment_and_shipping_page
+msgid "Tranfer"
+msgstr "Transferencia Bancaria"
+
+#. module: theme_canilike
+#: model:ir.ui.view,arch_db:theme_canilike.payment_and_shipping
+#: model:ir.ui.view,arch_db:theme_canilike.payment_and_shipping_page_ir_ui_view
+#: model:website.page,arch_db:theme_canilike.payment_and_shipping_page
+msgid "Credit Card"
+msgstr "Tarjeta de Crédito"
+
+#. module: theme_canilike
 #: model:ir.ui.view,arch_db:theme_canilike.website_layout
 msgid "<span class=\"hidden-xs\">Location</span>"
 msgstr "<span class=\"hidden-xs\">Localización</span>"
@@ -644,8 +658,8 @@ msgstr "Información de pago y envío"
 #: model:ir.ui.view,arch_db:theme_canilike.payment_and_shipping
 #: model:ir.ui.view,arch_db:theme_canilike.payment_and_shipping_page_ir_ui_view
 #: model:website.page,arch_db:theme_canilike.payment_and_shipping_page
-msgid "For Switzerland, the delivery will be the following day (Monday through Friday), having received the order the day before the deadline for shipments that the warehouse manager has."
-msgstr "Para Suiza la entrega será el día siguiente (De lunes a viernes) habiendo recibido el pedido el día anterior antes de la hora tope de envios que tenga el gestor del almacén."
+msgid "When paying by card or Paypal in Switzerland, the delivery will be the following day (Monday through Friday), having received the order the day before the deadline for shipments that the warehouse manager has."
+msgstr "Al pagar con tarjeta o Paypal en Suiza la entrega será el día siguiente (De lunes a viernes) habiendo recibido el pedido el día anterior antes de la hora tope de envios que tenga el gestor del almacén."
 
 #. module: theme_canilike
 #: model:ir.ui.view,arch_db:theme_canilike.payment_and_shipping
@@ -782,8 +796,16 @@ msgstr "Sólo los pescados y mariscos de máxima calidad continúan adelante en 
 #: model:ir.ui.view,arch_db:theme_canilike.payment_and_shipping
 #: model:ir.ui.view,arch_db:theme_canilike.payment_and_shipping_page_ir_ui_view
 #: model:website.page,arch_db:theme_canilike.payment_and_shipping_page
-msgid "The prices and availability of the products may change depending on the selected warehouse."
+msgid "he prices and availability of the products may change depending on the selected warehouse."
 msgstr "Los precios y la disponibilidad de los productos pueden variar dependiendo del almacén seleccionado."
+
+#. module: theme_canilike
+#: model:ir.ui.view,arch_db:theme_canilike.location_selection_modal
+#: model:ir.ui.view,arch_db:theme_canilike.payment_and_shipping
+#: model:ir.ui.view,arch_db:theme_canilike.payment_and_shipping_page_ir_ui_view
+#: model:website.page,arch_db:theme_canilike.payment_and_shipping_page
+msgid "<strong>Note: </strong>"
+msgstr "<strong>Nota: </strong>"
 
 #. module: theme_canilike
 #: model:ir.ui.view,arch_db:theme_canilike.header_logo
