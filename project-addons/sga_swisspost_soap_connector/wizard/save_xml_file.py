@@ -18,6 +18,14 @@
 #    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #
 ##############################################################################
+from odoo import fields, models, api, _
+from datetime import datetime
+from lxml import etree
 
-from . import models
-from . import wizard
+
+class SaveXmlFileWzd(models.TransientModel):
+
+    _name = 'save.xml.file.wrd'
+
+    file_name = fields.Char('File name', readonly=True)
+    xml_file = fields.Binary('File data', readonly=True, help='File(xml file)')

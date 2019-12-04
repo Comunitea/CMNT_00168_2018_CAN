@@ -137,7 +137,7 @@ class StockPicking(models.Model):
 
         for move_line in self.move_line_ids:
             wbl_position = etree.SubElement(wbl_order_positions, WBL + "Position", nsmap=NSMAP)
-            etree.SubElement(wbl_position, WBL + "PosNo", nsmap=NSMAP).text = "%s" % move_line.id[-6:]
+            etree.SubElement(wbl_position, WBL + "PosNo", nsmap=NSMAP).text = "%s" % move_line.id
             etree.SubElement(wbl_position, WBL + "ArticleNo", nsmap=NSMAP).text = "%s" % move_line.product_id.default_code # O el id, según lo que pongas en product_template
             etree.SubElement(wbl_position, WBL + "EAN", nsmap=NSMAP).text = "%s" % move_line.product_id.barcode
             etree.SubElement(wbl_position, WBL + "Quantity", nsmap=NSMAP).text = "%s" % move_line.qty_done
@@ -201,7 +201,7 @@ class StockPicking(models.Model):
         
         for move_line in self.move_line_ids:
             wab_position = etree.SubElement(wab_order_positions, WAB + "Position", nsmap=NSMAP)
-            etree.SubElement(wab_position, WAB + "PosNo", nsmap=NSMAP).text = "%s" % move_line.id[-6:]
+            etree.SubElement(wab_position, WAB + "PosNo", nsmap=NSMAP).text = "%s" % move_line.id
             etree.SubElement(wab_position, WAB + "ArticleNo", nsmap=NSMAP).text = "%s" % move_line.product_id.default_code # O el id, según lo que pongas en product_template
             etree.SubElement(wab_position, WAB + "EAN", nsmap=NSMAP).text = "%s" % move_line.product_id.barcode
             etree.SubElement(wab_position, WAB + "YCLot", nsmap=NSMAP).text = ""
@@ -233,7 +233,6 @@ class StockPicking(models.Model):
     def send_to_sga(self):
         for picking in self.filtered(lambda x: x.sga_integrated and x.sga_integration_type == 'sga_swiss_post'):
             data_type = picking.picking_type_id.swiss_soap_file
-            print(data_type)
             xml_data = picking.create_soap_xml(data_type)
             soap_connection = picking.create_soap(data_type, 'send', xml_data)
             res = soap_connection.send()
@@ -251,7 +250,6 @@ class StockPicking(models.Model):
                 data_type = 'wba_r'
             else:
                 return False
-            print(data_type)
             xml_data = picking.create_soap_xml(data_type)
             soap_connection = picking.create_soap(data_type, 'get', xml_data)
             res = soap_connection.get()

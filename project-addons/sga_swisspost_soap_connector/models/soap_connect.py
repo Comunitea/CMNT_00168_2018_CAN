@@ -23,6 +23,7 @@ from zeep import Client
 from zeep.wsse.signature import Signature
 from odoo.exceptions import UserError
 from lxml import etree
+import base64
 import urllib.request
 import ssl
 
@@ -128,3 +129,23 @@ class SoapConnect(models.Model):
             return xsd.assert_(xml)
         except AssertionError as e:
             return e
+
+
+    @api.multi
+    def save_to_file(self):
+
+        my_file = self.env['save.xml.file.wrd'].create({
+            'file_name': '{}.xml'.format(self.data_type),
+            'xml_file': base64.b64encode(str.encode(self.xml_data)),
+        })
+
+        return {
+            'name': _('Download File'),
+            'res_id': my_file.id,
+            'res_model': 'save.xml.file.wrd',
+            'target': 'new',
+            'type': 'ir.actions.act_window',
+            'view_id': self.env.ref('sga_swisspost_soap_connector.save_xml_file_wrd_view__done').id,
+            'view_mode': 'form',
+            'view_type': 'form',
+        }

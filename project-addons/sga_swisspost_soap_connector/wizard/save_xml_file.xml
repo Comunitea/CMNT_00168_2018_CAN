@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="save_xml_file_wrd_view__done" model="ir.ui.view">
+        <field name="name">save.xml.file.wrd.form</field>
+        <field name="model">save.xml.file.wrd</field>
+        <field name="arch" type="xml">
+            <form string="File download">
+                <group cols="2">
+                    <div>
+                        <field name="file_name" invisible="1" />
+                        <label string="The file has been successfully generated." />
+                        <field name="xml_file" filename="file_name" nolabel="1" />
+                    </div>
+                </group>
+                <footer>
+                    <button special="cancel" string="Close" type="object" />
+                </footer>
+            </form>
+        </field>
+    </record>
+</odoo>

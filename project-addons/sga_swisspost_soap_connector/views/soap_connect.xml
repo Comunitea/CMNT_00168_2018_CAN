@@ -16,6 +16,7 @@
                         <field name="picking_id" readonly="1" attrs="{'invisible': [('model','!=', 'stock.picking')]}" />
                         <field name="product_tmpl_id" readonly="1" attrs="{'invisible': [('model','!=', 'product.template')]}" />
                         <field name="warehouse_id" readonly="1" attrs="{'invisible': [('model','!=', 'stock.warehouse')]}" />
+                        <button name="save_to_file" string="Save to file" type="object" class="oe_stat_button oe_read_only" icon="fa-download"/>
                     </group>
                 </sheet>
             </form>
