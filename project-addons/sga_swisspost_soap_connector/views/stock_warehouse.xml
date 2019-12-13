@@ -13,6 +13,8 @@
                     statusbar_colors='{"get-error":"red", "send-error": "red", "not-integrated":"grey", "integrated":"green", "waiting": "green"}'/>
                 <button name="inventory_synchronization" string="Synchronization" type="object"
                     class="oe_stat_button" icon="fa-shopping-cart" attrs="{'invisible':[('sga_integrated', '!=', True),('sga_integration_type','!=', 'sga_swiss_post')]}"/>
+                <button name="inventory_movements" string="Movements" type="object"
+                    class="oe_stat_button" icon="fa-shopping-cart" attrs="{'invisible':[('sga_integrated', '!=', True),('sga_integration_type','!=', 'sga_swiss_post')]}"/>
             </field>
         </field>
     </record>

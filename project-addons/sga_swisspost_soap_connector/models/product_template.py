@@ -21,6 +21,9 @@
 from odoo import fields, models, api, _
 from datetime import datetime
 from lxml import etree
+from zeep import Client
+from zeep.cache import SqliteCache
+from zeep.transports import Transport
 
 SOAPENV_NAMESPACE = "http://schemas.xmlsoap.org/soap/envelope/"
 SOAPENV = "{%s}" % SOAPENV_NAMESPACE
@@ -42,6 +45,81 @@ class ProductTemplate(models.Model):
         ('not-integrated', 'Not Integrated'), ('error', 'Error')], default="not-integrated", string='Sga Status', help='Integration Status')
     sga_integration_type = fields.Selection([('sga_swiss_post', 'Swiss POST')], 'Integration type')
     sga_integrated = fields.Boolean('Sga', help='Marcar si tiene un tipo de integración con el sga')
+
+
+    def fileArt(self, client, prefix):
+
+        try:
+            #Types
+            iso_type = client.get_type("{}:ISO".format(prefix))
+            float13v3mandatory_type = client.get_type("{}:Float13v3Mandatory".format(prefix))
+            float13v3_type = client.get_type("{}:Float13v3".format(prefix))
+            descriptionlc_type = client.get_type("{}:ArticleDescription".format(prefix))
+
+            #Elements
+            units_element = client.get_element("{}:UnitsOfMeasure".format(prefix))
+            description_element = client.get_element("{}:ArticleDescription".format(prefix))
+            descriptions_element = client.get_element("{}:ArticleDescriptions".format(prefix))
+            article_element = client.get_element("{}:Article".format(prefix))
+            articleList_element = client.get_element("{}:ArticleList".format(prefix))
+
+            #Values
+            iso = iso_type("KGM")
+            grossWeight_qty = float13v3_type("{:.2f}".format(self.weight + (self.weight*5)/100))
+            weight = float13v3mandatory_type("{:.2f}".format(self.weight + (self.weight*5)/100))
+            articleDescription_de = descriptionlc_type(self.with_context(lang='de_DE').name[:40])
+            
+
+            unitsOfMeasure = units_element(
+                EAN=self.barcode if self.barcode else '',
+                AlternateUnitISO="PCE",
+                AltNumeratorUOM=1,
+                AltDenominatorUOM=1,
+                GrossWeight=grossWeight_qty,
+                Length="%s" % self.length or "%s" % 0,
+                Width="%s" % self.width or "%s" % 0,
+                Height="%s" % self.height or "%s" % 0,
+                Volume="%s" % self.volume or "%s" % 0,
+            )
+
+            unitsOfMeasure.EAN.EANType="HE"
+            unitsOfMeasure.GrossWeight.ISO=iso
+            unitsOfMeasure.Length.ISO=iso
+            unitsOfMeasure.Width.ISO=iso
+            unitsOfMeasure.Height.ISO=iso
+            unitsOfMeasure.Volume.ISO=iso
+            
+            articleDescription = description_element(
+                articleDescription_de,
+                ArticleDescriptionLC="de"
+            )    
+
+            articleDescriptions = descriptions_element(
+                ArticleDescription=articleDescription
+            )
+
+            article = article_element(
+                ChangeFlag='I' if self.sga_state == 'not-integrated' else 'U',
+                DepositorNo=self.env['ir.config_parameter'].get_param('sga_swisspost_soap_connector.depositor_no', False),
+                PlantID=self.env['ir.config_parameter'].get_param('sga_swisspost_soap_connector.warehouse_id', False),
+                ArticleNo="%s" % self.default_code or self.id,
+                BaseUOM="PCE",
+                NetWeight=weight,
+                BatchMngtReq=1,
+                MinRemLife="",
+                PeriodExpDateType="",
+                SerialNoFlag=0,
+                UnitsOfMeasure=unitsOfMeasure,
+                ArticleDescriptions=articleDescriptions
+            )
+
+            article.NetWeight.ISO=iso
+
+            articleList = articleList_element(Article=article)
+
+            return articleList
+        except Exception as e:
+            return e
 
     def create_soap_xml(self, action='create'):
         # File root
@@ -85,14 +163,14 @@ class ProductTemplate(models.Model):
         
         etree.SubElement(art_article, ART + "DepositorNo", nsmap=NSMAP).text = self.env['ir.config_parameter'].get_param('sga_swisspost_soap_connector.depositor_no', False)
         etree.SubElement(art_article, ART + "PlantID", nsmap=NSMAP).text = self.env['ir.config_parameter'].get_param('sga_swisspost_soap_connector.warehouse_id', False)
-        etree.SubElement(art_article, ART + "ArticleNo", nsmap=NSMAP).text = "%s" % self.id
+        etree.SubElement(art_article, ART + "ArticleNo", nsmap=NSMAP).text = "%s" % self.default_code or self.id
         etree.SubElement(art_article, ART + "BaseUOM", nsmap=NSMAP).text = "PCE"
         etree.SubElement(art_article, ART + "NetWeight", nsmap=NSMAP, ISO="KGM").text = "%s" % self.weight
 
         # Art Units of Measure
         art_units = etree.SubElement(art_article, ART + "UnitsOfMeasure", nsmap=NSMAP)
         etree.SubElement(art_units, ART + "EAN", nsmap=NSMAP, EANType="HE").text = "%s" % self.barcode or ''
-        etree.SubElement(art_units, ART + "AlternativeUnitISO", nsmap=NSMAP).text = "PCE"
+        etree.SubElement(art_units, ART + "AlternateUnitISO", nsmap=NSMAP).text = "PCE"
         etree.SubElement(art_units, ART + "AltNumeratorUOM", nsmap=NSMAP).text = "%s" % 1
         etree.SubElement(art_units, ART + "AltDenominatorUOM", nsmap=NSMAP).text = "%s" % 1
         etree.SubElement(art_units, ART + "GrossWeight", nsmap=NSMAP, ISO="KGM").text = "%s" % (self.weight + (self.weight*5)/100)
@@ -106,7 +184,6 @@ class ProductTemplate(models.Model):
         ctx = self._context.copy()
         ctx.update(lang='de_DE')
         etree.SubElement(art_descriptions, ART + "ArticleDescription", nsmap=NSMAP, ArticleDescriptionLC="de").text = self.with_context(ctx).name
-        etree.SubElement(art_descriptions, ART + "ArticleDescription", nsmap=NSMAP, ArticleDescriptionLC="es").text = self.name
         ctx.update(lang='en_EN')
         etree.SubElement(art_descriptions, ART + "ArticleDescription", nsmap=NSMAP, ArticleDescriptionLC="en").text = self.with_context(ctx).name
     

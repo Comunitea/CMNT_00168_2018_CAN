@@ -20,12 +20,41 @@
 ##############################################################################
 from odoo import fields, models, api, _
 from zeep import Client
+from zeep.cache import SqliteCache
+from zeep.transports import Transport
 from zeep.wsse.signature import Signature
 from odoo.exceptions import UserError
+from datetime import datetime
 from lxml import etree
 import base64
 import urllib.request
 import ssl
+
+import logging.config
+
+
+logging.config.dictConfig({
+    'version': 1,
+    'formatters': {
+        'verbose': {
+            'format': '%(name)s: %(message)s'
+        }
+    },
+    'handlers': {
+        'console': {
+            'level': 'DEBUG',
+            'class': 'logging.StreamHandler',
+            'formatter': 'verbose',
+        },
+    },
+    'loggers': {
+        'zeep.transports': {
+            'level': 'DEBUG',
+            'propagate': True,
+            'handlers': ['console'],
+        },
+    }
+})
 
 FILE_NAMES = {
     'wab' : 'YellowCube_WAB_REQUEST_Warenausgangsbestellung.xsd',
@@ -36,6 +65,7 @@ FILE_NAMES = {
     'war_r' : 'YellowCube_WAR_REQUEST_GoodsIssueReply.xsd',
     'wba' : 'YellowCube_WBA_REQUEST_GoodsReceiptReply.xsd'
 }
+
 
 class SoapConnect(models.Model):
     _name = 'sga_swiss_post_soap'
@@ -50,56 +80,160 @@ class SoapConnect(models.Model):
     product_tmpl_id = fields.Many2one('product.template', string="Product")
     warehouse_id = fields.Many2one('stock.warehouse', string="Warehouse")
 
-    
+    def controlReference(self, client, data_type, ctrl_type):
+        try:
+            element_type = client.get_element(data_type)
+            controlReference = element_type(
+                Type=ctrl_type,
+                Sender=self.env['ir.config_parameter'].get_param('sga_swisspost_soap_connector.sender_id', False),
+                Receiver="YELLOWCUBE",
+                Timestamp=datetime.now().strftime("%Y%m%d%H%M%S"),
+                OperatingMode=self.env['ir.config_parameter'].get_param('sga_swisspost_soap_connector.operating_mode', False),
+                Version=1.0,
+                CommType="SOAP"
+            )
+            return controlReference
+        except Exception as e:
+            self.response = e
+            return False
+
+        
     def send(self):
         
         validation = self.validate_xml(FILE_NAMES[self.data_type], self.xml_data)
-        print(validation)
         if validation != None:
             self.response = validation
             return False            
 
         if self.data_type and self.xml_data:
-            url = self.env['ir.config_parameter'].get_param('sga_swisspost_soap_connector.soap_url')
-            client = Client(url)
-            #key = "../../project-addons/sga_swisspost_soap_connector/static/cert/{}".format(self.env['ir.config_parameter'].get_param('sga_swisspost_soap_connector.certificate_file'))
-            #pem = "../../project-addons/sga_swisspost_soap_connector/static/cert/{}".format(self.env['ir.config_parameter'].get_param('sga_swisspost_soap_connector.certificate_key_file'))
+            url = self.env['ir.config_parameter'].get_param('sga_swisspost_soap_connector.soap_url') 
+            
+            #pem = "../../project-addons/sga_swisspost_soap_connector/static/cert/{}".format(self.env['ir.config_parameter'].get_param('sga_swisspost_soap_connector.certificate_file'))
+            #key = "../../project-addons/sga_swisspost_soap_connector/static/cert/{}".format(self.env['ir.config_parameter'].get_param('sga_swisspost_soap_connector.certificate_key_file'))
             #certificate_password = self.env['ir.config_parameter'].get_param('sga_swisspost_soap_connector.certificate_password')
-            #client = Client(url, wsse=Signature(key, pem, certificate_password))
 
             try:
                 if self.data_type == 'art':
-                    res = client.service.InsertArticleMasterData(self.xml_data)
+                    headers = {'Content-Type': 'text/xml;charset=UTF-8', 'SOAPAction': '"InsertArticleMasterData"'}
+                    transport = Transport(cache=SqliteCache())
+                    #client = Client(wsdl=url, transport=transport, wsse=Signature(key, pem, certificate_password))
+                    client = Client(wsdl=url, transport=transport)
+
+                    controlReference = self.controlReference(client, "ns2:ControlReference", "ART")
+
+                    art = self.product_tmpl_id.fileArt(client, "ns2")
+
+                    with client.settings(extra_http_headers=headers):
+                        res = client.service.InsertArticleMasterData(controlReference, art)
+
+                        assert res
+
+                        self.response = res
+                    
                 elif self.data_type == 'wab':
-                    res = client.service.CreateYCCustomerOrder(self.xml_data)
+                    headers = {'Content-Type': 'text/xml;charset=UTF-8', 'SOAPAction': '"CreateYCCustomerOrder"'}
+                    transport = Transport(cache=SqliteCache())
+                    client = Client(wsdl=url, transport=transport)
+
+                    controlReference = self.controlReference(client, "ns0:ControlReference", "WAB")
+
+                    wab = self.picking_id.fileWab(client, "ns0")
+
+                    with client.settings(extra_http_headers=headers):
+                        res = client.service.CreateYCCustomerOrder(controlReference, wab)
+
+                        assert res
+
+                        self.response = res
+                    
                 elif self.data_type == 'wbl':
-                    res = client.service.CreateYCSupplierOrder(self.xml_data)
+                    headers = {'Content-Type': 'text/xml;charset=UTF-8', 'SOAPAction': '"CreateYCSupplierOrder"'}
+                    transport = Transport(cache=SqliteCache())
+                    client = Client(wsdl=url, transport=transport)
+
+                    controlReference = self.controlReference(client, "ns8:ControlReference", "WBL")
+
+                    wbl = self.picking_id.fileWbl(client, "ns8")
+
+                    with client.settings(extra_http_headers=headers):
+                        res = client.service.CreateYCSupplierOrder(controlReference, wbl)
+
+                        assert res
+
+                        self.response = res
                 else:
                     raise UserError(_('Data type is not recognized.'))
                 self.response = res
                 return True
             except Exception as e:
-                print(e)
                 self.response = e
                 return False
         else:
             raise UserError(_('Seems that data_type or xml_data are missing.'))
 
     def get(self):
+        
         if self.data_type and self.xml_data:
             url = self.env['ir.config_parameter'].get_param('sga_swisspost_soap_connector.soap_url')
-            client = Client(url)
 
             try:
 
                 if self.data_type == 'bar_r':
-                    res = client.service.GetInventory()
-                elif self.data_type == 'bur':
-                    res = client.service.GetYCGoodsMovements()
+                    headers = {'Content-Type': 'text/xml;charset=UTF-8', 'SOAPAction': '"GetInventory"'}
+                    transport = Transport(cache=SqliteCache())
+                    client = Client(wsdl=url, transport=transport)
+
+                    controlReference = self.controlReference(client, "ns7:ControlReference", "BAR")
+
+                    with client.settings(extra_http_headers=headers):
+                        res = client.service.GetInventory(controlReference)
+
+                        assert res
+
+                        self.response = res
+
+                elif self.data_type == 'bur_r':
+                    headers = {'Content-Type': 'text/xml;charset=UTF-8', 'SOAPAction': '"GetYCGoodsMovements"'}
+                    transport = Transport(cache=SqliteCache())
+                    client = Client(wsdl=url, transport=transport)
+
+                    controlReference = self.controlReference(client, "ns11:ControlReference", "BUR")
+
+                    with client.settings(extra_http_headers=headers):
+                        res = client.service.GetYCGoodsMovements(controlReference)
+
+                        assert res
+
+                        self.response = res
+                    
                 elif self.data_type == 'war_r':
-                    res = client.service.GetYCCustomerOrderReply()
-                elif self.data_type == 'wba':
-                    res = client.service.GetYCSupplierOrderReply()
+                    headers = {'Content-Type': 'text/xml;charset=UTF-8', 'SOAPAction': '"GetYCCustomerOrderReply"'}
+                    transport = Transport(cache=SqliteCache())
+                    client = Client(wsdl=url, transport=transport)
+
+                    controlReference = self.controlReference(client, "ns6:ControlReference", "WAR")
+
+                    with client.settings(extra_http_headers=headers):
+                        res = client.service.GetYCCustomerOrderReply(controlReference, self.picking_id.name)
+
+                        assert res
+
+                        self.response = res
+                    
+                elif self.data_type == 'wba_r':
+                    headers = {'Content-Type': 'text/xml;charset=UTF-8', 'SOAPAction': '"GetYCSupplierOrderReply"'}
+                    transport = Transport(cache=SqliteCache())
+                    client = Client(wsdl=url, transport=transport)
+
+                    controlReference = self.controlReference(client, "ns10:ControlReference", "WBA")
+
+                    with client.settings(extra_http_headers=headers):
+                        res = client.service.GetYCSupplierOrderReply(controlReference, self.picking_id.name)
+
+                        assert res
+
+                        self.response = res
+                   
                 else:
                     raise UserError(_('Data type is not recognized.'))
                 self.response = res

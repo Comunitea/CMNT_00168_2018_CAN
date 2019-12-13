@@ -27,9 +27,12 @@ SOAPENV_NAMESPACE = "http://schemas.xmlsoap.org/soap/envelope/"
 SOAPENV = "{%s}" % SOAPENV_NAMESPACE
 
 BAR_R_NAMESPACE = "https://service-test.swisspost.ch/apache/yellowcube/YellowCube_BAR_REQUEST_ArticleList.xsd"
+BUR_R_NAMESPACE = "https://service.swisspost.ch/apache/yellowcube/YellowCube_BUR_REQUEST_GoodsMovements.xsd"
 BAR_R = "{%s}" % BAR_R_NAMESPACE
 
-NSMAP = {'soapenv' : SOAPENV_NAMESPACE, 'bar_r' : BAR_R_NAMESPACE}
+BUR_R = "{%s}" % BUR_R_NAMESPACE
+
+NSMAP = {'soapenv' : SOAPENV_NAMESPACE, 'bar_r' : BAR_R_NAMESPACE, 'bur_r' : BUR_R_NAMESPACE}
 
 class StockWarehouseSGA(models.Model):
 
@@ -71,6 +74,11 @@ class StockWarehouseSGA(models.Model):
             # Wab file content
             bar_r = etree.SubElement(body, BAR_R + "BAR_R", nsmap=NSMAP)
             self.file_control_reference(bar_r, data_type)
+        
+        elif data_type == 'bur_r':
+            # Wab file content
+            bur_r = etree.SubElement(body, BUR_R + "BUR_R", nsmap=NSMAP)
+            self.file_control_reference(bur_r, data_type)
 
         else:
             return False
@@ -84,6 +92,8 @@ class StockWarehouseSGA(models.Model):
         control_NS = ''
         if data_type == 'bar_r':
             control_NS = BAR_R
+        if data_type == 'bur_r':
+            control_NS = BUR_R
         else:
             return False
 
@@ -109,3 +119,11 @@ class StockWarehouseSGA(models.Model):
                 warehouse.sga_state = 'waiting'
             else:
                 warehouse.sga_state = 'get-error'
+
+
+    @api.multi
+    def inventory_movements(self):
+        for warehouse in self.filtered(lambda x: x.sga_integrated and x.sga_integration_type == 'sga_swiss_post'):
+            xml_data = warehouse.create_soap_xml('bur_r')
+            soap_connection = warehouse.create_soap('bur_r', 'get', xml_data)
+            res = soap_connection.get()

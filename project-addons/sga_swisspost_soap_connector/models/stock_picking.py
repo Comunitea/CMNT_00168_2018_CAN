@@ -21,6 +21,11 @@
 from odoo import fields, models, api, _
 from datetime import datetime
 from lxml import etree
+from zeep import Client
+from zeep.cache import SqliteCache
+from zeep.transports import Transport
+from odoo.exceptions import UserError
+import base64
 
 SOAPENV_NAMESPACE = "http://schemas.xmlsoap.org/soap/envelope/"
 SOAPENV = "{%s}" % SOAPENV_NAMESPACE
@@ -49,6 +54,232 @@ class StockPicking(models.Model):
              ('confirmation-error', 'Confirmation Error')], default="not-integrated", string='Sga Status', help='Integration Status')
     sga_integrated = fields.Boolean(related='picking_type_id.sga_integrated')
     sga_integration_type = fields.Selection(related='picking_type_id.sga_integration_type')
+
+
+    def fileWbl(self, client, prefix):
+
+        try:
+
+            #Elements
+            iso_element = client.get_element("{}:QuantityISO".format(prefix))
+            order_element = client.get_element("{}:SupplierOrder".format(prefix))
+            orderHeader_element = client.get_element("{}:SupplierOrderHeader".format(prefix))
+            orderPositions_element = client.get_element("{}:SupplierOrderPositions".format(prefix))
+            position_element = client.get_element("{}:Position".format(prefix))
+
+            #Values
+            iso = iso_element("KGM")
+
+
+            ## OrderHeader
+
+            orderHeader = orderHeader_element(
+                DepositorNo=self.env['ir.config_parameter'].get_param('sga_swisspost_soap_connector.depositor_no', False),
+                Plant=self.env['ir.config_parameter'].get_param('sga_swisspost_soap_connector.warehouse_id', False),
+                SupplierNo=self.env['ir.config_parameter'].get_param('sga_swisspost_soap_connector.supplier_no', False),
+                SupplierOrderNo=self.name
+            )
+
+
+            # OrderPositions
+
+            positions_arrary = []
+
+            for move_line in self.move_line_ids:
+
+                position = position_element(
+                    PosNo=move_line.id,
+                    ArticleNo=move_line.product_id.default_code, # O el id, según lo que pongas en product_template
+                    Quantity=move_line.product_uom_qty,
+                    QuantityISO=iso,
+                    PosText=move_line.with_context(lang='de_DE').product_id.name[:40],
+                )
+                
+                positions_arrary.append(position)
+                    
+            orderPositions = orderPositions_element(
+                Position = positions_arrary
+            )
+
+            order = order_element(
+                SupplierOrderHeader=orderHeader,
+                SupplierOrderPositions=orderPositions
+            )
+
+            return order
+        
+        except Exception as e:
+            return e
+
+
+    def fileWab(self, client, prefix):
+
+        try:
+
+            #Types
+            iso_type = client.get_type("{}:ISO".format(prefix))
+
+            #Elements
+            order_element = client.get_element("{}:Order".format(prefix))
+            orderHeader_element = client.get_element("{}:OrderHeader".format(prefix))
+            partnerAddress_element = client.get_element("{}:PartnerAddress".format(prefix))
+            partner_element = client.get_element("{}:Partner".format(prefix))
+            orderPositions_element = client.get_element("{}:OrderPositions".format(prefix))
+            position_element = client.get_element("{}:Position".format(prefix))
+            orderDocuments_element = client.get_element("{}:OrderDocuments".format(prefix))
+            orderDocFilenames_element = client.get_element("{}:OrderDocFilenames".format(prefix))
+            orderDocFilename_element = client.get_element("{}:OrderDocFilename".format(prefix))
+            docType_element = client.get_element("{}:DocType".format(prefix))
+            docMimeType_element = client.get_element("{}:DocMimeType".format(prefix))
+            docStream_element = client.get_element("{}:DocStream".format(prefix))
+            valueAddedServices_element = client.get_element("{}:ValueAddedServices".format(prefix))
+            additionalService_element = client.get_element("{}:AdditionalService".format(prefix))
+
+            #Values
+            iso = iso_type("KGM")
+
+
+            ## OrderHeader
+
+            orderHeader = orderHeader_element(
+                DepositorNo=self.env['ir.config_parameter'].get_param('sga_swisspost_soap_connector.depositor_no', False),
+                CustomerOrderNo=self.name,
+                CustomerOrderDate=datetime.strptime(self.sale_id.confirmation_date, '%Y-%m-%d %H:%M:%S').strftime("%Y%m%d")
+            )
+
+
+            ## PartnerAddress
+
+            partner = partner_element(
+                PartnerType="WE",
+                PartnerNo=self.env['ir.config_parameter'].get_param('sga_swisspost_soap_connector.partner_no', False),
+                PartnerReference=self.name,
+                Title="",
+                Name1=self.sale_id.partner_shipping_id.name[:35],
+                Name2=self.sale_id.partner_shipping_id.name[36:70],
+                Name3=self.sale_id.partner_shipping_id.name[71:136],
+                Name4=self.sale_id.partner_shipping_id.state_id.name if self.sale_id.partner_shipping_id.state_id.name else '', # name4/additional address line
+                Street="%s, %s" % (self.sale_id.partner_shipping_id.street, self.sale_id.partner_shipping_id.street2),
+                CountryCode=self.sale_id.partner_shipping_id.country_id.code,
+                ZIPCode=self.sale_id.partner_shipping_id.zip,
+                City=self.sale_id.partner_shipping_id.city,
+                POBox="",
+                PhoneNo=self.partner_id.phone,
+                MobileNo=self.partner_id.mobile if self.partner_id.mobile else '',
+                SMSAvisMobNo=self.partner_id.mobile if self.partner_id.mobile else '',
+                FaxNo="",
+                Email=self.partner_id.email,
+                LanguageCode=self.partner_id.lang if self.partner_id.lang in ['de', 'fr', 'it', 'en'] else "en"
+            )
+
+            partnerAddress = partnerAddress_element(
+                Partner=partner
+            )
+
+
+            # ValueAddedService
+            
+            AdditionalService = additionalService_element(
+                BasicShippingServices="PRI", # Preguntar qué servicio de la tabla usa
+                AdditionalShippingServices="", # Preguntar si necesitan más servicios
+                DeliveryInstructions="",
+                FloorNo="",
+                NotificationType="4", # 1- TEL, 2-FAX, 3-SMS, 4-EMAIL
+                NotificationServiceCode="2", # 0-On delivery, 1-24h, 2-On validation, 256-Saturday, 257-Evening 
+                DeliveryDate="",
+                DeliveryTimeJIT="",
+                DeliveryTimeFrom="",
+                DeliveryTimeTo="",
+                DeliveryPeriodeCode="3",  # 1-morning, 2-afternoon, 3-both
+                DeliveryLocation="",
+                CODAmount="", # Cash on delivery amount
+                CODAccountNo="", # Cash on delivery account number
+                CODRefNo="", # Cash on delivery ISR reference
+                FrightShippingFlag="0" # Cash on delivery ISR reference
+            )
+
+            valueAddedServices = valueAddedServices_element(
+                AdditionalService=AdditionalService
+            )
+
+
+            # OrderPositions
+
+            positions_arrary = []
+
+            for move_line in self.move_line_ids:
+
+                position = position_element(
+                    PosNo=move_line.id,
+                    ArticleNo=move_line.product_id.default_code, # O el id, según lo que pongas en product_template
+                    EAN=move_line.product_id.barcode if move_line.product_id.barcode else '',
+                    YCLot="",
+                    Lot=self.name,
+                    Plant=self.env['ir.config_parameter'].get_param('sga_swisspost_soap_connector.warehouse_id', False),
+                    Quantity=move_line.product_uom_qty,
+                    QuantityISO=iso,
+                    ShortDescription=move_line.with_context(lang='de_DE').product_id.name[:40],
+                    PickingMessage="",
+                    PickingMessageLC="en",
+                    ReturnReason=""
+                )
+                
+                positions_arrary.append(position)
+                    
+            orderPositions = orderPositions_element(
+                Position = positions_arrary
+            )
+
+
+            # OrderDocuments        
+
+            pdf = self.env.ref('sale.action_report_saleorder').sudo().render_qweb_pdf([self.sale_id.id])[0] or False
+
+            orderDocFilename = orderDocFilename_element(
+                "Order - %s.pdf" % self.sale_id.name
+            )
+
+            orderDocFilenames = orderDocFilenames_element(
+                OrderDocFilename=orderDocFilename
+            )      
+
+            orderDocuments = orderDocuments_element(
+                OrderDocFilenames = orderDocFilenames
+            )
+
+            if pdf:
+
+                orderDocuments.OrderDocumentsFlag=1 # 1-Yes, 0-No
+
+                docType = docType_element(
+                    "IV"
+                )
+
+                docMimeType = docMimeType_element(
+                    'pdf'
+                )
+
+                docStream = docStream_element(
+                    base64.b64encode(pdf)
+                )
+
+                orderDocuments.Docs = {docType, docMimeType, docStream}
+
+            else:
+                orderDocuments.OrderDocumentsFlag=0 # 1-Yes, 0-No
+
+            order = order_element(
+                OrderHeader=orderHeader,
+                PartnerAddress=partnerAddress,
+                ValueAddedServices=valueAddedServices,
+                OrderPositions=orderPositions,
+                OrderDocuments=orderDocuments
+            )
+
+            return order
+        
+        except Exception as e:
+            return e
     
 
     def create_soap_xml(self, data_type):
@@ -163,7 +394,7 @@ class StockPicking(models.Model):
         etree.SubElement(wab_partner, WAB + "Name1", nsmap=NSMAP).text = "%s" % self.sale_id.partner_shipping_id.name[:35]
         etree.SubElement(wab_partner, WAB + "Name2", nsmap=NSMAP).text = "%s" % self.sale_id.partner_shipping_id.name[36:70]
         etree.SubElement(wab_partner, WAB + "Name3", nsmap=NSMAP).text = "%s" % self.sale_id.partner_shipping_id.name[71:136]
-        etree.SubElement(wab_partner, WAB + "Name4", nsmap=NSMAP).text = "%s" % self.sale_id.partner_shipping_id.state_id.name # name4/additional address line
+        etree.SubElement(wab_partner, WAB + "Name4", nsmap=NSMAP).text = "%s" % self.sale_id.partner_shipping_id.state_id.name if self.sale_id.partner_shipping_id.state_id.name else '' # name4/additional address line
         etree.SubElement(wab_partner, WAB + "Street", nsmap=NSMAP).text = "%s, %s" % (self.sale_id.partner_shipping_id.street, self.sale_id.partner_shipping_id.street2)
         etree.SubElement(wab_partner, WAB + "CountryCode", nsmap=NSMAP).text = "%s" % self.sale_id.partner_shipping_id.country_id.code
         etree.SubElement(wab_partner, WAB + "ZIPCode", nsmap=NSMAP).text = "%s" % self.sale_id.partner_shipping_id.zip
@@ -185,12 +416,12 @@ class StockPicking(models.Model):
         etree.SubElement(wab_additional_service, WAB + "FloorNo", nsmap=NSMAP).text = ""
         etree.SubElement(wab_additional_service, WAB + "NotificationType", nsmap=NSMAP).text = "4" # 1- TEL, 2-FAX, 3-SMS, 4-EMAIL
         etree.SubElement(wab_additional_service, WAB + "NotificationServiceCode", nsmap=NSMAP).text = "2" # 0-On delivery, 1-24h, 2-On validation, 256-Saturday, 257-Evening 
-        etree.SubElement(wab_additional_service, WAB + "DelveryDate", nsmap=NSMAP).text = ""
-        etree.SubElement(wab_additional_service, WAB + "DelveryTimeJIT", nsmap=NSMAP).text = ""
-        etree.SubElement(wab_additional_service, WAB + "DelveryTimeFrom", nsmap=NSMAP).text = ""
-        etree.SubElement(wab_additional_service, WAB + "DelveryTimeTo", nsmap=NSMAP).text = ""
-        etree.SubElement(wab_additional_service, WAB + "DelveryTimePeriodeCode", nsmap=NSMAP).text = "3" # 1-morning, 2-afternoon, 3-both
-        etree.SubElement(wab_additional_service, WAB + "DelveryLocation", nsmap=NSMAP).text = ""
+        etree.SubElement(wab_additional_service, WAB + "DeliveryDate", nsmap=NSMAP).text = ""
+        etree.SubElement(wab_additional_service, WAB + "DeliveryTimeJIT", nsmap=NSMAP).text = ""
+        etree.SubElement(wab_additional_service, WAB + "DeliveryTimeFrom", nsmap=NSMAP).text = ""
+        etree.SubElement(wab_additional_service, WAB + "DeliveryTimeTo", nsmap=NSMAP).text = ""
+        etree.SubElement(wab_additional_service, WAB + "DeliveryPeriodeCode", nsmap=NSMAP).text = "3" # 1-morning, 2-afternoon, 3-both
+        etree.SubElement(wab_additional_service, WAB + "DeliveryLocation", nsmap=NSMAP).text = ""
         etree.SubElement(wab_additional_service, WAB + "CODAmount", nsmap=NSMAP).text = "" # Cash on delivery amount
         etree.SubElement(wab_additional_service, WAB + "CODAccountNo", nsmap=NSMAP).text = "" # Cash on delivery account number
         etree.SubElement(wab_additional_service, WAB + "CODRefNo", nsmap=NSMAP).text = "" # Cash on delivery ISR reference
@@ -198,6 +429,9 @@ class StockPicking(models.Model):
         
         # Wab order positions
         wab_order_positions = etree.SubElement(wab_order, WAB + "OrderPositions", nsmap=NSMAP)
+
+        ctx = self._context.copy()
+        ctx.update(lang='de_DE')
         
         for move_line in self.move_line_ids:
             wab_position = etree.SubElement(wab_order_positions, WAB + "Position", nsmap=NSMAP)
@@ -207,8 +441,8 @@ class StockPicking(models.Model):
             etree.SubElement(wab_position, WAB + "YCLot", nsmap=NSMAP).text = ""
             etree.SubElement(wab_position, WAB + "Lot", nsmap=NSMAP).text = "%s" % self.name
             etree.SubElement(wab_position, WAB + "Plant", nsmap=NSMAP).text = "%s" % self.env['ir.config_parameter'].get_param('sga_swisspost_soap_connector.warehouse_id', False)
-            etree.SubElement(wab_position, WAB + "Quantity", nsmap=NSMAP, ISO="PCE").text = "%s" % move_line.qty_done
-            etree.SubElement(wab_position, WAB + "ShortDescription", nsmap=NSMAP).text = "%s" % move_line.product_id.description_short
+            etree.SubElement(wab_position, WAB + "Quantity", nsmap=NSMAP, ISO="PCE").text = "%s" % move_line.product_uom_qty
+            etree.SubElement(wab_position, WAB + "ShortDescription", nsmap=NSMAP).text = "%s" % move_line.with_context(ctx).product_id.name
             etree.SubElement(wab_position, WAB + "PickingMessage", nsmap=NSMAP).text = ""
             etree.SubElement(wab_position, WAB + "PickingMessageLC", nsmap=NSMAP).text = "en"
             etree.SubElement(wab_position, WAB + "ReturnReason", nsmap=NSMAP).text = ""
@@ -243,7 +477,8 @@ class StockPicking(models.Model):
 
     @api.multi
     def get_from_sga(self):
-        for picking in self.filtered(lambda x: x.sga_integrated and x.sga_integration_type == 'sga_swiss_post' and sga_state == 'waiting'):
+        #for picking in self.filtered(lambda x: x.sga_integrated and x.sga_integration_type == 'sga_swiss_post' and sga_state == 'waiting'):
+        for picking in self.filtered(lambda x: x.sga_integrated and x.sga_integration_type == 'sga_swiss_post'):
             if picking.picking_type_id.code == 'outgoing':
                 data_type = 'war_r'
             elif picking.picking_type_id.code == 'incoming':

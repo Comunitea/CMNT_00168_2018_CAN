@@ -15,8 +15,10 @@
                             statusbar_colors='{"get-error":"red", "send-error": "red", "not-integrated":"grey", "integrated":"green", "waiting": "green"}'/>
                         <button name="send_to_sga" string="Enviar a SGA" type="object"
                             class="oe_stat_button" icon="fa-shopping-cart" attrs="{'invisible':[('sga_state','in', ['integrated', 'waiting'])]}"/>
+                        <!-- <button name="get_from_sga" string="Recibir del SGA" type="object"
+                            class="oe_stat_button" icon="fa-shopping-cart" attrs="{'invisible':[('sga_state','in', ['integrated', 'non-integrated', 'send-error'])]}"/> -->
                         <button name="get_from_sga" string="Recibir del SGA" type="object"
-                            class="oe_stat_button" icon="fa-shopping-cart" attrs="{'invisible':[('sga_state','in', ['integrated', 'non-integrated', 'send-error'])]}"/>
+                            class="oe_stat_button" icon="fa-shopping-cart"/>
                     </group>
                 </page>
             </notebook>

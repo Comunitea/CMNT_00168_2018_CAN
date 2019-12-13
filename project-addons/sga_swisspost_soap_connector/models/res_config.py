@@ -42,6 +42,7 @@ class ConfigSoapData(models.TransientModel):
     certificate_file = fields.Char('Certificate file', help='Certificate file supplied by Yellowcube')
     certificate_key_file = fields.Char('Certificate key file', help='Certificate key file supplied b y Yellowcube')
     certificate_password = fields.Char('Certificate password')
+    
 
     @api.model
     def get_values(self):
