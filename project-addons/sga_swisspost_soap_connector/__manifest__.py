@@ -39,6 +39,11 @@
         'views/stock_warehouse.xml',
         'wizard/save_xml_file.xml'
     ],
+    "external_dependencies": {
+        "python": [
+            "zeep"
+        ],
+    },
     'installable': True,
     'auto_install': False,
     'application': False,

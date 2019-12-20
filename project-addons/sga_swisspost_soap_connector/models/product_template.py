@@ -68,10 +68,11 @@ class ProductTemplate(models.Model):
             grossWeight_qty = float13v3_type("{:.2f}".format(self.weight + (self.weight*5)/100))
             weight = float13v3mandatory_type("{:.2f}".format(self.weight + (self.weight*5)/100))
             articleDescription_de = descriptionlc_type(self.with_context(lang='de_DE').name[:40])
+            barcode = self.barcode if self.barcode else ''
             
 
             unitsOfMeasure = units_element(
-                EAN=self.barcode if self.barcode else '',
+                EAN=barcode,
                 AlternateUnitISO="PCE",
                 AltNumeratorUOM=1,
                 AltDenominatorUOM=1,
@@ -215,6 +216,6 @@ class ProductTemplate(models.Model):
             soap_connection = product.create_soap('art', 'delete', xml_data)
             res = soap_connection.send()
             if res == True:
-                product.sga_state = 'non-integrated'
+                product.sga_state = 'not-integrated'
             else:
                 product.sga_state = 'error'

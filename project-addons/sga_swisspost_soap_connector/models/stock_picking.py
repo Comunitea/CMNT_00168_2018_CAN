@@ -77,7 +77,7 @@ class StockPicking(models.Model):
                 DepositorNo=self.env['ir.config_parameter'].get_param('sga_swisspost_soap_connector.depositor_no', False),
                 Plant=self.env['ir.config_parameter'].get_param('sga_swisspost_soap_connector.warehouse_id', False),
                 SupplierNo=self.env['ir.config_parameter'].get_param('sga_swisspost_soap_connector.supplier_no', False),
-                SupplierOrderNo=self.name
+                SupplierOrderNo=self.name.replace('/', '_')
             )
 
 
@@ -143,7 +143,7 @@ class StockPicking(models.Model):
 
             orderHeader = orderHeader_element(
                 DepositorNo=self.env['ir.config_parameter'].get_param('sga_swisspost_soap_connector.depositor_no', False),
-                CustomerOrderNo=self.name,
+                CustomerOrderNo=self.name.replace('/', '_'),
                 CustomerOrderDate=datetime.strptime(self.sale_id.confirmation_date, '%Y-%m-%d %H:%M:%S').strftime("%Y%m%d")
             )
 
@@ -153,7 +153,7 @@ class StockPicking(models.Model):
             partner = partner_element(
                 PartnerType="WE",
                 PartnerNo=self.env['ir.config_parameter'].get_param('sga_swisspost_soap_connector.partner_no', False),
-                PartnerReference=self.name,
+                PartnerReference=self.name.replace('/', '_'),
                 Title="",
                 Name1=self.sale_id.partner_shipping_id.name[:35],
                 Name2=self.sale_id.partner_shipping_id.name[36:70],
@@ -306,7 +306,7 @@ class StockPicking(models.Model):
             # Wbl file content
             war_r = etree.SubElement(body, WAR_R + "WAR_R", nsmap=NSMAP)
             self.file_control_reference(war_r, data_type)
-            self.request_order_info_info(war_r)
+            self.request_order_info_info(war_r, data_type)
         
         elif data_type == 'wba_r':
             # Wbl file content
@@ -349,9 +349,9 @@ class StockPicking(models.Model):
     def request_order_info_info(self, soap_file, data_type):
         # Order info request
         if data_type == 'war_r':
-            etree.SubElement(soap_file, WAR_R + "CustomerOrderNo", nsmap=NSMAP).text = "%s" % self.name
+            etree.SubElement(soap_file, WAR_R + "CustomerOrderNo", nsmap=NSMAP).text = "%s" % self.name.replace('/', '_')
         elif data_type == 'wba_r':
-            etree.SubElement(soap_file, WBA_R + "SupplierOrderNo", nsmap=NSMAP).text = "%s" % self.name
+            etree.SubElement(soap_file, WBA_R + "SupplierOrderNo", nsmap=NSMAP).text = "%s" % self.name.replace('/', '_')
 
     def file_supplier_order_info(self, wbl):
         # Wbl Info
@@ -361,7 +361,7 @@ class StockPicking(models.Model):
         wbl_order_header = etree.SubElement(wbl_order, WBL + "SupplierOrderHeader", nsmap=NSMAP)
         etree.SubElement(wbl_order_header, WBL + "Plant", nsmap=NSMAP).text = "%s" % self.env['ir.config_parameter'].get_param('sga_swisspost_soap_connector.warehouse_id', False)
         etree.SubElement(wbl_order_header, WBL + "SupplierNo", nsmap=NSMAP).text = "%s" % self.env['ir.config_parameter'].get_param('sga_swisspost_soap_connector.supplier_no', False)
-        etree.SubElement(wbl_order_header, WBL + "SupplierOrderNo", nsmap=NSMAP).text = "%s" % self.name
+        etree.SubElement(wbl_order_header, WBL + "SupplierOrderNo", nsmap=NSMAP).text = "%s" % self.name.replace('/', '_')
 
         # Wbl Supplier Order Detail
         wbl_order_positions = etree.SubElement(wbl_order, WBL + "SupplierOrderPositions", nsmap=NSMAP) # Revisar si es SupplierOrderDetail o SupplierOrderPositions. El pdf viene como Detail y el xsd viene positions
@@ -381,7 +381,7 @@ class StockPicking(models.Model):
         wab_order_header = etree.SubElement(wab_order, WAB + "OrderHeader", nsmap=NSMAP)
         
         etree.SubElement(wab_order_header, WAB + "DepositorNo", nsmap=NSMAP).text = self.env['ir.config_parameter'].get_param('sga_swisspost_soap_connector.depositor_no', False)
-        etree.SubElement(wab_order_header, WAB + "CustomerOrderNo", nsmap=NSMAP).text = "%s" % self.name
+        etree.SubElement(wab_order_header, WAB + "CustomerOrderNo", nsmap=NSMAP).text = "%s" % self.name.replace('/', '_')
         etree.SubElement(wab_order_header, WAB + "CustomerOrderDate", nsmap=NSMAP).text = "%s" % datetime.strptime(self.sale_id.confirmation_date, '%Y-%m-%d %H:%M:%S').strftime("%Y%m%d")
 
         ## Wab partner address
@@ -389,7 +389,7 @@ class StockPicking(models.Model):
         wab_partner = etree.SubElement(wab_partner_adress, WAB + "Partner", nsmap=NSMAP)
         etree.SubElement(wab_partner, WAB + "PartnerType", nsmap=NSMAP).text = "WE"
         etree.SubElement(wab_partner, WAB + "PartnerNo", nsmap=NSMAP).text = "%s" % self.env['ir.config_parameter'].get_param('sga_swisspost_soap_connector.partner_no', False)
-        etree.SubElement(wab_partner, WAB + "PartnerReference", nsmap=NSMAP).text = "%s" % self.name
+        etree.SubElement(wab_partner, WAB + "PartnerReference", nsmap=NSMAP).text = "%s" % self.name.replace('/', '_')
         etree.SubElement(wab_partner, WAB + "Title", nsmap=NSMAP).text = ""
         etree.SubElement(wab_partner, WAB + "Name1", nsmap=NSMAP).text = "%s" % self.sale_id.partner_shipping_id.name[:35]
         etree.SubElement(wab_partner, WAB + "Name2", nsmap=NSMAP).text = "%s" % self.sale_id.partner_shipping_id.name[36:70]

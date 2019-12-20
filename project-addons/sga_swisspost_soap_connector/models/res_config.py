@@ -40,7 +40,7 @@ class ConfigSoapData(models.TransientModel):
         ('https://service-test.swisspost.ch/apache/yellowcube-int/?wsdl', 'Integration and aceptance'),\
         ('https://service.swisspost.ch/apache/yellowcube/?wsdl', 'Production')], default="Trial", string='Webservice', help='Selected Webservice')
     certificate_file = fields.Char('Certificate file', help='Certificate file supplied by Yellowcube')
-    certificate_key_file = fields.Char('Certificate key file', help='Certificate key file supplied b y Yellowcube')
+    certificate_key_file = fields.Char('Certificate key file', help='Certificate key file supplied by Yellowcube')
     certificate_password = fields.Char('Certificate password')
     
 
