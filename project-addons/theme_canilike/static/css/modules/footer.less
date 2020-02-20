@@ -77,8 +77,16 @@ footer{
             display: flex;
             >div {
                 &:not(:last-child) {
-                    margin-right: 4em;
+                    /* With igape logo */
+//                     margin-right: 4em;
+                    /* Without igape logo */
+                    margin-right: 0;
+                    width: 20%;
                 }
+            }
+             /* Without igape logo */
+            >div:nth-child(2) {
+                margin-right: 2em;
             }
         }
     &::before {
@@ -89,6 +97,20 @@ footer{
         background-image: url('/theme_canilike/static/img/canilike/can-color.png');
         background-size:100%;
         background-repeat: no-repeat;
-        margin-right: 2em;
+        /* With igape logo */
+//         margin-right: 2em;
+        /* Without igape logo */
+        margin-right: 6em;
     }
+     /* Without igape logo */
+    @media (max-width: @screen-m) {
+        &::before {
+            margin-right: 3em;
+        }
     }
+}
+
+.modal-body {
+    max-height: calc(100vh - 22vh);
+    overflow-y: auto;
+}

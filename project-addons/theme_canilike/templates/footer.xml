@@ -38,11 +38,11 @@
                         <li><a href="/legal/advice" alt="Legal advice link" title="Legal Advice" rel="nofollow" target="_blank">Legal Advice</a></li>
                     </ul>
                 </div>
-                <div data-toggle="tooltip" title="Igape" class="footer-igape">
-                    <a href="#" data-toggle="modal" data-target="#igapeModal" rel="nofollow">
-                        <img t-att-src="'/theme_canilike/static/img/canilike/ue.jpg'" alt="European Union"/><span>European Union</span>
-                    </a>
-                </div>
+<!--                <div data-toggle="tooltip" title="Igape" class="footer-igape">-->
+<!--                    <a href="#" data-toggle="modal" data-target="#igapeModal" rel="nofollow">-->
+<!--                        <img t-att-src="'/theme_canilike/static/img/canilike/ue.jpg'" alt="European Union"/><span>European Union</span>-->
+<!--                    </a>-->
+<!--                </div>-->
             </div>
         </xpath>
     </template>
@@ -53,18 +53,33 @@
                 <div class="modal-content">
                     <div class="modal-header">
                     <button class="close" data-dismiss="modal"><span>Close</span></button>
-                        <h4 class="modal-title text-uppercase" id="modalLabel">Axudas do Igape á dixitalización Industria 4.0</h4>
+                        <h4 class="modal-title text-uppercase" id="modalLabel"><strong>Axudas do Igape</strong></h4>
+                        <img class="mt8" t-att-src="'/theme_canilike/static/img/canilike/igape.jpg'" alt="Igape Logo"/>
                     </div>
-                    <div class="modal-body mt8">
-                        <img t-att-src="'/theme_canilike/static/img/canilike/igape.jpg'" alt="Igape Logo"/>
-                        <h4 class="text-center mt32 mb24">Axudas do Igape á dixitalización Industria 4.0</h4>
-                        <h4 class="text-center mb24">Axudas do Igape Galicia Exporta Empresas</h4>
+                    <div class="modal-body">
+                        <h4 class="text-center text-uppercase mb16">Dixitalización Industria 4.0</h4>
                         <p>Esta empresa foi beneficiaria dunha axuda do programa do Igape Galicia Exporta Empresas. O obxectivo principal destas axudas é incentivar e estimular o comercio exterior galego e a internacionalización das pemes galegas. O resultado que se pretende é aumentar a base de empresas exportadoras e consolidar a presenza de empresas galegas nos mercados internacionais.</p>
-                        <ul class="list-unstyled mt24 mb24">
+                        <ul class="list-unstyled mt16">
                             <li class="text-center">Operación cofinanciada pola Unión Europea</li>
                             <li class="text-center mt4">Programa operativo FEDER Galicia 2014-2020</li>
                             <li class="text-center mt4">Conseguir un tecido empresarial máis competitivo</li>
                             <li class="text-center mt4"><i>Unha maneira de facer Europa</i></li>
+                        </ul>
+                        <hr/>
+                        <h4 class="text-center text-uppercase mb16">Galicia Exporta Empresas</h4>
+                        <p>Esta empresa foi beneficiaria dunha axuda do programa do Igape Galicia Exporta Empresas. O obxectivo principal destas axudas é incentivar e estimular o comercio exterior galego e a internacionalización das pemes galegas. O resultado que se pretende é aumentar a base de empresas exportadoras e consolidar a presenza de empresas galegas nos mercados internacionais.</p>
+                        <ul class="list-unstyled mt16">
+                            <li class="text-center">Operación cofinanciada pola Unión Europea</li>
+                            <li class="text-center mt4">Programa operativo FEDER Galicia 2014-2020</li>
+                            <li class="text-center mt4">Conseguir un tecido empresarial máis competitivo</li>
+                            <li class="text-center mt4"><i>Unha maneira de facer Europa</i></li>
+                        </ul>
+                        <hr/>
+                        <h4 class="text-center text-uppercase mb16">Plan de Emprego Local da Deputación da Coruña</h4>
+                        <ul class="list-unstyled mb24">
+                            <li class="text-center"><img t-att-src="'/theme_canilike/static/img/canilike/sello_vert.png'" alt="Vert Logo" style="width: 90px; height: 142px"/></li>
+                            <li class="text-center mt8">Convocatoria</li>
+                            <li class="text-center mt8">PEL Emprende Actividades 2019</li>
                         </ul>
                     </div>
                 </div>

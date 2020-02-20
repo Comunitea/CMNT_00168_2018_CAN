@@ -132,6 +132,11 @@
                 <div class="header-logo">
                     <t t-call="theme_canilike.header_logo"/>
                 </div>
+                <div class="header-igape" data-toggle="tooltip" title="Axudas do Igape">
+                    <a href="#" data-toggle="modal" data-target="#igapeModal" rel="nofollow">
+                        <img t-att-src="'/theme_canilike/static/img/canilike/ue.jpg'" alt="European Union"/>
+                    </a>
+                </div>
                 <div class="header-section">
                     <div class="header-options">
                         <div class="nav navbar-top pull-right">
