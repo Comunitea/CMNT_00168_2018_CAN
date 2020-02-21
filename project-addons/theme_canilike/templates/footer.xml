@@ -17,8 +17,8 @@
                         <li><a href="/payment-and-shipping" alt="Payment and Shipping Link" title="Payment and Shipping" rel="nofollow" target="_blank">Payment and Shipping</a></li>
                     </ul>
                 </div>
-                <div>
-                    <h4 t-if="website.social_facebook or website.social_twitter or website.social_linkedin or website.social_youtube or website.social_instagram or website.social_github">
+                <div t-if="website.social_facebook or website.social_twitter or website.social_linkedin or website.social_youtube or website.social_instagram or website.social_github">
+                    <h4>
                         Social Media
                     </h4>
                     <ul>
