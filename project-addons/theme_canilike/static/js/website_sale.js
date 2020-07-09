@@ -18,7 +18,7 @@ odoo.define('theme_canilike.website_sale', function (require) {
                     $('#alert_msg').html('');
                 } else {
                     $('#address_submit').addClass('hidden');
-                    $('#alert_msg').html('<div class="col-md-12"><div class="alert alert-danger"><p>'+ alert_msg +'</p><p>'+ alert_msg_2nd_line+'</p><p><a href="/shipping-info">'+conditions+'</a></p></div></div>');
+                    $('#alert_msg').html('<div class="col-md-12"><div class="alert alert-danger"><p>'+ alert_msg +'</p><p>'+ alert_msg_2nd_line+'</p><p><a href="/payment-and-shipping">'+conditions+'</a></p></div></div>');
                 }
             });
     }
@@ -28,7 +28,7 @@ odoo.define('theme_canilike.website_sale', function (require) {
         if (allowed_shipping) {
             $('#address_submit').removeClass('hidden');
         } else {
-            $('#alert_msg').html('<div class="col-md-12"><div class="alert alert-danger"><p>'+ alert_msg +'</p><p>'+ alert_msg_2nd_line+'</p><p><a href="/shipping-info">'+conditions+'</a></p></div></div>');
+            $('#alert_msg').html('<div class="col-md-12"><div class="alert alert-danger"><p>'+ alert_msg +'</p><p>'+ alert_msg_2nd_line+'</p><p><a href="/payment-and-shipping">'+conditions+'</a></p></div></div>');
         }        
     });
 
