@@ -26,7 +26,14 @@
                         <div class="container">
                             <div class="row">
                                 <div class="mt32 mb32 col-md-4">
-                                    <img class="img img-responsive center-block mb16" src="/theme_canilike/static/img/canilike/mar-circle.png" alt="Sea" data-original-title="" title="Sea"/>
+                                    <picture>
+                                        <source type="image/webp" srcset="/theme_canilike/static/img/canilike/mar-circle.webp"/>
+                                        <source type="image/png" srcset="/theme_canilike/static/img/canilike/mar-circle.png"/>
+                                        <img
+                                            class="img img-responsive center-block mb16"
+                                            src="/theme_canilike/static/img/canilike/mar-circle.png"
+                                            alt="Sea" data-original-title="" title="Sea"/>
+                                    </picture>
                                 </div>
                                 <div class="col-md-6 mt128 mb128">
                                     <h4>
@@ -51,7 +58,14 @@
                                     </p>
                                 </div>
                                 <div class="mb0 col-md-4 mt16">
-                                    <img class="img img-responsive pull-left mb16" src="/theme_canilike/static/img/canilike/pesca-circle.png" alt="Angeln" data-original-title="" title="Angeln"/>
+                                    <picture>
+                                        <source type="image/webp" srcset="/theme_canilike/static/img/canilike/pesca-circle.webp"/>
+                                        <source type="image/png" srcset="/theme_canilike/static/img/canilike/pesca-circle.png"/>
+                                        <img
+                                            class="img img-responsive pull-left mb16"
+                                            src="/theme_canilike/static/img/canilike/pesca-circle.png"
+                                            alt="Angeln" data-original-title="" title="Angeln"/>
+                                    </picture>
                                 </div>
                             </div>
                         </div>
@@ -60,7 +74,14 @@
                         <div class="container">
                             <div class="row">
                                 <div class="mt32 mb0 col-md-4">
-                                    <img class="img img-responsive center-block mb16" src="/theme_canilike/static/img/canilike/conserva-circle.png" alt="Geschmackserinnerungen" data-original-title="" title="Geschmackserinnerungen"/>
+                                    <picture>
+                                        <source type="image/webp" srcset="/theme_canilike/static/img/canilike/conserva-circle.webp"/>
+                                        <source type="image/png" srcset="/theme_canilike/static/img/canilike/conserva-circle.png"/>
+                                        <img
+                                            class="img img-responsive center-block mb16"
+                                            src="/theme_canilike/static/img/canilike/conserva-circle.png"
+                                            alt="Geschmackserinnerungen" data-original-title="" title="Geschmackserinnerungen"/>
+                                    </picture>
                                 </div>
                                 <div class="mb128 mt128 col-md-6">
                                     <h4>

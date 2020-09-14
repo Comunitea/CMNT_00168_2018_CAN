@@ -102,6 +102,11 @@ footer{
         /* Without igape logo */
         margin-right: 6em;
     }
+    @supports (background-image: -webkit-image-set(url('/theme_canilike/static/img/canilike/can-color.webp') 1x)) {
+        &::before {
+            background-image: -webkit-image-set(url('/theme_canilike/static/img/canilike/can-color.webp') 1x)
+        }
+      }
      /* Without igape logo */
     @media (max-width: @screen-m) {
         &::before {
