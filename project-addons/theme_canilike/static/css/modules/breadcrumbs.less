@@ -2,6 +2,15 @@
    Breadcrumbs
    ========================================================================== */
 
+// Avoid shadow when scrolling by breadcrumbs bar on breadcrumbs_base module
+html:not([data-scroll='0']) {
+    .wp_breadcrumbs_base {
+        box-shadow: none;
+        border-bottom: none;
+        transition: none;
+    }
+}
+
 .wp_breadcrumbs_base {
     //&:extend(.wrapper-l);
     padding-top: 1em;
